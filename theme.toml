@@ -1,0 +1,16 @@
+name = "tranquilpeak"
+license = "MIT"
+licenselink = "//opensource.org/licenses/MIT"
+description = "A Hyperminimal J̶e̶k̶y̶l̶l̶ Hugo Theme"
+homepage = "//hbpasti.github.io/heather-hugo"
+tags = ["blog"]
+features = ["blog"]
+
+[author]
+  name = "Thibaud Leprêtre"
+  homepage = "//github.com/kakawait"
+
+[original]
+  name = "Tranquilpeak"
+  homepage = "//github.com/LouisBarranqueiro/hexo-theme-tranquilpeak"
+  repo = "https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak.git"

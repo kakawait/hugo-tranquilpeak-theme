@@ -1,0 +1,12 @@
+{{ range .menu }}
+  <li class="sidebar-button">
+    {{ if and (in .URL "://") (not (in .URL (printf "%s" $.root.Site.BaseURL))) }}
+      <a class="sidebar-button-link {{ if eq .Identifier "search" }}open-algolia-search{{ end }}" href="{{ .URL | safeURL }}" target="_blank">
+    {{ else }}
+      <a class="sidebar-button-link {{ if eq .Identifier "search" }}open-algolia-search{{ end }}" href="{{ .URL }}">
+    {{ end }}
+      {{ .Pre }}
+      <span class="sidebar-button-desc">{{ .Name }}</span>
+    </a>
+  </li>
+{{ end }}

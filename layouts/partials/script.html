@@ -1,0 +1,68 @@
+<!--SCRIPTS-->
+<script src="/js/script-wobk42pexrkxfpjadfqtuepow0bp12xwpwetpoeldmynooqzltx4pfycyjkw.min.js" type="text/javascript"></script>
+<!--SCRIPTS END-->
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight').each(function(i, block) {
+    var code = "";
+    hljs.highlightAuto(block.innerText).value.split(/\r\n|\r|\n/).forEach(function(line) {
+      code += "<span class=\"line\">" + line + "</span><br>";
+    });
+    if (code.length > 0) {
+      block.innerHTML = code;  
+    }
+  });
+  $('pre > code').each(function(i, block) {
+    $(this).addClass('codeblock');
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+{{ if not (eq .Params.comments false) }}
+  {{ if .Site.DisqusShortname }}
+    <script>
+      var disqus_config = function () {
+        this.page.url = '{{ .Permalink }}';
+        {{ if .Params.disqusIdentifier }}
+          this.page.identifier = '{{ .Params.disqusIdentifier }}';
+        {{ else }}
+          this.page.identifier = '{{ .URL | relURL }}'
+        {{ end }}
+      };
+      (function() {
+        // Don't ever inject Disqus on localhost--it creates unwanted
+        // discussions from 'localhost:1313' on your Disqus account...
+        if (window.location.hostname == "localhost") {
+          return;
+        }
+        var d = document, s = d.createElement('script');
+        var disqus_shortname = '{{ .Site.DisqusShortname }}';
+        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+  {{ end }}
+{{ end }}
+{{ if $.Site.Params.swiftype_install_key }}
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+          (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+      e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','{{ $.Site.Params.swiftype_install_key }}','2.0.0');
+</script>
+{{ end }}
+{{ with .Site.Params.algolia }}
+  {{ if (isset . "appId") | and (isset . "apiKey") | and (isset . "indexName") }}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment-with-locales.min.js"></script>
+    <script src="//cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script>
+      var algoliaClient = algoliasearch('{{ .appId }}', '{{ .apiKey }}');
+      var algoliaIndex = algoliaClient.initIndex('{{ .indexName }}');
+    </script>
+  {{ end }}
+{{ end }}

@@ -1,0 +1,92 @@
+{{ $.Scratch.Set "isPost" false }}
+{{ if .IsPage }}
+  {{ if eq .Type "post" }}
+    {{ $.Scratch.Set "isPost" true }}
+  {{ end }}
+{{ end }}
+{{ if and (and ($.Scratch.Get "isPost") (lt .Site.Params.sidebar_behavior 3)) (or (and .Site.Params.clear_reading (not .Params.clearReading)) .Params.clearReading) }}
+  {{ .Scratch.Set "sidebarBehavior" (add .Site.Params.sidebar_behavior 3) }}
+{{ else }}
+  {{ .Scratch.Set "sidebarBehavior" .Site.Params.sidebar_behavior }}
+{{ end }}
+{{ if .Site.Author.gravatar_email }}
+  {{ .Scratch.Set "authorPicture" (printf "http://www.gravatar.com/avatar/%s" (urlize (md5 .Site.Author.gravatar_email))) }}
+{{ else if .Site.Author.picture }}
+  {{ .Scratch.Set "authorPicture" (absURL .Site.Author.picture) }}
+{{ end }}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo {{ .Hugo.Version }}">
+    <title>{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}</title>
+    <meta name="author" content="{{ .Site.Author.name }}">
+    <meta name="keywords" content="{{ with .Keywords }}{{ delimit . ", " }}{{ end }}{{ .Site.Params.keywords }}">
+
+    <link rel="icon" href="/favicon.png">
+    {{ with .RSSlink }}
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ . }}">
+    {{ end }}
+
+    <!-- open graph data -->
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}">
+    <meta property="og:url" content="{{ .URL }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ .Site.Title }}">
+    <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    {{ with .Site.Params.author.twitter }}
+      <meta name="twitter:creator" content="@{{ . }}">
+    {{ end }}
+    {{ with .Site.Params.fb_app_id }}
+      <meta property="fb:app_id" content="{{ . }}">
+    {{ end }}
+
+    <!-- Facebook admins -->
+    {{ with .Site.Params.fb_admin_ids }}
+      {{ range . }}
+          <meta property="fb:admins" content="{{ . }}">
+      {{ end }}
+    {{ end }}
+
+    {{ if .Site.Author.gravatar_email }}
+      <meta property="og:image" content="http://www.gravatar.com/avatar/{{ (md5 .Site.Author.gravatar_email) | urlize }}?s=640">
+    {{ else if .Site.Author.picture }}
+      <meta property="og:image" content="{{ .Site.Author.picture | absURL }}">
+    {{ end }}
+
+    {{ with .Params.thumbnailImage }}
+      <meta property="og:image" content="{{ . | absURL }}">
+      {{ if $.Site.Params.swiftype_install_key }}
+        <meta class="swiftype" name="image" data-type="enum" content="{{ . | absURL }}">
+      {{ end }}
+    {{ end }}
+    {{ with .Params.coverImage }}
+      <meta property="og:image" content="{{ . | absURL }}">
+      {{ if $.Site.Params.swiftype_install_key }}
+        <meta class="swiftype" name="image" data-type="enum" content="{{ . | absURL }}">
+      {{ end }}
+    {{ end }}
+    {{ with .Params.gallery }}
+      {{ range . }}
+        <meta property="og:image" content="{{ range first 1 (split . " ") }}{{ . | absURL }}{{ end }}">
+        {{ if $.Site.Params.swiftype_install_key }}
+          <meta class="swiftype" name="image" data-type="enum" content="{{ range first 1 (split . " ") }}{{ . | absURL }}{{ end }}">
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ with .Site.Params.author.google_plus }}
+      <link rel="publisher" href="https://plus.google.com/{{ . | urlize }}">
+    {{ end }}
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="/css/style-xa6h6bmmhqwdnloz2xcckoenaw5jhgucm8euzrr3hp6nridogjdujyoafoyl.min.css" />
+    <!--STYLES END-->
+    
+    {{ partial "google-analytics.html" }}
+  </head>
