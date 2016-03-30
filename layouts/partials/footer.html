@@ -1,0 +1,5 @@
+<footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    Copyrights &copy; {{ .Now.Format "2006" }} {{ with .Site.Author.name }}{{ . }}{{ else }}{{ with .Site.Title }}{{ . }}{{ end }}{{ end }}. All Rights Reserved.
+  </span>
+</footer>

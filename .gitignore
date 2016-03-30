@@ -1,0 +1,9 @@
+.sass-cache
+assets
+node_modules
+src/_bower_components
+static/js/*
+!static/js/script-*.min.js
+static/css/*
+!static/css/style-*.min.css
+

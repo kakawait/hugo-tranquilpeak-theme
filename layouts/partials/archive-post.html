@@ -1,0 +1,19 @@
+<h5 class="archive-result text-color-base text-xlarge" data-message-zero="no post found" data-message-one="1 post found" data-message-other="{n} posts found"></h5>
+<section class="boxes">
+  {{ range .GroupByDate "2006" }}
+    {{ $year := .Key }}
+    <div class="archive archive-year box" data-date="{{ $year }}">
+      <h4 class="archive-title" style="text-decoration: none;">{{ $year }}</h4>
+      {{ range .Pages.GroupByDate "01-January" }}
+        <ul class="archive-posts archive-month" data-date="{{ $year }}{{ range first 1 (split .Key "-") }}{{ . }}{{ end }}">
+          <h5 class="archive-title" style="text-decoration: none;">{{ range last 1 (split .Key "-") }}{{ . }}{{ end }}</h5>
+          {{ range .Pages }}
+            <li class="archive-post archive-day" data-date="{{ dateFormat "20060102" .Date }}">
+              <a class="archive-post-title" href="{{ .Permalink }}">{{ .Title }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </div>
+  {{ end }}
+</section>
