@@ -1,0 +1,3458 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Post-rsses on Hugo tranquilpeak theme</title>
+    <link>https://tranquilpeak.kakawait.com/post/index.xml</link>
+    <description>Recent content in Post-rsses on Hugo tranquilpeak theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Jun 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://tranquilpeak.kakawait.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Welcome to Tranquilpeak 1.9</title>
+      <link>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-1.9/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-1.9/</guid>
+      <description>&lt;p&gt;Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://tranquilpeak.kakawait.com/img/showcase.png&#34; alt=&#34;Tranquilpeak&#34; /&gt;
+Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
+&lt;!-- toc --&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;tranquilpeak&#34;&gt;Tranquilpeak&lt;/h1&gt;
+
+&lt;!--[![Join the chat at https://gitter.im/LouisBarranqueiro/hexo-theme-tranquilpeak](https://badges.gitter.im/Join%20Chat.svg)](http s://gitter.im/LouisBarranqueiro/hexo-theme-tranquilpeak?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge)--&gt;
+
+&lt;p&gt;A gorgeous responsive theme for Hugo blog framework&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://tranquilpeak.kakawait.com&#34;&gt;&lt;img src=&#34;https://tranquilpeak.kakawait.com/img/showcase.png&#34; alt=&#34;Tranquilpeak&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;credits&#34;&gt;Credits&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Hugo&lt;/em&gt; version of Tranquilpeak is a based on original &lt;em&gt;Hexo&lt;/em&gt; version &lt;a href=&#34;https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak&#34;&gt;https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak&lt;/a&gt;. This version is simply a port to &lt;em&gt;Hugo&lt;/em&gt; static site generator.&lt;/p&gt;
+
+&lt;p&gt;Please all the credit should be attributed to &lt;a href=&#34;https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak&#34;&gt;original &lt;em&gt;Hexo&lt;/em&gt; version&lt;/a&gt; and its author &lt;a href=&#34;https://github.com/LouisBarranqueiro&#34;&gt;Louis Barranqueiro&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Hugo&lt;/em&gt; version keeps every &lt;code&gt;.js&lt;/code&gt; and &lt;code&gt;.css&lt;/code&gt; files untouched from original &lt;em&gt;Hexo&lt;/em&gt; version in order to enjoy futur original &lt;em&gt;Hexo&lt;/em&gt; version updates or features!&lt;/p&gt;
+
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#general&#34;&gt;General&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#features&#34;&gt;Features&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#quick-start&#34;&gt;Quick start&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#demo&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#documentation&#34;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#contributing&#34;&gt;Contributing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#showcase&#34;&gt;Showcase&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#license&#34;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;general&#34;&gt;General&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Authors&lt;/strong&gt;: &lt;a href=&#34;https://github.com/LouisBarranqueiro&#34;&gt;Louis Barranqueiro (LouisBarranqueiro)&lt;/a&gt; and &lt;a href=&#34;https://github.com/kakawait&#34;&gt;Thibaud Leprêtre (kakawait)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Version&lt;/strong&gt;: 0.1.0-SNAPSHOT (based on Hexo version 1.9.1)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Compatibility&lt;/strong&gt;: Hugo v0.16&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;General features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fully responsive&lt;/li&gt;
+&lt;li&gt;Optimized for tablets &amp;amp; mobiles&lt;/li&gt;
+&lt;li&gt;Configurable menu of the sidebar&lt;/li&gt;
+&lt;li&gt;Pages to filter tags, categories and archives&lt;/li&gt;
+&lt;li&gt;Background cover image&lt;/li&gt;
+&lt;li&gt;Beautiful about page&lt;/li&gt;
+&lt;li&gt;Support Open Graph protocol&lt;/li&gt;
+&lt;li&gt;Easily customizable (fonts, colors, layout elements, code coloration, etc..)
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Posts features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Thumbnail image&lt;/li&gt;
+&lt;li&gt;Cover image&lt;/li&gt;
+&lt;li&gt;Responsive videos &amp;amp; images&lt;/li&gt;
+&lt;li&gt;Sharing options&lt;/li&gt;
+&lt;li&gt;Navigation menu&lt;/li&gt;
+&lt;li&gt;GitHub theme for code highlighting (customizable)&lt;/li&gt;
+&lt;li&gt;Image gallery&lt;/li&gt;
+&lt;li&gt;Tags for images (FancyBox), wide images, tabbed code blocks, highlighted text, alerts&lt;/li&gt;
+&lt;li&gt;Table of contents&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Integrated services:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Disqus&lt;/li&gt;
+&lt;li&gt;Google analytics&lt;/li&gt;
+&lt;li&gt;Gravatar&lt;/li&gt;
+&lt;li&gt;Facebook Insights&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;todo-of-missing-features-from-original-hexo-version&#34;&gt;Todo of missing features from original &lt;em&gt;Hexo&lt;/em&gt; version&lt;/h3&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Support internationalization (i18)&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Duoshuo&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Baidu analytics&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Algolia&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Documentations&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;ATTENTION&lt;/strong&gt; following features will not be possible due to &lt;em&gt;Hugo&lt;/em&gt; limitations&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Archives pages by years &lt;code&gt;/archives/2015&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Archives pages by month &lt;code&gt;/archives/2015/01&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;quick-start&#34;&gt;Quick start&lt;/h2&gt;
+
+&lt;p&gt;Coming soon (see &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/4&#34;&gt;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/4&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
+
+&lt;p&gt;Coming soon (see &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/3&#34;&gt;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/3&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h2 id=&#34;showcase&#34;&gt;Showcase&lt;/h2&gt;
+
+&lt;p&gt;I would like to create a showcase with all blogs that use Tranquilpeak, please, add your blog into.&lt;br /&gt;
+&lt;strong&gt;Click &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/new?title=Add%20my%20blog%20into%20the%20showcase&amp;amp;body=Hey,%20add%20my%20blog%20into%20the%20showcase:&#34;&gt;here&lt;/a&gt; to add your blog into the showcase.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;documentation&#34;&gt;Documentation&lt;/h2&gt;
+
+&lt;p&gt;Coming soon (see &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/4&#34;&gt;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/4&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h2 id=&#34;contributing&#34;&gt;Contributing&lt;/h2&gt;
+
+&lt;p&gt;All kinds of contributions (enhancements, new features, documentation &amp;amp; code improvements, issues &amp;amp; bugs reporting) are welcome.&lt;/p&gt;
+
+&lt;p&gt;As explained on &lt;a href=&#34;#credits&#34;&gt;Credits&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Hugo&lt;/em&gt; version keeps every &lt;code&gt;.js&lt;/code&gt; and &lt;code&gt;.css&lt;/code&gt; files untouched from original &lt;em&gt;Hexo&lt;/em&gt; version in order to enjoy futur original &lt;em&gt;Hexo&lt;/em&gt; version updates or features!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That mean I would keep a stronge dependency with original &lt;em&gt;Hexo&lt;/em&gt; theme. Thus if you want to suggest any modifications on &lt;code&gt;.css&lt;/code&gt; or &lt;code&gt;.js&lt;/code&gt; files &lt;strong&gt;I will submit those changes to original &lt;em&gt;Hexo&lt;/em&gt; theme&lt;/strong&gt; (except if it&amp;rsquo;s really specific to &lt;em&gt;Hugo&lt;/em&gt; bugs that is not present on &lt;em&gt;Hexo&lt;/em&gt;).&lt;/p&gt;
+
+&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+
+&lt;p&gt;hugo-tranquilpeak-theme is released under the terms of the &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/LICENSE&#34;&gt;GNU General Public License v3.0&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Elements showcase</title>
+      <link>https://tranquilpeak.kakawait.com/2015/05/elements-showcase/</link>
+      <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://tranquilpeak.kakawait.com/2015/05/elements-showcase/</guid>
+      <description>&lt;p&gt;Check out how Tranquilpeak theme display well HTML elements (title, paragraph, blockquote, table and more..). It&amp;rsquo;s simple and elegant.
+&lt;/p&gt;
+
+&lt;h1 id=&#34;heading-1&#34;&gt;Heading 1&lt;/h1&gt;
+
+&lt;h2 id=&#34;heading-2&#34;&gt;Heading 2&lt;/h2&gt;
+
+&lt;h3 id=&#34;heading-3&#34;&gt;Heading 3&lt;/h3&gt;
+
+&lt;h4 id=&#34;heading-4&#34;&gt;Heading 4&lt;/h4&gt;
+
+&lt;h5 id=&#34;heading-5&#34;&gt;Heading 5&lt;/h5&gt;
+
+&lt;h6 id=&#34;heading-6&#34;&gt;Heading 6&lt;/h6&gt;
+
+&lt;h2 id=&#34;paragraph&#34;&gt;Paragraph&lt;/h2&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, [test link]() consectetur adipiscing elit. &lt;strong&gt;Strong text&lt;/strong&gt; pellentesque ligula commodo viverra vehicula. &lt;em&gt;Italic text&lt;/em&gt; at ullamcorper enim. Morbi a euismod nibh. &lt;u&gt;Underline text&lt;/u&gt; non elit nisl. &lt;del&gt;Deleted text&lt;/del&gt; tristique, sem id condimentum tempus, metus lectus venenatis mauris, sit amet semper lorem felis a eros. Fusce egestas nibh at sagittis auctor. Sed ultricies ac arcu quis molestie. Donec dapibus nunc in nibh egestas, vitae volutpat sem iaculis. Curabitur sem tellus, elementum nec quam id, fermentum laoreet mi. Ut mollis ullamcorper turpis, vitae facilisis velit ultricies sit amet. Etiam laoreet dui odio, id tempus justo tincidunt id. Phasellus scelerisque nunc sed nunc ultricies accumsan.&lt;/p&gt;
+
+&lt;p&gt;Interdum et malesuada fames ac ante ipsum primis in faucibus. &lt;code&gt;Sed erat diam&lt;/code&gt;, blandit eget felis aliquam, rhoncus varius urna. Donec tellus sapien, sodales eget ante vitae, feugiat ullamcorper urna. Praesent auctor dui vitae dapibus eleifend. Proin viverra mollis neque, ut ullamcorper elit posuere eget.&lt;/p&gt;
+
+&lt;h2 id=&#34;list-types&#34;&gt;List Types&lt;/h2&gt;
+
+&lt;h3 id=&#34;definition-list-dl&#34;&gt;Definition List (dl)&lt;/h3&gt;
+
+&lt;dl&gt;&lt;dt&gt;Definition List Title&lt;/dt&gt;&lt;dd&gt;This is a definition list division.&lt;/dd&gt;&lt;/dl&gt;
+
+&lt;h3 id=&#34;ordered-list-ol&#34;&gt;Ordered List (ol)&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;List Item 1&lt;/li&gt;
+&lt;li&gt;List Item 2&lt;/li&gt;
+&lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;unordered-list-ul&#34;&gt;Unordered List (ul)&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;List Item 1&lt;/li&gt;
+&lt;li&gt;List Item 2&lt;/li&gt;
+&lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;table&#34;&gt;Table&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;Header 1&lt;/th&gt;
+&lt;th&gt;Header 2&lt;/th&gt;
+&lt;th&gt;Header 3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Division 1&lt;/td&gt;
+&lt;td&gt;Division 2&lt;/td&gt;
+&lt;td&gt;Division 3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Division 1&lt;/td&gt;
+&lt;td&gt;Division 2&lt;/td&gt;
+&lt;td&gt;Division 3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Division 1&lt;/td&gt;
+&lt;td&gt;Division 2&lt;/td&gt;
+&lt;td&gt;Division 3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Division 1&lt;/td&gt;
+&lt;td&gt;Division 2&lt;/td&gt;
+&lt;td&gt;Division 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;misc-stuff-abbr-acronym-sub-sup-etc&#34;&gt;Misc Stuff - abbr, acronym, sub, sup, etc.&lt;/h2&gt;
+
+&lt;p&gt;Lorem &lt;sup&gt;superscript&lt;/sup&gt; dolor &lt;sub&gt;subscript&lt;/sub&gt; amet, consectetuer adipiscing &lt;kdb&gt;ctrl + c&lt;/kdb&gt;. Nullam dignissim convallis est. Quisque aliquam. &lt;cite&gt;cite&lt;/cite&gt;. Nunc iaculis suscipit dui.
+ Nam
+sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. &lt;acronym title=&#34;National Basketball Association&#34;&gt;NBA&lt;/acronym&gt; Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  &lt;abbr title=&#34;Avenue&#34;&gt;AVE&lt;/abbr&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cover image showcase</title>
+      <link>https://tranquilpeak.kakawait.com/2015/05/cover-image-showcase/</link>
+      <pubDate>Wed, 13 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://tranquilpeak.kakawait.com/2015/05/cover-image-showcase/</guid>
+      <description>&lt;p&gt;Tranquilpeak integrate a unique &amp;ldquo;cover image&amp;rdquo; feature. Open this post to see how this feature sublimate your article.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna vitae velit eleifend interdum at ac nisi. In nec ligula lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eu cursus erat, ut dapibus quam. Aliquam eleifend dolor vitae libero pharetra adipiscing. Etiam adipiscing dolor a quam tempor, eu convallis nulla varius. Aliquam sollicitudin risus a porta aliquam. Ut nec velit dolor. Proin eget leo lobortis, aliquam est sed, mollis mauris. Fusce vitae leo pretium massa accumsan condimentum. Fusce malesuada gravida lectus vel vulputate. Donec bibendum porta nibh ut aliquam.
+Sed lorem felis, congue non fringilla eu, aliquam eu eros. Curabitur orci libero, mollis sed semper vitae, adipiscing in lectus. Aenean non egestas odio. Donec sollicitudin nisi quis lorem gravida, in pharetra mauris fringilla. Duis sit amet faucibus dolor, id aliquam neque. In egestas, odio gravida tempor dictum, mauris felis faucibus purus, sit amet commodo lacus diam vitae est. Ut ut quam eget massa semper sodales. Aenean non ipsum cursus, blandit lectus in, ornare odio. Curabitur ultrices porttitor vulputate.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna vitae velit eleifend interdum at ac nisi. In nec ligula lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eu cursus erat, ut dapibus quam. Aliquam eleifend dolor vitae libero pharetra adipiscing. Etiam adipiscing dolor a quam tempor, eu convallis nulla varius. Aliquam sollicitudin risus a porta aliquam. Ut nec velit dolor. Proin eget leo lobortis, aliquam est sed, mollis mauris. Fusce vitae leo pretium massa accumsan condimentum. Fusce malesuada gravida lectus vel vulputate. Donec bibendum porta nibh ut aliquam.&lt;/p&gt;
+
+&lt;p&gt;Sed lorem felis, congue non fringilla eu, aliquam eu eros. Curabitur orci libero, mollis sed semper vitae, adipiscing in lectus. Aenean non egestas odio. Donec sollicitudin nisi quis lorem gravida, in pharetra mauris fringilla. Duis sit amet faucibus dolor, id aliquam neque. In egestas, odio gravida tempor dictum, mauris felis faucibus purus, sit amet commodo lacus diam vitae est. Ut ut quam eget massa semper sodales. Aenean non ipsum cursus, blandit lectus in, ornare odio. Curabitur ultrices porttitor vulputate.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna vitae velit eleifend interdum at ac nisi. In nec ligula lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eu cursus erat, ut dapibus quam. Aliquam eleifend dolor vitae libero pharetra adipiscing. Etiam adipiscing dolor a quam tempor, eu convallis nulla varius. Aliquam sollicitudin risus a porta aliquam. Ut nec velit dolor. Proin eget leo lobortis, aliquam est sed, mollis mauris. Fusce vitae leo pretium massa accumsan condimentum. Fusce malesuada gravida lectus vel vulputate. Donec bibendum porta nibh ut aliquam.&lt;/p&gt;
+
+&lt;p&gt;Sed lorem felis, congue non fringilla eu, aliquam eu eros. Curabitur orci libero, mollis sed semper vitae, adipiscing in lectus. Aenean non egestas odio. Donec sollicitudin nisi quis lorem gravida, in pharetra mauris fringilla. Duis sit amet faucibus dolor, id aliquam neque. In egestas, odio gravida tempor dictum, mauris felis faucibus purus, sit amet commodo lacus diam vitae est. Ut ut quam eget massa semper sodales. Aenean non ipsum cursus, blandit lectus in, ornare odio. Curabitur ultrices porttitor vulputate.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>highlighted code showcase</title>
+      <link>https://tranquilpeak.kakawait.com/2015/03/highlighted-code-showcase/</link>
+      <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://tranquilpeak.kakawait.com/2015/03/highlighted-code-showcase/</guid>
+      <description>&lt;p&gt;Tranquilpeak Hugo theme have its own theme to highlight source code. It&amp;rsquo;s based on GitHub theme: simple and elegant. Check out how it sublimate source codes.
+&lt;/p&gt;
+
+&lt;!-- toc --&gt;
+
+&lt;h1 id=&#34;tabbed-code-block&#34;&gt;Tabbed code block&lt;/h1&gt;
+
+
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+
+  
+    
+  
+  
+
+&lt;figure class=&#34;codeblock codeblock--tabbed&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;tabbed_codeblock&lt;/span&gt;
+    
+    &lt;ul class=&#34;tabs&#34;&gt;
+      
+        &lt;li class=&#34;tab active&#34;&gt;js&lt;/li&gt;
+      
+        &lt;li class=&#34;tab &#34;&gt;css&lt;/li&gt;
+      
+        &lt;li class=&#34;tab &#34;&gt;html&lt;/li&gt;
+      
+    &lt;/ul&gt;
+  &lt;/figcaption&gt; 
+  &lt;div class=&#34;tabs-content&#34;&gt;
+    
+      
+      &lt;figure class=&#34;highlight js&#34; style=&#34;display: block;&#34;&gt;   
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td class=&#34;gutter&#34;&gt;
+                &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+              &lt;/td&gt;
+              &lt;td class=&#34;code&#34;&gt;
+                &lt;pre class=&#34;js code-highlight&#34;&gt;function $initHighlight(block, flags) {
+  try {
+    if (block.className.search(/\bno\-highlight\b/) != -1)
+      return processBlock(block.function, true, 0x0F) &amp;#43; &amp;#39; class=&amp;#34;&amp;#34;&amp;#39;;
+  } catch (e) {
+    /* handle exception */
+    var e4x =
+        &amp;lt;div&amp;gt;Example
+            &amp;lt;p&amp;gt;1234&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;;
+  }
+  for (var i = 0 / 2; i &amp;lt; classes.length; i&amp;#43;&amp;#43;) { // &amp;#34;0 / 2&amp;#34; should not be parsed as regexp
+    if (checkCondition(classes[i]) === undefined)
+      return /\d&amp;#43;[\s/]/g;
+  }
+  console.log(Array.every(classes, Boolean));
+}&lt;/pre&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/figure&gt;
+    
+      
+      &lt;figure class=&#34;highlight css&#34; style=&#34;display: none;&#34;&gt;   
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td class=&#34;gutter&#34;&gt;
+                &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+              &lt;/td&gt;
+              &lt;td class=&#34;code&#34;&gt;
+                &lt;pre class=&#34;css code-highlight&#34;&gt;@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  body:first-of-type pre::after {
+    content: &amp;#39;highlight: &amp;#39; attr(class);
+  }
+  body {
+    background: linear-gradient(45deg, blue, red);
+  }
+}
+
+@import url(&amp;#39;print.css&amp;#39;);
+@page:right {
+ margin: 1cm 2cm 1.3cm 4cm;
+}
+
+@font-face {
+  font-family: Chunkfive; src: url(&amp;#39;Chunkfive.otf&amp;#39;);
+}
+
+div.text,
+#content,
+li[lang=ru] {
+  font: Tahoma, Chunkfive, sans-serif;
+  background: url(&amp;#39;hatch.png&amp;#39;) /* wtf? */;  color: #F0F0F0 !important;
+  width: 100%;
+}&lt;/pre&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/figure&gt;
+    
+      
+      &lt;figure class=&#34;highlight html&#34; style=&#34;display: none;&#34;&gt;   
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td class=&#34;gutter&#34;&gt;
+                &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+              &lt;/td&gt;
+              &lt;td class=&#34;code&#34;&gt;
+                &lt;pre class=&#34;html code-highlight&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34;?&amp;gt;
+&amp;lt;response value=&amp;#34;ok&amp;#34; xml:lang=&amp;#34;en&amp;#34;&amp;gt;
+  &amp;lt;text&amp;gt;Ok&amp;lt;/text&amp;gt;
+  &amp;lt;comment html_allowed=&amp;#34;true&amp;#34;/&amp;gt;
+  &amp;lt;ns1:description&amp;gt;&amp;lt;![CDATA[
+  CDATA is &amp;lt;not&amp;gt; magical.
+  ]]&amp;gt;&amp;lt;/ns1:description&amp;gt;
+  &amp;lt;a&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a/&amp;gt;
+&amp;lt;/response&amp;gt;
+
+
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;title&amp;gt;Title&amp;lt;/title&amp;gt;
+
+&amp;lt;style&amp;gt;body {width: 500px;}&amp;lt;/style&amp;gt;
+
+&amp;lt;script type=&amp;#34;application/javascript&amp;#34;&amp;gt;
+  function $init() {return true;}
+&amp;lt;/script&amp;gt;
+
+&amp;lt;body&amp;gt;
+  &amp;lt;p checked class=&amp;#34;title&amp;#34; id=&amp;#39;title&amp;#39;&amp;gt;Title&amp;lt;/p&amp;gt;
+  &amp;lt;!-- here goes the rest of the page --&amp;gt;
+&amp;lt;/body&amp;gt;&lt;/pre&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/figure&gt;
+    
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;apacheconf&#34;&gt;ApacheConf&lt;/h1&gt;
+
+&lt;p&gt;
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight apacheconf&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;apache.conf&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;apache.conf&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;apacheconf code-highlight&#34;&gt;# rewrite`s rules for wordpress pretty url
+LoadModule rewrite_module  modules/mod_rewrite.so
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [NC,L]
+
+ExpiresActive On
+ExpiresByType application/x-javascript  &amp;#34;access plus 1 days&amp;#34;
+
+Order Deny,Allow
+Allow from All
+
+&amp;lt;Location /maps/&amp;gt;
+  RewriteMap map txt:map.txt
+  RewriteMap lower int:tolower
+  RewriteCond %{REQUEST_URI} ^/([^/.]&amp;#43;)\.html$ [NC]
+  RewriteCond ${map:${lower:%1}|NOT_FOUND} !NOT_FOUND
+  RewriteRule .? /index.php?q=${map:${lower:%1}} [NC,L]
+&amp;lt;/Location&amp;gt;&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;bash&#34;&gt;Bash&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight bash&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;test.bash&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;test.bash&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;bash code-highlight&#34;&gt;#!/bin/bash
+
+###### BEGIN CONFIG
+ACCEPTED_HOSTS=&amp;#34;/root/.hag_accepted.conf&amp;#34;
+BE_VERBOSE=false
+###### END CONFIG
+
+if [ &amp;#34;$UID&amp;#34; -ne 0 ]
+then
+ echo &amp;#34;Superuser rights is required&amp;#34;
+ echo &amp;#39;Printing the # sign&amp;#39;
+ exit 2
+fi
+
+if test $# -eq 0
+then
+elif test [ $1 == &amp;#39;start&amp;#39; ]
+else
+fi
+
+genApacheConf(){
+ if [[ &amp;#34;$2&amp;#34; = &amp;#34;www&amp;#34; ]]
+ then
+  full_domain=$1
+ else
+  full_domain=$2.$1
+ fi
+ host_root=&amp;#34;${APACHE_HOME_DIR}$1/$2/$(title)&amp;#34;
+ echo -e &amp;#34;# Host $1/$2 :&amp;#34;
+}&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;coffeescript&#34;&gt;Coffeescript&lt;/h1&gt;
+
+
+  
+  
+  
+  
+
+
+&lt;figure class=&#34;highlight coffeescript&#34;&gt;
+  &lt;figcaption&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;51&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;coffeescript code-highlight&#34;&gt; ###
+ Some tests
+ ###
+ class Animal
+   constructor: (@name) -&amp;gt;
+   move: (meters) -&amp;gt; alert @name &amp;#43; &amp;#34; moved &amp;#34; &amp;#43; meters &amp;#43; &amp;#34;m.&amp;#34;
+
+ class Snake extends Animal
+   move: -&amp;gt;
+     alert &amp;#39;Slithering...&amp;#39;
+     super 5
+
+ number   = 42; opposite = true
+
+
+ square = (x) -&amp;gt; x * x
+
+ range = [1..2]
+ list = [1...5]
+
+ math =
+   root:   Math.sqrt
+   cube:   (x) =&amp;gt; x * square x
+
+ race = (winner, runners...) -&amp;gt;
+   print winner, runners
+
+ alert &amp;#34;I knew it!&amp;#34; if elvis?
+
+ cubes = math.cube num for num in list
+
+ text = &amp;#34;&amp;#34;&amp;#34;
+  Result
+     is #{ @number }&amp;#34;&amp;#34;&amp;#34;
+
+ html = &amp;#39;&amp;#39;&amp;#39;   &amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;&amp;#39;&amp;#39;&amp;#39;
+
+ String::dasherize = -&amp;gt;
+   this.replace /_/g, &amp;#34;-&amp;#34;
+ SINGERS = {Jagger: &amp;#34;Rock&amp;#34;, Elvis: &amp;#34;Roll&amp;#34;}
+
+ t = ///
+ #{ something }[a-z]
+ ///
+
+ $(&amp;#39;.shopping_cart&amp;#39;).bind &amp;#39;click&amp;#39;, (event) =&amp;gt;
+     @customer.purchase @cart
+
+ hi = `function() {
+   return [document.title, &amp;#34;Hello JavaScript&amp;#34;].join(&amp;#34;: &amp;#34;);
+ }`&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;c&#34;&gt;C++&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight cpp&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.cpp&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.cpp&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;cpp code-highlight&#34;&gt;/*
+ * Block comment
+ */
+#include &amp;lt;vector&amp;gt;
+
+using namespace std;  // line comment
+namespace foo {
+
+  typedef struct Struct {
+    int field;
+  } Typedef;
+  enum Enum {Foo = 1, Bar = 2};
+
+  Typedef *globalVar;
+  extern Typedef *externVar;
+
+  template&amp;lt;typename T, int N&amp;gt;
+  class Class {
+    T n;
+  public:
+    void function(int paramName) {
+      int *localVar = new int[1];
+      this-&amp;gt;n = N;
+
+    label:
+      printf(&amp;#34;Formatted string %d\n\g&amp;#34;, localVar[0]);
+      printf(R&amp;#34;**(Formatted raw-string %d\n)**&amp;#34;, 1);
+      std::cout &amp;lt;&amp;lt; (1 &amp;lt;&amp;lt; 2) &amp;lt;&amp;lt; std::endl;
+
+    #define FOO(A) A
+    #ifdef DEBUG
+      printf(&amp;#34;debug&amp;#34;);
+    #endif
+    }
+  };
+}&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;cshparp&#34;&gt;CShparp&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight cs&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.cs&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.cs&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;cs code-highlight&#34;&gt;using System;
+
+#pragma warning disable 414, 3021
+
+public class Program
+{
+    /// &amp;lt;summary&amp;gt;The entry point to the program.&amp;lt;/summary&amp;gt;
+    public static int Main(string[] args)
+    {
+        Console.WriteLine(&amp;#34;Hello, World!&amp;#34;);
+        string s = @&amp;#34;This
+&amp;#34;&amp;#34;string&amp;#34;&amp;#34;
+spans
+multiple
+lines!&amp;#34;;
+        return 0;
+    }
+}
+
+async Task&amp;lt;int&amp;gt; AccessTheWebAsync()
+{
+    // ...
+    string urlContents = await getStringTask;
+    return urlContents.Length;
+}&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;css&#34;&gt;CSS&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight css&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.css&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.css&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;css code-highlight&#34;&gt;@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  body:first-of-type pre::after {
+    content: &amp;#39;highlight: &amp;#39; attr(class);
+  }
+  body {
+    background: linear-gradient(45deg, blue, red);
+  }
+}
+
+@import url(&amp;#39;print.css&amp;#39;);
+@page:right {
+ margin: 1cm 2cm 1.3cm 4cm;
+}
+
+@font-face {
+  font-family: Chunkfive; src: url(&amp;#39;Chunkfive.otf&amp;#39;);
+}
+
+div.text,
+#content,
+li[lang=ru] {
+  font: Tahoma, Chunkfive, sans-serif;
+  background: url(&amp;#39;hatch.png&amp;#39;) /* wtf? */;  color: #F0F0F0 !important;
+  width: 100%;
+}&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;diff&#34;&gt;DIFF&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight diff&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.diff&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.diff&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;diff code-highlight&#34;&gt;Index: languages/ini.js
+===================================================================
+--- languages/ini.js    (revision 199)
+&amp;#43;&amp;#43;&amp;#43; languages/ini.js    (revision 200)
+@@ -1,8 &amp;#43;1,7 @@
+ hljs.LANGUAGES.ini =
+ {
+   case_insensitive: true,
+-  defaultMode:
+-  {
+&amp;#43;  defaultMode: {
+     contains: [&amp;#39;comment&amp;#39;, &amp;#39;title&amp;#39;, &amp;#39;setting&amp;#39;],
+     illegal: &amp;#39;[^\\s]&amp;#39;
+   },
+
+*** /path/to/original timestamp
+--- /path/to/new      timestamp
+***************
+*** 1,3 ****
+--- 1,9 ----
+&amp;#43; This is an important
+&amp;#43; notice! It should
+&amp;#43; therefore be located at
+&amp;#43; the beginning of this
+&amp;#43; document!
+
+! compress the size of the
+! changes.
+
+  It is important to spell&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;http&#34;&gt;HTTP&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight http&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.http&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.http&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;http code-highlight&#34;&gt;POST /task?id=1 HTTP/1.1
+Host: example.org
+Content-Type: application/json; charset=utf-8
+Content-Length: 19
+
+{&amp;#34;status&amp;#34;: &amp;#34;ok&amp;#34;, &amp;#34;extended&amp;#34;: true}&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;ini&#34;&gt;INI&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight ini&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.ini&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.ini&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;ini code-highlight&#34;&gt;;Settings relating to the location and loading of the database
+[Database]
+ProfileDir=.
+ShowProfileMgr=smart
+Profile1_Name[] = &amp;#34;\|/_-=MegaDestoyer=-_\|/&amp;#34;
+DefaultProfile=True
+AutoCreate = no
+
+[AutoExec]
+use-prompt=&amp;#34;prompt&amp;#34;
+Glob=autoexec_*.ini
+AskAboutIgnoredPlugins=0&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;java&#34;&gt;Java&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight java&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.java&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.java&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;java code-highlight&#34;&gt;/* Block comment */
+import java.util.Date;
+/**
+ * Doc comment here for &amp;lt;code&amp;gt;SomeClass&amp;lt;/code&amp;gt;
+ * @see Math#sin(double)
+ */
+@Annotation (name=value)
+public class SomeClass&amp;lt;T extends Runnable&amp;gt; { // some comment
+  private T field = null;
+  private double unusedField = 12345.67890;
+  private UnknownType anotherString = &amp;#34;Another\nStrin\g&amp;#34;;
+  public static int staticField = 0;
+
+  public SomeClass(AnInterface param, int[] reassignedParam) {
+    int localVar = &amp;#34;IntelliJ&amp;#34;; // Error, incompatible types
+    System.out.println(anotherString &amp;#43; toString() &amp;#43; localVar);
+    long time = Date.parse(&amp;#34;1.2.3&amp;#34;); // Method is deprecated
+    int reassignedValue = this.staticField;
+    reassignedValue &amp;#43;&amp;#43;;
+    field.run();
+    new SomeClass() {
+      {
+        int a = localVar;
+      }
+    };
+    reassignedParam = new ArrayList&amp;lt;String&amp;gt;().toArray(new int[0]);
+  }
+}
+enum AnEnum { CONST1, CONST2 }
+interface AnInterface {
+  int CONSTANT = 2;
+  void method();
+}
+abstract class SomeAbstractClass {
+}&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;javascript&#34;&gt;JavaScript&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight js&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.js&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.js&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;js code-highlight&#34;&gt;function $initHighlight(block, flags) {
+  try {
+    if (block.className.search(/\bno\-highlight\b/) != -1)
+      return processBlock(block.function, true, 0x0F) &amp;#43; &amp;#39; class=&amp;#34;&amp;#34;&amp;#39;;
+  } catch (e) {
+    /* handle exception */
+    var e4x =
+        &amp;lt;div&amp;gt;Example
+            &amp;lt;p&amp;gt;1234&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;;
+  }
+  for (var i = 0 / 2; i &amp;lt; classes.length; i&amp;#43;&amp;#43;) { // &amp;#34;0 / 2&amp;#34; should not be parsed as regexp
+    if (checkCondition(classes[i]) === undefined)
+      return /\d&amp;#43;[\s/]/g;
+  }
+  console.log(Array.every(classes, Boolean));
+}&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;json&#34;&gt;JSON&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight json&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.json&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.json&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;json code-highlight&#34;&gt;[
+  {
+    &amp;#34;title&amp;#34;: &amp;#34;apples&amp;#34;,
+    &amp;#34;count&amp;#34;: [12000, 20000],
+    &amp;#34;description&amp;#34;: {&amp;#34;text&amp;#34;: &amp;#34;...&amp;#34;, &amp;#34;sensitive&amp;#34;: false}
+  },
+  {
+    &amp;#34;title&amp;#34;: &amp;#34;oranges&amp;#34;,
+    &amp;#34;count&amp;#34;: [17500, null],
+    &amp;#34;description&amp;#34;: {&amp;#34;text&amp;#34;: &amp;#34;...&amp;#34;, &amp;#34;sensitive&amp;#34;: false}
+  }
+]&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;makefile&#34;&gt;Makefile&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight mak&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.mak&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.mak&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;mak code-highlight&#34;&gt;# Makefile
+
+BUILDDIR      = _build
+EXTRAS       ?= $(BUILDDIR)/extras
+
+.PHONY: main clean
+
+main:
+	@echo &amp;#34;Building main facility...&amp;#34;
+	build_main $(BUILDDIR)
+
+clean:
+	rm -rf $(BUILDDIR)/*&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;markdown&#34;&gt;Markdown&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight md&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.md&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.md&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;md code-highlight&#34;&gt;# hello world
+
+you can write text [with links](http://example.com) inline or [link references][1].
+
+* one _thing_ has *em*phasis
+* two __things__ are **bold**
+
+[1]: http://example.com
+
+---
+
+hello world
+===========
+
+&amp;lt;this_is inline=&amp;#34;xml&amp;#34;&amp;gt;&amp;lt;/this_is&amp;gt;
+
+&amp;gt; markdown is so cool
+
+    so are code segments
+
+1. one thing (yeah!)
+2. two thing `i can write code`, and `more` wipee!&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;nginx&#34;&gt;Nginx&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight nginx&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.conf&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.conf&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;nginx code-highlight&#34;&gt;user  www www;
+worker_processes  2;
+pid /var/run/nginx.pid;
+error_log  /var/log/nginx.error_log  debug | info | notice | warn | error | crit;
+
+events {
+    connections   2000;
+    use kqueue | rtsig | epoll | /dev/poll | select | poll;
+}
+
+http {
+    log_format main      &amp;#39;$remote_addr - $remote_user [$time_local] &amp;#39;
+                         &amp;#39;&amp;#34;$request&amp;#34; $status $bytes_sent &amp;#39;
+                         &amp;#39;&amp;#34;$http_referer&amp;#34; &amp;#34;$http_user_agent&amp;#34; &amp;#39;
+                         &amp;#39;&amp;#34;$gzip_ratio&amp;#34;&amp;#39;;
+
+    send_timeout 3m;
+    client_header_buffer_size 1k;
+
+    gzip on;
+    gzip_min_length 1100;
+
+    #lingering_time 30;
+
+    server {
+        server_name   one.example.com  www.one.example.com;
+        access_log   /var/log/nginx.access_log  main;
+
+        rewrite (.*) /index.php?page=$1 break;
+
+        location / {
+            proxy_pass         http://127.0.0.1/;
+            proxy_redirect     off;
+            proxy_set_header   Host             $host;
+            proxy_set_header   X-Real-IP        $remote_addr;
+            charset            koi8-r;
+        }
+
+        location /api/ {
+            fastcgi_pass 127.0.0.1:9000;
+        }
+
+        location ~* \.(jpg|jpeg|gif)$ {
+            root         /spool/www;
+        }
+    }&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;objective-c&#34;&gt;Objective-C&lt;/h1&gt;
+
+&lt;p&gt;
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight objectivec&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.m&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.m&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;objectivec code-highlight&#34;&gt;#import &amp;lt;UIKit/UIKit.h&amp;gt;
+#import &amp;#34;Dependency.h&amp;#34;
+
+@protocol WorldDataSource
+@optional
+- (NSString*)worldName;
+@required
+- (BOOL)allowsToLive;
+@end
+
+@interface Test : NSObject &amp;lt;HelloDelegate, WorldDataSource&amp;gt; {
+  NSString *_greeting;
+}
+
+@property (nonatomic, readonly) NSString *greeting;
+- (IBAction) show;
+@end
+
+@implementation Test
+
+@synthesize test=_test;
+
+&amp;#43; (id) test {
+  return [self testWithGreeting:@&amp;#34;Hello, world!\nFoo bar!&amp;#34;];
+}
+
+&amp;#43; (id) testWithGreeting:(NSString*)greeting {
+  return [[[self alloc] initWithGreeting:greeting] autorelease];
+}
+
+- (id) initWithGreeting:(NSString*)greeting {
+  if ( (self = [super init]) ) {
+    _greeting = [greeting retain];
+  }
+  return self;
+}
+
+- (void) dealloc {
+  [_greeting release];
+  [super dealloc];
+}
+
+@end&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;perl&#34;&gt;Perl&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight perl&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.perl&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.perl&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;perl code-highlight&#34;&gt;# loads object
+sub load
+{
+  my $flds = $c-&amp;gt;db_load($id,@_) || do {
+    Carp::carp &amp;#34;Can`t load (class: $c, id: $id): &amp;#39;$!&amp;#39;&amp;#34;; return undef
+  };
+  my $o = $c-&amp;gt;_perl_new();
+  $id12 = $id / 24 / 3600;
+  $o-&amp;gt;{&amp;#39;ID&amp;#39;} = $id12 &amp;#43; 123;
+  #$o-&amp;gt;{&amp;#39;SHCUT&amp;#39;} = $flds-&amp;gt;{&amp;#39;SHCUT&amp;#39;};
+  my $p = $o-&amp;gt;props;
+  my $vt;
+  $string =~ m/^sought_text$/;
+  $items = split //, &amp;#39;abc&amp;#39;;
+  $string //= &amp;#34;bar&amp;#34;;
+  for my $key (keys %$p)
+  {
+    if(${$vt.&amp;#39;::property&amp;#39;}) {
+      $o-&amp;gt;{$key . &amp;#39;_real&amp;#39;} = $flds-&amp;gt;{$key};
+      tie $o-&amp;gt;{$key}, &amp;#39;CMSBuilder::Property&amp;#39;, $o, $key;
+    }
+  }
+  $o-&amp;gt;save if delete $o-&amp;gt;{&amp;#39;_save_after_load&amp;#39;};
+
+  # GH-117
+  my $g = glob(&amp;#34;/usr/bin/*&amp;#34;);
+
+  return $o;
+}
+
+=head1 NAME
+POD till the end of file&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;php&#34;&gt;PHP&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight php&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.php&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.php&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;php code-highlight&#34;&gt;&amp;lt;?php
+$heredoc = &amp;lt;&amp;lt;&amp;lt; HEREDOC_ID
+some $contents
+HEREDOC_ID;
+
+function foo() {
+   return SomeClass::$shared;
+}
+
+// Sample comment
+
+class SomeClass extends One implements Another {
+   private $my;
+   public static $shared;
+   const MAGIC = 0987654321;
+   /**
+    * Description by &amp;lt;a href=&amp;#34;mailto:&amp;#34;&amp;gt;user@host.dom&amp;lt;/a&amp;gt;
+    * @return SomeType
+    */
+   function doSmth($abc, $def) {
+      foo();
+      $def .=  self::MAGIC;
+      $v = Helper::convert($abc . &amp;#34;\n {$def}&amp;#34; . $$def);
+      $q = new Query( $this-&amp;gt;invent(abs(0x80)) );
+      return array($v =&amp;gt; $q-&amp;gt;result);
+   }
+}
+
+interface Another {
+}
+
+include (dirname(__FILE__) . &amp;#34;inc.php&amp;#34;);
+`rm -r`;
+
+goto Label;
+
+Label:
+&amp;lt;php_bad&amp;gt;№&amp;lt;/php_bad&amp;gt;&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;python&#34;&gt;Python&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight python&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.py&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.py&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;python code-highlight&#34;&gt;@requires_authorization
+def somefunc(param1=&amp;#39;&amp;#39;, param2=0):
+    r&amp;#39;&amp;#39;&amp;#39;A docstring&amp;#39;&amp;#39;&amp;#39;
+    if param1 &amp;gt; param2: # interesting
+        print &amp;#39;Gre\&amp;#39;ater&amp;#39;
+    return (param2 - param1 &amp;#43; 1 &amp;#43; 0b10l) or None
+
+class SomeClass:
+    pass
+
+&amp;gt;&amp;gt;&amp;gt; message = &amp;#39;&amp;#39;&amp;#39;interpreter
+... prompt&amp;#39;&amp;#39;&amp;#39;&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;ruby&#34;&gt;Ruby&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight ruby&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.rb&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.rb&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;ruby code-highlight&#34;&gt;class A &amp;lt; B; def self.create(object = User) object end end
+class Zebra; def inspect; &amp;#34;X#{2 &amp;#43; self.object_id}&amp;#34; end end
+
+module ABC::DEF
+  include Comparable
+
+  # @param test
+  # @return [String] nothing
+  def foo(test)
+    Thread.new do |blockvar|
+      ABC::DEF.reverse(:a_symbol, :&amp;#39;a symbol&amp;#39;, :&amp;lt;=&amp;gt;, &amp;#39;test&amp;#39; &amp;#43; ?\012)
+      answer = valid?4 &amp;amp;&amp;amp; valid?CONST &amp;amp;&amp;amp; ?A &amp;amp;&amp;amp; ?A.ord
+    end.join
+  end
+
+  def [](index) self[index] end
+  def ==(other) other == self end
+end
+
+class Car &amp;lt; ActiveRecord::Base
+  has_many :wheels, class_name: &amp;#39;Wheel&amp;#39;, foreign_key: &amp;#39;car_id&amp;#39;
+  scope :available, -&amp;gt; { where(available: true) }
+end
+
+hash = {1 =&amp;gt; &amp;#39;one&amp;#39;, 2 =&amp;gt; &amp;#39;two&amp;#39;}
+
+2.0.0p0 :001 &amp;gt; [&amp;#39;some&amp;#39;]
+ =&amp;gt; [&amp;#34;some&amp;#34;]&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;sql&#34;&gt;SQL&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight sql&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.sql&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.sql&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;sql code-highlight&#34;&gt;BEGIN;
+CREATE TABLE &amp;#34;topic&amp;#34; (
+    -- This is the greatest table of all time
+    &amp;#34;id&amp;#34; serial NOT NULL PRIMARY KEY,
+    &amp;#34;forum_id&amp;#34; integer NOT NULL,
+    &amp;#34;subject&amp;#34; varchar(255) NOT NULL -- Because nobody likes an empty subject
+);
+ALTER TABLE &amp;#34;topic&amp;#34; ADD CONSTRAINT forum_id FOREIGN KEY (&amp;#34;forum_id&amp;#34;) REFERENCES &amp;#34;forum&amp;#34; (&amp;#34;id&amp;#34;);
+
+-- Initials
+insert into &amp;#34;topic&amp;#34; (&amp;#34;forum_id&amp;#34;, &amp;#34;subject&amp;#34;) values (2, &amp;#39;D&amp;#39;&amp;#39;artagnian&amp;#39;);
+
+select /* comment */ count(*) from cicero_forum;
+
+-- this line lacks ; at the end to allow people to be sloppy and omit it in one-liners
+/*
+but who cares?
+*/
+COMMIT&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;html&#34;&gt;HTML&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight xml&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.html&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.html&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;xml code-highlight&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34;?&amp;gt;
+&amp;lt;response value=&amp;#34;ok&amp;#34; xml:lang=&amp;#34;en&amp;#34;&amp;gt;
+  &amp;lt;text&amp;gt;Ok&amp;lt;/text&amp;gt;
+  &amp;lt;comment html_allowed=&amp;#34;true&amp;#34;/&amp;gt;
+  &amp;lt;ns1:description&amp;gt;&amp;lt;![CDATA[
+  CDATA is &amp;lt;not&amp;gt; magical.
+  ]]&amp;gt;&amp;lt;/ns1:description&amp;gt;
+  &amp;lt;a&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a/&amp;gt;
+&amp;lt;/response&amp;gt;
+
+
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;title&amp;gt;Title&amp;lt;/title&amp;gt;
+
+&amp;lt;style&amp;gt;body {width: 500px;}&amp;lt;/style&amp;gt;
+
+&amp;lt;script type=&amp;#34;application/javascript&amp;#34;&amp;gt;
+  function $init() {return true;}
+&amp;lt;/script&amp;gt;
+
+&amp;lt;body&amp;gt;
+  &amp;lt;p checked class=&amp;#34;title&amp;#34; id=&amp;#39;title&amp;#39;&amp;gt;Title&amp;lt;/p&amp;gt;
+  &amp;lt;!-- here goes the rest of the page --&amp;gt;
+&amp;lt;/body&amp;gt;&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;puppet&#34;&gt;Puppet&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight puppet&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.pp&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.pp&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;65&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;66&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;67&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;68&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;69&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;70&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;71&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;72&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;73&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;74&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;75&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;76&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;77&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;78&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;79&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;80&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;81&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;82&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;83&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;84&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;85&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;86&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;87&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;88&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;89&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;90&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;91&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;92&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;93&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;94&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;95&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;96&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;97&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;98&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;99&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;100&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;101&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;102&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;103&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;puppet code-highlight&#34;&gt;class hg_punch::library {
+
+  firewall {&amp;#39;101 puppet library access&amp;#39;:
+    proto       =&amp;gt; &amp;#39;tcp&amp;#39;,
+    dport       =&amp;gt; &amp;#39;80&amp;#39;,
+    action      =&amp;gt; &amp;#39;accept&amp;#39;,
+  }
+
+  package { &amp;#39;git&amp;#39;:
+    ensure =&amp;gt; present,
+  }
+
+  vcsrepo { &amp;#34;puppet-library&amp;#34;:
+    path =&amp;gt; &amp;#39;/var/www/puppet-library/&amp;#39;,
+    ensure =&amp;gt; present,
+    owner =&amp;gt; &amp;#39;root&amp;#39;,
+    group =&amp;gt; &amp;#39;root&amp;#39;,
+    provider =&amp;gt; git,
+    source =&amp;gt; &amp;#39;https://github.com/Moliholy/puppet-library.git&amp;#39;,
+    revision =&amp;gt; &amp;#39;master&amp;#39;,
+    require =&amp;gt; Package[&amp;#39;git&amp;#39;],
+  }
+
+  package { &amp;#39;nfs-utils&amp;#39;:
+    ensure =&amp;gt; present,
+  }
+
+  package { &amp;#39;bundler&amp;#39;:
+    ensure =&amp;gt; present,
+    provider =&amp;gt; gem,
+  }
+
+  package { [ &amp;#34;ruby&amp;#34;, &amp;#34;ruby-devel&amp;#34;, &amp;#34;gcc&amp;#34;, &amp;#34;make&amp;#34; ]:
+    ensure =&amp;gt; present,
+  }
+
+  exec { &amp;#39;bundler update&amp;#39;:
+    command =&amp;gt; &amp;#34;bundler update &amp;amp;&amp;amp; bundler&amp;#34;,
+    cwd =&amp;gt; &amp;#39;/var/www/puppet-library&amp;#39;,
+    path =&amp;gt; [&amp;#34;/usr/bin&amp;#34;, &amp;#34;/bin&amp;#34;, &amp;#34;/usr/sbin&amp;#34;],
+    require =&amp;gt; [ Package[&amp;#39;ruby&amp;#39;], Package[&amp;#39;ruby-devel&amp;#39;],
+                Package[&amp;#39;gcc&amp;#39;], Package[&amp;#39;make&amp;#39;],
+                Package[&amp;#39;bundler&amp;#39;], Vcsrepo[&amp;#39;puppet-library&amp;#39;] ]
+  }
+
+  package { &amp;#39;mod_passenger&amp;#39;:
+    ensure =&amp;gt; present,
+  }
+
+  file { &amp;#34;/etc/httpd/conf.d/puppetlibrary.conf&amp;#34;:
+    owner   =&amp;gt; root,
+    group   =&amp;gt; root,
+    mode    =&amp;gt; 0644,
+    content =&amp;gt; template(&amp;#39;hg_punch/puppetlibrary.conf.erb&amp;#39;),
+    require =&amp;gt; Package[&amp;#39;mod_passenger&amp;#39;],
+    selinux_ignore_defaults =&amp;gt; true,
+  }
+
+  file { &amp;#34;/var/www/puppet-library/config.ru&amp;#34;:
+    owner   =&amp;gt; root,
+    group   =&amp;gt; root,
+    mode    =&amp;gt; 0644,
+    content =&amp;gt; template(&amp;#39;hg_punch/config.ru.erb&amp;#39;),
+    require =&amp;gt; Vcsrepo[&amp;#39;puppet-library&amp;#39;],
+  }
+
+  file { [ &amp;#39;/var/www/puppet-library/public&amp;#39;, &amp;#39;/var/www/puppet-library/tmp&amp;#39; ]:
+    ensure =&amp;gt; directory,
+    owner   =&amp;gt; root,
+    group   =&amp;gt; root,
+    mode =&amp;gt; 755,
+    require =&amp;gt; Vcsrepo[&amp;#39;puppet-library&amp;#39;],
+  }
+
+  # Disable SELinux
+  package { &amp;#34;augeas&amp;#34;:
+    ensure =&amp;gt; present,
+  }
+
+  augeas {&amp;#39;disable_selinux&amp;#39;:
+    context =&amp;gt; &amp;#39;/files/etc/sysconfig/selinux&amp;#39;,
+    changes =&amp;gt; &amp;#39;set SELINUX disabled&amp;#39;,
+    lens    =&amp;gt; &amp;#39;shellvars.lns&amp;#39;,
+    incl     =&amp;gt; &amp;#39;/etc/sysconfig/selinux&amp;#39;
+  } ~&amp;gt;
+  exec {&amp;#39;sudo disable_selinux&amp;#39;:
+    command =&amp;gt; &amp;#39;/bin/echo 0 &amp;gt; /selinux/enforce&amp;#39;,
+    refreshonly =&amp;gt; true,
+  }
+
+  service { &amp;#34;httpd&amp;#34;:
+    enable =&amp;gt; true,
+    ensure =&amp;gt; running,
+    hasrestart =&amp;gt; true,
+    require =&amp;gt; [ Exec[&amp;#39;bundler update&amp;#39;],
+                File[&amp;#39;/etc/httpd/conf.d/puppetlibrary.conf&amp;#39;],
+                File[&amp;#39;/var/www/puppet-library/public&amp;#39;],
+                File[&amp;#39;/var/www/puppet-library/tmp&amp;#39;],
+                Vcsrepo[&amp;#39;puppet-library&amp;#39;],
+                Package[&amp;#39;mod_passenger&amp;#39;] ],
+  }
+
+}&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;less&#34;&gt;Less&lt;/h1&gt;
+
+&lt;p&gt;
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight less&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.less&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.less&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;less code-highlight&#34;&gt;@import &amp;#39;mixins&amp;#39;; // external mixins
+
+@the-border: 1px;
+@base-color: #111;
+
+#header:after {
+  color: @base-color * 3;
+  border-right: @the-border * 2;
+}
+
+.colored(@c) when (iscolor(@c)) {
+  color: (@base-color &amp;#43; #111) * 1.5;
+}
+@var: `&amp;#34;hello&amp;#34;.toUpperCase() &amp;#43; &amp;#39;!&amp;#39;`;
+
+@font-face {
+  font-family: DroidSans;
+  src: url(DroidSans.ttf);
+  unicode-range: U&amp;#43;000-5FF, U&amp;#43;1e00-1fff, U&amp;#43;2000-2300;
+}
+
+div &amp;gt; p, p ~ ul, input[type=&amp;#34;radio&amp;#34;] {
+  color: green !important;
+}&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;scss&#34;&gt;SCSS&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight scss&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.scss&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.scss&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;scss code-highlight&#34;&gt;.btn {
+    font-size:      $font-size-base;
+    background:     #fff;
+    width:          auto;
+    height:         auto;
+    border-radius:  3px;
+    letter-spacing: $letter-spacing-base;
+    padding:        8px 15px;
+    cursor:         pointer;
+    margin:         0;
+
+    &amp;amp;:hover,
+    &amp;amp;:focus,
+    &amp;amp;:active {
+        text-decoration: none;
+    }
+}
+
+// Colors variant
+.btn--default {
+    @include button-color-variant($font-color-light);
+}
+.btn--success {
+    @include button-color-variant($color-success);
+}
+.btn--primary {
+    @include button-color-variant($color-primary);
+}
+.btn--danger {
+    @include button-color-variant($color-danger);
+}
+
+// Size variant
+.btn--medium {
+    @include button-size-variant($font-size-medium, 8px, 15px);
+}
+.btn--small {
+    @include button-size-variant($font-size-small, 8px, 15px);
+}
+
+// States variant
+.btn--disabled,
+.btn--disabled:hover {
+    color:           lighten($font-color-light, 10) !important;
+    border:          1px solid lighten($font-color-light, 10);
+    cursor:          not-allowed;
+    text-decoration: none;
+}&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;stylus&#34;&gt;Stylus&lt;/h1&gt;
+
+&lt;p&gt;
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight stylus&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.styl&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.styl&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;stylus code-highlight&#34;&gt;@import &amp;#34;nib&amp;#34;
+
+// variables
+$green = #008000
+$green_dark = darken($green, 10)
+
+// mixin/function
+container()
+  max-width 980px
+
+// mixin/function with parameters
+buttonBG($color = green)
+  if $color == green
+    background-color #008000
+  else if $color == red
+    background-color #B22222
+
+button
+  buttonBG(red)
+
+#content, .content
+  font Tahoma, Chunkfive, sans-serif
+  background url(&amp;#39;hatch.png&amp;#39;)
+  color #F0F0F0 !important
+  width 100%&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;go&#34;&gt;Go&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight go&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.go&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.go&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;go code-highlight&#34;&gt;package main
+
+import (
+    &amp;#34;fmt&amp;#34;
+    &amp;#34;os&amp;#34;
+)
+
+const (
+    Sunday = iota
+    numberOfDays  // this constant is not exported
+)
+
+type Foo interface {
+    FooFunc(int, float32) (complex128, []int)
+}
+
+type Bar struct {
+    os.File /* multi-line
+               comment */
+    PublicData chan int
+}
+
+func main() {
+    ch := make(chan int)
+    ch &amp;lt;- 1
+    x, ok := &amp;lt;- ch
+    ok = true
+    float_var := 1.0e10
+    defer fmt.Println(&amp;#39;\&amp;#39;&amp;#39;)
+    defer fmt.Println(`exitting now\`)
+    var fv1 float64 = 0.75
+    go println(len(&amp;#34;hello world!&amp;#34;))
+    return
+}&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;swift&#34;&gt;Swift&lt;/h1&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight swift&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;archives.swift&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;archives.swift&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;swift code-highlight&#34;&gt;extension MyClass : Interface {
+    class func unarchiveFromFile&amp;lt;A&amp;gt;(file : A, (Int,Int) -&amp;gt; B) -&amp;gt; SKNode? {
+        let path: String = bundle.pathForResource(file, ofType: &amp;#34;file\(name &amp;#43; 5).txt&amp;#34;)
+        let funnyNumber = 3 &amp;#43; 0xC2.15p2 * (1_000_000.000_000_1 - 000123.456) &amp;#43; 0o21
+        var sceneData = NSData.dataWithContentsOfFile(path, options: .DataReadingMappedIfSafe, error: nil)
+        /* a comment /* with a nested comment */ and the end */
+    }
+    @objc override func shouldAutorotate() {
+        return true
+    }
+}&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tags plugins showcase</title>
+      <link>https://tranquilpeak.kakawait.com/2014/10/tags-plugins-showcase/</link>
+      <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://tranquilpeak.kakawait.com/2014/10/tags-plugins-showcase/</guid>
+      <description>&lt;p&gt;This post is used to show how tag plugins are displayed. See &lt;a href=&#34;https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/user.md#tags&#34;&gt;docs&lt;/a&gt; for more info.
+&lt;/p&gt;
+
+&lt;!-- toc --&gt;
+
+&lt;h1 id=&#34;alert&#34;&gt;Alert&lt;/h1&gt;
+
+&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/user.md#alert&#34;&gt;Alert tag&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&#34;alert info&#34;&gt;
+  &lt;p&gt;
+Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;alert success&#34;&gt;
+  &lt;p&gt;
+Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;alert warning&#34;&gt;
+  &lt;p&gt;
+Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;alert danger&#34;&gt;
+  &lt;p&gt;
+Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;block-quote&#34;&gt;Block Quote&lt;/h1&gt;
+
+&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://hexo.io/docs/tag-plugins.html#Block_Quote&#34;&gt;Block Quote tag&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Normal blockquote&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Quote from a book&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.
+&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;strong&gt;David Levithan&lt;/strong&gt;
+    
+      
+        &lt;cite&gt;Wide Awake&lt;/cite&gt;
+      
+    
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Quote from Twitter&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+NEW: DevDocs now comes with syntax highlighting. //devdocs.io
+&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;strong&gt;@DevDocs&lt;/strong&gt;
+    
+      
+        &lt;cite&gt;&lt;a href=&#34;https://twitter.com/devdocs/status/356095192085962752&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;https://twitter.com/devdocs/status/356095192085962752&lt;/a&gt;&lt;/cite&gt;
+      
+    
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Quote from an article on the web&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+Every interaction is both precious and an opportunity to delight.
+&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;strong&gt;Seth Godin&lt;/strong&gt;
+    
+      &lt;cite&gt;&lt;a href=&#34;//sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;Welcome to Island Marketing&lt;/a&gt;&lt;/cite&gt;
+    
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;code-block&#34;&gt;Code Block&lt;/h1&gt;
+
+&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://hexo.io/docs/tag-plugins.html#Code_Block&#34;&gt;Code Block tag&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Normal code block&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;alert(&#39;Hello World!&#39;);
+alert(&#39;Hello World!&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;With caption&lt;/strong&gt;&lt;/p&gt;
+
+
+  
+    
+  
+  
+  
+  
+
+
+&lt;figure class=&#34;highlight &#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;Array.map&lt;/span&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34; code-highlight&#34;&gt;array.map(callback[, thisArg])&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;With caption and URL&lt;/strong&gt;&lt;/p&gt;
+
+
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+
+&lt;figure class=&#34;highlight apacheconf&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;apache.conf&lt;/span&gt;&lt;a href=&#34;http://underscorejs.org/#compact&#34; target=&#34;_blank&#34; rel=&#34;external&#34;&gt;apache.conf&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;gutter&#34;&gt;
+          &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td class=&#34;code&#34;&gt;
+          &lt;pre class=&#34;apacheconf code-highlight&#34;&gt;# rewrite`s rules for wordpress pretty url
+LoadModule rewrite_module  modules/mod_rewrite.so
+RewriteCond %{REQUEST_FILENAME} !-f
+
+&amp;lt;Location /maps/&amp;gt;
+  RewriteMap map txt:map.txt
+  RewriteMap lower int:tolower
+  RewriteCond %{REQUEST_URI} ^/([^/.]&amp;#43;)\.html$ [NC]
+  RewriteCond ${map:${lower:%1}|NOT_FOUND} !NOT_FOUND
+  RewriteRule .? /index.php?q=${map:${lower:%1}} [NC,L]
+&amp;lt;/Location&amp;gt;&lt;/pre&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;gist&#34;&gt;Gist&lt;/h1&gt;
+
+&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://hexo.io/docs/tag-plugins.html#Gist&#34;&gt;Gist tag&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;script src=&#34;//gist.github.com/imathis/996818.js&#34;&gt;&lt;/script&gt;
+
+&lt;h1 id=&#34;image&#34;&gt;Image&lt;/h1&gt;
+
+&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/user.md#image&#34;&gt;Image tag&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+
+&lt;div class=&#34;figure fig-100&#34; &gt;
+  
+    &lt;a class=&#34;fancybox&#34; href=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-15.jpg&#34; data-fancybox-group=&#34;&#34;&gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-15-750.jpg&#34; &gt;
+  
+    &lt;/a&gt;
+  
+  
+&lt;/div&gt;
+
+
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+&lt;div class=&#34;figure nocaption fig-50&#34; &gt;
+  
+    &lt;a class=&#34;fancybox&#34; href=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-4.jpg&#34; title=&#34;Ferrari&#34; data-fancybox-group=&#34;&#34;&gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-4-375.jpg&#34;  alt=&#34;Ferrari&#34;&gt;
+  
+    &lt;/a&gt;
+  
+  
+&lt;/div&gt;
+
+
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+&lt;div class=&#34;figure nocaption fig-50&#34; &gt;
+  
+    &lt;a class=&#34;fancybox&#34; href=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-12.jpg&#34; title=&#34;BMW i8 Concept&#34; data-fancybox-group=&#34;&#34;&gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-12-375.jpg&#34;  alt=&#34;BMW i8 Concept&#34;&gt;
+  
+    &lt;/a&gt;
+  
+  
+&lt;/div&gt;
+
+
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+&lt;div class=&#34;figure nocaption fig-33&#34; &gt;
+  
+    &lt;a class=&#34;fancybox&#34; href=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-14.jpg&#34; data-fancybox-group=&#34;&#34;&gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-14-250.jpg&#34; &gt;
+  
+    &lt;/a&gt;
+  
+  
+&lt;/div&gt;
+
+
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+&lt;div class=&#34;figure nocaption fig-33&#34; &gt;
+  
+    &lt;a class=&#34;fancybox&#34; href=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-9.jpg&#34; data-fancybox-group=&#34;&#34;&gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-9-250.jpg&#34; &gt;
+  
+    &lt;/a&gt;
+  
+  
+&lt;/div&gt;
+
+
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+&lt;div class=&#34;figure nocaption fig-33&#34; &gt;
+  
+    &lt;a class=&#34;fancybox&#34; href=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-2.jpg&#34; data-fancybox-group=&#34;&#34;&gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-2-250.jpg&#34; &gt;
+  
+    &lt;/a&gt;
+  
+  
+&lt;/div&gt;
+
+
+
+ 
+  
+  
+  
+  
+    
+      
+    
+  
+    
+  
+    
+      
+    
+  
+
+&lt;div class=&#34;figure right fig-75&#34; &gt;
+  
+    &lt;a class=&#34;fancybox&#34; href=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-11.jpg&#34; data-fancybox-group=&#34;&#34;&gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-11-560.jpg&#34; &gt;
+  
+    &lt;/a&gt;
+  
+  
+&lt;/div&gt;
+
+
+
+ 
+  
+  
+  
+  
+    
+      
+    
+  
+    
+  
+    
+      
+    
+  
+
+&lt;div class=&#34;figure right fig-25&#34; &gt;
+  
+    &lt;a class=&#34;fancybox&#34; href=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-8.jpg&#34; data-fancybox-group=&#34;&#34;&gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-8-185.jpg&#34; &gt;
+  
+    &lt;/a&gt;
+  
+  
+&lt;/div&gt;
+
+
+
+ 
+  
+  
+  
+  
+    
+      
+    
+  
+    
+  
+    
+      
+    
+  
+
+&lt;div class=&#34;figure right fig-25&#34; &gt;
+  
+    &lt;a class=&#34;fancybox&#34; href=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-10.jpg&#34; data-fancybox-group=&#34;&#34;&gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-10-185.jpg&#34; &gt;
+  
+    &lt;/a&gt;
+  
+  
+&lt;/div&gt;
+
+
+
+ 
+  
+  
+  
+  
+    
+      
+    
+  
+    
+  
+    
+      
+    
+  
+
+&lt;div class=&#34;figure right fig-25&#34; &gt;
+  
+    &lt;a class=&#34;fancybox&#34; href=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-5.jpg&#34; data-fancybox-group=&#34;&#34;&gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-5-185.jpg&#34; &gt;
+  
+    &lt;/a&gt;
+  
+  
+&lt;/div&gt;
+
+
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+
+&lt;div class=&#34;figure fig-50&#34; &gt;
+  
+    &lt;a class=&#34;fancybox&#34; href=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-13.jpg&#34; data-fancybox-group=&#34;&#34;&gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-13-375.jpg&#34; &gt;
+  
+    &lt;/a&gt;
+  
+  
+&lt;/div&gt;
+
+
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+
+&lt;div class=&#34;figure fig-25&#34; &gt;
+  
+    &lt;a class=&#34;fancybox&#34; href=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-17.jpg&#34; data-fancybox-group=&#34;&#34;&gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-17-185.jpg&#34; &gt;
+  
+    &lt;/a&gt;
+  
+  
+&lt;/div&gt;
+
+
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+
+&lt;div class=&#34;figure fig-25&#34; &gt;
+  
+    &lt;a class=&#34;fancybox&#34; href=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-18.jpg&#34; data-fancybox-group=&#34;&#34;&gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-18-185.jpg&#34; &gt;
+  
+    &lt;/a&gt;
+  
+  
+&lt;/div&gt;
+
+
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+
+&lt;div class=&#34;figure fig-25&#34; &gt;
+  
+    &lt;a class=&#34;fancybox&#34; href=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-19.jpg&#34; data-fancybox-group=&#34;&#34;&gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-19-185.jpg&#34; &gt;
+  
+    &lt;/a&gt;
+  
+  
+&lt;/div&gt;
+
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+
+&lt;div class=&#34;figure fig-25&#34; &gt;
+  
+    &lt;a class=&#34;fancybox&#34; href=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-20.jpg&#34; data-fancybox-group=&#34;&#34;&gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-20-185.jpg&#34; &gt;
+  
+    &lt;/a&gt;
+  
+  
+&lt;/div&gt;
+
+  &lt;div style=&#34;clear:both;&#34;&gt;&lt;/div&gt;
+
+
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+
+&lt;div class=&#34;figure fig-25&#34; &gt;
+  
+    &lt;a class=&#34;fancybox&#34; href=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-21.jpg&#34; data-fancybox-group=&#34;&#34;&gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-21-185.jpg&#34; &gt;
+  
+    &lt;/a&gt;
+  
+  
+&lt;/div&gt;
+
+
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+
+&lt;div class=&#34;figure fig-25&#34; &gt;
+  
+    &lt;a class=&#34;fancybox&#34; href=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-22.jpg&#34; data-fancybox-group=&#34;&#34;&gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-22-185.jpg&#34; &gt;
+  
+    &lt;/a&gt;
+  
+  
+&lt;/div&gt;
+
+
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+
+&lt;div class=&#34;figure fig-25&#34; &gt;
+  
+    &lt;a class=&#34;fancybox&#34; href=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-23.jpg&#34; data-fancybox-group=&#34;&#34;&gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-23-185.jpg&#34; &gt;
+  
+    &lt;/a&gt;
+  
+  
+&lt;/div&gt;
+
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+
+&lt;div class=&#34;figure fig-25&#34; &gt;
+  
+    &lt;a class=&#34;fancybox&#34; href=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-24.jpg&#34; data-fancybox-group=&#34;&#34;&gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-24-185.jpg&#34; &gt;
+  
+    &lt;/a&gt;
+  
+  
+&lt;/div&gt;
+
+  &lt;div style=&#34;clear:both;&#34;&gt;&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;figure fig-20&#34; &gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-25-150.jpg&#34; &gt;
+  
+  
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;figure fig-20&#34; &gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-26-150.jpg&#34; &gt;
+  
+  
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;figure fig-20&#34; &gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-27-150.jpg&#34; &gt;
+  
+  
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;figure fig-20&#34; &gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-28-150.jpg&#34; &gt;
+  
+  
+&lt;/div&gt;
+
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+
+
+&lt;div class=&#34;figure fig-20&#34; &gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-29-150.jpg&#34; &gt;
+  
+  
+&lt;/div&gt;
+
+  &lt;div style=&#34;clear:both;&#34;&gt;&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;figure fig-20&#34; &gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-35-150.jpg&#34; &gt;
+  
+  
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;figure fig-20&#34; &gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-30-150.jpg&#34; &gt;
+  
+  
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;figure fig-20&#34; &gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-31-150.jpg&#34; &gt;
+  
+  
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;figure fig-20&#34; &gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-32-150.jpg&#34; &gt;
+  
+  
+&lt;/div&gt;
+
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+
+
+&lt;div class=&#34;figure fig-20&#34; &gt;
+  
+    &lt;img class=&#34;fig-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-34-150.jpg&#34; &gt;
+  
+  
+&lt;/div&gt;
+
+  &lt;div style=&#34;clear:both;&#34;&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h1 id=&#34;jsfiddle&#34;&gt;jsFiddle&lt;/h1&gt;
+
+&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://hexo.io/docs/tag-plugins.html#jsFiddle&#34;&gt;jsFiddle tag&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;iframe scrolling=&#34;no&#34; width=&#34;100%&#34; height=&#34;300&#34; src=&#34;//jsfiddle.net/ccWP7/embedded/js,resources,html,css,result/light&#34; frameborder=&#34;0&#34; allowfullscreen=&#34;&#34;&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;pull-quote&#34;&gt;Pull Quote&lt;/h1&gt;
+
+&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://hexo.io/docs/tag-plugins.html#Pull_Quote&#34;&gt;Pull Quote tag&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Donec non tempus arcu.
+Phasellus adipiscing, mauris nec mollis egestas, ipsum nunc auctor velit, et rhoncus lorem ipsum at ante. Duis vel mauris nulla. Maecenas mattis interdum ante, quis sagittis.
+&lt;blockquote class=&#34;pullquote left&#34;&gt;
+	&lt;p&gt;
+Here is a pullquote left. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus molestie arcu, et
+fringilla mauris placerat ac. Nullam luctus bibendum risus. Ut cursus sed ipsum feugiat egestas. Suspendisse elementum, velit eu consequat consequat, augue lorem dapibus libero, eget pulvinar dolor est sit amet nulla. Suspendisse a porta tortor, et posuere mi. Pellentesque ultricies, mi quis volutpat malesuada, erat felis vulputate nisl, ac congue ante tortor ut ante. Proin aliquam sem vel mauris tincidunt, elementum ullamcorper nisl pretium, ultrices cursus justo. Mauris porttitor commodo eros, ac ornare orci interdum in. Cras fermentum cursus leo sed mattis. In dignissim lorem sem, sit amet elementum mauris venenatis ac.
+&lt;blockquote class=&#34;pullquote right&#34;&gt;
+	&lt;p&gt;
+Here is a pullquote right. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+Donec non tempus arcu. Phasellus adipiscing, mauris nec mollis egestas, ipsum nunc auctor velit, et rhoncus lorem ipsum at ante. Duis vel mauris nulla.
+Maecenas mattis interdum ante, quis sagittis nibh cursus et. Nulla facilisi. Morbi convallis gravida tortor, ut fermentum enim gravida et. Nunc vel dictum nisl, non ultrices libero.
+Proin vestibulum felis eget orci consectetur lobortis. Vestibulum augue nulla, iaculis vitae augue vehicula,
+dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;/p&gt;
+
+&lt;h1 id=&#34;highlight-text&#34;&gt;Highlight text&lt;/h1&gt;
+
+&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/user.md#highlight-text&#34;&gt;Highlight text tag&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;highlight-text red&#34;&gt;highlight red&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;span class=&#34;highlight-text green&#34;&gt;highlight green&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;span class=&#34;highlight-text blue&#34;&gt;highlight blue&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;span class=&#34;highlight-text purple&#34;&gt;highlight purple&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;span class=&#34;highlight-text orange&#34;&gt;highlight orange&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;span class=&#34;highlight-text yellow&#34;&gt;highlight yellow&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;span class=&#34;highlight-text cyan&#34;&gt;highlight cyan&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;span class=&#34;highlight-text primary&#34;&gt;highlight primary&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;span class=&#34;highlight-text success&#34;&gt;highlight success&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;span class=&#34;highlight-text warning&#34;&gt;highlight warning&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;span class=&#34;highlight-text danger&#34;&gt;highlight danger&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;/p&gt;
+
+&lt;h1 id=&#34;tabbed-code-block&#34;&gt;Tabbed code block&lt;/h1&gt;
+
+&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/user.md#tabbed-code-block&#34;&gt;Tabbed code block&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+
+  
+    
+  
+  
+
+&lt;figure class=&#34;codeblock codeblock--tabbed&#34;&gt;
+  &lt;figcaption&gt;
+    
+      &lt;span&gt;tabbed_codeblock&lt;/span&gt;
+    
+    &lt;ul class=&#34;tabs&#34;&gt;
+      
+        &lt;li class=&#34;tab active&#34;&gt;js&lt;/li&gt;
+      
+        &lt;li class=&#34;tab &#34;&gt;css&lt;/li&gt;
+      
+        &lt;li class=&#34;tab &#34;&gt;html&lt;/li&gt;
+      
+    &lt;/ul&gt;
+  &lt;/figcaption&gt; 
+  &lt;div class=&#34;tabs-content&#34;&gt;
+    
+      
+      &lt;figure class=&#34;highlight js&#34; style=&#34;display: block;&#34;&gt;   
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td class=&#34;gutter&#34;&gt;
+                &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+              &lt;/td&gt;
+              &lt;td class=&#34;code&#34;&gt;
+                &lt;pre class=&#34;js code-highlight&#34;&gt;function $initHighlight(block, flags) {
+  try {
+    if (block.className.search(/\bno\-highlight\b/) != -1)
+      return processBlock(block.function, true, 0x0F) &amp;#43; &amp;#39; class=&amp;#34;&amp;#34;&amp;#39;;
+  } catch (e) {
+    /* handle exception */
+    var e4x =
+        &amp;lt;div&amp;gt;Example
+            &amp;lt;p&amp;gt;1234&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;;
+  }
+  for (var i = 0 / 2; i &amp;lt; classes.length; i&amp;#43;&amp;#43;) { // &amp;#34;0 / 2&amp;#34; should not be parsed as regexp
+    if (checkCondition(classes[i]) === undefined)
+      return /\d&amp;#43;[\s/]/g;
+  }
+  console.log(Array.every(classes, Boolean));
+}&lt;/pre&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/figure&gt;
+    
+      
+      &lt;figure class=&#34;highlight css&#34; style=&#34;display: none;&#34;&gt;   
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td class=&#34;gutter&#34;&gt;
+                &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+              &lt;/td&gt;
+              &lt;td class=&#34;code&#34;&gt;
+                &lt;pre class=&#34;css code-highlight&#34;&gt;@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  body:first-of-type pre::after {
+    content: &amp;#39;highlight: &amp;#39; attr(class);
+  }
+  body {
+    background: linear-gradient(45deg, blue, red);
+  }
+}
+
+@import url(&amp;#39;print.css&amp;#39;);
+@page:right {
+ margin: 1cm 2cm 1.3cm 4cm;
+}
+
+@font-face {
+  font-family: Chunkfive; src: url(&amp;#39;Chunkfive.otf&amp;#39;);
+}
+
+div.text,
+#content,
+li[lang=ru] {
+  font: Tahoma, Chunkfive, sans-serif;
+  background: url(&amp;#39;hatch.png&amp;#39;) /* wtf? */;  color: #F0F0F0 !important;
+  width: 100%;
+}&lt;/pre&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/figure&gt;
+    
+      
+      &lt;figure class=&#34;highlight html&#34; style=&#34;display: none;&#34;&gt;   
+        &lt;table&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td class=&#34;gutter&#34;&gt;
+                &lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+              &lt;/td&gt;
+              &lt;td class=&#34;code&#34;&gt;
+                &lt;pre class=&#34;html code-highlight&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34;?&amp;gt;
+&amp;lt;response value=&amp;#34;ok&amp;#34; xml:lang=&amp;#34;en&amp;#34;&amp;gt;
+  &amp;lt;text&amp;gt;Ok&amp;lt;/text&amp;gt;
+  &amp;lt;comment html_allowed=&amp;#34;true&amp;#34;/&amp;gt;
+  &amp;lt;ns1:description&amp;gt;&amp;lt;![CDATA[
+  CDATA is &amp;lt;not&amp;gt; magical.
+  ]]&amp;gt;&amp;lt;/ns1:description&amp;gt;
+  &amp;lt;a&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a/&amp;gt;
+&amp;lt;/response&amp;gt;
+
+
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;title&amp;gt;Title&amp;lt;/title&amp;gt;
+
+&amp;lt;style&amp;gt;body {width: 500px;}&amp;lt;/style&amp;gt;
+
+&amp;lt;script type=&amp;#34;application/javascript&amp;#34;&amp;gt;
+  function $init() {return true;}
+&amp;lt;/script&amp;gt;
+
+&amp;lt;body&amp;gt;
+  &amp;lt;p checked class=&amp;#34;title&amp;#34; id=&amp;#39;title&amp;#39;&amp;gt;Title&amp;lt;/p&amp;gt;
+  &amp;lt;!-- here goes the rest of the page --&amp;gt;
+&amp;lt;/body&amp;gt;&lt;/pre&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/figure&gt;
+    
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;youtube&#34;&gt;Youtube&lt;/h1&gt;
+
+&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://hexo.io/docs/tag-plugins.html#YouTube&#34;&gt;Youtube tag&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/BSVkI3Ds8E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;h1 id=&#34;vimeo&#34;&gt;Vimeo&lt;/h1&gt;
+
+&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://hexo.io/docs/tag-plugins.html#Vimeo&#34;&gt;Vimeo tag&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//player.vimeo.com/video/147585091&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;h1 id=&#34;wide-image&#34;&gt;Wide image&lt;/h1&gt;
+
+&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/user.md#wide-image&#34;&gt;Wide image tag&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;figure figure--fullWidth&#34;&gt;
+  &lt;img class=&#34;figure-img&#34; src=&#34;//d1u9biwaxjngwg.cloudfront.net/tag-plugins-showcase/car-1.jpg&#34; alt=&#34;Mercedes SLS&#34; /&gt;&lt;span class=&#34;caption&#34;&gt;Mercedes SLS&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;main-content-wrap&#34;&gt;
+
+&lt;p&gt;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Video integrations showcase</title>
+      <link>https://tranquilpeak.kakawait.com/2014/08/video-integrations-showcase/</link>
+      <pubDate>Sat, 09 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://tranquilpeak.kakawait.com/2014/08/video-integrations-showcase/</guid>
+      <description>&lt;p&gt;Youtube and Vimeo videos are easily integrated thanks to tags plugins. Of course, you can add video other platforms like dailymotion.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Youtube&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/xL45JMI8IFg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Vimeo&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//player.vimeo.com/video/17877190&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>中文測試</title>
+      <link>https://tranquilpeak.kakawait.com/2013/10/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/</link>
+      <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://tranquilpeak.kakawait.com/2013/10/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/</guid>
+      <description>&lt;p&gt;This is a chinese test post to show you how chinese is displayed.
+&lt;/p&gt;
+
+&lt;p&gt;善我王上魚、產生資西員合兒臉趣論。畫衣生這著爸毛親可時，安程幾？合學作。觀經而作建。都非子作這！法如言子你關！手師也。&lt;/p&gt;
+
+&lt;p&gt;以也座論頭室業放。要車時地變此親不老高小是統習直麼調未，行年香一？&lt;/p&gt;
+
+&lt;p&gt;就竟在，是我童示讓利分和異種百路關母信過明驗有個歷洋中前合著區亮風值新底車有正結，進快保的行戰從：弟除文辦條國備當來際年每小腳識世可的的外的廣下歌洲保輪市果底天影；全氣具些回童但倒影發狀在示，數上學大法很，如要我……月品大供這起服滿老？應學傳者國：山式排只不之然清同關；細車是！停屋常間又，資畫領生，相們制在？公別的人寫教資夠。資再我我！只臉夫藝量不路政吃息緊回力之；兒足灣電空時局我怎初安。意今一子區首者微陸現際安除發連由子由而走學體區園我車當會，經時取頭，嚴了新科同？很夫營動通打，出和導一樂，查旅他。坐是收外子發物北看蘭戰坐車身做可來。道就學務。&lt;/p&gt;
+
+&lt;p&gt;國新故。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;工步他始能詩的，裝進分星海演意學值例道……於財型目古香亮自和這乎？化經溫詩。只賽嚴大一主價世哥受的沒有中年即病行金拉麼河。主小路了種就小為廣不？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;From &lt;a href=&#34;http://www.richyli.com/tool/loremipsum/&#34;&gt;亂數假文產生器 - Chinese Lorem Ipsum&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Image gallery showcase</title>
+      <link>https://tranquilpeak.kakawait.com/2013/02/image-gallery-showcase/</link>
+      <pubDate>Mon, 18 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://tranquilpeak.kakawait.com/2013/02/image-gallery-showcase/</guid>
+      <description>&lt;p&gt;And here is the image gallery!
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>日本語テスト</title>
+      <link>https://tranquilpeak.kakawait.com/2013/01/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/</link>
+      <pubDate>Wed, 02 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://tranquilpeak.kakawait.com/2013/01/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/</guid>
+      <description>&lt;p&gt;This is a Japanese test post to show you how japanese is displayed.
+&lt;/p&gt;
+
+&lt;p&gt;私は昨日ついにその助力家というのの上よりするたなけれ。
+最も今をお話団はちょうどこの前後なかろでくらいに困りがいるたをは帰着考えたなかって、そうにもするでうたらない。
+がたを知っないはずも同時に九月をいよいよたありた。&lt;/p&gt;
+
+&lt;p&gt;もっと槙さんにぼんやり金少し説明にえた自分大した人私か影響にというお関係たうませないが、この次第も私か兄具合に使うて、槙さんののに当人のあなたにさぞご意味と行くて私個人が小尊敬を聴いように同時に同反抗に集っだうて、いよいよまず相当へあっうからいだ事をしでなけれ。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;それでそれでもご時日をしはずはたったいやと突き抜けるますて、その元がは行ったてという獄を尽すていけですた。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;この中道具の日その学校はあなたごろがすまなりかとネルソンさんの考えるですん、辺の事実ないというご盲従ありたですと、爺さんのためが薬缶が結果までの箸の当時してならて、多少の十月にためからそういう上からとにかくしましないと触れべきものたで、ないうですと多少お人達したのでたた。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;From &lt;a href=&#34;http://lipsum.sugutsukaeru.jp/index.cgi&#34;&gt;すぐ使えるダミーテキスト - 日本語 Lorem ipsum&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hexo website</title>
+      <link>https://tranquilpeak.kakawait.com/2012/04/hexo-website/</link>
+      <pubDate>Thu, 12 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://tranquilpeak.kakawait.com/2012/04/hexo-website/</guid>
+      <description>&lt;p&gt;This is a link post. Clicking on the link should open &lt;a href=&#34;http://www.hexo.io/&#34;&gt;Hexo&lt;/a&gt; in a new tab or window.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

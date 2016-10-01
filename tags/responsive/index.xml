@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo tranquilpeak theme</title>
+    <link>https://tranquilpeak.kakawait.com/tags/responsive/index.xml</link>
+    <description>Recent content on Hugo tranquilpeak theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://tranquilpeak.kakawait.com/tags/responsive/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Welcome to Tranquilpeak 1.9</title>
+      <link>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-1.9/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-1.9/</guid>
+      <description>&lt;p&gt;Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://tranquilpeak.kakawait.com/img/showcase.png&#34; alt=&#34;Tranquilpeak&#34; /&gt;
+Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
+&lt;!-- toc --&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;tranquilpeak&#34;&gt;Tranquilpeak&lt;/h1&gt;
+
+&lt;!--[![Join the chat at https://gitter.im/LouisBarranqueiro/hexo-theme-tranquilpeak](https://badges.gitter.im/Join%20Chat.svg)](http s://gitter.im/LouisBarranqueiro/hexo-theme-tranquilpeak?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge)--&gt;
+
+&lt;p&gt;A gorgeous responsive theme for Hugo blog framework&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://tranquilpeak.kakawait.com&#34;&gt;&lt;img src=&#34;https://tranquilpeak.kakawait.com/img/showcase.png&#34; alt=&#34;Tranquilpeak&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;credits&#34;&gt;Credits&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Hugo&lt;/em&gt; version of Tranquilpeak is a based on original &lt;em&gt;Hexo&lt;/em&gt; version &lt;a href=&#34;https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak&#34;&gt;https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak&lt;/a&gt;. This version is simply a port to &lt;em&gt;Hugo&lt;/em&gt; static site generator.&lt;/p&gt;
+
+&lt;p&gt;Please all the credit should be attributed to &lt;a href=&#34;https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak&#34;&gt;original &lt;em&gt;Hexo&lt;/em&gt; version&lt;/a&gt; and its author &lt;a href=&#34;https://github.com/LouisBarranqueiro&#34;&gt;Louis Barranqueiro&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Hugo&lt;/em&gt; version keeps every &lt;code&gt;.js&lt;/code&gt; and &lt;code&gt;.css&lt;/code&gt; files untouched from original &lt;em&gt;Hexo&lt;/em&gt; version in order to enjoy futur original &lt;em&gt;Hexo&lt;/em&gt; version updates or features!&lt;/p&gt;
+
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#general&#34;&gt;General&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#features&#34;&gt;Features&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#quick-start&#34;&gt;Quick start&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#demo&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#documentation&#34;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#contributing&#34;&gt;Contributing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#showcase&#34;&gt;Showcase&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#license&#34;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;general&#34;&gt;General&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Authors&lt;/strong&gt;: &lt;a href=&#34;https://github.com/LouisBarranqueiro&#34;&gt;Louis Barranqueiro (LouisBarranqueiro)&lt;/a&gt; and &lt;a href=&#34;https://github.com/kakawait&#34;&gt;Thibaud Leprêtre (kakawait)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Version&lt;/strong&gt;: 0.1.0-SNAPSHOT (based on Hexo version 1.9.1)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Compatibility&lt;/strong&gt;: Hugo v0.16&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;General features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fully responsive&lt;/li&gt;
+&lt;li&gt;Optimized for tablets &amp;amp; mobiles&lt;/li&gt;
+&lt;li&gt;Configurable menu of the sidebar&lt;/li&gt;
+&lt;li&gt;Pages to filter tags, categories and archives&lt;/li&gt;
+&lt;li&gt;Background cover image&lt;/li&gt;
+&lt;li&gt;Beautiful about page&lt;/li&gt;
+&lt;li&gt;Support Open Graph protocol&lt;/li&gt;
+&lt;li&gt;Easily customizable (fonts, colors, layout elements, code coloration, etc..)
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Posts features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Thumbnail image&lt;/li&gt;
+&lt;li&gt;Cover image&lt;/li&gt;
+&lt;li&gt;Responsive videos &amp;amp; images&lt;/li&gt;
+&lt;li&gt;Sharing options&lt;/li&gt;
+&lt;li&gt;Navigation menu&lt;/li&gt;
+&lt;li&gt;GitHub theme for code highlighting (customizable)&lt;/li&gt;
+&lt;li&gt;Image gallery&lt;/li&gt;
+&lt;li&gt;Tags for images (FancyBox), wide images, tabbed code blocks, highlighted text, alerts&lt;/li&gt;
+&lt;li&gt;Table of contents&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Integrated services:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Disqus&lt;/li&gt;
+&lt;li&gt;Google analytics&lt;/li&gt;
+&lt;li&gt;Gravatar&lt;/li&gt;
+&lt;li&gt;Facebook Insights&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;todo-of-missing-features-from-original-hexo-version&#34;&gt;Todo of missing features from original &lt;em&gt;Hexo&lt;/em&gt; version&lt;/h3&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Support internationalization (i18)&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Duoshuo&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Baidu analytics&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Algolia&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Documentations&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;ATTENTION&lt;/strong&gt; following features will not be possible due to &lt;em&gt;Hugo&lt;/em&gt; limitations&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Archives pages by years &lt;code&gt;/archives/2015&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Archives pages by month &lt;code&gt;/archives/2015/01&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;quick-start&#34;&gt;Quick start&lt;/h2&gt;
+
+&lt;p&gt;Coming soon (see &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/4&#34;&gt;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/4&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
+
+&lt;p&gt;Coming soon (see &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/3&#34;&gt;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/3&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h2 id=&#34;showcase&#34;&gt;Showcase&lt;/h2&gt;
+
+&lt;p&gt;I would like to create a showcase with all blogs that use Tranquilpeak, please, add your blog into.&lt;br /&gt;
+&lt;strong&gt;Click &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/new?title=Add%20my%20blog%20into%20the%20showcase&amp;amp;body=Hey,%20add%20my%20blog%20into%20the%20showcase:&#34;&gt;here&lt;/a&gt; to add your blog into the showcase.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;documentation&#34;&gt;Documentation&lt;/h2&gt;
+
+&lt;p&gt;Coming soon (see &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/4&#34;&gt;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/4&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h2 id=&#34;contributing&#34;&gt;Contributing&lt;/h2&gt;
+
+&lt;p&gt;All kinds of contributions (enhancements, new features, documentation &amp;amp; code improvements, issues &amp;amp; bugs reporting) are welcome.&lt;/p&gt;
+
+&lt;p&gt;As explained on &lt;a href=&#34;#credits&#34;&gt;Credits&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Hugo&lt;/em&gt; version keeps every &lt;code&gt;.js&lt;/code&gt; and &lt;code&gt;.css&lt;/code&gt; files untouched from original &lt;em&gt;Hexo&lt;/em&gt; version in order to enjoy futur original &lt;em&gt;Hexo&lt;/em&gt; version updates or features!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That mean I would keep a stronge dependency with original &lt;em&gt;Hexo&lt;/em&gt; theme. Thus if you want to suggest any modifications on &lt;code&gt;.css&lt;/code&gt; or &lt;code&gt;.js&lt;/code&gt; files &lt;strong&gt;I will submit those changes to original &lt;em&gt;Hexo&lt;/em&gt; theme&lt;/strong&gt; (except if it&amp;rsquo;s really specific to &lt;em&gt;Hugo&lt;/em&gt; bugs that is not present on &lt;em&gt;Hexo&lt;/em&gt;).&lt;/p&gt;
+
+&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+
+&lt;p&gt;hugo-tranquilpeak-theme is released under the terms of the &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/LICENSE&#34;&gt;GNU General Public License v3.0&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
