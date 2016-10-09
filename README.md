@@ -61,7 +61,7 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 - Gravatar
 - Facebook Insights
 
-## Todo of missing features from original *Hexo* version
+### Todo of missing features from original *Hexo* version
 
 - [ ] Support internationalization (i18)
 - [ ] Duoshuo
