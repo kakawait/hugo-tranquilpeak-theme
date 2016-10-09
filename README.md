@@ -6,11 +6,11 @@ A gorgeous responsive theme for Hugo blog framework.
 
 ## Credits
 
-*Hugo* version of Tranquilpeak is a based on original *Hexo* version https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak. This version is simply a port to Hugo static site generator.
+*Hugo* version of Tranquilpeak is a based on original *Hexo* version https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak. This version is simply a port to *Hugo* static site generator.
 
-Please all the credit should be attributed to [original *Hexo* version](https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak) and author [Louis Barranqueiro](https://github.com/LouisBarranqueiro).
+Please all the credit should be attributed to [original *Hexo* version](https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak) and its author [Louis Barranqueiro](https://github.com/LouisBarranqueiro).
 
-*Hugo* version keeps every `.js` and `.css` files untouched from original Hexo version in order to enjoy futur original Hexo version updates or features! 
+*Hugo* version keeps every `.js` and `.css` files untouched from original Hexo version in order to enjoy futur original *Hexo* version updates or features! 
 
 ## Summary
 
@@ -61,7 +61,7 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 - Gravatar
 - Facebook Insights
 
-## Todo of missing features from Hexo origin version
+## Todo of missing features from original *Hexo* version
 
 - [ ] Support internationalization (i18)
 - [ ] Duoshuo
