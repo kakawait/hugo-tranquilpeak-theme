@@ -80,7 +80,7 @@ Coming soon (see https://github.com/kakawait/hugo-tranquilpeak-theme/issues/4)
 
 ## Demo
 
-Coming soon (see https://github.com/kakawait/hugo-tranquilpeak-theme/issues/3)
+Check out Tranquilpeak theme in live : [hexu-tranquilpeak-theme demo](https://tranquilpeak.kakawait.com)
 
 ## Showcase
 
