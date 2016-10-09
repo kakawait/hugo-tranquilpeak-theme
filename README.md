@@ -10,7 +10,7 @@ A gorgeous responsive theme for Hugo blog framework.
 
 Please all the credit should be attributed to [original *Hexo* version](https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak) and its author [Louis Barranqueiro](https://github.com/LouisBarranqueiro).
 
-*Hugo* version keeps every `.js` and `.css` files untouched from original Hexo version in order to enjoy futur original *Hexo* version updates or features! 
+*Hugo* version keeps every `.js` and `.css` files untouched from original *Hexo* version in order to enjoy futur original *Hexo* version updates or features! 
 
 ## Summary
 
@@ -97,7 +97,7 @@ All kinds of contributions (enhancements, new features, documentation & code imp
 
 As explained on [Credits](#credits):
 
-> *Hugo* version keeps every `.js` and `.css` files untouched from original Hexo version in order to enjoy futur original Hexo version updates or features! 
+> *Hugo* version keeps every `.js` and `.css` files untouched from original *Hexo* version in order to enjoy futur original *Hexo* version updates or features! 
 
 That mean I would keep a stronge dependency with original *Hexo* theme. Thus if you want to suggest any modifications on `.css` or `.js` files **I will submit those changes to original *Hexo* theme** (except if it's really specific to *Hugo* bugs that is not present on *Hexo*).
 
