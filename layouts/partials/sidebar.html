@@ -3,7 +3,7 @@
     {{ with ($.Scratch.Get "authorPicture") }}
       <div class="sidebar-profile">
         <a href="{{ "/#about" }}">
-          <img class="sidebar-profile-picture" src="{{ . }}{{ if in . "http://www.gravatar.com/avatar/" }}?s=110{{ end }}" alt="Author's picture" />
+          <img class="sidebar-profile-picture" src="{{ . }}{{ if in . "//www.gravatar.com/avatar/" }}?s=110{{ end }}" alt="Author's picture" />
         </a>
         <h4 class="sidebar-profile-name">{{ $.Site.Author.name }}</h4>
         {{ with $.Site.Author.bio }}

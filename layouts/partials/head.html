@@ -10,7 +10,7 @@
   {{ .Scratch.Set "sidebarBehavior" .Site.Params.sidebar_behavior }}
 {{ end }}
 {{ if .Site.Author.gravatar_email }}
-  {{ .Scratch.Set "authorPicture" (printf "http://www.gravatar.com/avatar/%s" (urlize (md5 .Site.Author.gravatar_email))) }}
+  {{ .Scratch.Set "authorPicture" (printf "//www.gravatar.com/avatar/%s" (urlize (md5 .Site.Author.gravatar_email))) }}
 {{ else if .Site.Author.picture }}
   {{ .Scratch.Set "authorPicture" (absURL .Site.Author.picture) }}
 {{ end }}
@@ -54,7 +54,7 @@
     {{ end }}
 
     {{ if .Site.Author.gravatar_email }}
-      <meta property="og:image" content="http://www.gravatar.com/avatar/{{ (md5 .Site.Author.gravatar_email) | urlize }}?s=640">
+      <meta property="og:image" content="//www.gravatar.com/avatar/{{ (md5 .Site.Author.gravatar_email) | urlize }}?s=640">
     {{ else if .Site.Author.picture }}
       <meta property="og:image" content="{{ .Site.Author.picture | absURL }}">
     {{ end }}
