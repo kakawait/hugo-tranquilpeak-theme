@@ -32,7 +32,7 @@
               {{ end }}
             {{ end }}
             {{ partial "post/actions.html" . }}
-            {{ if .Params.comments }}
+            {{ if not (eq .Params.comments false) }}
               {{ if .Site.DisqusShortname }}
                 {{ partial "post/disqus.html" . }}
               {{ end }}
