@@ -2,7 +2,7 @@
 
 A gorgeous responsive theme for Hugo blog framework 
 
-[![Tranquilpeak](http://d1u9biwaxjngwg.cloudfront.net/showcases/showcase-v1.9.jpg)](https://tranquilpeak.kakawait.com)
+[![Tranquilpeak](../showcase.png)](https://tranquilpeak.kakawait.com)
 
 Tranquilpeak theme is compatible with Hugo `v0.17`.
 

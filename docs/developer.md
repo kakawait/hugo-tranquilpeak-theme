@@ -63,9 +63,7 @@ grunt eslint
 
 ```
 tranquilpeak
-<!--├── .github-->
 ├── docs
-<!--├── languages-->
 ├── layout
 ├── src
 └── tasks
@@ -73,9 +71,7 @@ tranquilpeak
 
 |File/Folder|Description|
 |---|---|
-<!--|**.github**|Contains file templates for GitHub|-->
 |**docs**|Contains user and developer documentation|
-<!--|**languages**|Contains language files|-->
 |**layout**|Contains all views|
 |**src**|Contains all assets (css, js and images)|
 |**tasks**|Contains all grunt tasks|
