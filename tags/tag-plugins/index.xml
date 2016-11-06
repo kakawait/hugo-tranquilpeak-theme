@@ -14,34 +14,34 @@
       <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
       
       <guid>https://tranquilpeak.kakawait.com/2014/10/tags-plugins-showcase/</guid>
-      <description>&lt;p&gt;This post is used to show how tag plugins are displayed. See &lt;a href=&#34;https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/user.md#tags&#34;&gt;docs&lt;/a&gt; for more info.
+      <description>&lt;p&gt;This post is used to show how tag plugins are displayed. See &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#tags&#34;&gt;docs&lt;/a&gt; for more info.
 &lt;/p&gt;
 
 &lt;!-- toc --&gt;
 
 &lt;h1 id=&#34;alert&#34;&gt;Alert&lt;/h1&gt;
 
-&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/user.md#alert&#34;&gt;Alert tag&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#alert&#34;&gt;Alert tag&lt;/a&gt;&lt;/p&gt;
 
-&lt;div class=&#34;alert info&#34;&gt;
+&lt;div class=&#34;alert info &#34;&gt;
   &lt;p&gt;
 Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
 &lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&#34;alert success&#34;&gt;
+&lt;div class=&#34;alert success &#34;&gt;
   &lt;p&gt;
 Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
 &lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&#34;alert warning&#34;&gt;
+&lt;div class=&#34;alert warning &#34;&gt;
   &lt;p&gt;
 Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
 &lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&#34;alert danger&#34;&gt;
+&lt;div class=&#34;alert danger &#34;&gt;
   &lt;p&gt;
 Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
 &lt;/p&gt;
@@ -203,7 +203,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 
 &lt;h1 id=&#34;image&#34;&gt;Image&lt;/h1&gt;
 
-&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/user.md#image&#34;&gt;Image tag&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#image&#34;&gt;Image tag&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
 
@@ -912,13 +912,13 @@ dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac 
 
 &lt;h1 id=&#34;highlight-text&#34;&gt;Highlight text&lt;/h1&gt;
 
-&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/user.md#highlight-text&#34;&gt;Highlight text tag&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#highlight-text&#34;&gt;Highlight text tag&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span class=&#34;highlight-text red&#34;&gt;highlight red&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;span class=&#34;highlight-text green&#34;&gt;highlight green&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;span class=&#34;highlight-text blue&#34;&gt;highlight blue&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;span class=&#34;highlight-text purple&#34;&gt;highlight purple&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;span class=&#34;highlight-text orange&#34;&gt;highlight orange&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;span class=&#34;highlight-text yellow&#34;&gt;highlight yellow&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;span class=&#34;highlight-text cyan&#34;&gt;highlight cyan&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;span class=&#34;highlight-text primary&#34;&gt;highlight primary&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;span class=&#34;highlight-text success&#34;&gt;highlight success&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;span class=&#34;highlight-text warning&#34;&gt;highlight warning&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;span class=&#34;highlight-text danger&#34;&gt;highlight danger&lt;/span&gt; dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;/p&gt;
 
 &lt;h1 id=&#34;tabbed-code-block&#34;&gt;Tabbed code block&lt;/h1&gt;
 
-&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/user.md#tabbed-code-block&#34;&gt;Tabbed code block&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#tabbed-code-block&#34;&gt;Tabbed code block&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
 
@@ -1104,7 +1104,7 @@ li[lang=ru] {
 
 &lt;h1 id=&#34;wide-image&#34;&gt;Wide image&lt;/h1&gt;
 
-&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/user.md#wide-image&#34;&gt;Wide image tag&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#wide-image&#34;&gt;Wide image tag&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.&lt;/p&gt;
 
