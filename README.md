@@ -26,7 +26,7 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 ## General
 
 - **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
-- **Version**: 0.1.0-SNAPSHOT (based on Hexo version 1.9.1)
+- **Version**: 0.1.0-ALPHA (based on Hexo version 1.9.1)
 - **Compatibility**: Hugo v0.17
 
 ## Features
@@ -41,6 +41,7 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 - Beautiful about page
 - Support Open Graph protocol
 - Easily customizable (fonts, colors, layout elements, code coloration, etc..)
+- Documentations
   
 **Posts features:**  
 
@@ -67,7 +68,6 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 - [ ] Duoshuo
 - [ ] Baidu analytics
 - [ ] Algolia (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8)
-- [ ] Documentations (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/4)
 - [ ] Pagination custumization `tag_pagination`, `category_pagination` and `archive_pagination` (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17)
 
 **ATTENTION** following features will not be possible due to *Hugo* limitations
