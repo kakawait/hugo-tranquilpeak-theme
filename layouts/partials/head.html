@@ -22,7 +22,7 @@
     <meta name="generator" content="Hugo {{ .Hugo.Version }}">
     <title>{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}</title>
     <meta name="author" content="{{ .Site.Author.name }}">
-    <meta name="keywords" content="{{ with .Keywords }}{{ delimit . ", " }}{{ end }}{{ .Site.Params.keywords }}">
+    <meta name="keywords" content="{{ with .Keywords }}{{ delimit . ", " }}{{ end }}{{ if .Site.Params.keywords }}, {{ delimit .Site.Params.keywords ", " }}{{ end }}">
 
     <link rel="icon" href="/favicon.png">
     {{ with .RSSlink }}
@@ -39,7 +39,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{{ .Site.Title }}">
     <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    {{ with .Site.Params.author.twitter }}
+    {{ with .Site.Author.twitter }}
       <meta name="twitter:creator" content="@{{ . }}">
     {{ end }}
     {{ with .Site.Params.fb_app_id }}
@@ -80,7 +80,7 @@
       {{ end }}
     {{ end }}
 
-    {{ with .Site.Params.author.google_plus }}
+    {{ with .Site.Author.google_plus }}
       <link rel="publisher" href="https://plus.google.com/{{ . | urlize }}">
     {{ end }}
 

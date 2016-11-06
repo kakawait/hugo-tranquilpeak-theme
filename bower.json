@@ -1,9 +1,9 @@
 {
-    "name": "hexo-theme-tranquilpeak",
-    "version": "1.9.1",
+    "name": "hugo-tranquilpeak-theme",
+    "version": "0.1.0-SNAPSHOT",
     "description": "A gorgeous responsive theme for Hexo blog framework",
     "authors": [
-        "Louis Barranqueiro"
+        "Thibaud Leprêtre"
     ],
     "license": "GNU General Public License v3.0",
     "ignore": [

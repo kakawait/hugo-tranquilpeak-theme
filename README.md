@@ -27,7 +27,7 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 
 - **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
 - **Version**: 0.1.0-SNAPSHOT (based on Hexo version 1.9.1)
-- **Compatibility**: Hugo v0.16
+- **Compatibility**: Hugo v0.17
 
 ## Features
 
@@ -61,13 +61,14 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 - Gravatar
 - Facebook Insights
 
-### Todo of missing features from original *Hexo* version
+### Missing features from original *Hexo* version
 
-- [ ] Support internationalization (i18)
+- [ ] Support internationalization (i18) (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/9)
 - [ ] Duoshuo
 - [ ] Baidu analytics
-- [ ] Algolia
-- [ ] Documentations
+- [ ] Algolia (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8)
+- [ ] Documentations (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/4)
+- [ ] Pagination custumization `tag_pagination`, `category_pagination` and `archive_pagination` (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17)
 
 **ATTENTION** following features will not be possible due to *Hugo* limitations
 
