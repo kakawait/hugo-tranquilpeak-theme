@@ -2,7 +2,7 @@
 
 A gorgeous responsive theme for Hugo blog framework.
 
-![Tranquilpeak](showcase.png)
+![Tranquilpeak](https://raw.githubusercontent.com/kakawait/hugo-tranquilpeak-theme/master/showcase.png)
 
 ## Credits
 
