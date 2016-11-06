@@ -103,9 +103,14 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 
 ## Installation
 
-1. Download the latest version here : [hugo-tranquilpeak-theme-built-for-production-1.8.0]
-(https://github.com/LouisBarranqueiro/hugo-tranquilpeak-theme/releases/download/v1.8.0/hugo-tranquilpeak-theme-built-for-production-1.8.0.zip) or simply clone the repository `git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git`
+1. Simply clone the repository `git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git` on `themes` folder
 2. Rename the folder in `hugo-tranquilpeak-theme` (if necessary) and place it in `themes` folder of your Hugo blog
+
+```shell
+mkdir themes
+cd themes
+git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git
+```
 
 ## Tranquilpeak configuration
 

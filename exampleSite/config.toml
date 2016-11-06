@@ -1,0 +1,154 @@
+# Tranquilpeak
+# Version : 0.1.0-SNAPSHOT
+# Author : Thibaud Leprêtre
+
+# I STRONGLY recommend you to use a CDN to speed up loading of pages.
+# There is many free CDN like Cloudinary or you can also use indirectly
+# by using services like Google Photos.
+
+# If you want to store images yourself, please read this guidelines:
+# For users, if you only use this theme, put your images directly in `source/assets/images` folder
+# But if you want to add local images, you can put your images directly in `source/assets/images` folder
+# For developpers, if you modify this theme, put your images in `source/images` folder and
+# use grunt task `build` to synchronize assets
+
+baseurl = ""
+languageCode = "en-us"
+title = "Hugo tranquilpeak theme"
+theme = "hugo-tranquilpeak-theme"
+DisqusShortname = "hugo-tranquilpeak-theme"
+Paginate = 7
+canonifyurls = true
+
+[permalinks]
+  post = "/:year/:month/:title/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[author]
+  name = "Firstname Lastname"
+  bio = "Super bio with markdown support **COOL**"
+  job = "Your job title"
+  location = "France"
+  # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
+  gravatar_email = "thibaud.lepretre@gmail.com"
+  # Your profile picture
+  # Overwritten by your gravatar image if `author.gravatar` is filled
+  picture = "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"
+  # Your Twitter username without the @. E.g : thibaudlepretre
+  # twitter = "thibaudlepretre"
+  # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
+  # google_plus = "+ThibaudLepretre"
+
+# Menu Configuration
+[[menu.main]]
+  weight = 0
+  identifier = "home"
+  name = "Home"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
+  url = "/"
+[[menu.main]]
+  weight = 1
+  identifier = "categories"
+  name = "Categories"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
+  url = "/categories"
+[[menu.main]]
+  weight = 2
+  identifier = "tags"
+  name = "Tags"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
+  url = "/tags"
+[[menu.main]]
+  weight = 3
+  identifier = "archives"
+  name = "Archives"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
+  url = "/archives"
+[[menu.main]]
+  weight = 4
+  identifier = "about"
+  name = "About"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
+  url = "/#about"
+
+[[menu.links]]
+  weight = 0
+  identifier = "github"
+  name = "GitHub"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
+  url = "https://github.com/kakawait"
+[[menu.links]]
+  weight = 1
+  identifier = "stackoverflow"
+  name = "Stack Overflow"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-stack-overflow\"></i>"
+  url = "https://stackoverflow.com/users/636472/kakawait"
+
+[[menu.misc]]
+  weight = 0
+  identifier = "rss"
+  name = "RSS"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
+  url = "/index.xml"
+
+[params]
+  # Global keywords configuration. Following keywords will be add to every pages
+  # keywords = ["development", "next-gen"]
+  
+  # Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. (true: enable, false: disable)
+  clear_reading = true
+
+  hierarchical_categories = true
+
+  # Customization
+  # Define the behavior of the sidebar
+  # 1: Display extra large sidebar on extra large screen, large sidebar on large screen,
+  #    medium sidebar on medium screen and header bar on small screen and
+  # extra large sidebar is swiped on extra large screen and large sidebar on all lower screen (default)
+  # 2: Display large sidebar on large screen, medium sidebar on medium screen and
+  #    header bar on small screen and large sidebar is swiped
+  # 3: Display medium sidebar on large and medium screen and header bar on small screen and
+  #    medium sidebar is swiped
+  # 4: Display header bar on all screens, extra large sidebar is swiped on extra large screen and
+  #    large sidebar is swiped on all lower screens
+  # 5: Display header bar on all screens and large sidebar is swiped on large screen
+  # 6: Display header bar on all screens and medium sidebar is swiped
+  sidebar_behavior = 1
+
+  # Your blog cover picture. I STRONGLY recommend you to use a CDN to speed up loading of pages.
+  # There is many free CDN like Cloudinary or you can also use indirectly
+  # by using services like Google Photos.
+  # Current image is on AWS S3 and delivered by AWS CloudFront.
+  # Otherwise put your image in folder `static/_images/` (development)  or in `source/assets/images/` if you can't or don't want to build the theme,
+  # and use relative url : `your-image.png`
+  cover_image = "cover.jpg"
+
+  # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
+  image_gallery = true
+
+  # Display thumbnail image of each post on index pages (false: disabled, true: enabled)
+  thumbnail_image = true
+  # Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`)
+  # Set this value to `right` if you have old posts to keep the old style on them
+  # and define `thumbnailImagePosition` on a post to overwrite this setting
+  thumbnail_image_position = "bottom"
+  # Automatically select the cover image or the first photo from the gallery of a post if there is no thumbnail image as the thumbnail image
+  # Set this value to `true` if you have old posts that use the cover image or the first photo as the thumbnail image
+  # and set `autoThumbnailImage` to `false` on a post to overwrite this setting
+  auto_thumbnail_image = true
+
+  # Header configuration
+  # The link at the right of the header is customizable
+  # You can add a link (as an icon) at the right of the header instead of the author's gravatar image or author's picture.
+  # By default, author's gravatar or author's picture is displayed.
+  # E.g to display a shortcut to open swiftype search window :
+  #     url: /#search
+  #     icon: search
+  #     class: st-search-show-outputs
+  [params.header.right_link]
+    class = ""
+    icon = ""
+    url = "/#about"

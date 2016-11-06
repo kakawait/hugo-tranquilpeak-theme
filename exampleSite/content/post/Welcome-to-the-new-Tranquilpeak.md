@@ -1,8 +1,40 @@
+---
+title: "Welcome to Tranquilpeak 0.1.0-SNAPSHOT"
+date: 2015-06-15
+categories:
+- tranquilpeak
+- releases
+tags:
+- hexo theme
+- responsive
+- swiftype
+- gravatar
+- disqus
+- google analytics
+keywords:
+- disqus
+- google
+- gravatar
+autoThumbnailImage: false
+thumbnailImagePosition: "top"
+thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city-750.jpg
+coverImage: //d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city.jpg
+metaAlignment: center
+---
+Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
+<!--more-->
+
+![Tranquilpeak](/img/showcase.png)
+Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
+<!-- toc -->
+
 # Tranquilpeak
 
-A gorgeous responsive theme for Hugo blog framework.
+<!--[![Join the chat at https://gitter.im/LouisBarranqueiro/hexo-theme-tranquilpeak](https://badges.gitter.im/Join%20Chat.svg)](http s://gitter.im/LouisBarranqueiro/hexo-theme-tranquilpeak?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)-->
 
-![Tranquilpeak](showcase.png)
+A gorgeous responsive theme for Hugo blog framework
+
+[![Tranquilpeak](/img/showcase.png)](https://tranquilpeak.kakawait.com)
 
 ## Credits
 
@@ -27,7 +59,7 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 
 - **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
 - **Version**: 0.1.0-SNAPSHOT (based on Hexo version 1.9.1)
-- **Compatibility**: Hugo v0.17
+- **Compatibility**: Hugo v0.16
 
 ## Features
 
@@ -61,14 +93,13 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 - Gravatar
 - Facebook Insights
 
-### Missing features from original *Hexo* version
+### Todo of missing features from original *Hexo* version
 
-- [ ] Support internationalization (i18) (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/9)
+- [ ] Support internationalization (i18)
 - [ ] Duoshuo
 - [ ] Baidu analytics
-- [ ] Algolia (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8)
-- [ ] Documentations (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/4)
-- [ ] Pagination custumization `tag_pagination`, `category_pagination` and `archive_pagination` (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17)
+- [ ] Algolia
+- [ ] Documentations
 
 **ATTENTION** following features will not be possible due to *Hugo* limitations
 
@@ -77,32 +108,11 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 
 ## Quick start
 
-**Please read [user documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md), it's short and useful to discover all features and possibilities of the theme, especially the  [writing posts](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#writing-posts) section**
-
-##### For people who want to use the original version of Tranquilpeak without modifications (users)
-
-Go to the directory where you have your Hugo site and run:
-
-```shell
-mkdir themes
-cd themes
-git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git
-```
-
-After installing the Tranquilpeak theme successfully, we recommend you to take a look at the [exampleSite](exampleSite) directory. You will find a working Hugo site configured with the Universal theme that you can use as a starting point for your site.
-
-First, let's take a look at the [config.toml](exampleSite/config.tom). It will be useful to learn how to customize your site. Feel free to play around with the settings.
-
-More information on [user documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md) to install and configure the theme  
-
-##### For people who want to create their own version of tranquilpeak (developers) 
-
-1. Run `git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git`  
-2. Follow [developer documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/developer.md) to edit and build the theme 
+Coming soon (see https://github.com/kakawait/hugo-tranquilpeak-theme/issues/4)
 
 ## Demo
 
-Check out Tranquilpeak theme in live : [hugo-tranquilpeak-theme demo](https://tranquilpeak.kakawait.com)
+Coming soon (see https://github.com/kakawait/hugo-tranquilpeak-theme/issues/3)
 
 ## Showcase
 
@@ -125,5 +135,5 @@ That mean I would keep a stronge dependency with original *Hexo* theme. Thus if 
 
 ## License
 
-hugo-tranquilpeak-theme is released under the terms of the [GNU General Public License v3.0](LICENSE).
+hugo-tranquilpeak-theme is released under the terms of the [GNU General Public License v3.0](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/LICENSE).
 
