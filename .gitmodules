@@ -1,3 +1,0 @@
-[submodule "migrators/src"]
-	path = migrators/src
-	url = git@github.com:kakawait/hugo-tranquilpeak-theme-migrators.git
