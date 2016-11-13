@@ -4,6 +4,16 @@ A gorgeous responsive theme for Hugo blog framework.
 
 ![Tranquilpeak](https://raw.githubusercontent.com/kakawait/hugo-tranquilpeak-theme/master/showcase.png)
 
+## Alpha/Beta versions
+
+**ATTENTION** during *alpha* or *beta* [versions](https://github.com/kakawait/hugo-tranquilpeak-theme/milestones) breaking changes are possible on config file.
+
+You can track [breaking changes label](https://github.com/kakawait/hugo-tranquilpeak-theme/issues?q=is%3Aissue+is%3Aopen+label%3A%22breaking+changes%22) or simply read [CHANGELOG.md](https://github.com/kakawait/hugo-tranquilpeak-theme/CHANGELOG.md).
+
+Moreover you can use `migrators` from `migrators` folders. Migration scripts will produces a new config file with suffix `.new`, it will not override your current config. Indeed migration scripts will erase any comments and formating, that why migration scripts will not override your config.
+
+Any modifications are printed on output to allow you reproduce/replay migrations on your own config file manually.
+
 ## Credits
 
 *Hugo* version of Tranquilpeak is a based on original *Hexo* version https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak. This version is simply a port to *Hugo* static site generator.
@@ -134,5 +144,5 @@ That mean I would keep a stronge dependency with original *Hexo* theme. Thus if 
 
 ## License
 
-hugo-tranquilpeak-theme is released under the terms of the [GNU General Public License v3.0](LICENSE).
+hugo-tranquilpeak-theme is released under the terms of the [GNU General Public License v3.0](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/LICENSE).
 
