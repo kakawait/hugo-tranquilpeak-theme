@@ -144,5 +144,5 @@ That mean I would keep a stronge dependency with original *Hexo* theme. Thus if 
 
 ## License
 
-hugo-tranquilpeak-theme is released under the terms of the [GNU General Public License v3.0](LICENSE).
+hugo-tranquilpeak-theme is released under the terms of the [GNU General Public License v3.0](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/LICENSE).
 
