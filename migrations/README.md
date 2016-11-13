@@ -16,11 +16,11 @@ Replace
 
 ```toml
 [params]
-	google_analytics_id = UA-XXX-X
+	google_analytics_id = "UA-XXX-X"
 ```
 
 to (top level)
 
 ```toml
-googleAnalytics = UA-XXX-X
+googleAnalytics = "UA-XXX-X"
 ```
