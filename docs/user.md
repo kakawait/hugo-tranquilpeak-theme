@@ -307,7 +307,8 @@ The same page with `hierarchical_categories = false`:
 #### Integrated services
 
 ```toml
-DisqusShortname =
+disqusShortname =
+googleAnalytics = 
 ```
 
 ```toml
@@ -319,14 +320,13 @@ DisqusShortname =
 [params]
   fb_admin_ids = 
   fb_app_id = 
-  google_analytics_id =
 ```
 
 | Variable | Description |
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| disqus_shortnam | Your Disqus shortname. |
+| disqusShortname | Your Disqus shortname. |
 | gravatar_email | Your gravatar email. Overwrite `author.picture` everywhere in the blog |
-| google_analytics_id | Your Google analystics web property ID : UA-XXXXX-X |
+| googleAnalytics | Your Google analystics web property ID : UA-XXXXX-X |
 | fb_admin_ids | Your Facebook user ids used to connect your blog with your facebook user accounts (Facebook Insights). Separate ids with comma. E.g : `9830047,1003342`. Visit [Facebook docs](https://developers.facebook.com/docs/platforminsights/domains) for more information. |
 | fb_app_id | Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : `9841307`. Visit [Facebook docs](https://developers.facebook.com/docs/platforminsights/domains) for more information. |
 
