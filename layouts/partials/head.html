@@ -61,22 +61,13 @@
 
     {{ with .Params.thumbnailImage }}
       <meta property="og:image" content="{{ . | absURL }}">
-      {{ if $.Site.Params.swiftype_install_key }}
-        <meta class="swiftype" name="image" data-type="enum" content="{{ . | absURL }}">
-      {{ end }}
     {{ end }}
     {{ with .Params.coverImage }}
       <meta property="og:image" content="{{ . | absURL }}">
-      {{ if $.Site.Params.swiftype_install_key }}
-        <meta class="swiftype" name="image" data-type="enum" content="{{ . | absURL }}">
-      {{ end }}
     {{ end }}
     {{ with .Params.gallery }}
       {{ range . }}
         <meta property="og:image" content="{{ range first 1 (split . " ") }}{{ . | absURL }}{{ end }}">
-        {{ if $.Site.Params.swiftype_install_key }}
-          <meta class="swiftype" name="image" data-type="enum" content="{{ range first 1 (split . " ") }}{{ . | absURL }}{{ end }}">
-        {{ end }}
       {{ end }}
     {{ end }}
 

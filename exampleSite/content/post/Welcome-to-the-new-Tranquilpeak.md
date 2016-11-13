@@ -7,7 +7,6 @@ categories:
 tags:
 - hexo theme
 - responsive
-- swiftype
 - gravatar
 - disqus
 - google analytics
