@@ -6,7 +6,7 @@ A gorgeous responsive theme for Hugo blog framework.
 
 ## Alpha/Beta versions
 
-**ATTENTION** during *alpha* or *beta* [versions (check [milestones]](https://github.com/kakawait/hugo-tranquilpeak-theme/milestones) breaking changes are possible on config file.
+**ATTENTION** during *alpha* or *beta* [versions](https://github.com/kakawait/hugo-tranquilpeak-theme/milestones) breaking changes are possible on config file.
 
 You can track [breaking changes label](https://github.com/kakawait/hugo-tranquilpeak-theme/issues?q=is%3Aissue+is%3Aopen+label%3A%22breaking+changes%22) or simply read [CHANGELOG.md](https://github.com/kakawait/hugo-tranquilpeak-theme/CHANGELOG.md).
 
