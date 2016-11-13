@@ -17,6 +17,7 @@ languageCode = "en-us"
 title = "Hugo tranquilpeak theme"
 theme = "hugo-tranquilpeak-theme"
 DisqusShortname = "hugo-tranquilpeak-theme"
+# googleAnalytics = "UA-123-45"
 Paginate = 7
 canonifyurls = true
 
@@ -102,6 +103,8 @@ canonifyurls = true
   clear_reading = true
 
   hierarchical_categories = true
+
+  description = "Hugo tranquilpeak theme demo"
 
   # Customization
   # Define the behavior of the sidebar
