@@ -9,11 +9,11 @@
     <atom:link href="https://tranquilpeak.kakawait.com/tags/disqus/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Welcome to Tranquilpeak 0.1.0</title>
-      <link>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.1.0/</link>
+      <title>Welcome to Tranquilpeak 0.1.1</title>
+      <link>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.1.1/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.1.0/</guid>
+      <guid>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.1.1/</guid>
       <description>&lt;p&gt;Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
 &lt;/p&gt;
 
@@ -28,6 +28,16 @@ Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many
 &lt;p&gt;A gorgeous responsive theme for Hugo blog framework&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://tranquilpeak.kakawait.com&#34;&gt;&lt;img src=&#34;https://tranquilpeak.kakawait.com/img/showcase.png&#34; alt=&#34;Tranquilpeak&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;alpha-beta-versions&#34;&gt;Alpha/Beta versions&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;ATTENTION&lt;/strong&gt; during &lt;em&gt;alpha&lt;/em&gt; or &lt;em&gt;beta&lt;/em&gt; &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/milestones&#34;&gt;versions&lt;/a&gt; breaking changes are possible on config file.&lt;/p&gt;
+
+&lt;p&gt;You can track &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues?q=is%3Aissue+is%3Aopen+label%3A%22breaking+changes%22&#34;&gt;breaking changes label&lt;/a&gt; or simply read &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/CHANGELOG.md&#34;&gt;CHANGELOG.md&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Moreover you can use &lt;code&gt;migrators&lt;/code&gt; from &lt;code&gt;migrators&lt;/code&gt; folders. Migration scripts will produces a new config file with suffix &lt;code&gt;.new&lt;/code&gt;, it will not override your current config. Indeed migration scripts will erase any comments and formating, that why migration scripts will not override your config.&lt;/p&gt;
+
+&lt;p&gt;Any modifications are printed on output to allow you reproduce/replay migrations on your own config file manually.&lt;/p&gt;
 
 &lt;h2 id=&#34;credits&#34;&gt;Credits&lt;/h2&gt;
 
@@ -54,8 +64,8 @@ Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Authors&lt;/strong&gt;: &lt;a href=&#34;https://github.com/LouisBarranqueiro&#34;&gt;Louis Barranqueiro (LouisBarranqueiro)&lt;/a&gt; and &lt;a href=&#34;https://github.com/kakawait&#34;&gt;Thibaud Leprêtre (kakawait)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Version&lt;/strong&gt;: 0.1.0-ALPHA (based on Hexo version 1.9.1)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Compatibility&lt;/strong&gt;: Hugo v0.16&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Version&lt;/strong&gt;: 0.1.1-ALPHA (based on Hexo version 1.9.1)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Compatibility&lt;/strong&gt;: Hugo v0.17&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
@@ -70,7 +80,8 @@ Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many
 &lt;li&gt;Background cover image&lt;/li&gt;
 &lt;li&gt;Beautiful about page&lt;/li&gt;
 &lt;li&gt;Support Open Graph protocol&lt;/li&gt;
-&lt;li&gt;Easily customizable (fonts, colors, layout elements, code coloration, etc..)
+&lt;li&gt;Easily customizable (fonts, colors, layout elements, code coloration, etc..)&lt;/li&gt;
+&lt;li&gt;Documentations
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -98,14 +109,14 @@ Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many
 &lt;li&gt;Facebook Insights&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;todo-of-missing-features-from-original-hexo-version&#34;&gt;Todo of missing features from original &lt;em&gt;Hexo&lt;/em&gt; version&lt;/h3&gt;
+&lt;h3 id=&#34;missing-features-from-original-hexo-version&#34;&gt;Missing features from original &lt;em&gt;Hexo&lt;/em&gt; version&lt;/h3&gt;
 
 &lt;ul class=&#34;task-list&#34;&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Support internationalization (i18)&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Support internationalization (i18) (&lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/9&#34;&gt;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/9&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Duoshuo&lt;/li&gt;
 &lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Baidu analytics&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Algolia&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Documentations&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Algolia (&lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8&#34;&gt;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Pagination custumization &lt;code&gt;tag_pagination&lt;/code&gt;, &lt;code&gt;category_pagination&lt;/code&gt; and &lt;code&gt;archive_pagination&lt;/code&gt; (&lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17&#34;&gt;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;ATTENTION&lt;/strong&gt; following features will not be possible due to &lt;em&gt;Hugo&lt;/em&gt; limitations&lt;/p&gt;
@@ -117,16 +128,49 @@ Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many
 
 &lt;h2 id=&#34;quick-start&#34;&gt;Quick start&lt;/h2&gt;
 
-&lt;p&gt;Coming soon (see &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/4&#34;&gt;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/4&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Please read &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md&#34;&gt;user documentation&lt;/a&gt;, it&amp;rsquo;s short and useful to discover all features and possibilities of the theme, especially the  &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#writing-posts&#34;&gt;writing posts&lt;/a&gt; section&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;for-people-who-want-to-use-the-original-version-of-tranquilpeak-without-modifications-users&#34;&gt;For people who want to use the original version of Tranquilpeak without modifications (users)&lt;/h3&gt;
+
+&lt;p&gt;Go to the directory where you have your Hugo site and run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;mkdir themes
+cd themes
+git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After installing the Tranquilpeak theme successfully, we recommend you to take a look at the &lt;a href=&#34;exampleSite&#34;&gt;exampleSite&lt;/a&gt; directory. You will find a working Hugo site configured with the Universal theme that you can use as a starting point for your site.&lt;/p&gt;
+
+&lt;p&gt;First, let&amp;rsquo;s take a look at the &lt;a href=&#34;exampleSite/config.tom&#34;&gt;config.toml&lt;/a&gt;. It will be useful to learn how to customize your site. Feel free to play around with the settings.&lt;/p&gt;
+
+&lt;p&gt;More information on &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md&#34;&gt;user documentation&lt;/a&gt; to install and configure the theme&lt;/p&gt;
+
+&lt;h3 id=&#34;for-people-who-want-to-create-their-own-version-of-tranquilpeak-developers&#34;&gt;For people who want to create their own version of tranquilpeak (developers)&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Run &lt;code&gt;git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git&lt;/code&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Follow &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/developer.md&#34;&gt;developer documentation&lt;/a&gt; to edit and build the theme&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
 
-&lt;p&gt;Coming soon (see &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/3&#34;&gt;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/3&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Check out Tranquilpeak theme in live : &lt;a href=&#34;https://tranquilpeak.kakawait.com&#34;&gt;hugo-tranquilpeak-theme demo&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;showcase&#34;&gt;Showcase&lt;/h2&gt;
 
-&lt;p&gt;I would like to create a showcase with all blogs that use Tranquilpeak, please, add your blog into.&lt;br /&gt;
-&lt;strong&gt;Click &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/new?title=Add%20my%20blog%20into%20the%20showcase&amp;amp;body=Hey,%20add%20my%20blog%20into%20the%20showcase:&#34;&gt;here&lt;/a&gt; to add your blog into the showcase.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Checkout showcase &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/wiki/Showcase&#34;&gt;https://github.com/kakawait/hugo-tranquilpeak-theme/wiki/Showcase&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;how-can-i-add-my-site-to-the-showcase&#34;&gt;How can I add my site to the showcase&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Click &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/new?title=Add%20my%20blog%20into%20the%20showcase&amp;amp;body=Hey,%20add%20my%20blog%20into%20the%20showcase:&#34;&gt;here&lt;/a&gt; to add your blog into the showcase.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Please fill the following information:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;public url&lt;/li&gt;
+&lt;li&gt;name (optional)&lt;/li&gt;
+&lt;li&gt;description (optional)&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h2 id=&#34;documentation&#34;&gt;Documentation&lt;/h2&gt;
 
