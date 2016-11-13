@@ -120,7 +120,7 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 
 **Please read [user documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md), it's short and useful to discover all features and possibilities of the theme, especially the  [writing posts](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#writing-posts) section**
 
-##### For people who want to use the original version of Tranquilpeak without modifications (users)
+### For people who want to use the original version of Tranquilpeak without modifications (users)
 
 Go to the directory where you have your Hugo site and run:
 
@@ -136,7 +136,7 @@ First, let's take a look at the [config.toml](exampleSite/config.tom). It will b
 
 More information on [user documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md) to install and configure the theme  
 
-##### For people who want to create their own version of tranquilpeak (developers) 
+### For people who want to create their own version of tranquilpeak (developers) 
 
 1. Run `git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git`  
 2. Follow [developer documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/developer.md) to edit and build the theme 
