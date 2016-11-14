@@ -9,12 +9,12 @@
       <i class="search-icon fa fa-search"></i>
       <form id="algolia-search-form">
         <input type="text" id="algolia-search-input" name="search"
-          class="form-control input--large search-input" placeholder="Search "
+          class="form-control input--large search-input" placeholder="{{ i18n "global.search" }}"
           autofocus="autofocus"/>
       </form>
     </div>
     <div class="modal-body">
-      <div class="no-result text-color-light text-center">no post found</div>
+      <div class="no-result text-color-light text-center">{{ i18n "global.posts_found.zero" }}</div>
       <div class="results">
         {{ $posts := (where .Site.Pages "Section" "post") }}
         {{ range first 10 $posts }}
@@ -45,9 +45,9 @@
     </div>
     <div class="modal-footer">
       <p class="results-count text-medium"
-         data-message-zero="no post found"
-         data-message-one="1 post found"
-         data-message-other="{n} posts found">
+         data-message-zero="{{ i18n "global.posts_found.zero" }}"
+         data-message-one="{{ i18n "global.posts_found.one" }}"
+         data-message-other="{{ i18n "global.posts_found.other" }}">
          {{ len $posts }} posts found
       </p>
     </div>

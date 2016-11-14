@@ -16,7 +16,7 @@
     {{ end }}
     {{ if not $.Site.Params.header.right_link.icon }}
       {{ with ($.Scratch.Get "authorPicture") }}
-        <img class="header-picture" src="{{ . }}{{ if in . "//www.gravatar.com/avatar/" }}?s=90{{ end }}" alt="Author's picture" />
+        <img class="header-picture" src="{{ . }}{{ if in . "//www.gravatar.com/avatar/" }}?s=90{{ end }}" alt="{{ i18n "global.author_picture" }}" />
       {{ end }}
     {{ end }}
     </a>
