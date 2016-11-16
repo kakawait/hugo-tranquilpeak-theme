@@ -10,9 +10,7 @@ A gorgeous responsive theme for Hugo blog framework.
 
 You can track [breaking changes label](https://github.com/kakawait/hugo-tranquilpeak-theme/issues?q=is%3Aissue+is%3Aopen+label%3A%22breaking+changes%22) or simply read [CHANGELOG.md](https://github.com/kakawait/hugo-tranquilpeak-theme/CHANGELOG.md).
 
-Moreover you can use `migrators` from `migrators` folders. Migration scripts will produces a new config file with suffix `.new`, it will not override your current config. Indeed migration scripts will erase any comments and formating, that why migration scripts will not override your config.
-
-Any modifications are printed on output to allow you reproduce/replay migrations on your own config file manually.
+How can I migrate my current version? Please read [migrations](https://github.com/kakawait/hugo-tranquilpeak-theme/tree/master/migrations) pages.
 
 ## Credits
 
