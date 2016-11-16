@@ -161,7 +161,15 @@ Please fill the following information:
 
 ## Documentation
 
-Coming soon (see https://github.com/kakawait/hugo-tranquilpeak-theme/issues/4)
+If it's your first time using Hugo, please check [Hugo official documentation](https://gohugo.io/overview/introduction/)
+
+### For users  
+
+To install and configure the theme, consult the following documentation : [user documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md)  
+
+### For developers
+
+To understand the code, the workflow and edit the theme, consult the following documentation : [developer documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/developer.md)
 
 ## Contributing
 
