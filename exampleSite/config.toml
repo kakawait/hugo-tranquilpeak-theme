@@ -27,6 +27,7 @@ canonifyurls = true
 [taxonomies]
   tag = "tags"
   category = "categories"
+  archives = "archives"
 
 [author]
   name = "Firstname Lastname"
