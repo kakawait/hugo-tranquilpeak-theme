@@ -2,8 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.2-ALPHA] 16 nov 2016
+
+- Fix *archives* pages generation by creating `archive` taxonomy ([#31](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/31))
+- Use `slug` instead of `title` for *permalink* urls ([#33](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/33))
+
 ## [0.1.1-ALPHA] 13 nov 2016
 
-- Upgrade *Google Analytics* script to do not use anymore `ga.js` which is now deprecated (#21)
-- **[Breaking changes]** Changes *Google Analytics* config key from `params.google_analytics_id` to official `googleAnalytics` (#21)
-- Add parameter to choose between sync/async loading of *Google Analytics* `params.ga.async` (#21)
+- Upgrade *Google Analytics* script to do not use anymore `ga.js` which is now deprecated ([#21](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/21))
+- **[Breaking changes]** Changes *Google Analytics* config key from `params.google_analytics_id` to official `googleAnalytics` ([#21](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/21))
+- Add parameter to choose between sync/async loading of *Google Analytics* `params.ga.async` ([#21](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/21))
