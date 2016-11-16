@@ -6,15 +6,7 @@
 
 - [archive page return 404](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/31)
 
-### Using migration script
-
-```bash
-./0_1_1_to_0_1_2 /path/to/config.toml
-```
-
-Should works with `.toml`, `.yml` and `.json`
-
-### Manually
+### Procedure
 
 Add
 
@@ -29,15 +21,7 @@ Add
 
 - [Migrate google analytics](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/21)
 
-### Using migration script
-
-```bash
-./0_1_0_to_0_1_1 /path/to/config.toml
-```
-
-Should works with `.toml`, `.yml` and `.json`
-
-### Manually
+### Procedure
 
 Replace
 
