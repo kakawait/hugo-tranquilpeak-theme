@@ -2135,10 +2135,10 @@ func main() {
     
     <item>
       <title>中文測試</title>
-      <link>https://tranquilpeak.kakawait.com/2013/10/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/</link>
+      <link>https://tranquilpeak.kakawait.com/2013/10/chinese-test/</link>
       <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://tranquilpeak.kakawait.com/2013/10/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/</guid>
+      <guid>https://tranquilpeak.kakawait.com/2013/10/chinese-test/</guid>
       <description>&lt;p&gt;This is a chinese test post to show you how chinese is displayed.
 &lt;/p&gt;
 
@@ -2169,10 +2169,10 @@ func main() {
     
     <item>
       <title>日本語テスト</title>
-      <link>https://tranquilpeak.kakawait.com/2013/01/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/</link>
+      <link>https://tranquilpeak.kakawait.com/2013/01/japanese-test/</link>
       <pubDate>Wed, 02 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://tranquilpeak.kakawait.com/2013/01/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/</guid>
+      <guid>https://tranquilpeak.kakawait.com/2013/01/japanese-test/</guid>
       <description>&lt;p&gt;This is a Japanese test post to show you how japanese is displayed.
 &lt;/p&gt;
 

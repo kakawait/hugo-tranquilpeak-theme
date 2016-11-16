@@ -10,11 +10,11 @@
     <atom:link href="https://tranquilpeak.kakawait.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Welcome to Tranquilpeak 0.1.1</title>
-      <link>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.1.1/</link>
+      <title>Welcome to Tranquilpeak 0.1.2</title>
+      <link>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.1.2/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.1.1/</guid>
+      <guid>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.1.2/</guid>
       <description>&lt;p&gt;Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
 &lt;/p&gt;
 
@@ -65,7 +65,7 @@ Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Authors&lt;/strong&gt;: &lt;a href=&#34;https://github.com/LouisBarranqueiro&#34;&gt;Louis Barranqueiro (LouisBarranqueiro)&lt;/a&gt; and &lt;a href=&#34;https://github.com/kakawait&#34;&gt;Thibaud Leprêtre (kakawait)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Version&lt;/strong&gt;: 0.1.1-ALPHA (based on Hexo version 1.9.1)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Version&lt;/strong&gt;: 0.1.2-ALPHA (based on Hexo version 1.9.1)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Compatibility&lt;/strong&gt;: Hugo v0.17&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -175,7 +175,15 @@ git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git
 
 &lt;h2 id=&#34;documentation&#34;&gt;Documentation&lt;/h2&gt;
 
-&lt;p&gt;Coming soon (see &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/4&#34;&gt;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/4&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;If it&amp;rsquo;s your first time using Hugo, please check &lt;a href=&#34;https://gohugo.io/overview/introduction/&#34;&gt;Hugo official documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;for-users&#34;&gt;For users&lt;/h3&gt;
+
+&lt;p&gt;To install and configure the theme, consult the following documentation : &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md&#34;&gt;user documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;for-developers&#34;&gt;For developers&lt;/h3&gt;
+
+&lt;p&gt;To understand the code, the workflow and edit the theme, consult the following documentation : &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/developer.md&#34;&gt;developer documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;contributing&#34;&gt;Contributing&lt;/h2&gt;
 
@@ -3432,10 +3440,10 @@ li[lang=ru] {
     
     <item>
       <title>中文測試</title>
-      <link>https://tranquilpeak.kakawait.com/2013/10/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/</link>
+      <link>https://tranquilpeak.kakawait.com/2013/10/chinese-test/</link>
       <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://tranquilpeak.kakawait.com/2013/10/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/</guid>
+      <guid>https://tranquilpeak.kakawait.com/2013/10/chinese-test/</guid>
       <description>&lt;p&gt;This is a chinese test post to show you how chinese is displayed.
 &lt;/p&gt;
 
@@ -3466,10 +3474,10 @@ li[lang=ru] {
     
     <item>
       <title>日本語テスト</title>
-      <link>https://tranquilpeak.kakawait.com/2013/01/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/</link>
+      <link>https://tranquilpeak.kakawait.com/2013/01/japanese-test/</link>
       <pubDate>Wed, 02 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://tranquilpeak.kakawait.com/2013/01/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/</guid>
+      <guid>https://tranquilpeak.kakawait.com/2013/01/japanese-test/</guid>
       <description>&lt;p&gt;This is a Japanese test post to show you how japanese is displayed.
 &lt;/p&gt;
 
