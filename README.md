@@ -8,11 +8,9 @@ A gorgeous responsive theme for Hugo blog framework.
 
 **ATTENTION** during *alpha* or *beta* [versions](https://github.com/kakawait/hugo-tranquilpeak-theme/milestones) breaking changes are possible on config file.
 
-You can track [breaking changes label](https://github.com/kakawait/hugo-tranquilpeak-theme/issues?q=is%3Aissue+is%3Aopen+label%3A%22breaking+changes%22) or simply read [CHANGELOG.md](https://github.com/kakawait/hugo-tranquilpeak-theme/CHANGELOG.md).
+You can track [breaking changes label](https://github.com/kakawait/hugo-tranquilpeak-theme/issues?q=is%3Aissue+is%3Aopen+label%3A%22breaking+changes%22).
 
-Moreover you can use `migrators` from `migrators` folders. Migration scripts will produces a new config file with suffix `.new`, it will not override your current config. Indeed migration scripts will erase any comments and formating, that why migration scripts will not override your config.
-
-Any modifications are printed on output to allow you reproduce/replay migrations on your own config file manually.
+How can I migrate my current version? Please read [CHANGELOG.md](https://github.com/kakawait/hugo-tranquilpeak-theme/CHANGELOG.md).
 
 ## Credits
 
@@ -36,7 +34,7 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 ## General
 
 - **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
-- **Version**: 0.1.3-ALPHA (based on Hexo version 1.9.1)
+- **Version**: 0.1.4-ALPHA (based on Hexo version 1.9.1)
 - **Compatibility**: Hugo v0.17
 
 ## Features
