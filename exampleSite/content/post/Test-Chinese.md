@@ -1,6 +1,7 @@
 ---
 title: 中文測試
 date: 2013-10-02
+slug: test-chinese
 categories:
 - tranquilpeak
 - features

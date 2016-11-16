@@ -1,6 +1,7 @@
 ---
 title: 日本語テスト
 date: 2013-01-02
+slug: test-japanese
 categories:
 - tranquilpeak
 - features
