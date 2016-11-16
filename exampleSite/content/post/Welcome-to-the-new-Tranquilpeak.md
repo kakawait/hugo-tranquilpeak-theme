@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Tranquilpeak 0.1.3"
+title: "Welcome to Tranquilpeak 0.1.4"
 date: 2015-06-15
 categories:
 - tranquilpeak
@@ -39,9 +39,9 @@ A gorgeous responsive theme for Hugo blog framework
 
 **ATTENTION** during *alpha* or *beta* [versions](https://github.com/kakawait/hugo-tranquilpeak-theme/milestones) breaking changes are possible on config file.
 
-You can track [breaking changes label](https://github.com/kakawait/hugo-tranquilpeak-theme/issues?q=is%3Aissue+is%3Aopen+label%3A%22breaking+changes%22) or simply read [CHANGELOG.md](https://github.com/kakawait/hugo-tranquilpeak-theme/CHANGELOG.md).
+You can track [breaking changes label](https://github.com/kakawait/hugo-tranquilpeak-theme/issues?q=is%3Aissue+is%3Aopen+label%3A%22breaking+changes%22).
 
-How can I migrate my current version? Please read [migrations](https://github.com/kakawait/hugo-tranquilpeak-theme/tree/master/migrations) pages.
+How can I migrate my current version? Please read [CHANGELOG.md](https://github.com/kakawait/hugo-tranquilpeak-theme/CHANGELOG.md).
 
 ## Credits
 
@@ -65,7 +65,7 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 ## General
 
 - **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
-- **Version**: 0.1.3-ALPHA (based on Hexo version 1.9.1)
+- **Version**: 0.1.4-ALPHA (based on Hexo version 1.9.1)
 - **Compatibility**: Hugo v0.17
 
 ## Features
