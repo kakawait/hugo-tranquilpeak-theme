@@ -8,5 +8,5 @@
     {{ .Date.Format $.Site.Params.dateFormat }}
   {{ end }}
 {{ else }}
-  <span style="text-transform: capitalize;">{{ i18n (lower (printf "date.month.%s" .Date.Month)) }}</span> {{ .Date.Day }}, {{ .Date.Year }}
+  {{ i18n (lower (printf "date.month.%s" .Date.Month)) }} {{ .Date.Day }}, {{ .Date.Year }}
 {{ end }}
