@@ -145,37 +145,37 @@
 
 ## DATE ##
 - id: "date.month.january"
-  translation: "januar"
+  translation: "Januar"
 
 - id: "date.month.february"
-  translation: "februar"
+  translation: "Februar"
 
 - id: "date.month.march"
-  translation: "märz"
+  translation: "März"
 
 - id: "date.month.april"
-  translation: "april"
+  translation: "April"
 
 - id: "date.month.may"
-  translation: "mai"
+  translation: "Mai"
 
 - id: "date.month.june"
-  translation: "juni"
+  translation: "Juni"
 
 - id: "date.month.july"
-  translation: "juli"
+  translation: "Juli"
 
 - id: "date.month.august"
-  translation: "august"
+  translation: "August"
 
 - id: "date.month.september"
-  translation: "september"
+  translation: "September"
 
 - id: "date.month.october"
-  translation: "oktober"
+  translation: "Oktober"
 
 - id: "date.month.november"
-  translation: "november"
+  translation: "November"
 
 - id: "date.month.december"
-  translation: "dezember"
+  translation: "Dezember"
