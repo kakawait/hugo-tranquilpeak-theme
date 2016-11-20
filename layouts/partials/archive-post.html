@@ -6,7 +6,7 @@
       <h4 class="archive-title" style="text-decoration: none;">{{ $year }}</h4>
       {{ range .Pages.GroupByDate "01-January" }}
         <ul class="archive-posts archive-month" data-date="{{ $year }}{{ range first 1 (split .Key "-") }}{{ . }}{{ end }}">
-          <h5 class="archive-title" style="text-decoration: none; text-transform: capitalize;">{{ range last 1 (split .Key "-") }}{{ i18n (lower (printf "date.month.%s" .)) }}{{ end }}</h5>
+          <h5 class="archive-title" style="text-decoration: none;">{{ range last 1 (split .Key "-") }}{{ i18n (lower (printf "date.month.%s" .)) }}{{ end }}</h5>
           {{ range .Pages }}
             <li class="archive-post archive-day" data-date="{{ dateFormat "20060102" .Date }}">
               <a class="archive-post-title" href="{{ .Permalink }}">{{ .Title }}</a>
