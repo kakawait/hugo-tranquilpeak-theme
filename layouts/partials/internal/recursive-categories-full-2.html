@@ -7,7 +7,7 @@
   <ul class="archive-posts">
     {{ range (.scratch.GetSortedMapValues (replace .category.path " " "/")) }}
       <li class="archive-post" style="display: list-item;">
-        <a class="archive-post-title" href="{{ .RelPermalink }}">{{ .Title }}</a><span class="archive-post-date"> - {{ .Date.Format "Jan 1, 2006" }}</span>
+        <a class="archive-post-title" href="{{ .RelPermalink }}">{{ .Title }}</a><span class="archive-post-date"> - {{ partial "internal/date" . }}</span>
       </li>
     {{ end }}
   </ul>

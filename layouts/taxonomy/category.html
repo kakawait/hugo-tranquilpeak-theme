@@ -21,7 +21,7 @@
         {{ else }}
           <div id="archives" class="main-content-wrap">
             <form id="filter-form" action="#">
-              <input name="date" type="text" class="form-control input--xlarge" placeholder="Search date (YYYY/MM/DD)" autofocus="autofocus">
+              <input name="date" type="text" class="form-control input--xlarge" placeholder="{{ i18n "global.search_date" }}" autofocus="autofocus">
             </form>
             {{ partial "archive-post.html" (where .Data.Pages "Type" "post") }}
           </div>

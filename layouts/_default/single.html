@@ -17,7 +17,7 @@
           {{ end }}
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              {{ (replaceRE "<!--\\s*[t|T][o|O][c|C]\\s*-->" (printf "<h1 id=\"table-of-contents\">Table of Contents</h1>%s" .TableOfContents) .Content) | safeHTML }}
+              {{ (replaceRE "<!--\\s*[t|T][o|O][c|C]\\s*-->" (printf "<h1 id=\"table-of-contents\">%s</h1>%s" (i18n "post.toc") .TableOfContents) .Content) | safeHTML }}
               {{ partial "post/gallery.html" . }}
             </div>
           </div>
@@ -26,7 +26,7 @@
               {{ $tagsLength := len . }}
               {{ if gt $tagsLength 0 }}
                 <div class="post-footer-tags">
-                  <span class="text-color-light text-small">TAGGED IN</span><br/>
+                  <span class="text-color-light text-small">{{ i18n "post.tagged_in" }}</span><br/>
                   {{ partial "post/tag.html" $ }}
                 </div>
               {{ end }}

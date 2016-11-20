@@ -18,7 +18,11 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Tranquilpeak configuration](#tranquilpeak-configuration)
+    - [Language configuration](#language-configuration)
+        * [Menu translation](#menu-translation)
     - [Theme configuration](#theme-configuration)
+        * [Define date format](#define-date-format)
+        * [Define global keywords](#define-global-keywords)
         * [Sidebar](#sidebar)
         * [Header](#header)
         * [Author](#author)
@@ -63,6 +67,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 - Beautiful about page
 - Support Open Graph protocol
 - Easily customizable (fonts, colors, layout elements, code coloration, etc..)
+- Support internationalization (i18)
   
 **Posts features:**  
 
@@ -85,11 +90,9 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 
 ### Missing features from original *Hexo* version
 
-- [ ] Support internationalization (i18) (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/9)
 - [ ] Duoshuo
 - [ ] Baidu analytics
 - [ ] Algolia (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8)
-- [ ] Documentations (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/4)
 - [ ] Pagination custumization `tag_pagination`, `category_pagination` and `archive_pagination` (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17)
 
 **ATTENTION** following features will not be possible due to *Hugo* limitations
@@ -116,9 +119,68 @@ git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git
 
 If it's your first time using Hugo, please check [Hugo official documentation](https://gohugo.io/overview/introduction/)
 
+### Language configuration
+
+Simply edit following value in `config.{toml,yaml,json}`:
+
+```toml
+defaultContentLanguage = "en-us"
+```
+
+by one of the following code (code is between `()`):
+
+- Chinese (`zh-cn`)
+- Chinese Traditional (`zh-tw`)
+- English (`en-us`)
+- Deutsch (`de-de`)
+- French (`fr-fr`)
+- Japanase (`ja`)
+- Portuguese (`pt-br`)
+- Russian (`ru`)
+- Spanish (`es`)
+- Vietnamese (`vi`)
+
+If your language is not available, follow this guidelines (E.g : add swedish language (`sv-se`)) :  
+
+1. Set `defaultContentLanguage` to `sv-se` in Hugo configuration file `config.{toml,yaml,json}`  
+2. Create `sv-se.yaml` file in `theme/tranquilpeak/i18n/` folder  
+3. Copy the content of `theme/tranquilpeak/i18n/en.yaml` and paste it to `sv-se.yml` file  
+4. Replace all strings in english by their translation in swedish    
+
+#### Menu translation
+
+Menus are defined using Hugo menus https://gohugo.io/extras/menus/
+
+You can translate menu entries by setting `identifier` that matches a translation key. By using this way, `name` will not be use at all.
+
 ### Setting up default theme to Tranquilpeak
 
 Modify the theme in `config.{toml,yml,json}` by changing `theme` variable to `tranquilpeak`
+
+### Define date format
+
+By default date will be printed like following: `mmmm d, yyyy`, example: "January 1, 2006"
+
+You can customize it by setting
+
+```toml
+[params]
+  dateFormat = "1 January 2006"
+```
+
+Will produce: "1 January 2006"
+
+ATTENTION: date format should respect `go` `Time` package syntax, please refer to https://golang.org/pkg/time/
+
+**Moreover, if you are using fully named month (short named month like "jan", "feb", etc is not supported), month will be translated.**
+
+Example: 
+
+```toml
+defaultContentLanguage = "fr-fr"
+```
+
+"1 January 2006" will be output "1 Janvier 2006". 
 
 ### Define global keywords
 
@@ -218,6 +280,8 @@ You can add groups of links and links much as you want.
 | pre        | icon to be display a left of the name | template.HTML |
 | url        | menu entry url                        | string        |
 | class      | CSS Class added to the `a` link tag   | string        |
+
+`identifier` can be use for translation see [Menu translation](#menu-translation).
 
 #### Header
 
