@@ -101,8 +101,8 @@ defaultContentLanguage = "en-us"
   # Customize date format use to render blog post date, categories and other
   # You must use date format used by Go Time package https://golang.org/pkg/time/
   # Months (not work with short month like "jan", "feb", etc) are translated if translation exists on i18n folders
-  # Default format is: January 1, 2006 
-  # dateFormat = "1 January 2006"
+  # Default format is: January 2, 2006 
+  # dateFormat = "2 January 2006"
 
   # Global keywords configuration. Following keywords will be add to every pages
   # keywords = ["development", "next-gen"]
