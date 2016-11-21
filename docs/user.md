@@ -159,16 +159,16 @@ Modify the theme in `config.{toml,yml,json}` by changing `theme` variable to `tr
 
 ### Define date format
 
-By default date will be printed like following: `mmmm d, yyyy`, example: "January 1, 2006"
+By default date will be printed like following: `mmmm d, yyyy`, example: "January 2, 2006"
 
 You can customize it by setting
 
 ```toml
 [params]
-  dateFormat = "1 January 2006"
+  dateFormat = "2 January 2006"
 ```
 
-Will produce: "1 January 2006"
+Will produce: "2 January 2006"
 
 ATTENTION: date format should respect `go` `Time` package syntax, please refer to https://golang.org/pkg/time/
 
@@ -180,7 +180,7 @@ Example:
 defaultContentLanguage = "fr-fr"
 ```
 
-"1 January 2006" will be output "1 Janvier 2006". 
+"21 July 2006" will be output "21 Juillet 2006". 
 
 ### Define global keywords
 
