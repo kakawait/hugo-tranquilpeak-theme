@@ -334,6 +334,8 @@ E.g to display a shortcut to open algolia search window :
 
 #### Customization
 
+**ATTENTION** not all customizations are documented here, you may checkout [sample config.toml](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/exampleSite/config.toml).
+
 ```toml
 [params]
   sidebar_behavior = 1
