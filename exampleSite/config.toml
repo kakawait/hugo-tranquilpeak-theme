@@ -20,6 +20,7 @@ DisqusShortname = "hugo-tranquilpeak-theme"
 # googleAnalytics = "UA-123-45"
 Paginate = 7
 canonifyurls = true
+defaultContentLanguage = "en-us"
 
 [permalinks]
   post = "/:year/:month/:slug/"
@@ -97,6 +98,12 @@ canonifyurls = true
   url = "/index.xml"
 
 [params]
+  # Customize date format use to render blog post date, categories and other
+  # You must use date format used by Go Time package https://golang.org/pkg/time/
+  # Months (not work with short month like "jan", "feb", etc) are translated if translation exists on i18n folders
+  # Default format is: January 2, 2006 
+  # dateFormat = "2 January 2006"
+
   # Global keywords configuration. Following keywords will be add to every pages
   # keywords = ["development", "next-gen"]
   
@@ -155,3 +162,7 @@ canonifyurls = true
     class = ""
     icon = ""
     url = "/#about"
+
+  # Customize copyright value "© 2016 <CUSTOMIZATION>. All Rights Reserved"
+  # [params.footer]
+  #   copyright = "<a href=\"https://github.com/kakawait\">kakawait</a>"

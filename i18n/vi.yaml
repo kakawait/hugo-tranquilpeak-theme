@@ -1,0 +1,181 @@
+## GLOBAL ##
+- id: "global.home"
+  translation: "Trang chủ"
+
+- id: "global.categories"
+  translation: "Danh mục"
+
+- id: "global.category"
+  translation: "Mục"
+
+- id: "global.tags"
+  translation: "Thẻ thông tin"
+
+- id: "global.tag"
+  translation: "Thẻ"
+
+- id: "global.archives"
+  translation: "Lưu trữ"
+
+- id: "global.search"
+  translation: "Tìm kiếm"
+
+- id: "global.about"
+  translation: "Thông tin"
+
+- id: "global.author_picture"
+  translation: "Ảnh đại diện của tác giả"
+
+- id: "global.github"
+  translation: "GitHub"
+
+- id: "global.stackoverflow"
+  translation: "Stack Overflow"
+
+- id: "global.twitter"
+  translation: "Twitter"
+
+- id: "global.facebook"
+  translation: "Facebook"
+
+- id: "global.google_plus"
+  translation: "Google Plus"
+
+- id: "global.linkedin"
+  translation: "LinkedIn"
+
+- id: "global.mail"
+  translation: "Thư"
+
+- id: "global.rss"
+  translation: "RSS"
+
+- id: "global.share_on_google_plus"
+  translation: "Chia sẻ với Google Plus"
+
+- id: "global.share_on_facebook"
+  translation: "Chia sẻ với Facebook"
+
+- id: "global.share_on_twitter"
+  translation: "Chia sẻ với Twitter"
+
+- id: "global.search_category"
+  translation: "Tìm kiếm danh mục"
+
+- id: "global.search_tag"
+  translation: "Tìm kiếm thẻ"
+
+- id: "global.search_date"
+  translation: "Tìm theo ngày (YYYY/MM/DD)"
+
+## GLOBAL.POST_FOUND ##
+- id: "global.posts_found.zero"
+  translation: "không tìm thấy kết quả"
+
+- id: "global.posts_found.one"
+  translation: "tìm thấy 1 kết quả "
+
+- id: "global.posts_found.other"
+  translation: "tìm thấy {n} kết quả"
+
+## GLOBAL.CATEGORIES_FOUND ##
+- id: "global.categories_found.zero"
+  translation: "không tìm thấy kết quả"
+
+- id: "global.categories_found.one"
+  translation: "tìm thấy 1 kết quả"
+
+- id: "global.categories_found.other"
+  translation: "tìm thấy {n} kết quả"
+
+## GLOBAL.TAGS_FOUND ##
+- id: "global.tags_found.zero"
+  translation: "không tìm thấy kết quả"
+
+- id: "global.tags_found.one"
+  translation: "tìm thấy 1 thẻ"
+
+- id: "global.tags_found.other"
+  translation: "tìm thấy {n} thẻ"
+
+## PAGINATION ##
+- id: "pagination.page"
+  translation: "trang thứ {{ .Paginator.PageNumber }}"
+
+- id: "pagination.of"
+  translation: "trong {{ .Paginator.TotalPages }} trang."
+
+- id: "pagination.newer_posts"
+  translation: "Trang trước"
+
+- id: "pagination.older_posts"
+  translation: "Trang sau"
+
+- id: "pagination.previous"
+  translation: "Trước"
+
+- id: "pagination.next"
+  translation: "Tiếp"
+
+## POST ##
+- id: "post.no_title"
+  translation: "Không có tiêu đề"
+
+- id: "post.categorized_in"
+  translation: "trong"
+
+- id: "post.tagged_in"
+  translation: "THẺ ĐÁNH DẤU"
+
+- id: "post.toc"
+  translation: "Phụ lục"
+
+- id: "post.read_more"
+  translation: "Đọc tiếp..."
+
+- id: "post.go_to_website"
+  translation: "Đi tới website"
+
+- id: "post.comment_and_share"
+  translation: "Comment và chia sẻ"
+
+## FOOTER ##
+- id: "footer.all_rights_reserved"
+  translation: "All Rights Reserved"
+
+## DATE ##
+- id: "date.month.january"
+  translation: "Tháng một"
+
+- id: "date.month.february"
+  translation: "Tháng hai"
+
+- id: "date.month.march"
+  translation: "Tháng ba"
+
+- id: "date.month.april"
+  translation: "Tháng tư"
+
+- id: "date.month.may"
+  translation: "Tháng năm"
+
+- id: "date.month.june"
+  translation: "Tháng sáu"
+
+- id: "date.month.july"
+  translation: "Tháng bảy"
+
+- id: "date.month.august"
+  translation: "Tháng tám"
+
+- id: "date.month.september"
+  translation: "Tháng chín"
+
+- id: "date.month.october"
+  translation: "Tháng mười"
+
+- id: "date.month.november"
+  translation: "Tháng mười một"
+
+- id: "date.month.december"
+  translation: "Tháng mười hai"

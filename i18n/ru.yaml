@@ -1,0 +1,181 @@
+## GLOBAL ##
+- id: "global.home"
+  translation: "Главная"
+
+- id: "global.categories"
+  translation: "Разделы"
+
+- id: "global.category"
+  translation: "Раздел"
+
+- id: "global.tags"
+  translation: "Теги"
+
+- id: "global.tag"
+  translation: "Тег"
+
+- id: "global.archives"
+  translation: "Архив"
+
+- id: "global.search"
+  translation: "Поиск"
+
+- id: "global.about"
+  translation: "Об авторе"
+
+- id: "global.author_picture"
+  translation: "Авторская фотография"
+
+- id: "global.github"
+  translation: "GitHub"
+
+- id: "global.stackoverflow"
+  translation: "Stack Overflow"
+
+- id: "global.twitter"
+  translation: "Twitter"
+
+- id: "global.facebook"
+  translation: "Facebook"
+
+- id: "global.google_plus"
+  translation: "Google Plus"
+
+- id: "global.linkedin"
+  translation: "LinkedIn"
+
+- id: "global.mail"
+  translation: "Mail"
+
+- id: "global.rss"
+  translation: "RSS"
+
+- id: "global.share_on_google_plus"
+  translation: "Поделиться в Google Plus"
+
+- id: "global.share_on_facebook"
+  translation: "Поделиться в Facebook"
+
+- id: "global.share_on_twitter"
+  translation: "Поделиться в Twitter"
+
+- id: "global.search_category"
+  translation: "Поиск по разделу"
+
+- id: "global.search_tag"
+  translation: "Поиск по тегу"
+
+- id: "global.search_date"
+  translation: "Поиск по дате (ГГГГ/ММ/ДД)"
+
+## GLOBAL.POST_FOUND ##
+- id: "global.posts_found.zero"
+  translation: "Статей не найдено"
+
+- id: "global.posts_found.one"
+  translation: "Найдена 1 статья"
+
+- id: "global.posts_found.other"
+  translation: "Статей найдено: {n}"
+
+## GLOBAL.CATEGORIES_FOUND ##
+- id: "global.categories_found.zero"
+  translation: "Категории не найдены"
+
+- id: "global.categories_found.one"
+  translation: "Найдена 1 категория "
+
+- id: "global.categories_found.other"
+  translation: "Категорий нашлось: {n}"
+
+## GLOBAL.TAGS_FOUND ##
+- id: "global.tags_found.zero"
+  translation: "Теги не найдены"
+
+- id: "global.tags_found.one"
+  translation: "Найден 1 тег"
+
+- id: "global.tags_found.other"
+  translation: "Тегов найдено: {n}"
+
+## PAGINATION ##
+- id: "pagination.page"
+  translation: "Страница {{ .Paginator.PageNumber }}"
+
+- id: "pagination.of"
+  translation: "из {{ .Paginator.TotalPages }}"
+
+- id: "pagination.newer_posts"
+  translation: "Новые записи"
+
+- id: "pagination.older_posts"
+  translation: "Прошлые записи"
+
+- id: "pagination.previous"
+  translation: "Пред."
+
+- id: "pagination.next"
+  translation: "След."
+
+## POST ##
+- id: "post.no_title"
+  translation: "Без названия"
+
+- id: "post.categorized_in"
+  translation: "в"
+
+- id: "post.tagged_in"
+  translation: "Теги: "
+
+- id: "post.toc"
+  translation: "Содержание"
+
+- id: "post.read_more"
+  translation: "Читать далее"
+
+- id: "post.go_to_website"
+  translation: "Перейти на сайт"
+
+- id: "post.comment_and_share"
+  translation: "Обсудить и поделиться"
+
+## FOOTER ##
+- id: "footer.all_rights_reserved"
+  translation: "All Rights Reserved"
+
+## DATE ##
+- id: "date.month.january"
+  translation: "Январь"
+
+- id: "date.month.february"
+  translation: "Февраль"
+
+- id: "date.month.march"
+  translation: "Март"
+
+- id: "date.month.april"
+  translation: "Апрель"
+
+- id: "date.month.may"
+  translation: "Май"
+
+- id: "date.month.june"
+  translation: "Июнь"
+
+- id: "date.month.july"
+  translation: "Июль"
+
+- id: "date.month.august"
+  translation: "Август"
+
+- id: "date.month.september"
+  translation: "Сентябрь"
+
+- id: "date.month.october"
+  translation: "Октябрь"
+
+- id: "date.month.november"
+  translation: "Ноябрь"
+
+- id: "date.month.december"
+  translation: "Декабрь"

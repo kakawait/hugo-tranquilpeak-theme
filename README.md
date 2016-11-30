@@ -49,7 +49,7 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 - Beautiful about page
 - Support Open Graph protocol
 - Easily customizable (fonts, colors, layout elements, code coloration, etc..)
-- Documentations
+- Support internationalization (i18)
   
 **Posts features:**  
 
@@ -72,7 +72,6 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 
 ### Missing features from original *Hexo* version
 
-- [ ] Support internationalization (i18) (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/9)
 - [ ] Duoshuo
 - [ ] Baidu analytics
 - [ ] Algolia (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8)

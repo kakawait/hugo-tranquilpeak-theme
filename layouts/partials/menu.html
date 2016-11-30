@@ -6,7 +6,8 @@
       <a class="sidebar-button-link {{ if eq .Identifier "search" }}open-algolia-search{{ end }}" href="{{ .URL }}">
     {{ end }}
       {{ .Pre }}
-      <span class="sidebar-button-desc">{{ .Name }}</span>
+      {{ $name := (i18n (printf "global.%s" .Identifier)) }}
+      <span class="sidebar-button-desc">{{ if eq (len $name) 0 }}{{ .Name }}{{ else }}{{ $name }}{{ end }}</span>
     </a>
   </li>
 {{ end }}
