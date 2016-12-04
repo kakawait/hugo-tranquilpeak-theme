@@ -1,4 +1,4 @@
-{{ if $.Site.Params.hierarchical_categories }}
+{{ if $.Site.Params.hierarchicalCategories }}
   {{ $.Scratch.Set "max-level" 0 }}
   {{ range where $.Site.Pages "Type" "post" }}
     {{ $page := . }}
@@ -51,7 +51,7 @@
               data-message-one="{{ i18n "global.categories_found.one" }}"
               data-message-other="{{ i18n "global.categories_found.other" }}"></h5>
           <section class="boxes">
-            {{ if $.Site.Params.hierarchical_categories }}
+            {{ if $.Site.Params.hierarchicalCategories }}
               {{ range $.Scratch.GetSortedMapValues "categories-level-0" }}
                 {{ $path := .path }}
                 <div>
@@ -73,7 +73,7 @@
             {{ end }}
           </section>
           <section class="boxes">
-            {{ if $.Site.Params.hierarchical_categories }}
+            {{ if $.Site.Params.hierarchicalCategories }}
               {{ range $.Scratch.GetSortedMapValues "categories-level-0" }}
                 {{ $path := .path }}
                 <div id="posts-list-{{ .name | urlize }}" class="archive box" data-category="{{ .name }}" data-parent-categories="" style="display: block;">

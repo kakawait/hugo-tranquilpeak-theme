@@ -4,13 +4,13 @@
     {{ $.Scratch.Set "isPost" true }}
   {{ end }}
 {{ end }}
-{{ if and (and ($.Scratch.Get "isPost") (lt .Site.Params.sidebar_behavior 3)) (or (and .Site.Params.clear_reading (not .Params.clearReading)) .Params.clearReading) }}
-  {{ .Scratch.Set "sidebarBehavior" (add .Site.Params.sidebar_behavior 3) }}
+{{ if and (and ($.Scratch.Get "isPost") (lt .Site.Params.sidebarBehavior 3)) (or (and .Site.Params.clearReading (not .Params.clearReading)) .Params.clearReading) }}
+  {{ .Scratch.Set "sidebarBehavior" (add .Site.Params.sidebarBehavior 3) }}
 {{ else }}
-  {{ .Scratch.Set "sidebarBehavior" .Site.Params.sidebar_behavior }}
+  {{ .Scratch.Set "sidebarBehavior" .Site.Params.sidebarBehavior }}
 {{ end }}
-{{ if .Site.Author.gravatar_email }}
-  {{ .Scratch.Set "authorPicture" (printf "//www.gravatar.com/avatar/%s" (urlize (md5 .Site.Author.gravatar_email))) }}
+{{ if .Site.Author.gravatarEmail }}
+  {{ .Scratch.Set "authorPicture" (printf "//www.gravatar.com/avatar/%s" (urlize (md5 .Site.Author.gravatarEmail))) }}
 {{ else if .Site.Author.picture }}
   {{ .Scratch.Set "authorPicture" (absURL .Site.Author.picture) }}
 {{ end }}
@@ -42,19 +42,19 @@
     {{ with .Site.Author.twitter }}
       <meta name="twitter:creator" content="@{{ . }}">
     {{ end }}
-    {{ with .Site.Params.fb_app_id }}
+    {{ with .Site.Params.fbAppId }}
       <meta property="fb:app_id" content="{{ . }}">
     {{ end }}
 
     <!-- Facebook admins -->
-    {{ with .Site.Params.fb_admin_ids }}
+    {{ with .Site.Params.fbAdminIds }}
       {{ range . }}
           <meta property="fb:admins" content="{{ . }}">
       {{ end }}
     {{ end }}
 
-    {{ if .Site.Author.gravatar_email }}
-      <meta property="og:image" content="//www.gravatar.com/avatar/{{ (md5 .Site.Author.gravatar_email) | urlize }}?s=640">
+    {{ if .Site.Author.gravatarEmail }}
+      <meta property="og:image" content="//www.gravatar.com/avatar/{{ (md5 .Site.Author.gravatarEmail) | urlize }}?s=640">
     {{ else if .Site.Author.picture }}
       <meta property="og:image" content="{{ .Site.Author.picture | absURL }}">
     {{ end }}
@@ -71,7 +71,7 @@
       {{ end }}
     {{ end }}
 
-    {{ with .Site.Author.google_plus }}
+    {{ with .Site.Author.googlePlus }}
       <link rel="publisher" href="https://plus.google.com/{{ . | urlize }}">
     {{ end }}
 

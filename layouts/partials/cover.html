@@ -1,4 +1,4 @@
-{{ with .Site.Params.cover_image }}
+{{ with .Site.Params.coverImage }}
   {{ if (in . "://") }}
     {{ $cover := . }}
     <div id="cover" style="background-image:url('{{ $cover | absURL }}');"></div>
