@@ -1,8 +1,8 @@
-{{ if .Site.Params.thumbnail_image }}
+{{ if .Site.Params.thumbnailImage }}
   {{ if .Params.thumbnailimage }}
     {{ .Scratch.Set "thumbnailImage" (.Params.thumbnailimage | absURL) }}
   {{ else }}
-    {{ if or .Params.autothumbnailimage (and .Site.Params.auto_thumbnail_image (ne .Params.autothumbnailimage false)) }}
+    {{ if or .Params.autothumbnailimage (and .Site.Params.autoThumbnailImage (ne .Params.autothumbnailimage false)) }}
       {{ if .Params.gallery }}
         {{ range first 1 .Params.gallery }}
           {{ range first 1 (split . " ") }}
@@ -43,7 +43,7 @@
       <p>
         {{ printf "%s" .Summary | markdownify }}
         <br>
-        <a href="{{ .Permalink }}" class="postShorten-excerpt_link link">Continue reading</a>
+        <a href="{{ .Permalink }}" class="postShorten-excerpt_link link">{{ i18n "post.read_more" }}</a>
         {{ with .Params.readingtime }}
           <span class="postShorten-readingtime">
             {{ printf " - %s min read" . }}

@@ -1,4 +1,4 @@
-{{ if $.Site.Params.hierarchical_categories }}
+{{ if $.Site.Params.hierarchicalCategories }}
   {{ $.Scratch.Set "max-level" 0 }}
   {{ range where $.Site.Pages "Type" "post" }}
     {{ $page := . }}
@@ -44,14 +44,14 @@
         <div id="categories-archives" class="main-content-wrap">
           <form id="filter-form" action="##">
             <input name="category" type="text" class="form-control input--xlarge"
-                   placeholder="Search category" autofocus="autofocus">
+                   placeholder="{{ i18n "global.search_category" }}" autofocus="autofocus">
           </form>
           <h5 class="archive-result text-color-base text-xlarge"
-              data-message-zero="no category found"
-              data-message-one="1 cartegory found"
-              data-message-other="{n} categories found"></h5>
+              data-message-zero="{{ i18n "global.categories_found.zero" }}"
+              data-message-one="{{ i18n "global.categories_found.one" }}"
+              data-message-other="{{ i18n "global.categories_found.other" }}"></h5>
           <section class="boxes">
-            {{ if $.Site.Params.hierarchical_categories }}
+            {{ if $.Site.Params.hierarchicalCategories }}
               {{ range $.Scratch.GetSortedMapValues "categories-level-0" }}
                 {{ $path := .path }}
                 <div>
@@ -73,7 +73,7 @@
             {{ end }}
           </section>
           <section class="boxes">
-            {{ if $.Site.Params.hierarchical_categories }}
+            {{ if $.Site.Params.hierarchicalCategories }}
               {{ range $.Scratch.GetSortedMapValues "categories-level-0" }}
                 {{ $path := .path }}
                 <div id="posts-list-{{ .name | urlize }}" class="archive box" data-category="{{ .name }}" data-parent-categories="" style="display: block;">
@@ -83,7 +83,7 @@
                   <ul class="archive-posts">
                     {{ range ($.Scratch.GetSortedMapValues $path) }}
                       <li class="archive-post">
-                        <a class="archive-post-title" href="{{ .RelPermalink }}">{{ .Title }}</a><span class="archive-post-date"> - {{ .Date.Format "Jan 1, 2006" }}</span>
+                        <a class="archive-post-title" href="{{ .RelPermalink }}">{{ .Title }}</a><span class="archive-post-date"> - {{ partial "internal/date" . }}</span>
                       </li>
                     {{ end }}
                     {{ range seq ($.Scratch.Get "max-level") }}
@@ -107,7 +107,7 @@
                       <a class="archive-post-title" href="{{ .Permalink }}">
                         {{ .Title }}
                       </a>
-                      <span class="archive-post-date"> - {{ .Date.Format "Jan 1, 2006" }}</span>
+                      <span class="archive-post-date"> - {{ partial "internal/date" . }}</span>
                     </li>
                   {{ end }}
                 </ul>

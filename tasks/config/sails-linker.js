@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         startTag: '<!--SCRIPTS-->',
         endTag: '<!--SCRIPTS END-->',
         fileRef: function(filepath) {
-          var tmpl = '<script src="%s" type="text/javascript"></script>';
+          var tmpl = '<script src="%s"></script>';
           return util.format(tmpl, filepath.substring(filepath.indexOf("/")));
         },
         appRoot: 'src/'
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
         startTag: '<!--SCRIPTS-->',
         endTag: '<!--SCRIPTS END-->',
         fileRef: function(filepath) {
-          var tmpl = '<script src="%s" type="text/javascript"></script>';
+          var tmpl = '<script src="%s"></script>';
           return util.format(tmpl, filepath.substring(filepath.indexOf("/")));
         },
         appRoot: 'src/'

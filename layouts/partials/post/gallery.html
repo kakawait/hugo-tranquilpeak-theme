@@ -1,4 +1,4 @@
-{{ if and .Site.Params.image_gallery .Params.gallery }}
+{{ if and .Site.Params.imageGallery .Params.gallery }}
   {{ $galleryLength := len .Params.gallery }}
   {{ $imageGalleryClass := "" }}
   {{ if gt $galleryLength 0 }}

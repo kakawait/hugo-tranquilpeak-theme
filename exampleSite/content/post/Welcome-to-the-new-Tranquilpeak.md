@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Tranquilpeak 0.1.4"
+title: "Welcome to Tranquilpeak 0.2.0"
 date: 2015-06-15
 categories:
 - tranquilpeak
@@ -65,7 +65,7 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 ## General
 
 - **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
-- **Version**: 0.1.4-ALPHA (based on Hexo version 1.9.1)
+- **Version**: 0.2.0-ALPHA (based on Hexo version 1.9.1)
 - **Compatibility**: Hugo v0.17
 
 ## Features
@@ -81,6 +81,7 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 - Support Open Graph protocol
 - Easily customizable (fonts, colors, layout elements, code coloration, etc..)
 - Documentations
+- Support internationalization (i18)
   
 **Posts features:**  
 
@@ -103,11 +104,10 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 
 ### Missing features from original *Hexo* version
 
-- [ ] Support internationalization (i18) (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/9)
 - [ ] Duoshuo
 - [ ] Baidu analytics
 - [ ] Algolia (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8)
-- [ ] Pagination custumization `tag_pagination`, `category_pagination` and `archive_pagination` (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17)
+- [ ] Pagination custumization `tagPagination`, `categoryPagination` and `archivePagination` (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17)
 
 **ATTENTION** following features will not be possible due to *Hugo* limitations
 

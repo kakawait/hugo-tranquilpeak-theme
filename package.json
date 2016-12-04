@@ -1,6 +1,6 @@
 {
   "name": "hugo-tranquilpeak-theme",
-  "version": "0.1.4-ALPHA",
+  "version": "0.2.0-ALPHA",
   "description": "A gorgeous responsive theme for Hugo blog framework",
   "main": "Gruntfile.js",
   "scripts": {
@@ -27,7 +27,6 @@
   },
   "homepage": "https://github.com/kakawait/hugo-tranquilpeak-theme",
   "devDependencies": {
-    "bower": "^1.3.12",
     "eslint": "^2.11.1",
     "eslint-config-google": "^0.5.0",
     "grunt": "^0.4.5",

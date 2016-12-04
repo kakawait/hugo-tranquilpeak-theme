@@ -11,12 +11,12 @@
 
         <div id="tags-archives" class="main-content-wrap">
           <form id="filter-form" action="#">
-            <input name="tag" type="text" class="form-control input--xlarge" placeholder="Search tag" autofocus="autofocus">
+            <input name="tag" type="text" class="form-control input--xlarge" placeholder="{{ i18n "global.search_tag" }}" autofocus="autofocus">
           </form>
           <h4 class="archive-result text-color-base text-xlarge"
-              data-message-zero="no tag found"
-              data-message-one="1 tag found"
-              data-message-other="{n} tags found"></h4>
+              data-message-zero="{{ i18n "global.tags_found.zero" }}"
+              data-message-one="{{ i18n "global.tags_found.one" }}"
+              data-message-other="{{ i18n "global.tags_found.other" }}"></h4>
 
             <section>
               {{ range .Data.Terms.ByCount }}
@@ -39,7 +39,7 @@
                         <a class="archive-post-title" href="{{ .Permalink }}">
                           {{ .Title }}
                         </a>
-                        <span class="archive-post-date"> - {{ .Date.Format "Jan 1, 2006" }}</span>
+                        <span class="archive-post-date"> - {{ partial "internal/date" . }}</span>
                       </li>
                     {{ end }}
                   </ul>

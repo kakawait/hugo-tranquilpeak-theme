@@ -1,11 +1,11 @@
-name = "tranquilpeak"
+name = "Tranquilpeak"
 license = "GNU General Public License v3.0"
 licenselink = "https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/LICENSE"
 description = "A gorgeous responsive theme for Hugo blog framework"
 homepage = "https://github.com/kakawait/hugo-tranquilpeak-theme"
 tags = ["blog", "minimal", "responsive", "personal", "customizable", "creative", "fontawesome", "highlight.js"]
 features = ["blog", "themes", "disqus", "minimal", "responsive", "fontawesome", "highlight.js"]
-min_version = 0.16
+min_version = 0.17
 
 [author]
   name = "Thibaud Leprêtre"

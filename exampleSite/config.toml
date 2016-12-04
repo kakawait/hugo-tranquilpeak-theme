@@ -1,5 +1,5 @@
 # Tranquilpeak
-# Version : 0.1.4-ALPHA
+# Version : 0.2.0-ALPHA
 # Author : Thibaud Leprêtre
 
 # I STRONGLY recommend you to use a CDN to speed up loading of pages.
@@ -16,10 +16,11 @@ baseurl = ""
 languageCode = "en-us"
 title = "Hugo tranquilpeak theme"
 theme = "hugo-tranquilpeak-theme"
-DisqusShortname = "hugo-tranquilpeak-theme"
+disqusShortname = "hugo-tranquilpeak-theme"
 # googleAnalytics = "UA-123-45"
-Paginate = 7
+paginate = 7
 canonifyurls = true
+defaultContentLanguage = "en-us"
 
 [permalinks]
   post = "/:year/:month/:slug/"
@@ -35,14 +36,14 @@ canonifyurls = true
   job = "Your job title"
   location = "France"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
-  gravatar_email = "thibaud.lepretre@gmail.com"
+  gravatarEmail = "thibaud.lepretre@gmail.com"
   # Your profile picture
-  # Overwritten by your gravatar image if `author.gravatar` is filled
+  # Overwritten by your gravatar image if `author.gravatarEmail` is filled
   picture = "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"
   # Your Twitter username without the @. E.g : thibaudlepretre
   # twitter = "thibaudlepretre"
   # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
-  # google_plus = "+ThibaudLepretre"
+  # googlePlus = "+ThibaudLepretre"
 
 # Menu Configuration
 [[menu.main]]
@@ -97,13 +98,21 @@ canonifyurls = true
   url = "/index.xml"
 
 [params]
+  # Customize date format use to render blog post date, categories and other
+  # You must use date format used by Go Time package https://golang.org/pkg/time/
+  # Months (not work with short month like "jan", "feb", etc) are translated if translation exists on i18n folders
+  # Default format is: January 2, 2006 
+  # dateFormat = "2 January 2006"
+
   # Global keywords configuration. Following keywords will be add to every pages
   # keywords = ["development", "next-gen"]
-  
-  # Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. (true: enable, false: disable)
-  clear_reading = true
 
-  hierarchical_categories = true
+  # Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. (true: enable, false: disable)
+  clearReading = true
+
+  # Define categories will create hierarchy between parents: `categories = ["foo", "bar"]` will consider "bar" a sub-category of "foo". 
+  # If false it will flat categories.
+  hierarchicalCategories = true
 
   description = "Hugo tranquilpeak theme demo"
 
@@ -120,7 +129,7 @@ canonifyurls = true
   #    large sidebar is swiped on all lower screens
   # 5: Display header bar on all screens and large sidebar is swiped on large screen
   # 6: Display header bar on all screens and medium sidebar is swiped
-  sidebar_behavior = 1
+  sidebarBehavior = 1
 
   # Your blog cover picture. I STRONGLY recommend you to use a CDN to speed up loading of pages.
   # There is many free CDN like Cloudinary or you can also use indirectly
@@ -128,21 +137,21 @@ canonifyurls = true
   # Current image is on AWS S3 and delivered by AWS CloudFront.
   # Otherwise put your image in folder `static/_images/` (development)  or in `source/assets/images/` if you can't or don't want to build the theme,
   # and use relative url : `your-image.png`
-  cover_image = "cover.jpg"
+  coverImage = "cover.jpg"
 
   # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
-  image_gallery = true
+  imageGallery = true
 
   # Display thumbnail image of each post on index pages (false: disabled, true: enabled)
-  thumbnail_image = true
+  thumbnailImage = true
   # Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`)
   # Set this value to `right` if you have old posts to keep the old style on them
   # and define `thumbnailImagePosition` on a post to overwrite this setting
-  thumbnail_image_position = "bottom"
+  thumbnailImagePosition = "bottom"
   # Automatically select the cover image or the first photo from the gallery of a post if there is no thumbnail image as the thumbnail image
   # Set this value to `true` if you have old posts that use the cover image or the first photo as the thumbnail image
   # and set `autoThumbnailImage` to `false` on a post to overwrite this setting
-  auto_thumbnail_image = true
+  autoThumbnailImage = true
 
   # Header configuration
   # The link at the right of the header is customizable
@@ -151,7 +160,11 @@ canonifyurls = true
   #     url: /#search
   #     icon: search
   #     class: st-search-show-outputs
-  [params.header.right_link]
+  [params.header.rightLink]
     class = ""
     icon = ""
     url = "/#about"
+
+  # Customize copyright value "© 2016 <CUSTOMIZATION>. All Rights Reserved"
+  # [params.footer]
+  #   copyright = "<a href=\"https://github.com/kakawait\">kakawait</a>"
