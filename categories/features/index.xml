@@ -2191,15 +2191,5 @@ func main() {
 &lt;p&gt;&lt;em&gt;From &lt;a href=&#34;http://lipsum.sugutsukaeru.jp/index.cgi&#34;&gt;すぐ使えるダミーテキスト - 日本語 Lorem ipsum&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
-    <item>
-      <title>Hexo website</title>
-      <link>https://tranquilpeak.kakawait.com/2012/04/hexo-website/</link>
-      <pubDate>Thu, 12 Apr 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://tranquilpeak.kakawait.com/2012/04/hexo-website/</guid>
-      <description>&lt;p&gt;This is a link post. Clicking on the link should open &lt;a href=&#34;http://www.hexo.io/&#34;&gt;Hexo&lt;/a&gt; in a new tab or window.
-&lt;/p&gt;</description>
-    </item>
-    
   </channel>
 </rss>

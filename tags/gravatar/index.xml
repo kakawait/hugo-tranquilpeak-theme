@@ -9,11 +9,11 @@
     <atom:link href="https://tranquilpeak.kakawait.com/tags/gravatar/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Welcome to Tranquilpeak 0.1.4</title>
-      <link>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.1.4/</link>
+      <title>Welcome to Tranquilpeak 0.2.0</title>
+      <link>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.2.0/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.1.4/</guid>
+      <guid>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.2.0/</guid>
       <description>&lt;p&gt;Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
 &lt;/p&gt;
 
@@ -62,7 +62,7 @@ Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Authors&lt;/strong&gt;: &lt;a href=&#34;https://github.com/LouisBarranqueiro&#34;&gt;Louis Barranqueiro (LouisBarranqueiro)&lt;/a&gt; and &lt;a href=&#34;https://github.com/kakawait&#34;&gt;Thibaud Leprêtre (kakawait)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Version&lt;/strong&gt;: 0.1.4-ALPHA (based on Hexo version 1.9.1)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Version&lt;/strong&gt;: 0.2.0-ALPHA (based on Hexo version 1.9.1)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Compatibility&lt;/strong&gt;: Hugo v0.17&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -79,7 +79,8 @@ Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many
 &lt;li&gt;Beautiful about page&lt;/li&gt;
 &lt;li&gt;Support Open Graph protocol&lt;/li&gt;
 &lt;li&gt;Easily customizable (fonts, colors, layout elements, code coloration, etc..)&lt;/li&gt;
-&lt;li&gt;Documentations
+&lt;li&gt;Documentations&lt;/li&gt;
+&lt;li&gt;Support internationalization (i18)
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -110,11 +111,10 @@ Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many
 &lt;h3 id=&#34;missing-features-from-original-hexo-version&#34;&gt;Missing features from original &lt;em&gt;Hexo&lt;/em&gt; version&lt;/h3&gt;
 
 &lt;ul class=&#34;task-list&#34;&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Support internationalization (i18) (&lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/9&#34;&gt;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/9&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Duoshuo&lt;/li&gt;
 &lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Baidu analytics&lt;/li&gt;
 &lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Algolia (&lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8&#34;&gt;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Pagination custumization &lt;code&gt;tag_pagination&lt;/code&gt;, &lt;code&gt;category_pagination&lt;/code&gt; and &lt;code&gt;archive_pagination&lt;/code&gt; (&lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17&#34;&gt;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Pagination custumization &lt;code&gt;tagPagination&lt;/code&gt;, &lt;code&gt;categoryPagination&lt;/code&gt; and &lt;code&gt;archivePagination&lt;/code&gt; (&lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17&#34;&gt;https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;ATTENTION&lt;/strong&gt; following features will not be possible due to &lt;em&gt;Hugo&lt;/em&gt; limitations&lt;/p&gt;
