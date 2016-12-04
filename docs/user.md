@@ -52,7 +52,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 ## General
 
 - **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
-- **Version**: 0.1.4-ALPHA (based on Hexo version 1.9.1)
+- **Version**: 0.2.0-ALPHA (based on Hexo version 1.9.1)
 - **Compatibility**: Hugo v0.17
 
 ## Features

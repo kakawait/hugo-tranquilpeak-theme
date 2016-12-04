@@ -2,7 +2,44 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.2.0-ALPHA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/2) - TBD
+## [0.2.0-ALPHA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/2) - 4 dec 2016
+
+- *De-bundlize* every external scripts/css ([#66](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/66)) for many reasons:
+    - To use browser cache
+    - To reduce git repo size
+    - To easily upgrade dependencies without installing dev env
+- First iteration for i18n support ([#9](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/9)), theme currently support following language:
+    - `en-us`
+    - `fr-fr`
+    - `es-es`
+    - `ja`
+    - `pt-br`
+    - `ru`
+    - `zh-cn`
+    - `zh-tw`
+    - `vi` (thank you [@Kiennh](https://github.com/Kiennh))
+    - `de-de` (thank you [@Martin1001](https://github.com/Martin1001))
+- Allow some customization on *copyright* section ([#48](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/48))
+
+using 
+
+```toml
+[params.footer]
+    copyright = ...
+```
+
+like
+
+```toml
+[params.footer]
+    copyright = "<a href=\"https://github.com/kakawait\">kakawait</a>"
+```
+
+- Add fallback to `monospace` when `Menlo` font is not installed ([#68](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/68))
+- Update fontawesome to 4.7.0 ([#58](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/58))
+- Add horizontal scrolling for scrollblock ([#71](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/71)) (thank you [@jeremywho](https://github.com/jeremywho))
+- Fix missing blog post title when using caption ([#65](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/65))
+- Fix vertical scrolling page opening on Firefox ([#69](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/69))
 
 ### Breaking changes
 
