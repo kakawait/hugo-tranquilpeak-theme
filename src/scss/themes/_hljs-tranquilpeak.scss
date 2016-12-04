@@ -5,6 +5,11 @@ pre > code {
     color:      map-get($highlight-colors, night-rider);
 }
 
+// allow for horizontal scrolling of code blocks
+pre > code.codeblock {
+    overflow-x: auto;
+}
+
 // Default inline code
 code {
     background-color: map-get($highlight, 'background');
