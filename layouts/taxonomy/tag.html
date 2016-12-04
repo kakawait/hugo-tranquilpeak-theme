@@ -3,14 +3,14 @@
     <div id="blog">
       {{ partial "header.html" . }}
       {{ partial "sidebar.html" . }}
-      {{ if or (not (isset .Site.Params "tag_pagination")) (.Site.Params.tag_pagination) }}
+      {{ if or (not (isset .Site.Params "tagPagination")) (.Site.Params.tagPagination) }}
         {{ partial "post/header-cover.html" . }}
       {{ end }}
       <div id="main" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}"
         class="{{ with .Params.coverimage }}hasCover{{ end }}
                {{ if eq .Params.covermeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
                {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
-        {{ if or (not (isset .Site.Params "tag_pagination")) (.Site.Params.tag_pagination) }}
+        {{ if or (not (isset .Site.Params "tagPagination")) (.Site.Params.tagPagination) }}
           <section class="postShorten-group main-content-wrap">
             {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
             {{ range $paginator.Pages }}
