@@ -52,7 +52,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 ## General
 
 - **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
-- **Version**: 0.1.4-ALPHA (based on Hexo version 1.9.1)
+- **Version**: 0.2.0-ALPHA (based on Hexo version 1.9.1)
 - **Compatibility**: Hugo v0.17
 
 ## Features
@@ -93,7 +93,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 - [ ] Duoshuo
 - [ ] Baidu analytics
 - [ ] Algolia (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8)
-- [ ] Pagination custumization `tag_pagination`, `category_pagination` and `archive_pagination` (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17)
+- [ ] Pagination custumization `tagPagination`, `categoryPagination` and `archivePagination` (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17)
 
 **ATTENTION** following features will not be possible due to *Hugo* limitations
 
@@ -290,7 +290,7 @@ The right link of the header is customizable. You can add a link (as an icon) at
 E.g to display a shortcut to open algolia search window :
 
 ```toml
-[params.header.right_link]
+[params.header.rightLink]
   class = "open-algolia-search"
   icon = "search"
   url = "/#search"
@@ -311,26 +311,26 @@ E.g to display a shortcut to open algolia search window :
   job = "Java backend developer"
   location = "France"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
-  gravatar_email = "thibaud.lepretre@gmail.com"
+  gravatarEmail = "thibaud.lepretre@gmail.com"
   # Your profile picture
-  # Overwritten by your gravatar image if `author.gravatar` is filled
+  # Overwritten by your gravatar image if `author.gravatarEmail` is filled
   picture = "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"
   # Your Twitter username without the @. E.g : tranquilpeak
   twitter = "thibaudlepretre"
   # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
-  google_plus = "+ThibaudLepretre"
+  googlePlus = "+ThibaudLepretre"
 ```
   
-| Variable       | Description                                                                          |
-|----------------|--------------------------------------------------------------------------------------|
-| name           | Your name                                                                            |
-| gravatar_email | This address will be used to get your gravatar image if you activate gravatar option |
-| bio            | Your biography (Markdown and HTML supported)                                         |
-| job            | Your job                                                                             |
-| location       | Your location                                                                        |
-| picture        | Your profile picture. Overwritten by your gravatar image if gravatar email is filled |
-| twitter        | Your Twitter username without the @. E.g : `thibaudlepretre`                         |
-| google_plus    | Your google plus profile id. E.g : `+ThibaudLepretre` or `114625208755123718311`     |
+| Variable        | Description                                                                          |
+|-----------------|--------------------------------------------------------------------------------------|
+| name            | Your name                                                                            |
+| gravatarEmail   | This address will be used to get your gravatar image if you activate gravatar option |
+| bio             | Your biography (Markdown and HTML supported)                                         |
+| job             | Your job                                                                             |
+| location        | Your location                                                                        |
+| picture         | Your profile picture. Overwritten by your gravatar image if gravatar email is filled |
+| twitter         | Your Twitter username without the @. E.g : `thibaudlepretre`                         |
+| googlePlus      | Your google plus profile id. E.g : `+ThibaudLepretre` or `114625208755123718311`     |
 
 #### Customization
 
@@ -338,37 +338,34 @@ E.g to display a shortcut to open algolia search window :
 
 ```toml
 [params]
-  sidebar_behavior = 1
-  thumbnail_image = true
-  thumbnail_image_position = "right"
-  auto_thumbnail_image = true
-  cover_image = "cover.jpg"
+  sidebarBehavior = 1
+  thumbnailImage = true
+  thumbnailImagePosition = "right"
+  autoThumbnailImage = true
+  coverImage = "cover.jpg"
   favicon =
-  image_gallery = true
-  archive_pagination = true
-  category_pagination = true
-  tag_pagination = true
-  hierarchical_categories = true
+  imageGallery = true
+  hierarchicalCategories = true
 ```
 
 | Variable | Description |
 |--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| sidebar_behavior | Define the behavior of the header and sidebar :<ul><li>1: Display extra large sidebar on extra large screen, large sidebar on large screen, medium sidebar on medium screen and header bar on small screen and extra large sidebar is swiped on extra large screen and large sidebar on all lower screens when open button is clicked (default)</li><li>2: Display large sidebar on extra large & large screen, medium sidebar on medium screen and header bar on small screen and large sidebar is swiped when open button is clicked</li><li>3: Display medium sidebar on large and medium screen and header bar on small screen and medium sidebar is swiped when open button is clicked</li><li>4: Display header bar on all screens, extra large sidebar is swiped on extra large screen and large sidebar is swiped on all lower screens</li><li>5: Display header bar on all screens and large sidebar is swiped on large screen</li><li>6: isplay header bar on all screens and medium sidebar is swiped</li></ul> |
-| clear_reading | Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. Useless if `sidebar_behavior` is equal to `3` or `4`. (true: enable, false: disable). Default behavior : `theme.clear_reading` value in theme configuration file. |
-| thumbnail_image | Display thumbnail image of each post on index pages |
-| thumbnail_image_position | Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`). Set this value to `right` if you have old posts to keep the old style on them and define `thumbnailImagePosition` on a post to overwrite this setting. (Default : `right`) |
-| auto_thumbnail_image | Automatically select the cover image or the first photo from the gallery of a post if there is no thumbnail image as the thumbnail image. Set this value to `true` if you have old posts that use the cover image or the first photo as the thumbnail image and set `autoThumbnailImage` to `false` on a post to overwrite this setting. (Default : `true`) |
-| cover_image | Your blog cover picture. **I STRONGLY recommend you to use a CDN to speed up loading of pages. There is many free CDN like Cloudinary or you can also use indirectly by using services like Google Photos.** |
+| sidebarBehavior | Define the behavior of the header and sidebar :<ul><li>1: Display extra large sidebar on extra large screen, large sidebar on large screen, medium sidebar on medium screen and header bar on small screen and extra large sidebar is swiped on extra large screen and large sidebar on all lower screens when open button is clicked (default)</li><li>2: Display large sidebar on extra large & large screen, medium sidebar on medium screen and header bar on small screen and large sidebar is swiped when open button is clicked</li><li>3: Display medium sidebar on large and medium screen and header bar on small screen and medium sidebar is swiped when open button is clicked</li><li>4: Display header bar on all screens, extra large sidebar is swiped on extra large screen and large sidebar is swiped on all lower screens</li><li>5: Display header bar on all screens and large sidebar is swiped on large screen</li><li>6: isplay header bar on all screens and medium sidebar is swiped</li></ul> |
+| clearReading | Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. Useless if `sidebarBehavior` is equal to `3` or `4`. (true: enable, false: disable). Default behavior : `params.clearReading` value in theme configuration file. |
+| thumbnailImage | Display thumbnail image of each post on index pages |
+| thumbnailImagePosition | Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`). Set this value to `right` if you have old posts to keep the old style on them and define `thumbnailImagePosition` on a post to overwrite this setting. (Default : `right`) |
+| autoThumbnailImage | Automatically select the cover image or the first photo from the gallery of a post if there is no thumbnail image as the thumbnail image. Set this value to `true` if you have old posts that use the cover image or the first photo as the thumbnail image and set `autoThumbnailImage` to `false` on a post to overwrite this setting. (Default : `true`) |
+| coverImage | Your blog cover picture. **I STRONGLY recommend you to use a CDN to speed up loading of pages. There is many free CDN like Cloudinary or you can also use indirectly by using services like Google Photos.** |
 | favicon | Your favicon path |
-| image_gallery | Display an image gallery at the end of a post which have `photos` variables. (false: disabled, true: enabled) |
-| hierarchical_categories | Define categories will create hierarchy between parents: `categories = ["foo", "bar"]` will consider "bar" a sub-category of "foo". If false it will flat categories. |
+| imageGallery | Display an image gallery at the end of a post which have `photos` variables. (false: disabled, true: enabled) |
+| hierarchicalCategories | Define categories will create hierarchy between parents: `categories = ["foo", "bar"]` will consider "bar" a sub-category of "foo". If false it will flat categories. |
 
 E.g :  
-A category page look like this with `hierarchical_categories = true` :  
-![hierarchical_categories true](img/with_hierarchical_categories.png)  
+A category page look like this with `hierarchicalCategories = true` :  
+![hierarchicalCategories true](img/with_hierarchical_categories.png)  
 
-The same page with `hierarchical_categories = false`:  
-![hierarchical_categories false](img/without_hierarchical_categories.png)  
+The same page with `hierarchicalCategories = false`:  
+![hierarchicalCategories false](img/without_hierarchical_categories.png)  
 
 #### Integrated services
 
@@ -379,22 +376,22 @@ googleAnalytics =
 
 ```toml
 [author]
-  gravatar_email =
+  gravatarEmail =
 ```
 
 ```toml
 [params]
-  fb_admin_ids = 
-  fb_app_id = 
+  fbAdminIds = 
+  fbAppId = 
 ```
 
 | Variable | Description |
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | disqusShortname | Your Disqus shortname. |
-| gravatar_email | Your gravatar email. Overwrite `author.picture` everywhere in the blog |
+| gravatarEmail | Your gravatar email. Overwrite `author.picture` everywhere in the blog |
 | googleAnalytics | Your Google analystics web property ID : UA-XXXXX-X |
-| fb_admin_ids | Your Facebook user ids used to connect your blog with your facebook user accounts (Facebook Insights). Separate ids with comma. E.g : `9830047,1003342`. Visit [Facebook docs](https://developers.facebook.com/docs/platforminsights/domains) for more information. |
-| fb_app_id | Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : `9841307`. Visit [Facebook docs](https://developers.facebook.com/docs/platforminsights/domains) for more information. |
+| fbAdminIds | Your Facebook user ids used to connect your blog with your facebook user accounts (Facebook Insights). Use array syntax. E.g : `[9830047, 1003342]`. Visit [Facebook docs](https://developers.facebook.com/docs/platforminsights/domains) for more information. |
+| fbAppId | Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : `9841307`. Visit [Facebook docs](https://developers.facebook.com/docs/platforminsights/domains) for more information. |
 
 ### Enable pages ###
 
@@ -488,10 +485,10 @@ comments: false
 |---|---|
 |disqusIdentifier|Define a unique string which is used to look up a page's thread in the Disqus system.|
 |keywords|Define keywords for search engines. you can also define global keywords in Hugo configuration file.|
-|clearReading|Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. Useless if `theme.sidebar_behavior` is equal to `3` or `4`. (true: enable, false: disable). Default behavior : `theme.clear_reading` value in theme configuration file.|
-|autoThumbnailImage|Automatically select the cover image or the first photo from the gallery of a post if there is no thumbnail image as the thumbnail image. `autoThumbnailImage` overwrite the setting `auto_thumbnail_image` in the theme configuration file|
+|clearReading|Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. Useless if `params.sidebarBehavior` is equal to `3` or `4`. (true: enable, false: disable). Default behavior : `params.clearReading` value in theme configuration file.|
+|autoThumbnailImage|Automatically select the cover image or the first photo from the gallery of a post if there is no thumbnail image as the thumbnail image. `autoThumbnailImage` overwrite the setting `autoThumbnailImage` in the theme configuration file|
 |thumbnailImage|Image displayed in index view.|
-|thumbnailImagePosition|Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`). `thumbnailImagePosition` overwrite the setting `thumbnail_image_position` in the theme configuration file|
+|thumbnailImagePosition|Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`). `thumbnailImagePosition` overwrite the setting `thumbnailImagePosition` in the theme configuration file|
 |metaAlignment|Meta (title, date and categories) alignment (right, left or center). Default behavior : left|
 |coverImage|Image displayed in full size at the top of your post in post view. If thumbnail image is not configured, cover image is also used as thumbnail image. Check the beautiful demo here : [Cover image demo](https://tranquilpeak.kakawait.com/2015/05/cover-image-showcase/)|
 |coverSize|`partial`: cover image take a part of the screen height (60%), `full`: cover image take the entire screen height.|
