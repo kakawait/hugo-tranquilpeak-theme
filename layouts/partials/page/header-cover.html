@@ -1,11 +1,11 @@
 {{ if .Params.coverimage }}
-  <div class="post-header-cover
+  <div class="page-header-cover
               {{ if .Params.metaalignment }}text-{{ .Params.metaalignment }}{{ else }}text-left{{ end }}
-              {{ with .Params.coversize }}post-header-cover--{{ .Params.coverimage }}{{ end }}"
+              {{ with .Params.coversize }}page-header-cover--{{ .Params.coverimage }}{{ end }}"
        style="background-image:url('{{ .Params.coverimage }}')"
        data-behavior="{{ $.Scratch.Get "sidebarBehavior" }}">
     {{ if or (eq .Params.covermeta "in") (not .Params.covermeta) }}
-      {{ partial "post/header.html" . }}
+      {{ partial "page/header.html" . }}
     {{ end }}
   </div>
 {{ end }}
