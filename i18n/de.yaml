@@ -3,10 +3,10 @@
   translation: "Home"
 
 - id: "global.categories"
-  translation: "Categories"
+  translation: "Kategorien"
 
 - id: "global.category"
-  translation: "Category"
+  translation: "Kategorie"
 
 - id: "global.tags"
   translation: "Tags"
@@ -15,16 +15,16 @@
   translation: "Tag"
 
 - id: "global.archives"
-  translation: "Archives"
+  translation: "Archiv"
 
 - id: "global.search"
-  translation: "Search"
+  translation: "Suche"
 
 - id: "global.about"
-  translation: "About"
+  translation: "Über"
 
 - id: "global.author_picture"
-  translation: "Author's picture"
+  translation: "Bild des Autors"
 
 - id: "global.github"
   translation: "GitHub"
@@ -51,119 +51,119 @@
   translation: "RSS"
 
 - id: "global.share_on_google_plus"
-  translation: "Share on Google Plus"
+  translation: "Auf Google Plus teilen"
 
 - id: "global.share_on_facebook"
-  translation: "Share on Facebook"
+  translation: "Auf Facebook teilen"
 
 - id: "global.share_on_twitter"
-  translation: "Share on Twitter"
+  translation: "Auf Twitter teilen"
 
 - id: "global.search_category"
-  translation: "Search category"
+  translation: "Suche Kategorie"
 
 - id: "global.search_tag"
-  translation: "Search tag"
+  translation: "Suche Tag"
 
 - id: "global.search_date"
-  translation: "Search date (YYYY/MM/DD)"
+  translation: "Suche Datum (YYYY/MM/DD)"
 
 ## GLOBAL.POST_FOUND ##
 - id: "global.posts_found.zero"
-  translation: "no post found"
+  translation: "kein Beitrag gefunden"
 
 - id: "global.posts_found.one"
-  translation: "1 post found"
+  translation: "1 Beitrag gefunden"
 
 - id: "global.posts_found.other"
-  translation: "{n} posts found"
+  translation: "{n} Einträge gefunden"
 
 ## GLOBAL.CATEGORIES_FOUND ##
 - id: "global.categories_found.zero"
-  translation: "no category found"
+  translation: "keine Kategorie gefunden"
 
 - id: "global.categories_found.one"
-  translation: "1 cartegory found"
+  translation: "1 Kategorie gefunden"
 
 - id: "global.categories_found.other"
-  translation: "{n} categories found"
+  translation: "{n} Kategorien gefunden"
 
 ## GLOBAL.TAGS_FOUND ##
 - id: "global.tags_found.zero"
-  translation: "no tag found"
+  translation: "kein Tag gefunden"
 
 - id: "global.tags_found.one"
-  translation: "1 tag found"
+  translation: "1 Tag gefunden"
 
 - id: "global.tags_found.other"
-  translation: "{n} tags found"
+  translation: "{n} Tags gefunden"
 
 ## PAGINATION ##
 - id: "pagination.page"
-  translation: "page {{ .Paginator.PageNumber }}"
+  translation: "Seite {{ .Paginator.PageNumber }}"
 
 - id: "pagination.of"
-  translation: "of {{ .Paginator.TotalPages }}"
+  translation: "von {{ .Paginator.TotalPages }}"
 
 - id: "pagination.newer_posts"
-  translation: "NEWER POSTS"
+  translation: "NEUERE BEITRÄGE"
 
 - id: "pagination.older_posts"
-  translation: "OLDER POSTS"
+  translation: "ÄLTERE BEITRÄGE"
 
 - id: "pagination.previous"
-  translation: "PREVIOUS"
+  translation: "VORHERIGE"
 
 - id: "pagination.next"
-  translation: "NEXT"
+  translation: "NÄCHSTE"
 
 ## POST ##
 - id: "post.no_title"
-  translation: "no title"
+  translation: "kein Titel"
 
 - id: "post.categorized_in"
   translation: "in"
 
 - id: "post.tagged_in"
-  translation: "TAGGED IN"
+  translation: "GETAGGT IN"
 
 - id: "post.toc"
-  translation: "Table of Contents"
+  translation: "Inhaltsverzeichnis"
 
 - id: "post.read_more"
-  translation: "Continue reading"
+  translation: "Weiterlesen"
 
 - id: "post.go_to_website"
-  translation: "Go to website"
+  translation: "Zur Website"
 
 - id: "post.comment_and_share"
-  translation: "Comment and share"
+  translation: "kommentieren und teilen"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"
-  translation: "All Rights Reserved"
+  translation: "Alle Rechte vorbehalten"
 
 ## DATE ##
 - id: "date.month.january"
-  translation: "January"
+  translation: "Januar"
 
 - id: "date.month.february"
-  translation: "February"
+  translation: "Februar"
 
 - id: "date.month.march"
-  translation: "March"
+  translation: "März"
 
 - id: "date.month.april"
   translation: "April"
 
 - id: "date.month.may"
-  translation: "May"
+  translation: "Mai"
 
 - id: "date.month.june"
-  translation: "June"
+  translation: "Juni"
 
 - id: "date.month.july"
-  translation: "July"
+  translation: "Juli"
 
 - id: "date.month.august"
   translation: "August"
@@ -172,10 +172,10 @@
   translation: "September"
 
 - id: "date.month.october"
-  translation: "October"
+  translation: "Oktober"
 
 - id: "date.month.november"
   translation: "November"
 
 - id: "date.month.december"
-  translation: "December"
+  translation: "Dezember"

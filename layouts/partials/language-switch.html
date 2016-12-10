@@ -1,0 +1,8 @@
+{{ range .Translations }}
+    <li class="sidebar-button">
+        <a class="sidebar-button-link " href="{{ .Permalink }}">
+            <i class="sidebar-button-icon fa fa-lg fa-language"></i>
+            <span class="sidebar-button-desc">{{ .Lang }}</span>
+        </a>
+    </li>
+{{ end}}

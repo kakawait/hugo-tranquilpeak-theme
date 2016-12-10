@@ -1,0 +1,219 @@
+.page-header {
+    .page-title {
+        margin:     0;
+        word-break: initial;
+        overflow:   hidden;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+// Cover image displayed in single page view
+// When page's `coverImage` variable is defined
+.page-header-cover {
+    display:                     table;
+    position:                    relative;
+    // Fix the cover image to the top of the page
+    top:                         0;
+    left:                        0;
+    background-size:             cover;
+    background-position:         center;
+    background-repeat:           no-repeat;
+    width:                       100%;
+    padding:                     calc(#{map-get($header, 'height')} + 30px) 0 30px 0;
+    // 100% minus header high, minus padding-top, minus padding bottom and minus 4px for perfect pixels
+    height:                      100%;
+    z-index:                     map-get($z-indexes, 'c-page-header-cover');
+    // Sidebar animation
+    // Transition style (push)
+    transition:                  transform .25s ease-in-out;
+    -webkit-transition:          -webkit-transform .25s ease-in-out;
+    // Eliminate any flickering of elements while they are in a state of being animated
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective:         1000;
+
+    .page-header {
+        display:        table-cell;
+        vertical-align: middle;
+
+        .page-title {
+            max-width:     map-get($main-content, 'max-width');
+            margin:        0 auto;
+            color:         white;
+            text-shadow:   0 2px 0 rgba(0, 0, 0, 0.9);
+            margin-bottom: 20px;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        // page meta contains page's date, page's categories and tags
+        .page-meta {
+            max-width:      map-get($main-content, 'max-width');
+            font-family:    map-get($font-families, 'page-meta');
+            font-size:      $font-size-base;
+            color:          white !important;
+            font-weight:    400;
+            letter-spacing: 0.05em;
+            text-shadow:    0 1px 0 rgba(0, 0, 0, 0.9);
+            margin:         0 auto;
+
+            a {
+                color: white;
+            }
+        }
+    }
+}
+
+// Decrease height of cover image
+.page-header-cover.page-header-cover--partial {
+    height: 60%;
+}
+
+.page-header-cover-caption {
+    margin: 5px 0 50px 0;
+}
+
+// Decrease the font size of the page's title on very small screen
+@media #{$xsmall-and-down} {
+    .page-header-cover {
+        .page-header {
+            .page-title {
+                font-size: map-get($headings-font-size, h1);
+            }
+        }
+    }
+}
+
+// Increase the font size of the page's title on small screen
+@media #{$small-only} {
+    .page-header-cover {
+        .page-header {
+            .page-title {
+                font-size: map-get($headings-font-size, h1) + 0.5rem;
+            }
+        }
+    }
+}
+
+@media #{$small-and-down} {
+    .page-header-cover {
+        // Display page header cover div in large size
+        @include page-header-cover-lg;
+
+        // Push page header cover div from the size of the large sidebar
+        &[data-behavior="1"],
+        &[data-behavior="2"],
+        &[data-behavior="4"],
+        &[data-behavior="5"] {
+            @include page-header-cover-pushed-lg;
+        }
+        // Push page header cover div from the size of the medium sidebar
+        &[data-behavior="3"],
+        &[data-behavior="6"] {
+            @include page-header-cover-pushed-md;
+        }
+    }
+}
+
+@media #{$medium-only} {
+    // Increase the font size of the page's title on medium screen
+    .page-header-cover {
+        .page-header {
+            .page-title {
+                font-size:   map-get($headings-font-size, h1) + 3rem;
+                line-height: 1.3em;
+            }
+        }
+        // Display page header cover div in medium size
+        &[data-behavior="1"],
+        &[data-behavior="2"],
+        &[data-behavior="3"] {
+            @include page-header-cover-md;
+        }
+        // Display page header cover div in large size and push it from the size of the large sidebar
+        &[data-behavior="4"],
+        &[data-behavior="5"] {
+            @include page-header-cover-lg;
+            @include page-header-cover-pushed-lg;
+        }
+        // Display page header cover div in large size and push it from the size of the medium sidebar
+        &[data-behavior="6"] {
+            @include page-header-cover-lg;
+            @include page-header-cover-pushed-md;
+        }
+    }
+}
+
+@media #{$large-only} {
+    // Increase the font size of the page's title on large screen
+    .page-header-cover {
+        .page-header {
+            .page-title {
+                font-size:   map-get($headings-font-size, h1) + 3.7rem;
+                line-height: 1.3em;
+            }
+        }
+        // Display page header cover div in small size
+        &[data-behavior="1"],
+        &[data-behavior="2"] {
+            @include page-header-cover-sm;
+        }
+        // Display page header cover div in medium size
+        &[data-behavior="3"] {
+            @include page-header-cover-md;
+        }
+        // Display page header cover div in large size and push it from the size of the large sidebar
+        &[data-behavior="4"],
+        &[data-behavior="5"] {
+            @include page-header-cover-lg;
+            @include page-header-cover-pushed-lg;
+        }
+        // Display page header cover div in large size and push it from the size of the medium sidebar
+        &[data-behavior="6"] {
+            @include page-header-cover-lg;
+            @include page-header-cover-pushed-md;
+        }
+    }
+}
+
+@media #{$xlarge-and-up} {
+    // Increase the font size of the page's title on large screen
+    .page-header-cover {
+        .page-header {
+            .page-title {
+                font-size:   map-get($headings-font-size, h1) + 3.7rem;
+                line-height: 1.3em;
+            }
+        }
+        // Display page header cover div in extra small size
+        &[data-behavior="1"] {
+            @include page-header-cover-xs;
+        }
+        // Display page header cover div in small size
+        &[data-behavior="2"] {
+            @include page-header-cover-sm;
+        }
+        // Display page header cover div in medium size
+        &[data-behavior="3"] {
+            @include page-header-cover-md;
+        }
+        // Display page header cover div in large size and push it from the size of the large sidebar
+        &[data-behavior="4"] {
+            @include page-header-cover-lg;
+            @include page-header-cover-pushed-xlg;
+        }
+        // Display page header cover div in large size and push it from the size of the extra large sidebar
+        &[data-behavior="5"] {
+            @include page-header-cover-lg;
+            @include page-header-cover-pushed-lg;
+        }
+        // Display page header cover div in large size and push it from the size of the medium sidebar
+        &[data-behavior="6"] {
+            @include page-header-cover-lg;
+            @include page-header-cover-pushed-md;
+        }
+    }
+}

@@ -20,5 +20,10 @@
     <ul class="sidebar-buttons">
       {{ partial "menu.html" (dict "menu" .Site.Menus.misc "root" $) }}
     </ul>
+    {{ if .IsTranslated }}
+      <ul class="sidebar-buttons">
+        {{ partial "language-switch.html" . }}
+      </ul>
+    {{ end }}
   </div>
 </nav>
