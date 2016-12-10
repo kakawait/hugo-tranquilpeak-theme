@@ -1,0 +1,83 @@
+.page-actions-wrap {
+    height:      60px;
+    padding:     0;
+    line-height: 60px;
+    clear:       both;
+
+    ul.page-actions {
+        float:        left;
+        padding-left: 0;
+        margin-top:   0;
+        list-style:   none;
+
+        li.page-action {
+            width:      auto;
+            text-align: center;
+        }
+    }
+    // page's navigation options
+    ul.page-action-nav {
+        // Best width for responsive page's navigation panel on small screen and up
+        width:   45%;
+        // On very small screen `.page-actions-nav` will be above `.page-actions-share`
+        z-index: map-get($z-indexes, c-page-bottom-bar) + 2;
+
+        li.page-action {
+            float:     left;
+            // Fix a bug on Firefox. the right part of button `previous` fall down without this `min-width`
+            min-width: 42px;
+
+            &:last-child {
+                .page-action-btn {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+    // page's share options
+    ul.page-action-share {
+        // 100% minus width of `.page-action-nav`,
+        // best width for responsive page's share panel on small screen and up
+        width:   55%;
+        // On very small screen `.page-actions-nav` will be above `.page-actions-share`
+        z-index: map-get($z-indexes, c-page-bottom-bar) + 1;
+
+        li.page-action {
+            float: right;
+
+            &:nth-child(n + 3) {
+                .page-action-btn {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+// Increase width of `.page-actions-share` on small screen
+@media #{$small-and-down} {
+    .page-actions-wrap {
+        ul.page-action-nav {
+            // Best width for responsive page's navigation panel on small screen
+            width: 25%;
+        }
+        ul.page-action-share {
+            // Best width for responsive page's share panel on small screen
+            width: 75%;
+        }
+    }
+}
+
+// Increase width of `.page-actions-nav` on very small screen
+@media #{$xsmall-and-down} {
+    .page-actions-wrap {
+        ul.page-action-nav {
+            // Best width for responsive page's navigation panel on very small screen
+            width: 35%;
+        }
+        ul.page-action-share {
+            // Best width for responsive page's share panel on very small screen
+            width: 65%;
+        }
+    }
+}
