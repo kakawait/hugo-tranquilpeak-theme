@@ -20,6 +20,9 @@ $font-families: (
    'post-meta':         $open-sans-sans-serif,
    'post-content':      $merriweather-serif,
    'post-excerpt-link': $open-sans-sans-serif,
+   'page-header-cover': $merriweather-serif,
+   'page-content':      $merriweather-serif,
+   'page-excerpt-link': $open-sans-sans-serif,
    'highlight':         $menlo,
    // layout
    'sidebar':           $open-sans-sans-serif
@@ -66,11 +69,13 @@ $z-indexes: (
     'l-cover':             -1,
     'l-main':              10,
     'c-post-header-cover': 15,
+    'c-page-header-cover': 15,
     'l-header':            20,
     'l-sidebar':           20,
     'l-about':             30,
     'c-mask':              30,
     'c-post-bottom-bar':   40,
+    'c-page-bottom-bar':   40,
     'c-share-options-bar': 50,
     'c-tooltip':           1000,
     'c-overlay':           1009,
