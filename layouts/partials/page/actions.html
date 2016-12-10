@@ -2,24 +2,7 @@
   <nav>
     <ul class="post-actions post-action-nav">
       <li class="post-action">
-        {{ with .Prev }}
-          <a class="post-action-btn btn btn--default tooltip--top" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}">
-        {{ else }}
-          <a class="post-action-btn btn btn--disabled">
-        {{ end }}
-          <i class="fa fa-angle-left"></i>
-          <span class="hide-xs hide-sm text-small icon-ml">{{ i18n "pagination.previous" }}</span>
-        </a>
-      </li>
-      <li class="post-action">
-        {{ with .Next }}
-          <a class="post-action-btn btn btn--default tooltip--top" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}">
-        {{ else }}
-          <a class="post-action-btn btn btn--disabled">
-        {{ end }}
-          <span class="hide-xs hide-sm text-small icon-mr">{{ i18n "pagination.next" }}</span>
-          <i class="fa fa-angle-right"></i>
-        </a>
+       &nbsp;
       </li>
     </ul>
   </nav>
@@ -42,22 +25,6 @@
     <li class="post-action hide-xs">
       <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text={{ .Permalink }}">
         <i class="fa fa-twitter"></i>
-      </a>
-    </li>
-    {{ if and (not (eq .Params.comments false)) .Site.DisqusShortname }}
-      <li class="post-action">
-        <a class="post-action-btn btn btn--default" href="#disqus_thread">
-          <i class="fa fa-comment-o"></i>
-        </a>
-      </li>
-    {{ end }}
-    <li class="post-action">
-      {{ if findRE "<!--\\s*[t|T][o|O][c|C]\\s*-->" .Content }}
-        <a class="post-action-btn btn btn--default" href="#table-of-contents">
-      {{ else }}
-        <a class="post-action-btn btn btn--default" href="#">
-      {{ end }}
-        <i class="fa fa-list"></i>
       </a>
     </li>
   </ul>
