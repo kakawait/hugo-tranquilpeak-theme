@@ -17,6 +17,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
   <head>
+    {{ partial "head_start.html" . }}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo {{ .Hugo.Version }}">
@@ -89,4 +90,5 @@
     {{ else }}
       {{ template "_internal/google_analytics.html" . }}
     {{ end }}
+    {{ partial "head_end.html" . }}
   </head>
