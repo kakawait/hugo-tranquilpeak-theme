@@ -479,6 +479,9 @@ gallery:
     - http://i.imgur.com/o9r19kD.jpg "Dubai"
     - https://example.com/orignal.jpg https://example.com/thumbnail.jpg "Sidney"
 comments: false
+showTags: true
+showPagination: true
+showSocial: true
 ```
 
 |Variable|Description|
@@ -496,6 +499,9 @@ comments: false
 |coverMeta|`in`: display post meta (title, date and categories) on cover image, `out`: display meta (title, date and categories) under cover image as usual. Default behavior : `in`|
 |gallery|Images displayed in an image gallery (with fancybox) at the end of the post. If thumbnail image is not configured and cover image too, the first photo is used as thumbnail image. format: `original url [thumbnail url] [caption]`, E.g : `https://example.com/original.jpg https://example.com/thumbnail.jpg "New York"`|
 |comments|Disable the comment of the post.
+|showTags|`true`: show tags of this page. Default behavior: `true`
+|showPagination|`true`: show pagination.  Default behavior: `true`
+|showSocial|`true`: show social button such as share on Twitter, Facebook...  Default behavior: `true`
 
 Example: 
 A post on index page will look like this with :`thumbnailImagePosition` set to `bottom`:  
