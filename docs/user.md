@@ -144,7 +144,7 @@ If your language is not available, follow this guidelines (E.g : add swedish lan
 
 1. Set `defaultContentLanguage` to `sv-se` in Hugo configuration file `config.{toml,yaml,json}`  
 2. Create `sv-se.yaml` file in `theme/tranquilpeak/i18n/` folder  
-3. Copy the content of `theme/tranquilpeak/i18n/en.yaml` and paste it to `sv-se.yml` file  
+3. Copy the content of `theme/tranquilpeak/i18n/en-us.yaml` and paste it to `sv-se.yml` file  
 4. Replace all strings in english by their translation in swedish    
 
 #### Menu translation
