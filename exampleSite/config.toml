@@ -1,5 +1,5 @@
 # Tranquilpeak
-# Version : 0.2.0-ALPHA
+# Version : 0.2.1-ALPHA
 # Author : Thibaud Leprêtre
 
 # I STRONGLY recommend you to use a CDN to speed up loading of pages.
@@ -14,13 +14,13 @@
 
 baseurl = ""
 languageCode = "en-us"
+defaultContentLanguage = "en-us"
 title = "Hugo tranquilpeak theme"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "hugo-tranquilpeak-theme"
 # googleAnalytics = "UA-123-45"
 paginate = 7
 canonifyurls = true
-defaultContentLanguage = "en-us"
 
 [permalinks]
   post = "/:year/:month/:slug/"
@@ -164,6 +164,10 @@ defaultContentLanguage = "en-us"
     class = ""
     icon = ""
     url = "/#about"
+
+  # Customize like of athor avatar in sidebar
+  # [params.sidebar.profile]
+  #   url = "/#about"
 
   # Customize copyright value "© 2016 <CUSTOMIZATION>. All Rights Reserved"
   # [params.footer]

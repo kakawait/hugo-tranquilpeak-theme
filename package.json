@@ -1,6 +1,6 @@
 {
   "name": "hugo-tranquilpeak-theme",
-  "version": "0.2.0-ALPHA",
+  "version": "0.2.1-ALPHA",
   "description": "A gorgeous responsive theme for Hugo blog framework",
   "main": "Gruntfile.js",
   "scripts": {

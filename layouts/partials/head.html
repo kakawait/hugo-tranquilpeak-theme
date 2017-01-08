@@ -9,14 +9,15 @@
 {{ else }}
   {{ .Scratch.Set "sidebarBehavior" .Site.Params.sidebarBehavior }}
 {{ end }}
-{{ if .Site.Author.gravatarEmail }}
-  {{ .Scratch.Set "authorPicture" (printf "//www.gravatar.com/avatar/%s" (urlize (md5 .Site.Author.gravatarEmail))) }}
+{{ if .Site.Author.gravataremail }}
+  {{ .Scratch.Set "authorPicture" (printf "//www.gravatar.com/avatar/%s" (urlize (md5 .Site.Author.gravataremail))) }}
 {{ else if .Site.Author.picture }}
   {{ .Scratch.Set "authorPicture" (absURL .Site.Author.picture) }}
 {{ end }}
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
   <head>
+    {{ partial "head_start.html" . }}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo {{ .Hugo.Version }}">
@@ -53,8 +54,8 @@
       {{ end }}
     {{ end }}
 
-    {{ if .Site.Author.gravatarEmail }}
-      <meta property="og:image" content="//www.gravatar.com/avatar/{{ (md5 .Site.Author.gravatarEmail) | urlize }}?s=640">
+    {{ if .Site.Author.gravataremail }}
+      <meta property="og:image" content="//www.gravatar.com/avatar/{{ (md5 .Site.Author.gravataremail) | urlize }}?s=640">
     {{ else if .Site.Author.picture }}
       <meta property="og:image" content="{{ .Site.Author.picture | absURL }}">
     {{ end }}
@@ -89,4 +90,5 @@
     {{ else }}
       {{ template "_internal/google_analytics.html" . }}
     {{ end }}
+    {{ partial "head_end.html" . }}
   </head>

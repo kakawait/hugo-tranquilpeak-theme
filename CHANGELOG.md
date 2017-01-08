@@ -2,6 +2,49 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.1-ALPHA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/10) - 8 jan 2017
+
+- Easy customization of head and foot via `/layouts/partials/(head|foot)_(start|end).html` ([#80](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/80)) (thank you [@blaubaer](https://github.com/blaubaer))
+- New front matters to hide/show pagination, social buttons and tags ([#81](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/81)) (thank you [@blaubaer](https://github.com/blaubaer))
+- Sidebar author avatar link modifiable ([#81](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/81)) (thank you [@blaubaer](https://github.com/blaubaer))
+
+```toml
+[params.sidebar.profile]
+    url = ...
+```
+
+- Alert shortcode support markdown content ([#91](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/91))
+
+```
+{{< alert info >}}
+Praesent diam elit, **interdum** ut [pulvinar](http://foo.bar) placerat, imperdiet at magna.
+{{< /alert >}}
+```
+
+- Add basic post archetype ([#76](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/76))
+- Remove `en.yaml` symlink ([#84](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/84))
+- Fix gravatar integration that was broken ([#87](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/87))
+- Fix missing css for post meta ([#89](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/89))
+- Fix front matters `coverSize` ([#93](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/93))
+
+### Breaking changes
+
+Related to [#84](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/84), language code `en` does not exist anymore.
+
+Replace if relevant
+
+```toml
+languageCode = "en"
+defaultContentLanguage = "en"
+```
+
+to
+
+```toml
+languageCode = "en-us"
+defaultContentLanguage = "en-us"
+```
+
 ## [0.2.0-ALPHA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/2) - 4 dec 2016
 
 - *De-bundlize* every external scripts/css ([#66](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/66)) for many reasons:

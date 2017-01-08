@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
   grunt.config.set('exec', {
     eslint: {
-      cmd: 'eslint .'
+      cmd: './node_modules/eslint/bin/eslint.js .'
     }
   });
 
