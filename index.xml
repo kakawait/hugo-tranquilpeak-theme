@@ -10,11 +10,11 @@
     <atom:link href="https://tranquilpeak.kakawait.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Welcome to Tranquilpeak 0.2.0</title>
-      <link>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.2.0/</link>
+      <title>Welcome to Tranquilpeak 0.2.1</title>
+      <link>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.2.1/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.2.0/</guid>
+      <guid>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.2.1/</guid>
       <description>&lt;p&gt;Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
 &lt;/p&gt;
 
@@ -63,7 +63,7 @@ Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Authors&lt;/strong&gt;: &lt;a href=&#34;https://github.com/LouisBarranqueiro&#34;&gt;Louis Barranqueiro (LouisBarranqueiro)&lt;/a&gt; and &lt;a href=&#34;https://github.com/kakawait&#34;&gt;Thibaud Leprêtre (kakawait)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Version&lt;/strong&gt;: 0.2.0-ALPHA (based on Hexo version 1.9.1)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Version&lt;/strong&gt;: 0.2.1-ALPHA (based on Hexo version 1.9.1)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Compatibility&lt;/strong&gt;: Hugo v0.17&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -604,7 +604,7 @@ genApacheConf(){
 
 &lt;h1 id=&#34;coffeescript&#34;&gt;Coffeescript&lt;/h1&gt;
 
-
+&lt;p&gt;
   
   
   
@@ -677,11 +677,11 @@ genApacheConf(){
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/figure&gt;
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;c&#34;&gt;C++&lt;/h1&gt;
 
-
+&lt;p&gt;
   
     
   
@@ -749,11 +749,11 @@ namespace foo {
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/figure&gt;
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;cshparp&#34;&gt;CShparp&lt;/h1&gt;
 
-
+&lt;p&gt;
   
     
   
@@ -810,7 +810,7 @@ async Task&amp;lt;int&amp;gt; AccessTheWebAsync()
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/figure&gt;
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;css&#34;&gt;CSS&lt;/h1&gt;
 
@@ -941,7 +941,7 @@ li[lang=ru] {
 
 &lt;h1 id=&#34;http&#34;&gt;HTTP&lt;/h1&gt;
 
-
+&lt;p&gt;
   
     
   
@@ -979,7 +979,7 @@ Content-Length: 19
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/figure&gt;
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;ini&#34;&gt;INI&lt;/h1&gt;
 
@@ -1102,7 +1102,7 @@ abstract class SomeAbstractClass {
 
 &lt;h1 id=&#34;javascript&#34;&gt;JavaScript&lt;/h1&gt;
 
-
+&lt;p&gt;
   
     
   
@@ -1150,7 +1150,7 @@ abstract class SomeAbstractClass {
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/figure&gt;
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;json&#34;&gt;JSON&lt;/h1&gt;
 
@@ -1470,7 +1470,7 @@ http {
 
 &lt;h1 id=&#34;perl&#34;&gt;Perl&lt;/h1&gt;
 
-
+&lt;p&gt;
   
     
   
@@ -1534,11 +1534,11 @@ POD till the end of file&lt;/pre&gt;
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/figure&gt;
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;php&#34;&gt;PHP&lt;/h1&gt;
 
-
+&lt;p&gt;
   
     
   
@@ -1608,11 +1608,11 @@ Label:
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/figure&gt;
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;python&#34;&gt;Python&lt;/h1&gt;
 
-
+&lt;p&gt;
   
     
   
@@ -1656,7 +1656,7 @@ class SomeClass:
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/figure&gt;
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;ruby&#34;&gt;Ruby&lt;/h1&gt;
 
@@ -1724,7 +1724,7 @@ hash = {1 =&amp;gt; &amp;#39;one&amp;#39;, 2 =&amp;gt; &amp;#39;two&amp;#39;}
 
 &lt;h1 id=&#34;sql&#34;&gt;SQL&lt;/h1&gt;
 
-
+&lt;p&gt;
   
     
   
@@ -1775,7 +1775,7 @@ COMMIT&lt;/pre&gt;
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/figure&gt;
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;html&#34;&gt;HTML&lt;/h1&gt;
 
@@ -2253,7 +2253,7 @@ func main() {
 
 &lt;h1 id=&#34;swift&#34;&gt;Swift&lt;/h1&gt;
 
-
+&lt;p&gt;
   
     
   
@@ -2296,7 +2296,7 @@ func main() {
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/figure&gt;</description>
+&lt;/figure&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -2315,27 +2315,19 @@ func main() {
 &lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#alert&#34;&gt;Alert tag&lt;/a&gt;&lt;/p&gt;
 
 &lt;div class=&#34;alert info &#34;&gt;
-  &lt;p&gt;
-Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
-&lt;/p&gt;
+  &lt;p&gt;Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;alert success &#34;&gt;
-  &lt;p&gt;
-Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
-&lt;/p&gt;
+  &lt;p&gt;Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;alert warning &#34;&gt;
-  &lt;p&gt;
-Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
-&lt;/p&gt;
+  &lt;p&gt;Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;alert danger &#34;&gt;
-  &lt;p&gt;
-Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
-&lt;/p&gt;
+  &lt;p&gt;Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h1 id=&#34;block-quote&#34;&gt;Block Quote&lt;/h1&gt;
@@ -3408,6 +3400,42 @@ li[lang=ru] {
 &lt;div class=&#34;main-content-wrap&#34;&gt;
 
 &lt;p&gt;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hidden social section showcase</title>
+      <link>https://tranquilpeak.kakawait.com/2014/08/hidden-social-section-showcase/</link>
+      <pubDate>Sun, 17 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://tranquilpeak.kakawait.com/2014/08/hidden-social-section-showcase/</guid>
+      <description>&lt;p&gt;This post is used to show how a site looks if the social section is hidden.
+&lt;/p&gt;
+
+&lt;p&gt;In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hidden tag section showcase</title>
+      <link>https://tranquilpeak.kakawait.com/2014/08/hidden-tag-section-showcase/</link>
+      <pubDate>Sat, 16 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://tranquilpeak.kakawait.com/2014/08/hidden-tag-section-showcase/</guid>
+      <description>&lt;p&gt;This post is used to show how a site looks if the tag section is hidden.
+&lt;/p&gt;
+
+&lt;p&gt;In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hidden pagination showcase</title>
+      <link>https://tranquilpeak.kakawait.com/2014/08/hidden-pagination-showcase/</link>
+      <pubDate>Fri, 15 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://tranquilpeak.kakawait.com/2014/08/hidden-pagination-showcase/</guid>
+      <description>&lt;p&gt;This post is used to show how a site looks if the pagination is hidden.
+&lt;/p&gt;
+
+&lt;p&gt;In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.&lt;/p&gt;</description>
     </item>
     
     <item>

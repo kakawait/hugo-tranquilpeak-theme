@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo tranquilpeak theme</title>
+    <title>Hexo Theme on Hugo tranquilpeak theme</title>
     <link>https://tranquilpeak.kakawait.com/tags/hexo-theme/index.xml</link>
-    <description>Recent content on Hugo tranquilpeak theme</description>
+    <description>Recent content in Hexo Theme on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="https://tranquilpeak.kakawait.com/tags/hexo-theme/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Welcome to Tranquilpeak 0.2.0</title>
-      <link>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.2.0/</link>
+      <title>Welcome to Tranquilpeak 0.2.1</title>
+      <link>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.2.1/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.2.0/</guid>
+      <guid>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.2.1/</guid>
       <description>&lt;p&gt;Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
 &lt;/p&gt;
 
@@ -62,7 +62,7 @@ Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Authors&lt;/strong&gt;: &lt;a href=&#34;https://github.com/LouisBarranqueiro&#34;&gt;Louis Barranqueiro (LouisBarranqueiro)&lt;/a&gt; and &lt;a href=&#34;https://github.com/kakawait&#34;&gt;Thibaud Leprêtre (kakawait)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Version&lt;/strong&gt;: 0.2.0-ALPHA (based on Hexo version 1.9.1)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Version&lt;/strong&gt;: 0.2.1-ALPHA (based on Hexo version 1.9.1)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Compatibility&lt;/strong&gt;: Hugo v0.17&lt;/li&gt;
 &lt;/ul&gt;
 

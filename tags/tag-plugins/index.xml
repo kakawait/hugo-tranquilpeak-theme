@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo tranquilpeak theme</title>
+    <title>Tag Plugins on Hugo tranquilpeak theme</title>
     <link>https://tranquilpeak.kakawait.com/tags/tag-plugins/index.xml</link>
-    <description>Recent content on Hugo tranquilpeak theme</description>
+    <description>Recent content in Tag Plugins on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="https://tranquilpeak.kakawait.com/tags/tag-plugins/index.xml" rel="self" type="application/rss+xml" />
@@ -24,27 +24,19 @@
 &lt;p&gt;Read documentation to know how to use &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#alert&#34;&gt;Alert tag&lt;/a&gt;&lt;/p&gt;
 
 &lt;div class=&#34;alert info &#34;&gt;
-  &lt;p&gt;
-Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
-&lt;/p&gt;
+  &lt;p&gt;Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;alert success &#34;&gt;
-  &lt;p&gt;
-Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
-&lt;/p&gt;
+  &lt;p&gt;Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;alert warning &#34;&gt;
-  &lt;p&gt;
-Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
-&lt;/p&gt;
+  &lt;p&gt;Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;alert danger &#34;&gt;
-  &lt;p&gt;
-Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
-&lt;/p&gt;
+  &lt;p&gt;Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h1 id=&#34;block-quote&#34;&gt;Block Quote&lt;/h1&gt;

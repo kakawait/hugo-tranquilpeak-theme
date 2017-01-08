@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo tranquilpeak theme</title>
+    <title>Features on Hugo tranquilpeak theme</title>
     <link>https://tranquilpeak.kakawait.com/categories/features/index.xml</link>
-    <description>Recent content on Hugo tranquilpeak theme</description>
+    <description>Recent content in Features on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="https://tranquilpeak.kakawait.com/categories/features/index.xml" rel="self" type="application/rss+xml" />
@@ -412,7 +412,7 @@ genApacheConf(){
 
 &lt;h1 id=&#34;coffeescript&#34;&gt;Coffeescript&lt;/h1&gt;
 
-
+&lt;p&gt;
   
   
   
@@ -485,11 +485,11 @@ genApacheConf(){
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/figure&gt;
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;c&#34;&gt;C++&lt;/h1&gt;
 
-
+&lt;p&gt;
   
     
   
@@ -557,11 +557,11 @@ namespace foo {
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/figure&gt;
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;cshparp&#34;&gt;CShparp&lt;/h1&gt;
 
-
+&lt;p&gt;
   
     
   
@@ -618,7 +618,7 @@ async Task&amp;lt;int&amp;gt; AccessTheWebAsync()
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/figure&gt;
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;css&#34;&gt;CSS&lt;/h1&gt;
 
@@ -749,7 +749,7 @@ li[lang=ru] {
 
 &lt;h1 id=&#34;http&#34;&gt;HTTP&lt;/h1&gt;
 
-
+&lt;p&gt;
   
     
   
@@ -787,7 +787,7 @@ Content-Length: 19
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/figure&gt;
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;ini&#34;&gt;INI&lt;/h1&gt;
 
@@ -910,7 +910,7 @@ abstract class SomeAbstractClass {
 
 &lt;h1 id=&#34;javascript&#34;&gt;JavaScript&lt;/h1&gt;
 
-
+&lt;p&gt;
   
     
   
@@ -958,7 +958,7 @@ abstract class SomeAbstractClass {
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/figure&gt;
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;json&#34;&gt;JSON&lt;/h1&gt;
 
@@ -1278,7 +1278,7 @@ http {
 
 &lt;h1 id=&#34;perl&#34;&gt;Perl&lt;/h1&gt;
 
-
+&lt;p&gt;
   
     
   
@@ -1342,11 +1342,11 @@ POD till the end of file&lt;/pre&gt;
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/figure&gt;
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;php&#34;&gt;PHP&lt;/h1&gt;
 
-
+&lt;p&gt;
   
     
   
@@ -1416,11 +1416,11 @@ Label:
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/figure&gt;
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;python&#34;&gt;Python&lt;/h1&gt;
 
-
+&lt;p&gt;
   
     
   
@@ -1464,7 +1464,7 @@ class SomeClass:
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/figure&gt;
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;ruby&#34;&gt;Ruby&lt;/h1&gt;
 
@@ -1532,7 +1532,7 @@ hash = {1 =&amp;gt; &amp;#39;one&amp;#39;, 2 =&amp;gt; &amp;#39;two&amp;#39;}
 
 &lt;h1 id=&#34;sql&#34;&gt;SQL&lt;/h1&gt;
 
-
+&lt;p&gt;
   
     
   
@@ -1583,7 +1583,7 @@ COMMIT&lt;/pre&gt;
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/figure&gt;
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;html&#34;&gt;HTML&lt;/h1&gt;
 
@@ -2061,7 +2061,7 @@ func main() {
 
 &lt;h1 id=&#34;swift&#34;&gt;Swift&lt;/h1&gt;
 
-
+&lt;p&gt;
   
     
   
@@ -2104,7 +2104,43 @@ func main() {
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/figure&gt;</description>
+&lt;/figure&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hidden social section showcase</title>
+      <link>https://tranquilpeak.kakawait.com/2014/08/hidden-social-section-showcase/</link>
+      <pubDate>Sun, 17 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://tranquilpeak.kakawait.com/2014/08/hidden-social-section-showcase/</guid>
+      <description>&lt;p&gt;This post is used to show how a site looks if the social section is hidden.
+&lt;/p&gt;
+
+&lt;p&gt;In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hidden tag section showcase</title>
+      <link>https://tranquilpeak.kakawait.com/2014/08/hidden-tag-section-showcase/</link>
+      <pubDate>Sat, 16 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://tranquilpeak.kakawait.com/2014/08/hidden-tag-section-showcase/</guid>
+      <description>&lt;p&gt;This post is used to show how a site looks if the tag section is hidden.
+&lt;/p&gt;
+
+&lt;p&gt;In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hidden pagination showcase</title>
+      <link>https://tranquilpeak.kakawait.com/2014/08/hidden-pagination-showcase/</link>
+      <pubDate>Fri, 15 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://tranquilpeak.kakawait.com/2014/08/hidden-pagination-showcase/</guid>
+      <description>&lt;p&gt;This post is used to show how a site looks if the pagination is hidden.
+&lt;/p&gt;
+
+&lt;p&gt;In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.&lt;/p&gt;</description>
     </item>
     
     <item>
