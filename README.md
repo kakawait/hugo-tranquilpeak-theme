@@ -141,6 +141,8 @@ To understand the code, the workflow and edit the theme, consult the following d
 
 All kinds of contributions (enhancements, new features, documentation & code improvements, issues & bugs reporting) are welcome.
 
+Read [guidelines for contributing](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/.github/CONTRIBUTING.md) for more information.
+
 As explained on [Credits](#credits):
 
 > *Hugo* version keeps every `.js` and `.css` files untouched from original *Hexo* version in order to enjoy futur original *Hexo* version updates or features! 
