@@ -6,7 +6,7 @@
   translation: "Categorias"
 
 - id: "global.category"
-  translation: "Category"
+  translation: "Categoria"
 
 - id: "global.tags"
   translation: "Tags"
@@ -45,19 +45,19 @@
   translation: "LinkedIn"
 
 - id: "global.mail"
-  translation: "Mail"
+  translation: "Email"
 
 - id: "global.rss"
   translation: "RSS"
 
 - id: "global.share_on_google_plus"
-  translation: "Partilhar no Google Plus"
+  translation: "Compartilhar no Google Plus"
 
 - id: "global.share_on_facebook"
-  translation: "Partilhar no Facebook"
+  translation: "Compartilhar no Facebook"
 
 - id: "global.share_on_twitter"
-  translation: "Partilhar no Twitter"
+  translation: "Compartilhar no Twitter"
 
 - id: "global.search_category"
   translation: "Pesquisar categoria"
@@ -73,30 +73,30 @@
   translation: "não foram encontrados artigos"
 
 - id: "global.post_found.one"
-  translation: "1 artigo encontrados"
+  translation: "1 artigo encontrado"
 
 - id: "global.post_found.other"
   translation: "{n} artigos encontrados"
 
 ## GLOBAL.CATEGORIES_FOUND ##
 - id: "global.categories_found.zero"
-  translation: "não foram encontrados categorias"
+  translation: "não foram encontradas categorias"
 
 - id: "global.categories_found.one"
-  translation: "1 category encontrados"
+  translation: "1 categoria encontrada"
 
 - id: "global.categories_found.other"
-  translation: "{n} categorias encontrados"
+  translation: "{n} categorias encontradas"
 
 ## GLOBAL.TAGS_FOUND ##
 - id: "global.tags_found.zero"
-  translation: "não foram encontrados tag"
+  translation: "não foram encontradas tags"
 
 - id: "global.tags_found.one"
-  translation: "1 tag encontrados"
+  translation: "1 tag encontrada"
 
 - id: "global.tags_found.other"
-  translation: "{n} tags encontrados"
+  translation: "{n} tags encontradas"
 
 ## PAGINATION ##
 - id: "pagination.page"
@@ -128,7 +128,7 @@
   translation: "ETIQUETADO em"
 
 - id: "post.toc"
-  translation: "Tabela de Conteúdos"
+  translation: "Conteúdo"
 
 - id: "post.read_more"
   translation: "Continuar leitura"
