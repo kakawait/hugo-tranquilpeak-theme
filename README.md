@@ -75,7 +75,7 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 - [ ] Duoshuo
 - [ ] Baidu analytics
 - [ ] Algolia (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8)
-- [ ] Pagination custumization `tagPagination`, `categoryPagination` and `archivePagination` (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17)
+- [ ] Pagination customization `tagPagination`, `categoryPagination` and `archivePagination` (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17)
 
 **ATTENTION** following features will not be possible due to *Hugo* limitations
 
