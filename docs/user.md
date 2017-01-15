@@ -703,7 +703,7 @@ showPagination: false
 
 ```
 
-The rest is basically the same as for a regular _[post](#writing-post)_.
+The rest is basically the same as for a regular _[post](#writing-posts)_.
 
 ## Running ##
 
