@@ -47,6 +47,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
         * [Tabbed code block](#tabbed-code-block)
         * [Wide image](#wide-image)
         * [Fancybox](#fancybox)
+- [Writing pages](#writing-pages)
 - [Running](#running)  
 
 ## General
@@ -662,6 +663,48 @@ E.g:
 |src|Path to the original image.|
 |title (optional)|Title of image displayed in a caption under image. `Alt` HTML attribute will use this title. E.g : `"A beautiful sunrise"`.| 
   
+
+## Writing pages ##
+
+Sometimes you need to create a **page** that is **not** a **regular blog post**,
+where you want to hide the date, social sharing buttons, tags, categories 
+and pagination.
+This is the case for the blog pages _About_ or _Contact_ for instance which do
+not need to be timestamped (nor tagged or categorized) nor provide 
+pagination and are not intended to be shared on social networks.
+
+In order to create such a page you can proceed like so:
+
+```
+hugo new page/contact.md
+```
+
+This creates the file `contact.md` in the directory `content/page`
+pre-populated with the following front matter.
+
+```yaml
+---
+title: "New Page"
+categories:
+- category
+- subcategory
+tags:
+- tag1
+- tag2
+keywords:
+- tech
+comments:       false
+showDate:       false
+showSocial:     false
+showTags:       false
+showPagination: false
+#thumbnailImage: //example.com/image.jpg
+---
+
+```
+
+The rest is basically the same as for a regular _[post](#writing-post)_.
+
 ## Running ##
 
 Run `hugo server` and start writing! :)
