@@ -47,6 +47,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
         * [Tabbed code block](#tabbed-code-block)
         * [Wide image](#wide-image)
         * [Fancybox](#fancybox)
+- [Writing pages](#writing-pages)
 - [Running](#running)  
 
 ## General
@@ -482,6 +483,7 @@ comments: false
 showTags: true
 showPagination: true
 showSocial: true
+showDate: true
 ```
 
 |Variable|Description|
@@ -499,6 +501,7 @@ showSocial: true
 |coverMeta|`in`: display post meta (title, date and categories) on cover image, `out`: display meta (title, date and categories) under cover image as usual. Default behavior : `in`|
 |gallery|Images displayed in an image gallery (with fancybox) at the end of the post. If thumbnail image is not configured and cover image too, the first photo is used as thumbnail image. format: `original url [thumbnail url] [caption]`, E.g : `https://example.com/original.jpg https://example.com/thumbnail.jpg "New York"`|
 |comments|Disable the comment of the post.
+|showDate|`true`: Show the date when `true` (default)|
 |showTags|`true`: show tags of this page. Default behavior: `true`
 |showPagination|`true`: show pagination.  Default behavior: `true`
 |showSocial|`true`: show social button such as share on Twitter, Facebook...  Default behavior: `true`
@@ -660,6 +663,48 @@ E.g:
 |src|Path to the original image.|
 |title (optional)|Title of image displayed in a caption under image. `Alt` HTML attribute will use this title. E.g : `"A beautiful sunrise"`.| 
   
+
+## Writing pages ##
+
+Sometimes you need to create a **page** that is **not** a **regular blog post**,
+where you want to hide the date, social sharing buttons, tags, categories 
+and pagination.
+This is the case for the blog pages _About_ or _Contact_ for instance which do
+not need to be timestamped (nor tagged or categorized) nor provide 
+pagination and are not intended to be shared on social networks.
+
+In order to create such a page you can proceed like so:
+
+```
+hugo new page/contact.md
+```
+
+This creates the file `contact.md` in the directory `content/page`
+pre-populated with the following front matter.
+
+```yaml
+---
+title: "New Page"
+categories:
+- category
+- subcategory
+tags:
+- tag1
+- tag2
+keywords:
+- tech
+comments:       false
+showDate:       false
+showSocial:     false
+showTags:       false
+showPagination: false
+#thumbnailImage: //example.com/image.jpg
+---
+
+```
+
+The rest is basically the same as for a regular _[post](#writing-posts)_.
+
 ## Running ##
 
 Run `hugo server` and start writing! :)
