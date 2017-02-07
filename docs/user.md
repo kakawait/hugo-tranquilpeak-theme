@@ -520,11 +520,11 @@ The same with : `thumbnailImagePosition` set to `left`:
 
 Use: 
 
-- `<!-- more -->` to define post excerpt and keep the post excerpt in the post content
+- `<!--more-->` to define post excerpt and keep the post excerpt in the post content
 
 ### Display table of contents
 
-As post excerpt feature enable with `<!-- more -->` comment, you can display the table of contents of a post with  `<!-- toc -->`.  Place this comment where you want to display the table of content.
+As post excerpt feature enable with `<!--more-->` comment, you can display the table of contents of a post with  `<!-- toc -->`.  Place this comment where you want to display the table of content.
   
 Here is what looks like the table of contents generated:  
 ![thumbnail-image-position-left](https://s3-ap-northeast-1.amazonaws.com/tranquilpeak-hexo-theme/docs/1.4.0/toc-400.png) 
