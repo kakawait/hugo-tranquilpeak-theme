@@ -9,8 +9,15 @@
 {{ else }}
   {{ .Scratch.Set "sidebarBehavior" .Site.Params.sidebarBehavior }}
 {{ end }}
+<!-- Fix hugo 0.17 expects ".Site.Author.gravatarEmail" whereas hugo 0.18 expects ".Site.Author.gravataremail" -->
+{{ if .Site.Author.gravatarEmail }}
+  {{ .Scratch.Set "gravatarEmail" .Site.Author.gravatarEmail }}
+{{ end }}
 {{ if .Site.Author.gravataremail }}
-  {{ .Scratch.Set "authorPicture" (printf "//www.gravatar.com/avatar/%s" (urlize (md5 .Site.Author.gravataremail))) }}
+  {{ .Scratch.Set "gravatarEmail" .Site.Author.gravataremail }}
+{{ end }}
+{{ if .Scratch.Get "gravatarEmail" }}
+  {{ .Scratch.Set "authorPicture" (printf "//www.gravatar.com/avatar/%s" (urlize (md5 (.Scratch.Get "gravatarEmail")))) }}
 {{ else if .Site.Author.picture }}
   {{ .Scratch.Set "authorPicture" (absURL .Site.Author.picture) }}
 {{ end }}
@@ -54,8 +61,8 @@
       {{ end }}
     {{ end }}
 
-    {{ if .Site.Author.gravataremail }}
-      <meta property="og:image" content="//www.gravatar.com/avatar/{{ (md5 .Site.Author.gravataremail) | urlize }}?s=640">
+    {{ if .Scratch.Get "gravatarEmail" }}
+      <meta property="og:image" content="//www.gravatar.com/avatar/{{ (md5 (.Scratch.Get "gravatarEmail")) | urlize }}?s=640">
     {{ else if .Site.Author.picture }}
       <meta property="og:image" content="{{ .Site.Author.picture | absURL }}">
     {{ end }}
