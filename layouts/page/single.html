@@ -1,0 +1,35 @@
+{{ partial "head.html" . }}
+  <body>
+    <div id="blog">
+      {{ partial "header.html" . }}
+      {{ partial "sidebar.html" . }}
+      {{ partial "page/header-cover.html" . }}
+      <div id="main" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}"
+        class="{{ with .Params.coverimage }}hasCover{{ end }}
+               {{ if eq .Params.covermeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
+               {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
+        <article class="page" itemscope itemType="http://schema.org/WebSite">
+          {{ with .Params.covercaption }}
+            <span class="page-header-cover-caption caption">{{ . | markdownify }}</span>
+          {{ end }}
+          {{ if or (not .Params.coverimage) (eq .Params.covermeta "out") }}
+            {{ partial "page/header.html" . }}
+          {{ end }}
+          <div class="page-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              {{ (replaceRE "<!--\\s*[t|T][o|O][c|C]\\s*-->" (printf "<h1 id=\"table-of-contents\">%s</h1>%s" (i18n "post.toc") .TableOfContents) .Content) | safeHTML }}
+              {{ partial "page/gallery.html" . }}
+            </div>
+          </div>
+          <div id="page-footer" class="page-footer main-content-wrap">
+            {{ partial "page/actions.html" . }}
+          </div>
+        </article>
+        {{ partial "footer.html" . }}
+      </div>
+      <div id="bottom-bar" class="page-bottom-bar" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}">
+        {{ partial "page/actions.html" . }}
+      </div>
+      {{ partial "page/share-options.html" . }}
+    </div>
+{{ partial "foot.html" . }}

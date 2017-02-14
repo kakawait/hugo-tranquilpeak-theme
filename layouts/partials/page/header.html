@@ -1,0 +1,13 @@
+<div class="page-header main-content-wrap {{ if $.Params.metaalignment }}text-{{ $.Params.metaalignment }}{{ else }}text-left{{ end }}">
+  {{ with $.Params.link }}
+    <h1 itemprop="headline"> 
+      <a class="link" href="{{ . | absURL }}" target="_blank" itemprop="url">
+        {{ $.Title }}
+      </a>
+    </h1>
+  {{ else }}
+    <h1 class="page-title" itemprop="headline">
+      {{ $.Title }}
+    </h1>
+  {{ end }}
+</div>
