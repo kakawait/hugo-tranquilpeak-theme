@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.2-ALPHA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/11) - 14 feb 2017
+
+- Page archetype ([#106](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/106)) (thank you [@ebouchut](https://github.com/ebouchut))
+- Improve documentation ([#113](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/113), [#105](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/105)) (thank you [@ebouchut](https://github.com/ebouchut))
+- Update brazilian translation ([#101](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/101)) (thank you [@italocegatta](https://github.com/italocegatta))
+
 ## [0.2.1-ALPHA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/10) - 8 jan 2017
 
 - Easy customization of head and foot via `/layouts/partials/(head|foot)_(start|end).html` ([#80](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/80)) (thank you [@blaubaer](https://github.com/blaubaer))
