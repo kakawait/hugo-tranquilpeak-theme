@@ -3,22 +3,22 @@
     <ul class="post-actions post-action-nav">
       {{ if (not (eq .Params.showPagination false)) }}
         <li class="post-action">
-          {{ with .Prev }}
+          {{ with .NextInSection }}
             <a class="post-action-btn btn btn--default tooltip--top" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}">
           {{ else }}
             <a class="post-action-btn btn btn--disabled">
           {{ end }}
             <i class="fa fa-angle-left"></i>
-            <span class="hide-xs hide-sm text-small icon-ml">{{ i18n "pagination.previous" }}</span>
+            <span class="hide-xs hide-sm text-small icon-ml">{{ i18n "pagination.next" }}</span>
           </a>
         </li>
         <li class="post-action">
-          {{ with .Next }}
+          {{ with .PrevInSection }}
             <a class="post-action-btn btn btn--default tooltip--top" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}">
           {{ else }}
             <a class="post-action-btn btn btn--disabled">
           {{ end }}
-            <span class="hide-xs hide-sm text-small icon-mr">{{ i18n "pagination.next" }}</span>
+            <span class="hide-xs hide-sm text-small icon-mr">{{ i18n "pagination.previous" }}</span>
             <i class="fa fa-angle-right"></i>
           </a>
         </li>
