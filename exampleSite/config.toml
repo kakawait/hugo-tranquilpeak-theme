@@ -172,3 +172,11 @@ canonifyurls = true
   # Customize copyright value "© 2016 <CUSTOMIZATION>. All Rights Reserved"
   # [params.footer]
   #   copyright = "<a href=\"https://github.com/kakawait\">kakawait</a>"
+  #
+  # Custom CSS. Put here your custom CSS files. They are loaded after the theme CSS;
+  # they have to be referred from static root. Example
+  # customCSS = ["css/foo.css"]
+
+  # Custom JS. Put here your custom JS files. They are loaded after the theme JS;
+  # they have to be referred from static root. Example
+  # customJS = ["js/foo.js"]

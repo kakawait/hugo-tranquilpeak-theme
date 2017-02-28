@@ -360,6 +360,8 @@ E.g to display a shortcut to open algolia search window :
 | favicon | Your favicon path |
 | imageGallery | Display an image gallery at the end of a post which have `photos` variables. (false: disabled, true: enabled) |
 | hierarchicalCategories | Define categories will create hierarchy between parents: `categories = ["foo", "bar"]` will consider "bar" a sub-category of "foo". If false it will flat categories. |
+| customCSS | Define files with css that override or extend the theme css; they are expected in `static` folder: `customCSS` = ["css/mystyles.css"]. |
+| customJS | Define files with js that override or extend the theme js; they are expected in `static` folder: `customJS` = ["js/myscripts.js"]. |
 
 E.g :  
 A category page look like this with `hierarchicalCategories = true` :  
