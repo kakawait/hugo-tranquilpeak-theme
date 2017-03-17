@@ -9,11 +9,18 @@
                {{ if eq .Params.covermeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
                {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
         <section class="postShorten-group main-content-wrap">
+        {{ if .IsHome  }}
+		   {{ range first 1 .Data.Pages }}
+				{{ .Render "home"}}
+			{{ end }}
+  		{{else}}
           {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
           {{ range $paginator.Pages }}
             {{ .Render "summary" }}
           {{ end }}
           {{ partial "pagination.html" . }}
+        {{ end }}
+
         </section>
         {{ partial "footer.html" . }}
       </div>
