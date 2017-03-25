@@ -73,6 +73,8 @@
       var current = $addproject.data('current');
       if(!current)
         return; // should not happen
+      var $btn = $addproject.find('.step-confirm button');
+      $btn.prop('disabled', true);
       $.ajax({
         type: "POST",
         url: "http://api.openassistive.org/v1/project/save",
@@ -88,7 +90,8 @@
         .fail(function($xhr) {
           $addproject.find('.step-confirm .error-msg')
             .html(ajaxFailMessage($xhr)).show();
-        });
+        })
+        .always(function(){ $btn.prop('disabled', false); });
     });
     $addproject.find('.back-btn').click(function(){$wizard.steps('previous')});
     $('#add-project-form').submit(function($evt) {
