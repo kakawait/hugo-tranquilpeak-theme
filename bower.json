@@ -1,0 +1,29 @@
+{
+  "name": "hugo-tranquilpeak-theme",
+  "description": "A gorgeous responsive theme for Hugo blog framework",
+  "main": "Gruntfile.js",
+  "authors": [
+    "Thibaud Leprêtre <thibaud.lepretre@gmail.com> (https://kakawait.com)"
+  ],
+  "license": "GPL-3.0",
+  "keywords": [
+    "hugo",
+    "blog",
+    "tranquilpeak",
+    "tranquil",
+    "peak"
+  ],
+  "homepage": "https://github.com/openassistive/hugo-tranquilpeak-theme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "parsleyjs": "^2.6.5",
+    "jquery.steps": "jquery-steps#^1.1.0"
+  }
+}
