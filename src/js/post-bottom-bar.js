@@ -45,6 +45,8 @@
      * @return {void}
      */
     swipePostBottomBar: function() {
+      if(this.$postFooter.length == 0) // skip
+        return;
       var scrollTop = $(window).scrollTop();
       var postFooterOffsetTop = this.$postFooter.offset().top;
       // show bottom bar

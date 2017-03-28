@@ -1,10 +1,37 @@
-#add-project {
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: auto;
-  margin: 0px auto;
-  max-width: 400px;
-  height: 480px;
+.add-wrapper {
+  // submit when loading
+  .state-loading {
+    -moz-transition: opacity 0.3s, max-height 0.5s;
+    -ms-transition: opacity 0.3s, max-height 0.5s;
+    -o-transition: opacity 0.3s, max-height 0.5s;
+    -webkit-transition: opacity 0.3, max-height 0.5s;
+    transition: 0.3s opacity, max-height 0.5s;
+    opacity: 1;
+    overflow: hidden;
+    max-height: 100px;
+    padding: 5px;
+  }
+  .state-loading.finished {
+    opacity: 0;
+    max-height: 0px;
+  }
+  .state-after-loading {
+    -moz-transition: max-height 0.5s;
+    -ms-transition: max-height 0.5s;
+    -o-transition: max-height 0.5s;
+    -webkit-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+    -moz-transition-delay: 0.5s;
+    -ms-transition-delay: 0.5s;
+    -o-transition-delay: 0.5s;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+    overflow: hidden;
+    max-height: 0px;
+  }
+  .state-after-loading.ready {
+    max-height: 1000px; // needs change on content change
+  }
   // bootstrap form styling start
   * {
     -webkit-box-sizing: border-box;
@@ -293,14 +320,10 @@
   .parsley-errors-list.filled {
     opacity: 1;
   }
-  // base changes
-  input.form-control {
-    border: 1px solid map-get($border-tiny-color, 'dark');
-  }
   .clearfix {
     clear: both;
   }
-  
+
   // specific changes
   .error-msg {
     margin-bottom: 5px;
@@ -310,115 +333,8 @@
       margin: 0px 5px;
     }
   }
-  .sub-head {
-    text-align: center;
-    img {
-      height: 120px;
-      width: auto;
-    }
-  }
-  .steps {
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 20px 0px 0px 0px;
-      text-align: center;
-    }
-    li {
-      .current-info {
-        display: none;
-      }
-      display: inline-block;
-      padding: 0px;
-      margin: 0px;
-      box-sizing: border-box;
-      background-color: #dadada;
-      border: 1px solid map-get($border-tiny-color, 'dark');
-      border-right-width: 0px;
-      border-left-width: 0px;
-      &.first {
-        border-left-width: 1px;
-        border-radius: 5px 0px 0px 5px;
-      }
-      &.last {
-        border-right-width: 1px;
-        border-radius: 0px 5px 5px 0px;
-      }
-      &.done {
-        background-color: #eee;
-      }
-      &.current {
-        background-color: #f5f5f5;
-      }
-      &.done:hover {
-        background-color: #fefefe;
-      }
-      a {
-        color: map-get($colors, 'base');
-        display: block;
-        padding: 10px 25px;
-        &:hover {
-          text-decoration: none
-        }
-      }
-    }
-  }
-  .fixed-wrap {
-    position: relative;
-  }
-  .finish,
-  .wizard {
-    text-align: left;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 275px;
-  }
-  .wizard .content {
-    position: relative;
-    width: 100%;
-    height: 275px;
-    margin: 0px auto;
-    margin-top: 10px;
-  }
-  .wizard .content > h4 {
-    display: none;
-  }
-  .wizard .content > section {
-    float: left;
-    height: 95%;
-    padding: 2.5%;
-    position: absolute;
-    width: 95%;
-    box-sizing: content-box;
-  }
-  .finish {
-    float: left;
-    height: 95%;
-    padding: 2.5%;
-    position: absolute;
-    width: 95%;
-    box-sizing: content-box;
-    display: none; /* wait until finish */
-    margin: 0px auto;
-    margin-top: 10px;
-  }
-  .project-url-dd,
-  .project-download-url-dd {
-    word-wrap: break-word;
-  }
-  // responsive
-  @media (max-width: 500px) {
-    & {
-      font-size: 90%;
-    }
-    .steps li a {
-      padding: 10px 10px;
-    }
-  }
-}
 
+}
 
 #add {
     display:     none;

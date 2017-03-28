@@ -1,0 +1,34 @@
+<div class="add-wrapper">
+  {{ partial "post/content.html" . }}
+  {{ with $.Site.Params.Add }}
+  <div class="state-loading">
+    <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="state-after-loading">
+    <form id="add-project-submit-form" data-done-goto="{{ .doneurl }}">
+      {{ range .fields }}
+      <div class="form-group">
+        <label for="{{ .name }}-inpf">{{ .label }}</label>
+        <input class="form-control" id="{{ .name }}-inpf" type="{{ .type }}" name="{{ .name }}" {{with .placeholder}}placeholder="{{.}}"{{end}} {{if isset . "required"|and .required }}required=""{{end}} {{ if isset . "canEdit" | and .canEdit | not }}disabled=""{{end}} />
+      </div>
+      {{ end }}
+      {{ if isset $.Site.Taxonomies "tags" }}
+      <div class="tags form-group">
+        <label for="tags-select">Tags</label>
+        
+        <select id="tags-select2" class="multiselect2 form-control" multiple="multiple" required>
+          {{ range $name, $taxonomy := $.Site.Taxonomies.tags }}
+          <option>{{ $name }}</option>
+          {{ end }}
+        </select>
+      </div>
+      {{ end }}
+      <div class="error-msg alert alert-danger" role="alert" style="display:none">
+      </div>
+      <button type="button" class="btn btn--default" data-goto="{{ .selecturl }}">Back</button>
+      <button type="submit" class="btn btn--primary">Submit</button>
+    </form>
+    {{ end }}
+  </div>
+</div>

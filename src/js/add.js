@@ -35,17 +35,19 @@
         ('<strong>' + $xhr.status + '</strong>: ' +
          $xhr.statusText);
   }
-  function resetAddForm() {
-    var $ap = $('#add-project');
-    $ap.data('current', false);
-    $ap.find('.project-url-dd').text('');
-    $ap.find('.project-title-dd').text('');
-    $ap.find('.project-download-url-dd').text('');
-    $ap.find('.error-msg').html('').hide();
-    $('#add-project-form').parsley().reset();
-    $('#add-project-form input[name=url]').val('');
-    $ap.find('.wizard').show().steps('previous');
-    $ap.find('.finish').hide();
+  function parseQueries() {
+    function _parse(s) {
+      var ret = {},
+          sa = s.split('&');
+      for(var i = 0, len = sa.length; i < len; ++i) {
+        var v = sa[i].split('=');
+        ret[decodeURIComponent(v[0])] =
+          decodeURIComponent(v.length > 1 ? v[1] : "");
+      }
+      return ret;
+    }
+    var q = window.location.search;
+    return _parse(q.length > 0 ? (q[0] == '?' ? q.substr(1) : q) : '');
   }
   // add parsley project url validator
   window.Parsley.addValidator('projectUrl', {
@@ -56,53 +58,20 @@
       en: 'Unkown url has given, Known hosts are ('+projectOrigins.join(', ')+')'
     }
   });
-  $(function() {
-    var $addproject = $('#add-project'),
-        $wizard = $addproject.find('.wizard');
-    if($addproject.length == 0)
-      return;
-    $wizard.steps({
-      headerTag: "h4",
-      bodyTag: "section",
-      transitionEffect: "slideLeft",
-      enablePagination: false,
-      titleTemplate: '#title#'
-    });
-    var parsley = $('#add-project-form').parsley();
-    $addproject.find('.save-btn').click(function(){
-      var current = $addproject.data('current');
-      if(!current)
-        return; // should not happen
-      var $btn = $addproject.find('.step-confirm button');
-      $btn.prop('disabled', true);
-      $.ajax({
-        type: "POST",
-        url: "http://api.openassistive.org/v1/project/save",
-        data: JSON.stringify(current.data),
-        contentType: "application/json; charset=utf-8",
-        dataType: "json"
-      })
-        .then(function(data) {
-          // thank you page
-          $wizard.fadeOut();
-          $addproject.find('.finish').fadeIn();
-        })
-        .fail(function($xhr) {
-          $addproject.find('.step-confirm .error-msg')
-            .html(ajaxFailMessage($xhr)).show();
-        })
-        .always(function(){ $btn.prop('disabled', false); });
-    });
-    $addproject.find('.back-btn').click(function(){$wizard.steps('previous')});
-    $('#add-project-form').submit(function($evt) {
+  function _addSelectInit() {
+    var $form = $('#add-project-select-form'),
+        $wrp = $form.parents('.add-wrapper'),
+        parsley = $form.parsley();
+    $form.submit(function($evt) {
       $evt.preventDefault();
-      $addproject.find('.error-msg').hide();
+      // [for now] check for validity of url
+      $form.find('.error-msg').hide();
       if(!parsley.validate()) {
         return;
       }
-      var $btn = $addproject.find('.step-enter button[type=submit]');
+      var $btn = $form.find('button[type=submit]');
       $btn.prop('disabled', true);
-      var url = $('#add-project-form input[name=url]').val();
+      var url = $form.find('input[name=url]').val();
       var m = parseProjectUrl(url);
       if(!m)
         return; // should not happen
@@ -113,19 +82,109 @@
         dataType: 'json'
       })
         .then(function(data) {
-          // fill confirm
-          $addproject.data('current', { m: m, url: url, data: data });
-          $addproject.find('.project-url-dd').text(url);
-          $addproject.find('.project-title-dd').text(data.title);
-          $addproject.find('.project-download-url-dd').text(data.download_url);
-          $wizard.steps('next');
+          // goto submit page
+          window.location = $form.attr('action') + '?' + $.param({
+            service: m[0],
+            id: m[1]
+          });
         })
         .fail(function($xhr) {
-          $addproject.find('.step-enter .error-msg')
-            .html(ajaxFailMessage($xhr)).show();
+          $form.find('.error-msg').html(ajaxFailMessage($xhr)).show();
         })
         .always(function(){ $btn.prop('disabled', false); });
     });
+  }
+  function _addSubmitInit() {
+    var $form = $('#add-project-submit-form'),
+        $wrp = $form.parents('.add-wrapper');
+    $form.find('.multiselect2').select2(); // should get called before parsley
+    // replace selects to display errors at bottom
+    $form.find('.multiselect2')
+      .each(function(){ $(this).parent().append(this); });
+    var $tags = $("#tags-select2"),
+        parsley = $form.parsley(), // initiate parsley
+        // load data
+        query = parseQueries(),
+        service = query.service,
+        id = query.id,
+        data;
+    function loadingFinished(success, msg) {
+      $wrp.find('.state-after-loading').addClass('ready');
+      $wrp.find('.state-loading').addClass('finished');
+      if(!success) {
+        $form.find('.error-msg').html(msg).show();
+        $form.find('button[type=submit]').prop('disabled', true);
+      }
+    }
+    function updateForm() {
+      for(var key in data) {
+        var $inp = $form.find('input,textarea,select')
+            .filter('[name="'+key+'"]');
+        if($inp.length > 0)
+          $inp.val(data[key] || '');
+      }
+    }
+    function dataWithFormInput() {
+      var d = $.extend({}, data);
+      $form.find('input,textarea,select')
+        .each(function() {
+          var $inp = $(this);
+          if($inp.prop('name'))
+            d[$inp.prop] = $inp.value;
+        });
+      d.tags = $tags.val();
+      return d;
+    }
+    if(!service || !id) {
+      loadingFinished(false, "service and id parameters are required!");
+      return;
+    }
+    $.ajax({
+      url: "http://api.openassistive.org/v1/service/"+
+        encodeURIComponent(service)+"/project?id="+encodeURIComponent(id),
+      dataType: 'json'
+    })
+      .then(function(_data) {
+        loadingFinished(true);
+        data = _data;
+        updateForm()
+      })
+      .fail(function($xhr) {
+        loadingFinished(false, ajaxFailMessage($xhr));
+      });
+    $form.submit(function($evt) {
+      $evt.preventDefault();
+      $form.find('.error-msg').hide();
+      if(!parsley.validate()) {
+        return;
+      }
+      var $btn = $form.find('button[type=submit]');
+      $btn.prop('disabled', true);
+      $.ajax({
+        type: "POST",
+        url: "http://api.openassistive.org/v1/project/save",
+        data: JSON.stringify(dataWithFormInput()),
+        contentType: "application/json; charset=utf-8",
+        dataType: "json"
+      })
+        .then(function(data) {
+          // thank you page
+          window.location = $form.data('done-goto');
+        })
+        .fail(function($xhr) {
+          $form.find('.error-msg').html(ajaxFailMessage($xhr)).show();
+        })
+        .always(function(){ $btn.prop('disabled', false); });
+    });
+    $form.find('.back-btn').click(function(){
+      window.location = $(this).data('goto');
+    });
+  }
+  $(function() {
+    if($('#add-project-select-form').length > 0)
+      _addSelectInit()
+    if($('#add-project-submit-form').length > 0)
+      _addSubmitInit();
   });
 
   

@@ -1,0 +1,31 @@
+{{ partial "head.html" . }}
+  <body>
+    <div id="blog">
+      {{ partial "header.html" . }}
+      {{ partial "sidebar.html" . }}
+      {{ partial "post/header-cover.html" . }}
+      <div id="main" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}"
+        class="{{ with .Params.coverimage }}hasCover{{ end }}
+               {{ if eq .Params.covermeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
+               {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
+        <section class="postShorten-group main-content-wrap">
+          {{ if or (not .Params.coverimage) (eq .Params.covermeta "out") }}
+            {{ partial "post/header.html" . }}
+          {{ end }}
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              {{ if isset .Params "subview" }}
+                {{ partial (printf "add/%s.html" .Params.subview) . }}
+              {{ else }}
+                {{ partial "post/content.html" . }}
+              {{ end }}
+            </div>
+          </div>
+        </section>
+        {{ partial "footer.html" . }}
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}">
+      </div>
+      {{ partial "post/share-options.html" . }}
+    </div>
+{{ partial "foot.html" . }}

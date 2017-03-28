@@ -1,0 +1,14 @@
+<div class="add-wrapper">
+  {{ partial "post/content.html" . }}
+  {{ with $.Site.Params.Add }}
+  <form id="add-project-select-form" data-parsley-validate="" method="GET" action="{{ .submiturl }}">
+    <div class="form-group">
+      <label for="add-form-url">URL</label>
+      <input class="form-control" id="add-form-url" type="url" name="url" placeholder="URL of your project" required="" data-parsley-project-url />
+    </div>
+    <div class="error-msg alert alert-danger" role="alert" style="display:none">
+    </div>
+    <button type="submit" class="btn btn--primary">Select</button>
+  </form>
+  {{ end }}
+</div>
