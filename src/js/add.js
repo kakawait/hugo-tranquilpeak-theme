@@ -77,7 +77,7 @@
         return; // should not happen
       // GET request
       $.ajax({
-        url: "http://api.openassistive.org/v1/service/"+
+        url: "//api.openassistive.org/v1/service/"+
              encodeURIComponent(m[0])+"/project?id="+encodeURIComponent(m[1]),
         dataType: 'json'
       })
@@ -140,7 +140,7 @@
       return;
     }
     $.ajax({
-      url: "http://api.openassistive.org/v1/service/"+
+      url: "//api.openassistive.org/v1/service/"+
         encodeURIComponent(service)+"/project?id="+encodeURIComponent(id),
       dataType: 'json'
     })
@@ -162,7 +162,7 @@
       $btn.prop('disabled', true);
       $.ajax({
         type: "POST",
-        url: "http://api.openassistive.org/v1/project/save",
+        url: "//api.openassistive.org/v1/project/save",
         data: JSON.stringify(dataWithFormInput()),
         contentType: "application/json; charset=utf-8",
         dataType: "json"
