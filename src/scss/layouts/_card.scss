@@ -1,0 +1,76 @@
+.card-wrapper {
+    display:     none;
+    position:    fixed;
+    top:         0;
+    left:        0;
+    width:       100%;
+    height:      100%;
+    background:  map-get($card, background);
+    text-align:  center;
+    line-height: 100%;
+    overflow-y:  auto;
+    overflow-x:  hidden;
+    z-index:     map-get($z-indexes, l-card);
+
+    > .card {
+        position:      relative;
+        // Position the card out the page to improve the javascript drop effect
+        top:           -1000px;
+        display:       block;
+        background:    white;
+        max-width:     400px;
+        margin:        15px auto;
+        border-radius: 3px;
+        padding:       30px 0;
+        @include prefix(box-shadow, 0 0 5px rgba(0, 0, 0, 0.50), 'webkit' 'moz');
+
+        .close-btn {
+            position: absolute;
+            top:      15px;
+            right:    15px;
+            color:    map-get($colors, light);
+            cursor:   pointer;
+
+            &:hover {
+                color: darken(map-get($colors, light), 15);
+            }
+        }
+        .card-picture {
+            margin-bottom: 15px;
+        }
+        
+        .card-name {
+            margin-top:    0;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+// Improve responsiveness of about card on small screen and down
+@media #{$small-and-down} {
+    .card-wrapper {
+        > .card {
+            width: 90%;
+            
+            .card-picture {
+                width:         90px;
+                height:        90px;
+                border-radius: 45px;
+            }
+        }
+    }
+}
+
+// Improve responsiveness of about card on medium screen and up
+@media #{$medium-and-up} {
+    .card-wrapper {
+        > .card {
+            width: 80%;
+            .card-picture {
+                width:         110px;
+                height:        110px;
+                border-radius: 55px;
+            }
+        }
+    }
+}

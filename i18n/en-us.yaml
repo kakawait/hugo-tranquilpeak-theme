@@ -179,3 +179,29 @@
 
 - id: "date.month.december"
   translation: "December"
+
+## CONTACT ##
+
+- id: "contact.label"
+  translation: "Contact Us"
+
+- id: "contact.name_label"
+  translation: "Name"
+
+- id: "contact.name_placeholder"
+  translation: "Your name"
+
+- id: "contact.email_label"
+  translation: "Email"
+  
+- id: "contact.email_placeholder"
+  translation: "Your email"
+  
+- id: "contact.message_label"
+  translation: "Message"
+
+- id: "contact.message_placeholder"
+  translation: "Wirte a message"
+  
+- id: "contact.send"
+  translation: "SEND"

@@ -72,7 +72,7 @@ $z-indexes: (
     'c-post-header-cover': 15,
     'l-header':            20,
     'l-sidebar':           20,
-    'l-about':             30,
+    'l-card':             30,
     'c-mask':              30,
     'c-post-bottom-bar':   40,
     'c-share-options-bar': 50,
@@ -136,11 +136,7 @@ $headings-font-size-md-screen-reduction-factor: 0.15rem;
 // --------------------------------------------
 
 // Main
-$about: (
-    'background': rgba(17, 26, 35, 0),
-);
-
-$add: (
+$card: (
     'background': rgba(17, 26, 35, 0),
 );
 

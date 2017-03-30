@@ -1,0 +1,29 @@
+<div id="contact" class="card-wrapper">
+  <div class="card">
+    <div class="close-btn">
+      <i class="fa fa-remove"></i>
+    </div>
+    {{ with $.Site.Params.Contact }}
+    {{ with .card_picture }}
+      <img class="card-picture" src="{{ . }}{{ if in . "//www.gravatar.com/avatar/" }}?s=110{{ end }}" alt="{{ i18n "contact.label" }}" />
+    {{ end }}
+      <h4 class="card-name">{{ i18n "contact.label" }}</h4>
+      <form action="https://formspree.io/{{ .formspree_email }}"
+            method="POST" class="bootstrap-form-wrapper contact-form">
+        <div class="form-group">
+          <label for="contact-name-inp">{{ i18n "contact.name_label" }}</label>
+          <input id="contact-name-inp" class="form-control" type="text" name="name" placeholder="{{ i18n "contact.name_placeholder" }}" />
+        </div>
+        <div class="form-group">
+          <label for="contact-email-inp">{{ i18n "contact.email_label" }}</label>
+          <input id="contact-email-inp" class="form-control" type="email" name="_replyto" placeholder="{{ i18n "contact.email_placeholder" }}" />
+        </div>
+        <div class="form-group">
+          <label for="contact-message-inp">{{ i18n "contact.message_label" }}</label>
+          <textarea id="contact-message-inp" class="form-control" placeholder="{{ i18n "contact.message_placeholder" }}" name="message"></textarea>
+        </div>
+        <button class="btn btn--primary" type="submit">{{ i18n "contact.send" }}</button>
+      </form> 
+    {{ end }}  
+  </div>
+</div>

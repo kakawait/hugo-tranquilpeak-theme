@@ -1,10 +1,10 @@
-<div id="about">
-  <div id="about-card">
-    <div id="about-btn-close">
+<div id="about" class="card-wrapper">
+  <div class="card">
+    <div class="close-btn">
       <i class="fa fa-remove"></i>
     </div>
     {{ with ($.Scratch.Get "authorPicture") }}
-      <img id="about-card-picture" src="{{ . }}{{ if in . "//www.gravatar.com/avatar/" }}?s=110{{ end }}" alt="{{ i18n "global.author_picture" }}" />
+      <img class="card-picture" src="{{ . }}{{ if in . "//www.gravatar.com/avatar/" }}?s=110{{ end }}" alt="{{ i18n "global.author_picture" }}" />
     {{ end }}
     <h4 id="about-card-name">{{ .Site.Author.name }}</h4>
     {{ with .Site.Author.bio }}

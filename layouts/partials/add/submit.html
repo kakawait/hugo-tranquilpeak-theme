@@ -1,4 +1,4 @@
-<div class="add-wrapper">
+<div class="add-wrapper bootstrap-form-wrapper">
   {{ partial "post/content.html" . }}
   {{ with $.Site.Params.Add }}
   <div class="state-loading">
@@ -6,11 +6,11 @@
     <span class="sr-only">Loading...</span>
   </div>
   <div class="state-after-loading">
-    <form id="add-project-submit-form" data-done-goto="{{ .doneurl }}">
+    <form id="add-project-submit-form" data-done-goto="{{ .done_url }}">
       {{ range .fields }}
       <div class="form-group">
         <label for="{{ .name }}-inpf">{{ .label }}</label>
-        <input class="form-control" id="{{ .name }}-inpf" type="{{ .type }}" name="{{ .name }}" {{with .placeholder}}placeholder="{{.}}"{{end}} {{if isset . "required"|and .required }}required=""{{end}} {{ if isset . "canEdit" | and .canEdit | not }}disabled=""{{end}} />
+        <input class="form-control" id="{{ .name }}-inpf" type="{{ .type }}" name="{{ .name }}" {{with .placeholder}}placeholder="{{.}}"{{end}} {{if isset . "required"|and .required }}required=""{{end}} {{ if isset . "can_edit" | and .can_edit | not }}disabled=""{{end}} />
       </div>
       {{ end }}
       {{ if isset $.Site.Taxonomies "tags" }}
@@ -26,7 +26,7 @@
       {{ end }}
       <div class="error-msg alert alert-danger" role="alert" style="display:none">
       </div>
-      <button type="button" class="btn btn--default" data-goto="{{ .selecturl }}">Back</button>
+      <button type="button" class="btn btn--default" data-goto="{{ .select_url }}">Back</button>
       <button type="submit" class="btn btn--primary">Submit</button>
     </form>
     {{ end }}

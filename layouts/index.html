@@ -10,7 +10,7 @@
                {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
         <section class="postShorten-group main-content-wrap">
         {{ if .IsHome  }}
-		   {{ range first 1 .Data.Pages }}
+		   {{ range first 1 (where .Data.Pages "Type" "post") }}
 				{{ .Render "home"}}
 			{{ end }}
   		{{else}}
