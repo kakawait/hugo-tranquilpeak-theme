@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Tranquilpeak 0.2.3-ALPHA
+title: "Welcome to Tranquilpeak 0.2.3-ALPHA"
 date: 2015-06-15
 categories:
 - tranquilpeak
