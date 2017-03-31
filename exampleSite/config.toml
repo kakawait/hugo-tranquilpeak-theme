@@ -153,6 +153,9 @@ canonifyurls = true
   # and set `autoThumbnailImage` to `false` on a post to overwrite this setting
   autoThumbnailImage = true
 
+  # Your favicon path, default is "/favicon.png"
+  # favicon = "/favicon.png"
+
   # Header configuration
   # The link at the right of the header is customizable
   # You can add a link (as an icon) at the right of the header instead of the author's gravatar image or author's picture.

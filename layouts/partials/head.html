@@ -32,7 +32,7 @@
     <meta name="author" content="{{ .Site.Author.name }}">
     <meta name="keywords" content="{{ with .Keywords }}{{ delimit . ", " }}{{ end }}{{ if .Site.Params.keywords }}, {{ delimit .Site.Params.keywords ", " }}{{ end }}">
 
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="{{ with .Site.Params.favicon }}{{ . }}{{ else }}/favicon.png{{ end }}">
     {{ with .RSSLink }}
       <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ . }}">
     {{ end }}
