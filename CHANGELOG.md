@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.3-ALPHA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/12) - 31 mar 2017
+
+- CSS and JS imports customization ([#120](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/120)) (thank you [#yamila-moreno](https://github.com/yamila-moreno))
+
+two news settings:
+
+```toml
+customCSS = ["css/foo.css"]
+customJS = ["js/foo.js"]
+```
+
+That allow you to inject your own `CSS` or `JS`
+
+- Fix nav since Hugo 0.18 ([#119](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/119), [#122](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/122))
+- Change _Next_ and _Previous_ behavior ([#118](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/118), [#122](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/122))
+
+### Breaking changes
+
+Related to new _Next_ and _Previous_ behavior [#118](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/118), nav is now working like following
+
+Next -> Newer post
+Previous -> Older post
+
 ## [0.2.2-ALPHA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/11) - 14 feb 2017
 
 - Page archetype ([#106](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/106)) (thank you [@ebouchut](https://github.com/ebouchut))
