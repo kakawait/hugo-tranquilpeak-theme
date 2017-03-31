@@ -68,3 +68,10 @@ $(document).ready(function() {
     </script>
   {{ end }}
 {{ end }}
+<<<<<<< HEAD
+=======
+
+{{ range .Site.Params.customJS }}
+   <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+{{ end }}
+>>>>>>> kakawait/master
