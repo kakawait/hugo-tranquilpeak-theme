@@ -344,7 +344,7 @@ E.g to display a shortcut to open algolia search window :
   thumbnailImagePosition = "right"
   autoThumbnailImage = true
   coverImage = "cover.jpg"
-  favicon =
+  favicon = /favicon.png
   imageGallery = true
   hierarchicalCategories = true
 ```
@@ -354,10 +354,10 @@ E.g to display a shortcut to open algolia search window :
 | sidebarBehavior | Define the behavior of the header and sidebar :<ul><li>1: Display extra large sidebar on extra large screen, large sidebar on large screen, medium sidebar on medium screen and header bar on small screen and extra large sidebar is swiped on extra large screen and large sidebar on all lower screens when open button is clicked (default)</li><li>2: Display large sidebar on extra large & large screen, medium sidebar on medium screen and header bar on small screen and large sidebar is swiped when open button is clicked</li><li>3: Display medium sidebar on large and medium screen and header bar on small screen and medium sidebar is swiped when open button is clicked</li><li>4: Display header bar on all screens, extra large sidebar is swiped on extra large screen and large sidebar is swiped on all lower screens</li><li>5: Display header bar on all screens and large sidebar is swiped on large screen</li><li>6: isplay header bar on all screens and medium sidebar is swiped</li></ul> |
 | clearReading | Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. Useless if `sidebarBehavior` is equal to `3` or `4`. (true: enable, false: disable). Default behavior : `params.clearReading` value in theme configuration file. |
 | thumbnailImage | Display thumbnail image of each post on index pages |
-| thumbnailImagePosition | Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`). Set this value to `right` if you have old posts to keep the old style on them and define `thumbnailImagePosition` on a post to overwrite this setting. (Default : `right`) |
+| thumbnailImagePosition | Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`). Set this value to `right` if you have old posts to keep the old style on them and define `thumbnailImagePosition` on a post to overwrite this setting. (Default: `right`) |
 | autoThumbnailImage | Automatically select the cover image or the first photo from the gallery of a post if there is no thumbnail image as the thumbnail image. Set this value to `true` if you have old posts that use the cover image or the first photo as the thumbnail image and set `autoThumbnailImage` to `false` on a post to overwrite this setting. (Default : `true`) |
 | coverImage | Your blog cover picture. **I STRONGLY recommend you to use a CDN to speed up loading of pages. There is many free CDN like Cloudinary or you can also use indirectly by using services like Google Photos.** |
-| favicon | Your favicon path |
+| favicon | Your favicon path (Default: `/favicon.png`) |
 | imageGallery | Display an image gallery at the end of a post which have `photos` variables. (false: disabled, true: enabled) |
 | hierarchicalCategories | Define categories will create hierarchy between parents: `categories = ["foo", "bar"]` will consider "bar" a sub-category of "foo". If false it will flat categories. |
 | customCSS | Define files with css that override or extend the theme css; they are expected in `static` folder: `customCSS` = ["css/mystyles.css"]. |
