@@ -1,0 +1,54 @@
+.item-with-extra {
+  .main-content-wrap { 
+    width: map-get($main-content, max-width) + map-get($item-content, extra-width-lg);
+    max-width: inherit;
+  }
+  .item-content {
+    margin-right: map-get($item-content, extra-width-lg);
+  }
+  .item-extra {
+    width: map-get($item-content, extra-width-lg);
+    float: right;
+    .item-image {
+      text-align: center;
+      padding: 5px;
+      img {
+        display: inline-block;
+        max-width: 100%;
+        width: auto;
+      }
+    }
+    .item-download {
+      padding: 5px;
+      a {
+        text-align: center;
+        display: block;
+        padding: 5px 15px;
+      }
+    }
+  }
+  @media (max-width: map-get($main-content, max-width) +
+                     map-get($item-content, extra-width-lg) + 70px) {
+    // put it in ease with 70px offset
+    .main-content-wrap {
+      width: auto;
+      max-width: map-get($main-content, max-width);
+    }
+    .item-content {
+      margin-right: 0px;
+    }
+    .item-extra {
+      float: none;
+      width: auto;
+      .item-image {
+        text-align: center;
+      }
+      .item-download {
+        padding: 0px;
+        a {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
