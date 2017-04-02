@@ -28,8 +28,8 @@
     }
   }
   @media (max-width: map-get($main-content, max-width) +
-                     map-get($item-content, extra-width-lg) + 70px) {
-    // put it in ease with 70px offset
+                     map-get($item-content, extra-width-lg) + 320px) {
+    // 320px for left menu and some extra offset
     .main-content-wrap {
       width: auto;
       max-width: map-get($main-content, max-width);
