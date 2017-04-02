@@ -8,10 +8,21 @@
   <div class="state-after-loading">
     <form id="add-project-submit-form" data-done-goto="{{ .done_url }}">
       {{ range .fields }}
-      <div class="form-group">
-        <label for="{{ .name }}-inpf">{{ .label }}</label>
-        <input class="form-control" id="{{ .name }}-inpf" type="{{ .type }}" name="{{ .name }}" {{with .placeholder}}placeholder="{{.}}"{{end}} {{if isset . "required"|and .required }}required=""{{end}} {{ if isset . "can_edit" | and .can_edit | not }}disabled=""{{end}} />
-      </div>
+        {{ if eq .type "select" }}
+        <div class="form-group">
+          <label for="{{ .name }}-inpf">{{ .label }}</label>
+          <select class="form-control" id="{{ .name }}-inpf" name="{{ .name }}" {{with .placeholder}}placeholder="{{.}}"{{end}} {{if isset . "required"|and .required }}required=""{{end}} {{ if isset . "can_edit" | and .can_edit | not }}disabled=""{{end}}>
+            {{ range .options }}
+            <option>{{ . }}</option>
+            {{ end }}
+          </select>
+        </div>
+        {{ else }}
+        <div class="form-group">
+          <label for="{{ .name }}-inpf">{{ .label }}</label>
+          <input class="form-control" id="{{ .name }}-inpf" type="{{ .type }}" name="{{ .name }}" {{with .placeholder}}placeholder="{{.}}"{{end}} {{if isset . "required"|and .required }}required=""{{end}} {{ if isset . "can_edit" | and .can_edit | not }}disabled=""{{end}} />
+        </div>
+        {{ end }}
       {{ end }}
       {{ if isset $.Site.Taxonomies "tags" }}
       <div class="tags form-group">
@@ -26,7 +37,7 @@
       {{ end }}
       <div class="error-msg alert alert-danger" role="alert" style="display:none">
       </div>
-      <button type="button" class="btn btn--default" data-goto="{{ .select_url }}">Back</button>
+      <button type="button" class="back-btn btn btn--default" data-goto="{{ .select_url }}">Back</button>
       <button type="submit" class="btn btn--primary">Submit</button>
     </form>
     {{ end }}

@@ -128,9 +128,8 @@
       var d = $.extend({}, data);
       $form.find('input,textarea,select')
         .each(function() {
-          var $inp = $(this);
-          if($inp.prop('name'))
-            d[$inp.prop] = $inp.value;
+          if(this.name)
+            d[this.name] = this.value;
         });
       d.tags = $tags.val();
       return d;
