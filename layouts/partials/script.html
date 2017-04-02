@@ -9,7 +9,7 @@
 <script src="/bower_components/select2/dist/js/select2.full.min.js"></script>
 <!--COMPONENTS END-->
 <!--SCRIPTS-->
-<script src="/js/script-z6i2tbpr6ashvb2s1dnwteiv1n2dkiigfhrbsk51vxwurty5gc3xrlgqyeqq.min.js"></script>
+<script src="/js/script-sqzic0xcvifvtk1nqfmnikcbd5koqtupexumwb1m0sorxwheeed12uwkcfjh.min.js"></script>
 <!--SCRIPTS END-->
 <script>
 $(document).ready(function() {
@@ -67,4 +67,8 @@ $(document).ready(function() {
       var algoliaIndex = algoliaClient.initIndex('{{ .indexName }}');
     </script>
   {{ end }}
+{{ end }}
+
+{{ range .Site.Params.customJS }}
+   <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
 {{ end }}
