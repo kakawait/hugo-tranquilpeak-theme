@@ -42,6 +42,9 @@
       width: auto;
       .item-image {
         text-align: center;
+        img {
+          max-width: 210px;
+        }
       }
       .item-download {
         padding: 0px;
