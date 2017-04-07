@@ -19,16 +19,30 @@
             <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
               {{ if $hasExtra }}
-              <div class="item-extra">
+              <div class="item-extra clearfix">
                 {{ if isset .Params "image" }}
                 <div class="item-image">
                   <img src="{{ if in .Params.image "://" | or (hasPrefix .Params.image "/") }}{{ .Params.image }}{{ else }}{{ printf "/%s" .Params.image }}{{ end }}" alt="{{ $.Title }}" />
                 </div>
                 {{ end }}
+                <div class="btn-group">
                 {{ if isset .Params "download_url" }}
-                <div class="item-download"><a class="btn btn--success" href="{{ .Params.download_url }}"><i class="fa fa-cloud-download"></i> Download</a></div>
+                  {{ if isset .Params "service_name" }}
+                    {{ (.Scratch.Set "item.download" (printf "item.download_%s" .Params.service_name)) }}
+                  {{ else }}
+                    {{ (.Scratch.Set "item.download" "item.download") }}
+                  {{ end }}
+                  <div class="item-download"><a class="btn btn--success" href="{{ .Params.download_url }}"><i class="{{ (i18n (printf "%s_icon" (.Scratch.Get "item.download"))) }}"></i>{{ (i18n (.Scratch.Get "item.download")) }}</a></div>
                 {{ end }}
-                <div class="clearfix"></div>
+                {{ if isset .Params "project_url" }}
+                  {{ if isset .Params "service_name" }}
+                    {{ (.Scratch.Set "item.project_link" (printf "item.project_link_%s" .Params.service_name)) }}
+                  {{ else }}
+                    {{ (.Scratch.Set "item.project_link" "item.project_link") }}
+                  {{ end }}
+                  <div class="item-project-link"><a class="btn btn--primary" href="{{ .Params.project_url }}"><i class="{{ (i18n (printf "%s_icon" (.Scratch.Get "item.project_link"))) }}"></i>{{ (i18n (.Scratch.Get "item.project_link")) }}</a></div>
+                {{ end }}
+                </div>
               </div>
               {{ end }}
               <div class="item-content">
@@ -38,6 +52,9 @@
             </div>
           </div>
           <div id="post-footer" class="post-footer main-content-wrap">
+            <div class="report-ctr">
+              Is something wrong with this entry? <a href="#contact">Get in touch with us</a>
+            </div>
             {{ if (not (eq .Params.showTags false)) }}
               {{ with .Params.tags }}
                 {{ $tagsLength := len . }}

@@ -18,9 +18,11 @@
         width: auto;
       }
     }
-    .item-download {
+    .item-download,
+    .item-project-link {
       padding: 5px;
       a {
+        line-height: 1.4em;
         text-align: center;
         display: block;
         padding: 5px 15px;
@@ -46,7 +48,15 @@
           max-width: 210px;
         }
       }
-      .item-download {
+      .btn-group {
+
+      }
+      .item-download,
+      .item-project-link {
+        .fa-2x {
+          font-size: 120%;
+        }
+        display: inline-block;
         padding: 0px;
         a {
           display: inline-block;

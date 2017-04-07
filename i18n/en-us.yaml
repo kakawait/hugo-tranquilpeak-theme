@@ -205,3 +205,55 @@
   
 - id: "contact.send"
   translation: "SEND"
+
+## ITEM ##
+
+- id: "item.download_icon"
+  translation: "fa fa-cloud-download"
+- id: "item.download"
+  translation: " Download"
+
+- id: "item.download_github_icon"
+  translation: "fa fa-cloud-download"
+- id: "item.download_github"
+  translation: " Download from github"
+
+- id: "item.download_instructables_icon"
+  translation: "fa fa-cloud-download"
+- id: "item.download_instructables"
+  translation: " Download from instructables"
+
+- id: "item.download_pinshape_icon"
+  translation: "fa fa-cloud-download"
+- id: "item.download_pinshape"
+  translation: " Download from pinshape"
+
+- id: "item.download_sourceforge_icon"
+  translation: "fa fa-cloud-download"
+- id: "item.download_sourceforge"
+  translation: " Download from sourceforge"
+
+- id: "item.download_sourceforge_icon"
+  translation: "fa fa-cloud-download"
+- id: "item.download_thingiverse"
+  translation: " Download from thingiverse"
+
+- id: "item.project_link"
+  translation: "Goto Project"
+
+- id: "item.project_link_github_icon"
+  translation: "fa fa-github fa-2x"
+- id: "item.project_link_github"
+  translation: ""
+
+- id: "item.project_link_instructables"
+  translation: "Project at instructables"
+  
+- id: "item.project_link_pinshape"
+  translation: "Project at pinshape"
+  
+- id: "item.project_link_sourceforge"
+  translation: "Project at sourceforge"
+  
+- id: "item.project_link_thingiverse"
+  translation: "Project at thingiverse"
