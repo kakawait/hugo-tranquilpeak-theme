@@ -3,7 +3,7 @@
     {{ if and (in .URL "://") (not (in .URL (printf "%s" $.root.Site.BaseURL))) }}
       <a class="sidebar-button-link {{ if eq .Identifier "search" }}open-algolia-search{{ end }}" href="{{ .URL | safeURL }}" target="_blank">
     {{ else }}
-      <a class="sidebar-button-link {{ if eq .Identifier "search" }}open-algolia-search{{ end }}" href="{{ .URL }}">
+      <a class="sidebar-button-link {{ if eq .Identifier "search" }}open-algolia-search{{ end }}" href="{{ .URL | relLangURL }}">
     {{ end }}
       {{ .Pre }}
       {{ $name := (i18n (printf "global.%s" .Identifier)) }}
