@@ -4,7 +4,7 @@ A gorgeous responsive theme for Hugo blog framework
 
 [![Tranquilpeak](../showcase.png)](https://tranquilpeak.kakawait.com)
 
-Tranquilpeak theme is compatible with Hugo `v0.17`.
+Tranquilpeak theme is compatible with Hugo `v0.20`.
 
 This documentation will help you to install hugo-tranquilpeak-theme and configure it to use all features which it provides.  
 
@@ -53,8 +53,8 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 ## General
 
 - **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
-- **Version**: 0.2.3-ALPHA (based on Hexo version 1.9.1)
-- **Compatibility**: Hugo v0.17
+- **Version**: 0.3.0-BETA (based on Hexo version 1.9.1)
+- **Compatibility**: Hugo v0.20
 
 ## Features
 
@@ -103,7 +103,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 
 ## Requirements
 
-1. **Hugo** : `v0.17`
+1. **Hugo** : `v0.20`
 
 ## Installation
 

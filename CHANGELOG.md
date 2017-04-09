@@ -2,9 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.0-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/3) - 9 apr 2017
+
+- Update minimun requirement to Hugo 0.20 ([#134](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/134))
+- Fix warning from Hugo 0.19 ([#125](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/125)) (thank you [jmugz3](https://github.com/jmugz3))
+- Hugo 0.20 fix 404's page for archive ([#111](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/111))
+
+### Breaking changes
+
+Do not support anymore Hugo version < 0.20! 
+
 ## [0.2.3-ALPHA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/12) - 31 mar 2017
 
-- CSS and JS imports customization ([#120](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/120)) (thank you [#yamila-moreno](https://github.com/yamila-moreno))
+- CSS and JS imports customization ([#120](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/120)) (thank you [yamila-moreno](https://github.com/yamila-moreno))
 
 two news settings:
 

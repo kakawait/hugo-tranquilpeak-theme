@@ -34,8 +34,8 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 ## General
 
 - **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
-- **Version**: 0.2.3-ALPHA (based on Hexo version 1.9.1)
-- **Compatibility**: Hugo v0.17
+- **Version**: 0.3.0-BETA (based on Hexo version 1.9.1)
+- **Compatibility**: Hugo v0.20
 
 ## Features
 

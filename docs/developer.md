@@ -28,8 +28,8 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 ## General ##
 
 - **Author** : Thibaud Leprêtre
-- **Version** : 0.2.3-ALPHA (based on Hexo version 1.9.1)
-- **Compatibility** : Hugo v0.17
+- **Version** : 0.3.0-BETA (based on Hexo version 1.9.1)
+- **Compatibility** : Hugo v0.20
 
 ## Requirements ##
 
