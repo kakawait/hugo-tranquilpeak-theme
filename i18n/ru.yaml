@@ -68,6 +68,15 @@
 - id: "global.search_date"
   translation: "Поиск по дате (ГГГГ/ММ/ДД)"
 
+- id: "global.calendar"
+  translation: "Календарь"
+
+- id: "global.support"
+  translation: "поддержка"
+
+- id: "global.idea"
+  translation: "идея"
+
 ## GLOBAL.POST_FOUND ##
 - id: "global.posts_found.zero"
   translation: "Статей не найдено"

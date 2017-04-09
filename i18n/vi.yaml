@@ -68,6 +68,15 @@
 - id: "global.search_date"
   translation: "Tìm theo ngày (YYYY/MM/DD)"
 
+- id: "global.calendar"
+  translation: "Lịch"
+
+- id: "global.support"
+  translation: "ủng hộ"
+
+- id: "global.idea"
+  translation: "ý kiến"
+
 ## GLOBAL.POST_FOUND ##
 - id: "global.posts_found.zero"
   translation: "không tìm thấy kết quả"

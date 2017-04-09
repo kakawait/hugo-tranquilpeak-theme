@@ -62,6 +62,15 @@
 - id: "global.search_date"
   translation: "Rechercher une date (YYYY/MM/DD)"
 
+- id: "global.calendar"
+  translation: "Calendrier"
+
+- id: "global.support"
+  translation: "Soutien"
+
+- id: "global.idea"
+  translation: "idée"
+
 ## GLOBAL.POSTS_FOUND ##
 - id: "global.posts_found.zero"
   translation: "aucun article trouvé"
