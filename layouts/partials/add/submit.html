@@ -7,6 +7,8 @@
   </div>
   <div class="state-after-loading">
     <form id="add-project-submit-form" data-done-goto="{{ .done_url }}">
+      <div class="warning-msg alert alert-warning" role="alert" style="display:none">
+      </div>
       {{ range .fields }}
         {{ if eq .type "select" }}
         <div class="form-group">

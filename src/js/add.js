@@ -146,6 +146,14 @@
       .then(function(_data) {
         loadingFinished(true);
         data = _data;
+        if(data.exists) {
+          $form.find('.warning-msg').html(
+            'A duplicate record exists with this short title, '
+          )
+            .append($('<a/>').attr('href', data.current_url)
+                    .html('Click here to see'))
+            .show();
+        }
         updateForm()
       })
       .fail(function($xhr) {
