@@ -91,6 +91,9 @@
     <!--STYLES-->
     <link rel="stylesheet" href="/css/style-u6mk0ojoywresbx8iepslrmmhl4stuhrsxuwhkpwrkrx7mryjcaimasnk4pi.min.css" />
     <!--STYLES END-->
+    {{ range .Site.Params.customCSS }}
+      <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+    {{ end }}
 
     {{ if .Params.ga.async }}
       {{ template "_internal/google_analytics_async.html" . }}
