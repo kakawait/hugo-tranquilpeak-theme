@@ -26,23 +26,8 @@
 - id: "global.author_picture"
   translation: "Foto do autor"
 
-- id: "global.github"
-  translation: "GitHub"
-
-- id: "global.stackoverflow"
-  translation: "Stack Overflow"
-
-- id: "global.twitter"
-  translation: "Twitter"
-
-- id: "global.facebook"
-  translation: "Facebook"
-
-- id: "global.google_plus"
-  translation: "Google Plus"
-
-- id: "global.linkedin"
-  translation: "LinkedIn"
+- id: "global.share_on"
+  translation: "Compartilhar no %s"
 
 - id: "global.mail"
   translation: "Email"
@@ -51,7 +36,7 @@
   translation: "RSS"
 
 - id: "global.share_on_google_plus"
-  translation: "Compartilhar no Google Plus"
+  translation: "Compartilhar no Google+"
 
 - id: "global.share_on_facebook"
   translation: "Compartilhar no Facebook"

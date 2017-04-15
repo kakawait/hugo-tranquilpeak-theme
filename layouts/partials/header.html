@@ -6,7 +6,7 @@
   {{ with .Site.Params.header.rightLink }}
     {{ if and (in .url ":") (not (in .url (printf "%s" $.Site.BaseURL))) }}
       <a class="{{ if .icon }}header-right-icon {{ else }}header-right-picture {{ end }}{{ with .class }}{{ . }}{{ end }}"
-         href="{{ .url | safeURL }}" target="_blank">
+         href="{{ .url | safeURL }}" target="_blank" rel="noopener">
     {{ else if .url }}
       <a class="{{ if .icon }}header-right-icon {{ else }}header-right-picture {{ end }}{{ with .class }}{{ . }}{{ end }}"
          href="{{ .url | safeURL }}">
