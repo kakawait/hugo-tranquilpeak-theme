@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.0-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/4) - WIP
+
+- Fix menu ordering ([#149](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/149), [#150](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/150))
+
+### Breaking changes
+
+In order to fix menu ordering, you have to upgrade you `config.toml` to avoid any menu weight equals to `0`. See https://github.com/kakawait/hugo-tranquilpeak-theme/commit/f4feb3261381bd9a77be4da66d8466322886eb22#diff-991d2a2fe208cdee83955ad6e9a323a7 to get an full example.
+
 ## [0.3.1-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/13) - 15 apr 2017
 
 - Fix Merriweather font to support non latin chars ([#129](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/129), [#142](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/142), [#143](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/143))
