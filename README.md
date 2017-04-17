@@ -72,7 +72,6 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 
 ### Missing features from original *Hexo* version
 
-- [ ] Duoshuo
 - [ ] Baidu analytics
 - [ ] Algolia (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8)
 - [ ] Pagination customization `tagPagination`, `categoryPagination` and `archivePagination` (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17)
