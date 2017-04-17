@@ -91,7 +91,6 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 
 ### Missing features from original *Hexo* version
 
-- [ ] Duoshuo
 - [ ] Baidu analytics
 - [ ] Algolia (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8)
 - [ ] Pagination custumization `tagPagination`, `categoryPagination` and `archivePagination` (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17)
