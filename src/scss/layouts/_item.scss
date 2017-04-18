@@ -1,6 +1,6 @@
 .item-with-extra {
   .main-content-wrap { 
-    width: map-get($main-content, max-width) + map-get($item-content, extra-width-lg);
+    width: map-get($item-content, max-width-lg);
     max-width: inherit;
   }
   .item-content {
@@ -29,8 +29,7 @@
       }
     }
   }
-  @media (max-width: map-get($main-content, max-width) +
-                     map-get($item-content, extra-width-lg) + 320px) {
+  @media (max-width: map-get($item-content, max-width-lg) + 320px) {
     // 320px for left menu and some extra offset
     .main-content-wrap {
       width: auto;
