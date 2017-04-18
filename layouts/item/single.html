@@ -27,20 +27,12 @@
                 {{ end }}
                 <div class="btn-group">
                 {{ if isset .Params "download_url" }}
-                  {{ if isset .Params "service_name" }}
-                    {{ (.Scratch.Set "item.download" (printf "item.download_%s" .Params.service_name)) }}
-                  {{ else }}
-                    {{ (.Scratch.Set "item.download" "item.download") }}
-                  {{ end }}
-                  <div class="item-download"><a class="btn btn--success" href="{{ .Params.download_url }}"><i class="{{ (i18n (printf "%s_icon" (.Scratch.Get "item.download"))) }}"></i>{{ (i18n (.Scratch.Get "item.download")) }}</a></div>
+                {{ partial "internal/define-by-service-url.html" (dict "name" "item.download" "prefix" "item.download_" "default" "item.download" "url" .Params.download_url "self" .) }}
+                  <div class="item-download"><a class="btn btn--success" href="{{ .Params.download_url }}"><i class="{{ (i18n (printf "%s_icon" ($.Scratch.Get "item.download"))) }}"></i>{{ (i18n ($.Scratch.Get "item.download")) }}</a></div>
                 {{ end }}
                 {{ if isset .Params "project_url" }}
-                  {{ if isset .Params "service_name" }}
-                    {{ (.Scratch.Set "item.project_link" (printf "item.project_link_%s" .Params.service_name)) }}
-                  {{ else }}
-                    {{ (.Scratch.Set "item.project_link" "item.project_link") }}
-                  {{ end }}
-                  <div class="item-project-link"><a class="btn btn--primary" href="{{ .Params.project_url }}"><i class="{{ (i18n (printf "%s_icon" (.Scratch.Get "item.project_link"))) }}"></i>{{ (i18n (.Scratch.Get "item.project_link")) }}</a></div>
+                  {{ partial "internal/define-by-service-url.html" (dict "name" "item.project_link" "prefix" "item.project_link_" "default" "item.project_link" "url" .Params.project_url "self" .) }}
+                  <div class="item-project-link"><a class="btn btn--primary" href="{{ .Params.project_url }}"><i class="{{ (i18n (printf "%s_icon" ($.Scratch.Get "item.project_link"))) }}"></i>{{ (i18n ($.Scratch.Get "item.project_link")) }}</a></div>
                 {{ end }}
                 </div>
               </div>

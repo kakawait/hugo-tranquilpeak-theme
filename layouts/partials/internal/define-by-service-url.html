@@ -1,0 +1,9 @@
+{{ $name := .name }}{{ $prefix := .prefix }}{{ $url := .url }}
+{{ range $.self.Site.Params.service_by_url_finder }}
+  {{ if gt (len (findRE .regexp $url)) 0 }}
+    {{ ($.self.Scratch.Set $name (printf "%s%s" $prefix .name)) }}
+  {{ end }}
+{{ end }}
+{{ if not ($.self.Scratch.Get $name) }}
+  {{ ($.self.Scratch.Set $name .default) }}
+{{ end }}

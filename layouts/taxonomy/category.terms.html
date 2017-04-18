@@ -1,7 +1,7 @@
 {{ if $.Site.Params.hierarchicalCategories }}
   {{ $.Scratch.Set "max-level" 0 }}
   <!-- MODERATED ITEMS -->
-  {{ range where $.Site.Pages "Section" "item" "Params.moderated" true }}
+  {{ range (where (where $.Site.Pages "Section" "item") "Params.moderated" true) }}
     {{ $page := . }}
     {{ if .Params.categories }}
       {{ $categories := (apply .Params.categories "urlize" ".") }}
