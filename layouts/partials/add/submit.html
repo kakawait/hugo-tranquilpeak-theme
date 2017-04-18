@@ -37,12 +37,16 @@
         </select>
       </div>
       {{ end }}
+      <script src="https://www.google.com/recaptcha/api.js"></script>
+      <div class="g-recaptcha" data-sitekey="{{ .recaptcha_site_key }}"></div>
       <div class="error-msg alert alert-danger" role="alert" style="display:none">
       </div>
       <pre class="debug-result" style="display:none;">
       </pre>
-      <button type="button" class="back-btn btn btn--default" data-goto="{{ .select_url }}">Back</button>
-      <button type="submit" class="btn btn--primary">Submit</button>
+      <div class="buttons-wrp">
+        <button type="button" class="back-btn btn btn--default" data-goto="{{ .select_url }}">Back</button>
+        <button type="submit" class="btn btn--primary">Submit</button>
+      </div>
     </form>
     {{ end }}
   </div>

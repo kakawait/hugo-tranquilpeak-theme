@@ -5,6 +5,9 @@
     background-color: lightgrey;
     font-size: 16px;
   }
+  .buttons-wrp {
+    margin-top: 10px;
+  }
   // submit when loading
   .state-loading {
     -moz-transition: opacity 0.3s, max-height 0.5s;
@@ -37,7 +40,7 @@
     padding: 2px;
   }
   .state-after-loading.ready {
-    max-height: 1000px; // needs change on content change
+    max-height: 1200px; // needs change on content change
   }
   dl {
     margin-top: 0;
