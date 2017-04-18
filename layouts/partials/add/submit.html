@@ -15,7 +15,7 @@
           <label for="{{ .name }}-inpf">{{ .label }}</label>
           <select class="form-control" id="{{ .name }}-inpf" name="{{ .name }}" {{with .placeholder}}placeholder="{{.}}"{{end}} {{if isset . "required"|and .required }}required=""{{end}} {{ if isset . "can_edit" | and .can_edit | not }}disabled=""{{end}}>
             {{ range .options }}
-            <option>{{ . }}</option>
+            <option value="{{ index . 0 }}">{{ index . 1 }}</option>
             {{ end }}
           </select>
         </div>
@@ -39,6 +39,8 @@
       {{ end }}
       <div class="error-msg alert alert-danger" role="alert" style="display:none">
       </div>
+      <pre class="debug-result" style="display:none;">
+      </pre>
       <button type="button" class="back-btn btn btn--default" data-goto="{{ .select_url }}">Back</button>
       <button type="submit" class="btn btn--primary">Submit</button>
     </form>

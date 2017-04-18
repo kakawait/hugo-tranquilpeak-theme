@@ -27,14 +27,16 @@
             </section>
             <section class="boxes">
               {{ range .Data.Terms.ByCount }}
+                <!-- MODERATED ITEMS -->
+                {{ $pages := (where .Pages.ByDate "Params.moderated" true) }}
                 <div id="{{ .Name | urlize }}-list" class="archive box" data-tag="{{ .Name | lower }}">
                   <h4 class="archive-title">
                     <a class="link-unstyled" href="{{ .Name | urlize }}">
-                      {{ .Name }} ({{ .Pages | len }})
+                      {{ .Name }} ({{ $pages | len }})
                     </a>
                   </h4>
                   <ul class="archive-posts">
-                    {{ range .Pages.ByDate }}
+                    {{ range $pages }}
                       <li class="archive-post">
                         <a class="archive-post-title" href="{{ .Permalink }}">
                           {{ .Title }}

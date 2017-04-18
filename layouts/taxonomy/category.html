@@ -12,7 +12,8 @@
                {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
         {{ if or (not (isset .Site.Params "categoryPagination")) (.Site.Params.categoryPagination) }}
           <section class="postShorten-group main-content-wrap">
-            {{ $paginator := .Paginate (where .Data.Pages "Section" "item") }}
+            <!-- MODERATED ITEMS -->
+            {{ $paginator := .Paginate (where (where .Data.Pages "Section" "item") "Params.moderated" true) }}
             {{ range $paginator.Pages }}
               {{ .Render "summary" }}
             {{ end }}
@@ -23,7 +24,8 @@
             <form id="filter-form" action="#">
               <input name="date" type="text" class="form-control input--xlarge" placeholder="{{ i18n "global.search_date" }}" autofocus="autofocus">
             </form>
-            {{ partial "archive-post.html" (where .Data.Pages "Section" "item") }}
+            <!-- MODERATED ITEMS -->
+            {{ partial "archive-post.html" (where (where .Data.Pages "Section" "item") "Params.moderated" true) }}
           </div>
         {{ end }}
         {{ partial "footer.html" . }}

@@ -1,4 +1,10 @@
 .add-wrapper {
+  .debug-result {
+    max-height: 600px;
+    overflow: auto;
+    background-color: lightgrey;
+    font-size: 16px;
+  }
   // submit when loading
   .state-loading {
     -moz-transition: opacity 0.3s, max-height 0.5s;

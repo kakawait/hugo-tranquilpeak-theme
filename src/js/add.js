@@ -107,7 +107,7 @@
         query = parseQueries(),
         service = query.service,
         id = query.id,
-        data;
+        data, _data;
     function loadingFinished(success, msg) {
       $wrp.find('.state-after-loading').addClass('ready');
       $wrp.find('.state-loading').addClass('finished');
@@ -143,14 +143,24 @@
         encodeURIComponent(service)+"/project?id="+encodeURIComponent(id),
       dataType: 'json'
     })
-      .then(function(_data) {
+      .then(function(resp) {
         loadingFinished(true);
-        data = _data;
-        if(data.exists) {
+        _data = resp;
+        
+        data = $.extend({}, _data);
+        $.each(['exists','current_url'],
+               function(i, prop) { delete data[prop]; });
+        // exceptions
+
+        // category
+        if(data.categories.length > 0)
+          data.category = data.categories[0];
+        
+        if(_data.exists) {
           $form.find('.warning-msg').html(
             'A duplicate record exists with this short title, '
           )
-            .append($('<a/>').attr('href', data.current_url)
+            .append($('<a/>').attr('href', _data.current_url)
                     .html('Click here to see'))
             .show();
         }
@@ -165,18 +175,41 @@
       if(!parsley.validate()) {
         return;
       }
+      var data = dataWithFormInput(),
+          DEBUG_KEYWORD = "__DRYRUN__";
+      if(data.project_url.lastIndexOf(DEBUG_KEYWORD) +
+           DEBUG_KEYWORD.length == data.project_url.length) { // for debugging
+        data.project_url = data.project_url
+          .slice(0, data.project_url.length - DEBUG_KEYWORD.length);
+        $form.find('[name=project_url]').val(data.project_url);
+        data.dryrun = true;
+      }
+
+      // exceptions
+
+      // category
+      data.categories = [data.category];
+      delete data.category;
+      
       var $btn = $form.find('button[type=submit]');
       $btn.prop('disabled', true);
       $.ajax({
         type: "POST",
         url: "//api.openassistive.org/v1/project/save",
-        data: JSON.stringify(dataWithFormInput()),
+        data: JSON.stringify(data),
         contentType: "application/json; charset=utf-8",
         dataType: "json"
       })
-        .then(function(data) {
+        .then(function(resp) {
           // thank you page
-          window.location = $form.data('done-goto');
+          if(data.dryrun) {
+            console.log(resp);
+            $wrp.find('.state-after-loading').css('max-height', 'inherit');
+            $form.find('.debug-result').html(JSON.stringify(resp, null, '  '))
+              .show();
+          } else {
+            window.location = $form.data('done-goto');
+          }
         })
         .fail(function($xhr) {
           $form.find('.error-msg').html(ajaxFailMessage($xhr)).show();

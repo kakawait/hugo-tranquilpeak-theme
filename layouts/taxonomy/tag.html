@@ -12,8 +12,15 @@
                {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
         {{ if or (not (isset .Site.Params "tagPagination")) (.Site.Params.tagPagination) }}
           <section class="postShorten-group main-content-wrap">
-            {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-            {{ range $paginator.Pages }}
+            <!-- with exception un-moderated -->
+            {{ if eq .URL "/tags/un-moderated/" }}
+              <!-- UNMODERATED ITEMS WITH NO CHECK -->
+              {{ .Scratch.Set "paginator" (.Paginate (where .Data.Pages "Section" "item")) }}
+            {{ else }}
+              <!-- MODERATED ITEMS -->
+              {{ .Scratch.Set "paginator" (.Paginate (where (where .Data.Pages "Section" "item") "Params.moderated" true)) }}
+            {{ end }}
+            {{ range (.Scratch.Get "paginator").Pages }}
               {{ .Render "summary" }}
             {{ end }}
             {{ partial "pagination.html" . }}
@@ -23,7 +30,14 @@
             <form id="filter-form" action="#">
               <input name="date" type="text" class="form-control input--xlarge" placeholder="{{ i18n "global.search_date" }}" autofocus="autofocus">
             </form>
-            {{ partial "archive-post.html" (where .Data.Pages "Type" "post") }}
+            <!-- with exception un-moderated -->
+            {{ if eq .URL "/tags/un-moderated/" }}
+              <!-- UNMODERATED ITEMS WITH NO CHECK -->
+              {{ partial "archive-post.html" (where .Data.Pages "Section" "item") }}
+            {{ else }}
+              <!-- MODERATED ITEMS -->
+              {{ partial "archive-post.html" (where (where .Data.Pages "Section" "item") "Params.moderated" true) }}
+            {{ end }}
           </div>
         {{ end }}
         {{ partial "footer.html" . }}
