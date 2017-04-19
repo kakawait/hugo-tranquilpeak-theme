@@ -43,6 +43,9 @@
         {{ printf "%s" .Content | markdownify }}
       </p>
     </div>
+    <div class="select-item-wrp">
+      {{ partial "add/home-select.html" . }}
+    </div>
   </div>
   {{ if and (.Scratch.Get "thumbnailImage") (ne (.Scratch.Get "thumbnailImagePosition") "top")}}
     <a href="{{ .Permalink }}">
@@ -50,5 +53,5 @@
         <img alt="" itemprop="image" src="{{ .Scratch.Get "thumbnailImage" }}"/>
       </div>
     </a>
-  {{ end }}
+    {{ end }}
 </article>

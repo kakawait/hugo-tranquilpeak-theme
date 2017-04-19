@@ -32,17 +32,16 @@
       </a>
     {{ end }}
     <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
+      <h2 class="postShorten-title" itemprop="headline">
         <a class="link-unstyled" href="{{ .Permalink }}">
           {{ .Title }}
         </a>
-      </h1>
+      </h2>
       {{ partial "post/meta" . }}
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       <p>
         {{ printf "%s" .Summary | markdownify }}
-        <br>
         <a href="{{ .Permalink }}" class="postShorten-excerpt_link link">{{ i18n "post.read_more" }}</a>
         {{ with .Params.readingtime }}
           <span class="postShorten-readingtime">

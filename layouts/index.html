@@ -8,19 +8,30 @@
         class="{{ with .Params.coverimage }}hasCover{{ end }}
                {{ if eq .Params.covermeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
                {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
-        <section class="postShorten-group main-content-wrap">
-        {{ if .IsHome  }}
-		   {{ range first 1 (where .Data.Pages "Type" "post") }}
-				{{ .Render "home"}}
-			{{ end }}
-  		{{else}}
-          {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-          {{ range $paginator.Pages }}
-            {{ .Render "summary" }}
+        <section class="postShorten-group main-content-wrap home-content">
+          <div class="sticky">
+            {{ range first 1 (where .Data.Pages "URL" "/custom/home-sticky/") }}
+            {{ .Render "home"}}
           {{ end }}
-          {{ partial "pagination.html" . }}
-        {{ end }}
-
+          </div>
+          <div class="list-group clearfix">
+            <div class="list">
+              <h1 class="list-head">Latest posts</h1>
+              {{ $paginator := .Paginate (where .Data.Pages.ByDate "Type" "post") }}
+              {{ range $paginator.Pages }}
+                {{ .Render "summary" }}
+              {{ end }}
+              {{ partial "pagination.html" . }}
+            </div>
+            <div class="list">
+              <h1 class="list-head">Latest projects</h1>
+              <!-- MODERATED ITEMS -->
+              {{ range last 5 (where (where $.Site.Pages.ByDate "Section" "item") "Params.moderated" true) }}
+                {{ .Render "summary" }}
+              {{ end }}
+              {{ partial "pagination.html" . }}
+            </div>
+          </div>
         </section>
         {{ partial "footer.html" . }}
       </div>

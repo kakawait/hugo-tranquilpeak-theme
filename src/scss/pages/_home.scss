@@ -1,0 +1,60 @@
+.home-content {
+  max-width: inherit;
+  .sticky {
+    max-width: 750px;
+    margin: 0px auto;
+  }
+  .select-item-wrp  {
+    max-width: 500px;
+    margin: 10px auto;
+    form {
+      input {
+        float: left;
+        width: 400px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      button {
+        float: right;
+        width: 90px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+      .parsley-errors-list {
+        clear: both;
+        margin-top: 5px;
+      }
+    }
+  }
+  .postShorten-excerpt {
+    font-size: 90%;
+  }
+  .list-group {
+    margin-left: -15px;
+    margin-right: -15px;
+    .list {
+      .list-head {
+        margin: 10px 0px 0px 0px;
+      }
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      position: relative;
+      width: 50%;
+      float: left;
+      padding-left: 15px;
+      padding-right: 15px;
+      min-height: 1px;
+    }
+  }
+  @media(max-width: map-get($main-content, max-width)) {
+    .list-group {
+      margin-left: 0px;
+      margin-right: 0px;
+      .list {
+        float: none;
+        width: auto;
+      }
+    }
+  }
+}
