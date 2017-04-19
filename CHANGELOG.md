@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.1-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/13) - 15 apr 2017
+
+- Fix Merriweather font to support non latin chars ([#129](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/129), [#142](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/142), [#143](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/143))
+- Fix `exampleSite/config.toml` about `customCSS` and `customJS` ([#137](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/137), [#141](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/141))
+- Add meta tag `theme` that will contain theme version ([#140](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/140), [#144](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/144))
+
 ## [0.3.0-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/3) - 9 apr 2017
 
 - Update minimun requirement to Hugo 0.20 ([#134](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/134))
