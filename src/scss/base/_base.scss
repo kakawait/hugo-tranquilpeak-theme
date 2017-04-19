@@ -135,7 +135,7 @@ pre > code {
     // To override cursor attribute of `.tag` components
     cursor:      text;
     overflow-x:  auto;
-    line-height: map-get($highlight, line-height) + 0.4em;
+    line-height: map-get($highlight, line-height) + 0.4rem;
     font-size:   map-get($highlight, font-size);
 }
 

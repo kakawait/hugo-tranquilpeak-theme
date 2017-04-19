@@ -25,20 +25,20 @@
       <span>{{ $.Scratch.Get "tc-title" }}</span>
     {{ end }}
     <ul class="tabs">
-      {{ range $index,$value := $.Scratch.Get "tc-languages" }}
+      {{ range $index, $value := $.Scratch.Get "tc-languages" }}
         <li class="tab {{ if eq $index 0 }}active{{ end }}">{{ . }}</li>
       {{ end }}
     </ul>
   </figcaption> 
   <div class="tabs-content">
-    {{ range $index,$value := $.Scratch.Get "tc-content" }}
+    {{ range $index, $value := $.Scratch.Get "tc-content" }}
       {{ $trimmedContent := trim $value "\n" }}
       <figure class="highlight {{ index ($.Scratch.Get "tc-languages") $index }}" style="display: {{ if eq $index 0 }}block{{ else }}none{{ end }};">   
         <table>
           <tbody>
             <tr>
               <td class="gutter">
-                <pre>{{ range $index,$value := (split $trimmedContent "\n") }}<span class="line">{{ add $index 1 }}</span><br>{{ end }}</pre>
+                <pre>{{ range $index,$value := (split $trimmedContent "\n") }}<span>{{ add $index 1 }}</span><br>{{ end }}</pre>
               </td>
               <td class="code">
                 <pre class="{{ index ($.Scratch.Get "tc-languages") $index }} code-highlight">{{ $trimmedContent }}</pre>
