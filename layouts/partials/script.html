@@ -8,7 +8,11 @@
 <script src="/js/script-wl33z0n6ocaypepiqrazthtivfrliqijej4rq8ek8gvrv1awftmgjuv8k4zc.min.js"></script>
 <!--SCRIPTS END-->
 {{ range .Site.Params.customJS }}
-   <script src="{{ . | absURL }}"></script>
+  {{ if isset . "src" }}
+    <script{{ range $key, $value := . }} {{ if eq $key "src" }}{{ (printf "%s=\"%s\"" $key ($value | absURL)) | safeHTMLAttr }}{{ else }}{{ (printf "%s=\"%s\"" $key (string $value)) | safeHTMLAttr }}{{ end }}{{ end }}></script>
+  {{ else }}
+    <script src="{{ . | absURL }}"></script>
+  {{ end }}
 {{ end }}
 <script>
 $(document).ready(function() {
