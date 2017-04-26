@@ -82,6 +82,11 @@
         dataType: 'json'
       })
         .then(function(data) {
+          if(data.error) {
+            $form.find('.error-msg')
+              .html((data.error+'').replace("\n", "<br/>")).show();
+            return;
+          }
           // goto submit page
           window.location = $form.attr('action') + '?' + $.param({
             service: m[0],
@@ -145,6 +150,12 @@
     })
       .then(function(resp) {
         loadingFinished(true);
+        if(resp.error) {
+          $form.hide();
+          $wrp.find('.outer-error-msg')
+            .html((resp.error+'').replace("\n", "<br/>")).show();
+          return;
+        }
         _data = resp;
         
         data = $.extend({}, _data);
@@ -201,6 +212,11 @@
         dataType: "json"
       })
         .then(function(resp) {
+          if(resp.error) {
+            $form.find('.error-msg')
+              .html((resp.error+'').replace("\n", "<br/>")).show();
+            return;
+          }
           // thank you page
           if(data.dryrun) {
             console.log(resp);
