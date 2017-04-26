@@ -212,6 +212,7 @@
         dataType: "json"
       })
         .then(function(resp) {
+          $btn.prop('disabled', false);
           if(resp.error) {
             $form.find('.error-msg')
               .html((resp.error+'').replace("\n", "<br/>")).show();
@@ -228,9 +229,9 @@
           }
         })
         .fail(function($xhr) {
+          $btn.prop('disabled', false);
           $form.find('.error-msg').html(ajaxFailMessage($xhr)).show();
-        })
-        .always(function(){ $btn.prop('disabled', false); });
+        });
     });
     $form.find('.back-btn').click(function(){
       window.location = $(this).data('goto');
