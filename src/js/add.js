@@ -214,6 +214,7 @@
         .then(function(resp) {
           $btn.prop('disabled', false);
           if(resp.error) {
+            $wrp.find('.state-after-loading').css('max-height', 'inherit');
             $form.find('.error-msg')
               .html((resp.error+'').replace("\n", "<br/>")).show();
             return;
