@@ -6,16 +6,24 @@
       pinshapePatt = new RegExp("^https?:\/\/?(?:www\.)?(pinshape)\.com\/(items)(\/)?([a-zA-Z0-9-]*)\/?$"),
       instructablesPatt = new RegExp("^https?:\/\/?(?:www\.)?(instructables)\.com\/(id)(\/)?([a-zA-Z0-9-]*)\/?$"),
       githubPatt = new RegExp("^https?:\/\/?(?:www\.)?(github)\.com\/?([a-zA-Z0-9\-_\.]*)(\/)?([a-zA-Z0-9\-_\.]*)\/?$"),
+      httpfilePatt = new RegExp("^https?://([a-z\\d-]+\\.){1,}[a-z\\d]{2,}/.*\.md$", "i"),
       projectOrigins = ['sourceforge','thingiverse','pinshape',
-                        'instructables','github'];
+                        'instructables','github','httpfile'],
+      apiurl = '//api.openassistive.org/';
+   //   apiurl = 'http://localhost:5000/'; // for development
   function parseProjectUrl(url) {
-    function commonConv(m){return [m[1],m[4]]}
+    function commonConv(m) {
+      return [ m[1], { id: m[4] } ]
+    }
     var checklist = [
       { r: sourceforgePatt, conv:commonConv },
       { r: thingiversePatt, conv:commonConv },
       { r: pinshapePatt, conv:commonConv },
       { r: instructablesPatt, conv:commonConv },
-      { r: githubPatt, conv:function(m){return [m[1],m.slice(2,5).join("")]} }
+      { r: githubPatt,
+        conv: function(m) { return [ m[1],{ id: m.slice(2,5).join("") } ] } },
+      { r: httpfilePatt,
+        conv:function(m) { return [ 'httpfile', { url: m[0] } ] } },
     ];
     for(var i = 0, len = checklist.length; i < len; ++i) {
       var item = checklist[i];
@@ -25,6 +33,9 @@
       }
     }
     return null;
+  }
+  function respFailMessage(resp) {
+    return '<strong>Error</strong> ' + resp.error;
   }
   function ajaxFailMessage($xhr) {
     var data;
@@ -77,21 +88,18 @@
         return; // should not happen
       // GET request
       $.ajax({
-        url: "//api.openassistive.org/v1/service/"+
-             encodeURIComponent(m[0])+"/project?id="+encodeURIComponent(m[1]),
+        url: apiurl + "v1/service/"+
+          encodeURIComponent(m[0])+"/project?"+$.param(m[1]),
         dataType: 'json'
       })
         .then(function(data) {
           if(data.error) {
-            $form.find('.error-msg')
-              .html((data.error+'').replace("\n", "<br/>")).show();
+            $form.find('.error-msg').html(respFailMessage(data)).show();
             return;
           }
           // goto submit page
-          window.location = $form.attr('action') + '?' + $.param({
-            service: m[0],
-            id: m[1]
-          });
+          window.location = $form.attr('action') + '?' +
+            $.param($.extend({ service: m[0] }, m[1]));
         })
         .fail(function($xhr) {
           $form.find('.error-msg').html(ajaxFailMessage($xhr)).show();
@@ -111,8 +119,12 @@
         // load data
         query = parseQueries(),
         service = query.service,
-        id = query.id,
+        inputquery = {}, // subset of query [id,url]
         data, _data;
+    $.each(query, function(k,v) {
+      if(['id','url'].indexOf(k) != -1)
+        inputquery[k] = v;
+    });
     function loadingFinished(success, msg) {
       $wrp.find('.state-after-loading').addClass('ready');
       $wrp.find('.state-loading').addClass('finished');
@@ -139,21 +151,20 @@
       d.tags = $tags.val();
       return d;
     }
-    if(!service || !id) {
-      loadingFinished(false, "service and id parameters are required!");
+    if(!service || !(inputquery.id || inputquery.url)) {
+      loadingFinished(false, "service and id/url parameters are required!");
       return;
     }
     $.ajax({
-      url: "//api.openassistive.org/v1/service/"+
-        encodeURIComponent(service)+"/project?id="+encodeURIComponent(id),
+      url: apiurl + "v1/service/"+
+        encodeURIComponent(service)+"/project?"+$.param(inputquery),
       dataType: 'json'
     })
       .then(function(resp) {
         loadingFinished(true);
         if(resp.error) {
           $form.hide();
-          $wrp.find('.outer-error-msg')
-            .html((resp.error+'').replace("\n", "<br/>")).show();
+          $wrp.find('.outer-error-msg').html(respFailMessage(resp)).show();
           return;
         }
         _data = resp;
@@ -164,7 +175,7 @@
         // exceptions
 
         // category
-        if(data.categories.length > 0)
+        if(Array.isArray(data.categories) && data.categories.length > 0)
           data.category = data.categories[0];
         
         if(_data.exists) {
@@ -206,7 +217,7 @@
       $btn.prop('disabled', true);
       $.ajax({
         type: "POST",
-        url: "//api.openassistive.org/v1/project/save",
+        url: apiurl + "v1/project/save",
         data: JSON.stringify(data),
         contentType: "application/json; charset=utf-8",
         dataType: "json"
@@ -215,8 +226,7 @@
           $btn.prop('disabled', false);
           if(resp.error) {
             $wrp.find('.state-after-loading').css('max-height', 'inherit');
-            $form.find('.error-msg')
-              .html((resp.error+'').replace("\n", "<br/>")).show();
+            $form.find('.error-msg').html(respFailMessage(resp)).show();
             return;
           }
           // thank you page
