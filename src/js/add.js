@@ -7,10 +7,11 @@
       instructablesPatt = new RegExp("^https?:\/\/?(?:www\.)?(instructables)\.com\/(id)(\/)?([a-zA-Z0-9-]*)\/?$"),
       githubPatt = new RegExp("^https?:\/\/?(?:www\.)?(github)\.com\/?([a-zA-Z0-9\-_\.]*)(\/)?([a-zA-Z0-9\-_\.]*)\/?$"),
       httpfilePatt = new RegExp("^https?://([a-z\\d-]+\\.){1,}[a-z\\d]{2,}/.*\.md$", "i"),
+      dropboxPatt = new RegExp("^https?:\\/\\/(?:www\.)?(dropbox)\.com\/sh/([^\?\\s]+)(?:\\?dl=[01])?$"),
       projectOrigins = ['sourceforge','thingiverse','pinshape',
-                        'instructables','github','httpfile'],
-      apiurl = '//api.openassistive.org/';
-   //   apiurl = 'http://localhost:5000/'; // for development
+                        'instructables','github','dropbox','httpfile'],
+   //   apiurl = '//api.openassistive.org/';
+      apiurl = 'http://localhost:5000/'; // for development
   function parseProjectUrl(url) {
     function commonConv(m) {
       return [ m[1], { id: m[4] } ]
@@ -24,6 +25,8 @@
         conv: function(m) { return [ m[1],{ id: m.slice(2,5).join("") } ] } },
       { r: httpfilePatt,
         conv:function(m) { return [ 'httpfile', { url: m[0] } ] } },
+      { r: dropboxPatt,
+        conv: function(m) { return [ m[1], { id: m[2] } ] } }
     ];
     for(var i = 0, len = checklist.length; i < len; ++i) {
       var item = checklist[i];
