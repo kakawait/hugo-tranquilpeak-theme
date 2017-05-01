@@ -23,10 +23,10 @@
       { r: instructablesPatt, conv:commonConv },
       { r: githubPatt,
         conv: function(m) { return [ m[1],{ id: m.slice(2,5).join("") } ] } },
+      { r: dropboxPatt,
+        conv: function(m) { return [ m[1], { id: m[2] } ] } },
       { r: httpfilePatt,
         conv:function(m) { return [ 'httpfile', { url: m[0] } ] } },
-      { r: dropboxPatt,
-        conv: function(m) { return [ m[1], { id: m[2] } ] } }
     ];
     for(var i = 0, len = checklist.length; i < len; ++i) {
       var item = checklist[i];
