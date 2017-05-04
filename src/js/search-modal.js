@@ -24,9 +24,10 @@
      */
     run: function() {
       var self = this;
-
+      
       // open modal when open button is clicked
-      self.$openButton.click(function() {
+      self.$openButton.click(function($evt) {
+        $evt.preventDefault();
         self.open();
       });
 

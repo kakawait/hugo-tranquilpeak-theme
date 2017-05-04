@@ -9,7 +9,7 @@
 <script src="/bower_components/select2/dist/js/select2.full.min.js"></script>
 <!--COMPONENTS END-->
 <!--SCRIPTS-->
-<script src="/js/script-bupxgkhznp1amidyuycwc9zkmplu4eqdlpdsvgn0e63lkcr4qhemiukkuhy7.min.js"></script>
+<script src="/js/script-hugindjly9fo6h9vctdnsnklljlinjvyciv99r58sarj3owaer48ygyrtecy.min.js"></script>
 <!--SCRIPTS END-->
 <script>
 $(document).ready(function() {
@@ -59,12 +59,12 @@ $(document).ready(function() {
   {{ end }}
 {{ end }}
 {{ with .Site.Params.algolia }}
-  {{ if (isset . "appId") | and (isset . "apiKey") | and (isset . "indexName") }}
+  {{ if (isset . "appid") | and (isset . "apikey") | and (isset . "indexname") }}
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment-with-locales.min.js"></script>
     <script src="//cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
     <script>
-      var algoliaClient = algoliasearch('{{ .appId }}', '{{ .apiKey }}');
-      var algoliaIndex = algoliaClient.initIndex('{{ .indexName }}');
+      var algoliaClient = algoliasearch('{{ .appid }}', '{{ .apikey }}');
+      var algoliaIndex = algoliaClient.initIndex('{{ .indexname }}');
     </script>
   {{ end }}
 {{ end }}

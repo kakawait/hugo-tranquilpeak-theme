@@ -15,31 +15,7 @@
     <div class="modal-body">
       <div class="no-result text-color-light text-center">{{ i18n "global.posts_found.zero" }}</div>
       <div class="results">
-        {{ $posts := (where .Site.Pages "Section" "post") }}
-        {{ range first 10 $posts }}
-          <div class="media">
-            {{ if .Params.thumbnailImageUrl }}
-              <div class="media-left">
-                <a class="link-unstyled" href="{{ .Permalink }}">
-                  <img class="media-image" src="{{ .Params.thumbnailImageUrl }}" width="90" height="90"/>
-                </a>
-              </div>
-            {{ end }}
-            <div class="media-body">
-              <a class="link-unstyled" href="{{ .Permalink }}">
-                <h3 class="media-heading">{{ .Title }}</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  {{ .Date.Format "Jan 1, 2006" }}
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather">{{ .Summary }}</div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        {{ end }}
+        <p>Write your search words and hit enter</p>
       </div>
     </div>
     <div class="modal-footer">
@@ -47,7 +23,7 @@
          data-message-zero="{{ i18n "global.posts_found.zero" }}"
          data-message-one="{{ i18n "global.posts_found.one" }}"
          data-message-other="{{ i18n "global.posts_found.other" }}">
-         {{ len $posts }} posts found
+         Ready
       </p>
     </div>
   </div>
