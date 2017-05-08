@@ -10,8 +10,8 @@
       dropboxPatt = new RegExp("^https?:\\/\\/(?:www\.)?(dropbox)\.com\/sh/([^\?\\s]+)(?:\\?dl=[01])?$"),
       projectOrigins = ['sourceforge','thingiverse','pinshape',
                         'instructables','github','dropbox','httpfile'],
-   //   apiurl = '//api.openassistive.org/';
-      apiurl = 'http://localhost:5000/'; // for development
+      apiurl = '//api.openassistive.org/';
+   //   apiurl = 'http://localhost:5000/'; // for development
   function parseProjectUrl(url) {
     function commonConv(m) {
       return [ m[1], { id: m[4] } ]
