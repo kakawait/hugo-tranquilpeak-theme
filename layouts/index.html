@@ -26,8 +26,8 @@
             <div class="list">
               <h1 class="list-head">Latest projects</h1>
               <!-- MODERATED ITEMS -->
-              {{ range last 5 (where (where $.Site.Pages.ByDate "Section" "item") "Params.moderated" true) }}
-                {{ .Render "summary" }}
+              {{ range last 3 (where (where $.Site.Pages.ByDate "Section" "item") "Params.moderated" true) }}
+                {{ .Render "short-summary" }}
               {{ end }}
               {{ partial "pagination.html" . }}
             </div>
