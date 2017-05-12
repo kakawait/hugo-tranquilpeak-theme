@@ -139,6 +139,10 @@ canonifyurls = true
   # and use relative url : `your-image.png`
   coverImage = "cover.jpg"
 
+  # Set value for background color (hex). Suggested that you choose a dark color since the text on the page is white. This will help users view your website
+  # even when the cover photo is still loading. The default value is white, so until the cover image loads, the text will not be readable.
+  fallbackCoverColor = "#0B0D19"
+  
   # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
   imageGallery = true
 
