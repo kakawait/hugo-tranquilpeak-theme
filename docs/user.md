@@ -475,7 +475,7 @@ coverImage: image-2.png
 coverCaption: "A beautiful sunrise"
 coverMeta: out
 coverSize: full
-coverHeight: 40
+coverImage: image-2.png
 gallery:
     - image-3.jpg "New York"
     - image-4.png "Paris"
@@ -493,21 +493,20 @@ showDate: true
 |disqusIdentifier|Define a unique string which is used to look up a page's thread in the Disqus system.|
 |keywords|Define keywords for search engines. you can also define global keywords in Hugo configuration file.|
 |clearReading|Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. Useless if `params.sidebarBehavior` is equal to `3` or `4`. (true: enable, false: disable). Default behavior : `params.clearReading` value in theme configuration file.|
+|autoThumbnailImage|Automatically select the cover image or the first photo from the gallery of a post if there is no thumbnail image as the thumbnail image. `autoThumbnailImage` overwrite the setting `autoThumbnailImage` in the theme configuration file|
 |thumbnailImage|Image displayed in index view.|
 |thumbnailImagePosition|Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`). `thumbnailImagePosition` overwrite the setting `thumbnailImagePosition` in the theme configuration file|
-|autoThumbnailImage|Automatically select the cover image or the first photo from the gallery of a post if there is no thumbnail image as the thumbnail image. `autoThumbnailImage` overwrite the setting `autoThumbnailImage` in the theme configuration file|
 |metaAlignment|Meta (title, date and categories) alignment (right, left or center). Default behavior : left|
 |coverImage|Image displayed in full size at the top of your post in post view. If thumbnail image is not configured, cover image is also used as thumbnail image. Check the beautiful demo here : [Cover image demo](https://tranquilpeak.kakawait.com/2015/05/cover-image-showcase/)|
+|coverSize|`partial`: cover image take a part of the screen height (60%), `full`: cover image take the entire screen height.|
 |coverCaption|Add a caption under the cover image : [Cover caption demo](https://tranquilpeak.kakawait.com/2015/05/cover-image-showcase/)|
 |coverMeta|`in`: display post meta (title, date and categories) on cover image, `out`: display meta (title, date and categories) under cover image as usual. Default behavior : `in`|
-|coverSize|`partial`: cover image take a part of the screen height (60%), `full`: cover image take the entire screen height.|
-|coverHeight|Specify a custom percent value for the height of the cover image. If this value is present, `coverSize` will be ignored. Default behavior: `60%` or `100%` (based on `coverSize`)|
 |gallery|Images displayed in an image gallery (with fancybox) at the end of the post. If thumbnail image is not configured and cover image too, the first photo is used as thumbnail image. format: `original url [thumbnail url] [caption]`, E.g : `https://example.com/original.jpg https://example.com/thumbnail.jpg "New York"`|
 |comments|Disable the comment of the post.
+|showDate|`true`: Show the date when `true` (default)|
 |showTags|`true`: show tags of this page. Default behavior: `true`
 |showPagination|`true`: show pagination.  Default behavior: `true`
 |showSocial|`true`: show social button such as share on Twitter, Facebook...  Default behavior: `true`
-|showDate|`true`: show the date.  Default behavior: `true`|
 
 Example: 
 A post on index page will look like this with :`thumbnailImagePosition` set to `bottom`:  
