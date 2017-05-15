@@ -15,4 +15,3 @@ showTags:       false
 showPagination: false
 #thumbnailImage: //example.com/image.jpg
 ---
-
