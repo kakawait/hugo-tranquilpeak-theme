@@ -34,8 +34,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 ## Requirements ##
 
 1. **Hugo** : v0.16 or higher, see official documentation (https://gohugo.io/overview/installing/)
-3. **Grunt CLI** : v0.1.13 or higher. Run `npm install grunt-cli -g`
-4. **Bower** : v1.4.1 or higher. Run `npm install bower -g`
+2. **Grunt CLI** : v0.1.13 or higher. Run `npm install grunt-cli -g`
 
 ## Installation ##
 
@@ -45,7 +44,6 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 4. Go in `theme/tranquilpeak` folder with `cd themes/tranquilpeak`
 5. Install [requirements](#requirements)
 6. Run `npm install` to install [NPM dependencies](#npm-dependencies)
-7. Run `bower install` to install [Bower dependencies](#bower-dependencies) 
 
 If you want to configure the theme, please follow the [user documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md)  
 
@@ -160,7 +158,7 @@ Use `npm run <script_name>` to run one of these scripts. E.g : `npm run start`
 |`npm run ...`|Description|
 |---|---|
 |`start`|Build the theme once and rebuild after each change|
-|`prod`|Build the theme for production. (synchronize bower dependencies, images, fonts, compile assets (css and js) with some optimization (concat and minify) and link it to views)|
+|`prod`|Build the theme for production. (synchronize images, fonts, compile assets (css and js) with some optimization (concat and minify) and link it to views)|
 |`lint`|Check code style with [ESLint](http://eslint.org)|
 
 ## Grunt tasks ##
@@ -209,7 +207,6 @@ On production environment, these javascript and stylesheets files are concatenat
 
 |Task|Description|
 |---|---|
-|bower|Copy all needed files by types from bower dependencies|
 |clean|Delete `src/assets` folder|
 |concat|<ul><li>devJs : Concat all javascript files located in `src/js/` into 1 file : `src/assets/js/tranquilpeak.js`</li><li>prodCss : Concat all stylesheets files located in `src/assets/css/` into 1 file : `src/assets/css/style.css`</li><li>prodJs : Concat all javascript listed in `tasks/pipeline.js` in 1 file : `src/assets/js/script.js`</li></ul>|
 |cssmin|Minify `src/assets/cssstyle.css` file in : `src/assets/cssstyle.min.css`|
@@ -223,8 +220,8 @@ On production environment, these javascript and stylesheets files are concatenat
 
 |Task|Description|
 |---|---|
-|build|Synchronize bower dependencies, images, fonts, compile assets (css and js) and link it to views|
-|buildProd|Synchronize bower dependencies, images, fonts, compile assets (css and js) with some optimization (concat and minify) and link it to views|
+|build|Synchronize images, fonts, compile assets (css and js) and link it to views|
+|buildProd|Synchronize images, fonts, compile assets (css and js) with some optimization (concat and minify) and link it to views|
 |default|Build the theme once and rebuild after each change|
 |eslint|Check code style with ESLint|
 |compileAssets|Compile scss files and concat js files|
