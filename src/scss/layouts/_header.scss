@@ -52,6 +52,7 @@
     .header-title {
         text-align:  center;
         font-size:   $font-size-base;
+        height: 55px;
         line-height: 55px;
         margin:      0;
 
@@ -64,6 +65,13 @@
                 color:           darken(map-get($header, color), 10);
                 text-decoration: none;
             }
+        }
+        .header-icon {
+          height: 28px;
+          width: auto;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 3px;
         }
     }
     // Class used to swipe to the top the header on small screen when the user scroll down

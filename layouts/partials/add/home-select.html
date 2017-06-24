@@ -1,9 +1,0 @@
-<div class="add-wrapper bootstrap-form-wrapper">
-  {{ with $.Site.Params.Add }}
-  <form id="add-project-select-form" data-parsley-validate="" method="GET" action="{{ .submit_url }}" class="clearfix">
-    <button type="submit" class="btn btn--primary">Select</button>
-    <input class="form-control" id="add-form-url" type="url" name="url" placeholder="Enter URL of your project to add" required="" data-parsley-project-url />
-    <div class="error-msg alert alert-danger" role="alert" style="display:none"></div>
-  </form>
-  {{ end }}
-</div>

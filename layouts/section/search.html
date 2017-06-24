@@ -1,0 +1,28 @@
+{{ partial "head.html" . }}
+  <body>
+    <div id="blog">
+      {{ partial "header.html" . }}
+      {{ partial "sidebar.html" . }}
+      {{ partial "post/header-cover.html" . }}
+      <div id="main" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}"
+        class="{{ with .Params.coverimage }}hasCover{{ end }}
+               {{ if eq .Params.covermeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
+               {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
+        <section class="postShorten-group main-content-wrap home-content">
+          {{ partial "post/content.html" . }}
+          <div id="search-result-wrp">
+            <!-- <div class="no-result text-color-light text-center" style="display:none">{{ i18n "global.posts_found.zero" }}</div> -->
+            <p class="results-count text-medium"
+               data-message-zero="{{ i18n "global.posts_found.zero" }}"
+               data-message-one="{{ i18n "global.posts_found.one" }}"
+               data-message-other="{{ i18n "global.posts_found.other" }}">
+              Ready
+            </p>
+            <div class="results">
+            </div>
+          </div>
+        </section>
+        {{ partial "footer.html" . }}
+      </div>
+    </div>
+{{ partial "foot.html" . }}

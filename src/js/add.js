@@ -49,20 +49,6 @@
         ('<strong>' + $xhr.status + '</strong>: ' +
          $xhr.statusText);
   }
-  function parseQueries() {
-    function _parse(s) {
-      var ret = {},
-          sa = s.split('&');
-      for(var i = 0, len = sa.length; i < len; ++i) {
-        var v = sa[i].split('=');
-        ret[decodeURIComponent(v[0])] =
-          decodeURIComponent(v.length > 1 ? v[1] : "");
-      }
-      return ret;
-    }
-    var q = window.location.search;
-    return _parse(q.length > 0 ? (q[0] == '?' ? q.substr(1) : q) : '');
-  }
   // add parsley project url validator
   window.Parsley.addValidator('projectUrl', {
     validateString: function(url) {
@@ -72,43 +58,49 @@
       en: 'Unkown url has given, Known hosts are ('+projectOrigins.join(', ')+')'
     }
   });
-  function _addSelectInit() {
-    var $form = $('#add-project-select-form'),
-        $wrp = $form.parents('.add-wrapper'),
+  // public func, used at home.js
+  window.addSelectSubmit = function($evt, url, callback) {
+    var $form = $(this),
         parsley = $form.parsley();
-    $form.submit(function($evt) {
-      $evt.preventDefault();
-      // [for now] check for validity of url
-      $form.find('.error-msg').hide();
-      if(!parsley.validate()) {
-        return;
-      }
-      var $btn = $form.find('button[type=submit]');
-      $btn.prop('disabled', true);
-      var url = $form.find('input[name=url]').val();
-      var m = parseProjectUrl(url);
-      if(!m)
-        return; // should not happen
-      // GET request
-      $.ajax({
-        url: apiurl + "v1/service/"+
-          encodeURIComponent(m[0])+"/project?"+$.param(m[1]),
-        dataType: 'json'
-      })
-        .then(function(data) {
-          if(data.error) {
-            $form.find('.error-msg').html(respFailMessage(data)).show();
-            return;
-          }
+    $evt.preventDefault();
+    // [for now] check for validity of url
+    $form.find('.error-msg').hide();
+    if(!parsley.validate()) {
+      return false;
+    }
+    var $btn = $form.find('button[type=submit]');
+    $btn.prop('disabled', true);
+    url = url || $form.find('input[name=url]').val();
+    var m = parseProjectUrl(url);
+    if(!m)
+      return false; // should not happen
+    // GET request
+    $.ajax({
+      url: apiurl + "v1/service/"+
+        encodeURIComponent(m[0])+"/project?"+$.param(m[1]),
+      dataType: 'json'
+    })
+      .then(function(data) {
+        if(data.error) {
+          $form.find('.error-msg').html(respFailMessage(data)).show();
+          return;
+        }
+        if(!callback) {
           // goto submit page
-          window.location = $form.attr('action') + '?' +
+          window.location = ($form.data('add-submit-url')||'') + '?' +
             $.param($.extend({ service: m[0] }, m[1]));
-        })
-        .fail(function($xhr) {
-          $form.find('.error-msg').html(ajaxFailMessage($xhr)).show();
-        })
-        .always(function(){ $btn.prop('disabled', false); });
-    });
+        } else {
+          callback($.extend({ service: m[0] }, m[1]));
+        }
+      })
+      .fail(function($xhr) {
+        $form.find('.error-msg').html(ajaxFailMessage($xhr)).show();
+      })
+      .always(function(){ $btn.prop('disabled', false); });
+    return true;
+  }
+  function _addSelectInit() {
+    $('#add-project-select-form').submit(addSelectSubmit);
   }
   function _addSubmitInit() {
     var $form = $('#add-project-submit-form'),
@@ -120,7 +112,7 @@
     var $tags = $("#tags-select2"),
         parsley = $form.parsley(), // initiate parsley
         // load data
-        query = parseQueries(),
+        query = parseStringQueries(),
         service = query.service,
         inputquery = {}, // subset of query [id,url]
         data, _data;

@@ -4,25 +4,51 @@
     max-width: 750px;
     margin: 0px auto;
   }
-  .select-item-wrp  {
-    max-width: 500px;
+  .home-lookup-wrp  {
+    max-width: 700px;
     margin: 10px auto;
-    form {
-      input {
-        float: left;
-        width: 400px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-      }
+    .parsley-errors-list {
+      clear: both;
+      margin-top: 5px;
+    }
+    .search-group {
       button {
+        margin-top: 10px;
         float: right;
-        width: 90px;
-        padding-top: 2px;
-        padding-bottom: 2px;
       }
-      .parsley-errors-list {
-        clear: both;
-        margin-top: 5px;
+    }
+    @media(max-width: 749px) and (min-width: 300px) {
+      .search-group {
+        display: flex;
+        flex-direction: row;
+        input {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+        button {
+          width: 90px;
+          padding-top: 2px;
+          padding-bottom: 2px;
+          margin-left: 5px;
+          margin-top: 0px;
+        }
+      }
+    }
+    @media(min-width: 750px) {
+      .search-group {
+        input {
+          float: left;
+          width: 600px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+        button {
+          float: right;
+          width: 90px;
+          padding-top: 2px;
+          padding-bottom: 2px;
+          margin-top: 0px;
+        }
       }
     }
   }
