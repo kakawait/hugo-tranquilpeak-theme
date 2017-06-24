@@ -14,6 +14,7 @@
             {{ .Render "home"}}
           {{ end }}
           </div>
+          {{ if 0 }}
           <div class="list-group clearfix">
             <div class="list">
               <h1 class="list-head">Latest posts</h1>
@@ -32,6 +33,7 @@
               {{ partial "pagination.html" . }}
             </div>
           </div>
+          {{ end }}
         </section>
         {{ partial "footer.html" . }}
       </div>
