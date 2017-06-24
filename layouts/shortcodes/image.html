@@ -28,7 +28,7 @@
     </a>
   {{ end }}
   {{ if and (.Get "title") (not (in ($.Scratch.Get "i-classes") "nocaption")) }} 
-    <span class="caption">{{ .Get "title" }}</span>
+    <span class="caption" {{if (.Get "title-style") }}style="{{(.Get "title-style")}}"{{end}}>{{ .Get "title" }}</span>
   {{ end }}
 </div>
 {{ if eq ($.Scratch.Get "i-clear") 1 }}

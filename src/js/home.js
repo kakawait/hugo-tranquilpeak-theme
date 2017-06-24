@@ -2,6 +2,15 @@
   'use strict';
 
   function _openATLookupInit($form) {
+    var $btn = $form.find('button').first()
+    $form.find('input[name=query]').on('input', function() {
+      var query = this.value
+      if(/^https?:\/\//.test(query)) { // is url
+        $btn.text("Add")
+      } else {
+        $btn.text("Search")
+      }
+    });
     $form.submit(function($evt) {
       var $queryinp = $form.find('input[name=query]'),
           query = $queryinp.val().trim();
