@@ -21,10 +21,6 @@
       .search-group {
         display: flex;
         flex-direction: row;
-        input {
-          padding-top: 10px;
-          padding-bottom: 10px;
-        }
         button {
           width: 90px;
           padding-top: 2px;
@@ -39,8 +35,6 @@
         input {
           float: left;
           width: 600px;
-          padding-top: 10px;
-          padding-bottom: 10px;
         }
         button {
           float: right;
