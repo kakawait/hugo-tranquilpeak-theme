@@ -177,7 +177,7 @@ canonifyurls = true
     icon = ""
     url = "/#about"
 
-  # Customize like of athor avatar in sidebar
+  # Customize link of author avatar in sidebar
   # [params.sidebar.profile]
   #   url = "/#about"
 
