@@ -1,9 +1,26 @@
+
 .home-content {
   max-width: inherit;
   .sticky {
     max-width: 750px;
     margin: 0px auto;
   }
+  .intro {
+	text-rendering: optimizelegibility;
+	letter-spacing: -0.3px;
+	font-family:    map-get($font-families, 'post-content');
+	color:          map-get($colors, base);
+	margin-top:     20px;
+	font-weight:    400;
+	overflow:       hidden;
+	@include prefix('hypens', 'auto', 'webkit' 'moz');  	
+  }
+  .center {
+  	padding-left: 50px;
+  	margin: auto;
+  	display: block;
+  }
+
   .home-lookup-wrp  {
     max-width: 700px;
     margin: 10px auto;
