@@ -1,5 +1,6 @@
 ---
-title: "New Page"
+title: "{{ replace .TranslationBaseName "-" " " | title }}"
+date: {{ .Date }}
 categories:
 - category
 - subcategory
