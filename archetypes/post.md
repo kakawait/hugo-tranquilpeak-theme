@@ -1,6 +1,6 @@
 ---
-title: "New Post"
-date: 2015-05-28
+title: "{{ replace .TranslationBaseName "-" " " | title }}"
+date: {{ .Date }}
 categories:
 - category
 - subcategory
