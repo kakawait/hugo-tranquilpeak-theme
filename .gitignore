@@ -10,3 +10,5 @@ static/js/*
 static/css/*
 !static/css/style-*.min.css
 static/bower_components
+
+npm-debug.log
