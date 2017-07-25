@@ -1,7 +1,7 @@
 <div class="add-wrapper bootstrap-form-wrapper">
   <form id="openat-lookup-form" data-parsley-validate="" method="GET" action="/search/" data-add-submit-url="{{ with $.Site.Params.Add }}{{ .submit_url }}{{ end }}" class="clearfix">
     <div class="search-group clearfix">
-      <input class="form-control" type="text" name="query" placeholder="Type anything, project url, search" required="" data-parsley-errors-container="#openat-lookup-form" />
+      <input class="form-control" type="text" name="query" placeholder="Simply enter your project url or search text..." required="" data-parsley-errors-container="#openat-lookup-form" />
       <button type="submit" class="btn btn--primary">Lookup</button>
     </div>
     <div class="error-msg alert alert-danger" role="alert" style="display:none"></div>
