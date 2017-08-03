@@ -38,8 +38,19 @@
               </div>
               {{ end }}
               <div class="item-content">
+                {{ with .Params.description }}
+                <div class="item-short-description">{{ . }}</div>
+                {{ end }}
                 {{ (replaceRE "<!--\\s*[t|T][o|O][c|C]\\s*-->" (printf "<h1 id=\"table-of-contents\">%s</h1>%s" (i18n "post.toc") .TableOfContents) .Content) | safeHTML }}
                 {{ partial "post/gallery.html" . }}
+                <div class="item-foot">
+                  {{ with .Params.license }}
+                  <div class="item-license">{{ i18n "item.license" }}: {{ . }}</div>
+                  {{ end }}
+                  {{ with .Params.authors }}
+                  <div class="item-authors">{{ i18n "item.authors" }}: {{ . }}</div>
+                  {{ end }}
+                </div>
               </div>
             </div>
           </div>

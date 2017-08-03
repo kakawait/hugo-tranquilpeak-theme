@@ -257,3 +257,10 @@
   
 - id: "item.project_link_thingiverse"
   translation: "Project at thingiverse"
+
+
+- id: "item.license"
+  translation: "License"
+
+- id: "item.authors"
+  translation: "Authors"

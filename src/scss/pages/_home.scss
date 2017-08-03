@@ -1,3 +1,5 @@
+$home_logo_height: 3.8em;
+$home_logo_color: #a50074;
 
 .home-content {
   max-width: inherit;
@@ -93,5 +95,27 @@
         width: auto;
       }
     }
+  }
+}
+
+.home-logo {
+  text-align: center;
+  .fig-img, .home-title {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .fig-img {
+    height: $home_logo_height;
+    margin-right: 10px
+  }
+  .home-title {
+    font-size: $home_logo_height;
+    font-family: "Raleway-Regular", sans-serif;
+    color: $home_logo_color;
+    line-height: 1.3;
+  }
+  .caption {
+    margin-top: 10px;
+    color: darken(map-get($colors, 'light'), 20%);
   }
 }

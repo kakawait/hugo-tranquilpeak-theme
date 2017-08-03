@@ -8,7 +8,7 @@
   {{ end }}
 {{ end }}
 {{ if .Scratch.Get "thumbnailImage" }}
-  {{ .Scratch.Set "thumbnailImagePosition" "bottom" }}
+  {{ .Scratch.Set "thumbnailImagePosition" "side" }}
 {{ end }}
 <article class="postShorten postShorten--thumbnailimg-{{ .Scratch.Get "thumbnailImagePosition" }}" itemscope itemType="http://schema.org/BlogPosting">
   <div class="postShorten-wrap">
@@ -25,26 +25,45 @@
           {{ .Title }}
         </a>
       </h2>
-      {{ partial "post/meta" . }}
     </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>
-		{{ if isset .Params "description" }}
-			{{ .Params.description }}
-		{{ else }}
-			{{ printf "%s" .Summary | markdownify }}	
-		{{ end }}
-        <br>
-        <a href="{{ .Permalink }}" class="postShorten-excerpt_link link">{{ i18n "post.read_more" }}</a>
-        {{ with .Params.readingtime }}
-          <span class="postShorten-readingtime">
-            {{ printf " - %s min read" . }}
-          </span>
+    <div class="summary-body">
+      {{ if and (.Scratch.Get "thumbnailImage") (eq (.Scratch.Get "thumbnailImagePosition") "side")}}
+      <a class="item-image not-in-texts" href="{{ .Permalink }}">
+        <div class="postShorten-thumbnailimg">
+          <img alt="" itemprop="image" src="{{ .Scratch.Get "thumbnailImage" }}"/>
+        </div>
+      </a>
+      {{ end }}
+      <div class="summary-texts">
+        {{ partial "post/meta" . }}
+        {{ if and (.Scratch.Get "thumbnailImage") (eq (.Scratch.Get "thumbnailImagePosition") "side")}}
+        <a class="item-image in-texts" href="{{ .Permalink }}">
+          <div class="postShorten-thumbnailimg">
+            <img alt="" itemprop="image" src="{{ .Scratch.Get "thumbnailImage" }}"/>
+          </div>
+        </a>
         {{ end }}
-      </p>
+        <div class="postShorten-excerpt" itemprop="articleBody">
+          <p>
+		        {{ if isset .Params "description" }}
+			      {{ .Params.description }}
+		        {{ else }}
+			      {{ printf "%s" .Summary | markdownify }}	
+		        {{ end }}
+            <br>
+            <a href="{{ .Permalink }}" class="postShorten-excerpt_link link">{{ i18n "post.read_more" }}</a>
+            {{ with .Params.readingtime }}
+            <span class="postShorten-readingtime">
+              {{ printf " - %s min read" . }}
+            </span>
+            {{ end }}
+          </p>
+          {{ partial "post/tag.html" . }}
+        </div>
+      </div>
     </div>
   </div>
-  {{ if and (.Scratch.Get "thumbnailImage") (ne (.Scratch.Get "thumbnailImagePosition") "top")}}
+  {{ if and (.Scratch.Get "thumbnailImage") (eq (.Scratch.Get "thumbnailImagePosition") "bottom")}}
     <a href="{{ .Permalink }}">
       <div class="postShorten-thumbnailimg">
         <img alt="" itemprop="image" src="{{ .Scratch.Get "thumbnailImage" }}"/>

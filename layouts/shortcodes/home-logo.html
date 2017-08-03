@@ -1,0 +1,6 @@
+<div class="home-logo figure">
+  <img class="fig-img" src="{{ (.Get "image-src") }}" alt="{{ (.Get "image-alt") }}">
+  <span class="home-title">{{ (.Get "title") }}</span>
+  <span class="caption" {{ with (.Get "caption-style") }}style="{{.}}"{{ end }}>{{ (.Get "caption") }}</span>
+</div>
+
