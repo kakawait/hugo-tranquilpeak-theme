@@ -120,7 +120,7 @@
           html += '<div class="media-left">';
           html += '<a class="link-unstyled" href="' + (post.link || post.permalink) + '">';
           html += '<img class="media-image" ' +
-            'src="' + post.thumbnailImageUrl + '" ' +
+            'src="/' + post.thumbnailImageUrl + '" ' +
             'width="90" height="90"/>';
           html += '</a>';
           html += '</div>';

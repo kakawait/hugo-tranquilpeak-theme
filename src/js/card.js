@@ -120,6 +120,6 @@
 
   $(document).ready(function() {
     new Card('#about', $("#sidebar, #header").find("a[href*='#about']")).run();
-    new Card('#contact', $("#sidebar, #header, .report-ctr").find("a[href*='#contact']")).run();
+    new Card('#contact', $("#sidebar, #header, #main, .report-ctr").find("a[href*='#contact']")).run();
   });
 })(jQuery);
