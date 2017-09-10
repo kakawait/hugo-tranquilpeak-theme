@@ -26,38 +26,14 @@
 - id: "global.author_picture"
   translation: "Ảnh đại diện của tác giả"
 
-- id: "global.github"
-  translation: "GitHub"
-
-- id: "global.stackoverflow"
-  translation: "Stack Overflow"
-
-- id: "global.twitter"
-  translation: "Twitter"
-
-- id: "global.facebook"
-  translation: "Facebook"
-
-- id: "global.google_plus"
-  translation: "Google Plus"
-
-- id: "global.linkedin"
-  translation: "LinkedIn"
+- id: "global.share_on"
+  translation: "Chia sẻ với %s"
 
 - id: "global.mail"
   translation: "Thư"
 
 - id: "global.rss"
   translation: "RSS"
-
-- id: "global.share_on_google_plus"
-  translation: "Chia sẻ với Google Plus"
-
-- id: "global.share_on_facebook"
-  translation: "Chia sẻ với Facebook"
-
-- id: "global.share_on_twitter"
-  translation: "Chia sẻ với Twitter"
 
 - id: "global.search_category"
   translation: "Tìm kiếm danh mục"

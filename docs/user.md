@@ -28,6 +28,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
         * [Author](#author)
         * [Customization](#customization)
         * [Integrated services](#integrated-services)
+        * [Sharing options](#sharing-options)
         * [Enable pages](#enable-pages)
 - [Integrated services configuration](#integrated-services-configuration)
     * [Google Analytics](#google-analytics)
@@ -53,7 +54,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 ## General
 
 - **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
-- **Version**: 0.3.1-BETA (based on Hexo version 1.9.1)
+- **Version**: 0.4.0-BETA (based on Hexo version 1.10.0)
 - **Compatibility**: Hugo v0.20.1
 
 ## Features
@@ -91,7 +92,6 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 
 ### Missing features from original *Hexo* version
 
-- [ ] Duoshuo
 - [ ] Baidu analytics
 - [ ] Algolia (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8)
 - [ ] Pagination custumization `tagPagination`, `categoryPagination` and `archivePagination` (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17)
@@ -360,8 +360,8 @@ E.g to display a shortcut to open algolia search window :
 | favicon | Your favicon path (Default: `/favicon.png`) |
 | imageGallery | Display an image gallery at the end of a post which have `photos` variables. (false: disabled, true: enabled) |
 | hierarchicalCategories | Define categories will create hierarchy between parents: `categories = ["foo", "bar"]` will consider "bar" a sub-category of "foo". If false it will flat categories. |
-| customCSS | Define files with css that override or extend the theme css; they are expected in `static` folder: `customCSS` = ["css/mystyles.css"]. |
-| customJS | Define files with js that override or extend the theme js; they are expected in `static` folder: `customJS` = ["js/myscripts.js"]. |
+| customCSS (_DEPRECATED see [Add custom JS or CSS using configuration](#add-custom-js-or-css-using-configuration)_) | Define files with css that override or extend the theme css: `customCSS` = ["css/mystyles.css"]. |
+| customJS (_DEPRECATED see [Add custom JS or CSS using configuration](#add-custom-js-or-css-using-configuration)_) | Define files with js that override or extend the theme js: `customJS` = ["js/myscripts.js"]. |
 
 E.g :  
 A category page look like this with `hierarchicalCategories = true` :  
@@ -369,6 +369,37 @@ A category page look like this with `hierarchicalCategories = true` :
 
 The same page with `hierarchicalCategories = false`:  
 ![hierarchicalCategories false](img/without_hierarchical_categories.png)  
+
+##### Add custom JS or CSS using configuration
+
+If you need to add some additionnal javascript or css files to your blog without forking or overriding theme itself you could use following configuration:
+
+```toml
+[params]
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/languages/go.min.js"
+    integrity = "sha256-LVuWfOU0rWFMCJNl1xb3K2HSWfxtK4IPbqEerP1P83M="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/languages/dockerfile.min.js"
+    integrity = "sha256-putofyQv7OB569xAldpyBnHJ0Uc+7VGp5Us05IgDGss="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "js/myscript.js"
+
+  [[params.customCSS]]
+    href = "css/mystyle.css"
+```
+
+**ATTENTION** there is no limitation on key structures and each keys will be converted as tag attributes.
+
+Futhermore, even if previous syntax is still supported (`customJS = ["js/myscripts.js"]`), you can't mix both new and old syntax.
 
 #### Integrated services
 
@@ -396,7 +427,43 @@ googleAnalytics =
 | fbAdminIds | Your Facebook user ids used to connect your blog with your facebook user accounts (Facebook Insights). Use array syntax. E.g : `[9830047, 1003342]`. Visit [Facebook docs](https://developers.facebook.com/docs/platforminsights/domains) for more information. |
 | fbAppId | Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : `9841307`. Visit [Facebook docs](https://developers.facebook.com/docs/platforminsights/domains) for more information. |
 
-### Enable pages ###
+#### Sharing options
+
+``` toml
+[params]
+  [[params.sharingOptions]]
+    name = "Facebook"
+    icon = "fa-facebook-official"
+    url = "https://www.facebook.com/sharer/sharer.php?u=%s"
+
+  [[params.sharingOptions]]
+    name = "Twitter"
+    icon = "fa-twitter"
+    url = "https://twitter.com/intent/tweet?text=%s"
+
+  [[params.sharingOptions]]
+    name = "Google+"
+    icon = "fa-google-plus"
+    url = "https://plus.google.com/share?url=%s"
+```
+
+You can comment and uncomment to enable or disable sharing options. If your own sharing options, simply add new sharing options on your configuration. E.g with **foo_bar** social network:
+
+```toml
+[params]
+  [[params.sharingOptions]]
+    name = "Foo bar"
+    icon = "fa-foo-bar"
+    url = "https://www.foo-bar.com/sharer/sharer.php?u=%s"
+```
+
+|Variable|Description|
+|---|---|
+|name| Name of your sharing site.|
+|icon|Name of the fontawesome icon class (Go to [font-awesome icons](http://fontawesome.io/icons/) to find class name of icon)|
+|url|URL of the link. use %s to specify where to put the permalink.|
+
+#### Enable pages
 
 Tranquilpeak provides you 2 pages to display all posts title and date by tags, by categories, by date and an about page. To enable one of this pages simply add following [taxonomies](https://gohugo.io/taxonomies/overview/):
 
@@ -426,15 +493,15 @@ Follow these steps, to add new filter :
 7. Select **Custom filter**, **Filter Field** : `Hostname`, **Filter Pattern** :  `(.*?localhost.*?)`
 8. Click on **Save** button
 
-## Quick & easy modifications ##
+## Quick & easy modifications
 
-### Prerequisites ###
+### Prerequisites
 
 Since you are going to edit the theme, you have to install all the necessary to build it after changes : [Installation](https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/developer.md#installation)
 
 **Run command in theme folder : `hexo-blog/themes/tranquilpeak`**
 
-### Change global style ###
+### Change global style
 
 If you want to change font families, font size, sidebar color, things like that, take a look at `source/scss/utils/_variables.scss` file. This file contains global variables used in this theme. **Build the theme after changes to see changes.**
 
@@ -502,11 +569,13 @@ showDate: true
 |coverCaption|Add a caption under the cover image : [Cover caption demo](https://tranquilpeak.kakawait.com/2015/05/cover-image-showcase/)|
 |coverMeta|`in`: display post meta (title, date and categories) on cover image, `out`: display meta (title, date and categories) under cover image as usual. Default behavior : `in`|
 |gallery|Images displayed in an image gallery (with fancybox) at the end of the post. If thumbnail image is not configured and cover image too, the first photo is used as thumbnail image. format: `original url [thumbnail url] [caption]`, E.g : `https://example.com/original.jpg https://example.com/thumbnail.jpg "New York"`|
-|comments|Disable the comment of the post.
+|comments|`true`: Show the comment of the post.|
 |showDate|`true`: Show the date when `true` (default)|
-|showTags|`true`: show tags of this page. Default behavior: `true`
-|showPagination|`true`: show pagination.  Default behavior: `true`
-|showSocial|`true`: show social button such as share on Twitter, Facebook...  Default behavior: `true`
+|showTags|`true`: show tags of this page.|
+|showPagination|`true`: show pagination.|
+|showSocial|`true`: show social button such as share on Twitter, Facebook...|
+|showMeta|`true`: Show post meta (date, categories).|
+|showActions|`true`: Show post actions (navigation, share links).|
 
 Example: 
 A post on index page will look like this with :`thumbnailImagePosition` set to `bottom`:  
@@ -696,10 +765,8 @@ tags:
 keywords:
 - tech
 comments:       false
-showDate:       false
-showSocial:     false
-showTags:       false
-showPagination: false
+showMeta:       false
+showActions:    false
 #thumbnailImage: //example.com/image.jpg
 ---
 

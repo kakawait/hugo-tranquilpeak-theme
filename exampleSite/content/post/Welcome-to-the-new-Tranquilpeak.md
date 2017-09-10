@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Tranquilpeak 0.3.1-BETA"
+title: "Welcome to Tranquilpeak 0.4.0-BETA"
 date: 2015-06-15
 categories:
 - tranquilpeak
@@ -65,7 +65,7 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 ## General
 
 - **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
-- **Version**: 0.3.1-BETA (based on Hexo version 1.9.1)
+- **Version**: 0.4.0-BETA (based on Hexo version 1.10.0)
 - **Compatibility**: Hugo v0.20.1
 
 ## Features
@@ -104,7 +104,6 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 
 ### Missing features from original *Hexo* version
 
-- [ ] Duoshuo
 - [ ] Baidu analytics
 - [ ] Algolia (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8)
 - [ ] Pagination custumization `tagPagination`, `categoryPagination` and `archivePagination` (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17)

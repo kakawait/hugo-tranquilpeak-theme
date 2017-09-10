@@ -26,38 +26,14 @@
 - id: "global.author_picture"
   translation: "Foto de autor"
 
-- id: "global.github"
-  translation: "GitHub"
-
-- id: "global.stackoverflow"
-  translation: "Stack Overflow"
-
-- id: "global.twitter"
-  translation: "Twitter"
-
-- id: "global.facebook"
-  translation: "Facebook"
-
-- id: "global.google_plus"
-  translation: "Google Plus"
-
-- id: "global.linkedin"
-  translation: "LinkedIn"
+- id: "global.share_on"
+  translation: "Compartir en %s"
 
 - id: "global.mail"
   translation: "Correo"
 
 - id: "global.rss"
   translation: "RSS"
-
-- id: "global.share_on_google_plus"
-  translation: "Compartir en Google Plus"
-
-- id: "global.share_on_facebook"
-  translation: "Compartir en Facebook"
-
-- id: "global.share_on_twitter"
-  translation: "Compartir en Twitter"
 
 - id: "global.search_category"
   translation: "Buscar categoría"
