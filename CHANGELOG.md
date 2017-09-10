@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.4.0-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/4) - 10 sep 2017
+## [0.4.1-SNAPSHOT](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/4) - 10 sep 2017
 
 - Fix menu ordering ([#149](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/149), [#150](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/150))
 - Synch from Hexo Tranquilpeak theme 1.10 ([#147](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/147), [#132](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/132))
