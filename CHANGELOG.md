@@ -5,10 +5,37 @@ All notable changes to this project will be documented in this file.
 ## [0.4.0-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/4) - WIP
 
 - Fix menu ordering ([#149](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/149), [#150](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/150))
+- Synch from Hexo Tranquilpeak theme 1.10 ([#147](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/147), [#132](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/132))
+  - Italian translation
+  - `showMeta` & `showActions` (see user doc for more details)
+  - Extensible _Sharing options_ (see user doc for more details)
+  - XLG side bar bug on Edge
+  - _OLDER POSTS_ Button Overlaps Sidebar
+  - Print media queries
 
 ### Breaking changes
 
 In order to fix menu ordering, you have to upgrade you `config.toml` to avoid any menu weight equals to `0`. See https://github.com/kakawait/hugo-tranquilpeak-theme/commit/f4feb3261381bd9a77be4da66d8466322886eb22#diff-991d2a2fe208cdee83955ad6e9a323a7 to get an full example.
+
+With new _Sharing options_ that allow extensible list of sharing options, there is no more hardcoded sharing option inside template. Thus sharing options: Facebook, Twitter and Google plus should be reported inside your `config.toml` (you can checkout `exampleSite/config.toml` to see sample):
+
+```toml
+[params]
+  [[params.sharingOptions]]
+    name = "Facebook"
+    icon = "fa-facebook-official"
+    url = "https://www.facebook.com/sharer/sharer.php?u=%s"
+
+  [[params.sharingOptions]]
+    name = "Twitter"
+    icon = "fa-twitter"
+    url = "https://twitter.com/intent/tweet?text=%s"
+
+  [[params.sharingOptions]]
+    name = "Google+"
+    icon = "fa-google-plus"
+    url = "https://plus.google.com/share?url=%s"
+```
 
 ## [0.3.1-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/13) - 15 apr 2017
 
