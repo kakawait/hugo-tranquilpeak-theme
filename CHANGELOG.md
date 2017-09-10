@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.4.0-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/4) - WIP
+## [0.4.0-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/4) - 10 sep 2017
 
 - Fix menu ordering ([#149](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/149), [#150](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/150))
 - Synch from Hexo Tranquilpeak theme 1.10 ([#147](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/147), [#132](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/132))
@@ -12,6 +12,12 @@ All notable changes to this project will be documented in this file.
   - XLG side bar bug on Edge
   - _OLDER POSTS_ Button Overlaps Sidebar
   - Print media queries
+- Load external resources using SRI ([#159](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/159))
+- revamp HLjs usage to fix highligthing bugs ([#154](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/154), [#160](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/160))
+- Improve `customJS` and `customCSS`
+  - Now support both abs and rel url ([#155](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/155))
+  - Add more customization than just url ([#163](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/163))
+- Add theme version on meta tag ([#140](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/140))
 
 ### Breaking changes
 
