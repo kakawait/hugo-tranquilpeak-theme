@@ -24,7 +24,7 @@
   translation: "プロフィール"
 
 - id: "global.author_picture"
-  translation: "著者の絵"
+  translation: "プロフィール画像"
 
 - id: "global.share_on"
   translation: "%sで共有"
@@ -113,7 +113,7 @@
   translation: "ウェブサイトへ"
 
 - id: "post.comment_and_share"
-  translation: "コメント・シェア"
+  translation: "コメント・共有"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"
