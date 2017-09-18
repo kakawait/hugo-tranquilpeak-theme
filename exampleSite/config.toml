@@ -12,7 +12,7 @@
 # For developpers, if you modify this theme, put your images in `source/images` folder and
 # use grunt task `build` to synchronize assets
 
-baseurl = ""
+baseURL = "https://example.org/"
 languageCode = "en-us"
 defaultContentLanguage = "en-us"
 title = "Hugo tranquilpeak theme"
@@ -166,11 +166,13 @@ canonifyurls = true
 
   # Custom CSS. Put here your custom CSS files. They are loaded after the theme CSS;
   # they have to be referred from static root. Example
-  # customCSS = ["css/foo.css"]
+  # [[params.customCSS]]
+  #   href = "css/mystyle.css"
 
   # Custom JS. Put here your custom JS files. They are loaded after the theme JS;
   # they have to be referred from static root. Example
-  # customJS = ["js/foo.js"]
+  # [[params.customJS]]
+  #   src = "js/myscript.js"
 
   # Sharing options
   # Comment and uncomment to enable or disable sharing options
@@ -200,6 +202,6 @@ canonifyurls = true
   # [params.sidebar.profile]
   #   url = "/#about"
 
-  # Customize copyright value "© 2016 <CUSTOMIZATION>. All Rights Reserved"
+  # Customize copyright value "© 2017 <CUSTOMIZATION>. All Rights Reserved"
   # [params.footer]
   #   copyright = "<a href=\"https://github.com/kakawait\">kakawait</a>"
