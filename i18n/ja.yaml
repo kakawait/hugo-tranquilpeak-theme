@@ -24,7 +24,7 @@
   translation: "プロフィール"
 
 - id: "global.author_picture"
-  translation: "著者の絵"
+  translation: "プロフィール画像"
 
 - id: "global.share_on"
   translation: "%sで共有"
@@ -113,45 +113,54 @@
   translation: "ウェブサイトへ"
 
 - id: "post.comment_and_share"
-  translation: "コメント・シェア"
+  translation: "コメント・共有"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"
   translation: "All Rights Reserved"
 
 ## DATE ##
+- id: "date.year.suffix"
+  translation: "年"
+
+- id: "date.month.suffix"
+  translation: "月"
+
+- id: "date.day.suffix"
+  translation: "日"
+
 - id: "date.month.january"
-  translation: "一月"
+  translation: "1"
 
 - id: "date.month.february"
-  translation: "二月"
+  translation: "2"
 
 - id: "date.month.march"
-  translation: "三月"
+  translation: "3"
 
 - id: "date.month.april"
-  translation: "四月"
+  translation: "4"
 
 - id: "date.month.may"
-  translation: "五月"
+  translation: "5"
 
 - id: "date.month.june"
-  translation: "六月"
+  translation: "6"
 
 - id: "date.month.july"
-  translation: "七月"
+  translation: "7"
 
 - id: "date.month.august"
-  translation: "八月"
+  translation: "8"
 
 - id: "date.month.september"
-  translation: "九月"
+  translation: "9"
 
 - id: "date.month.october"
-  translation: "十月"
+  translation: "10"
 
 - id: "date.month.november"
-  translation: "十一月"
+  translation: "11"
 
 - id: "date.month.december"
-  translation: "十二月"
+  translation: "12"
