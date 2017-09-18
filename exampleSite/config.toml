@@ -172,6 +172,10 @@ canonifyurls = true
   # they have to be referred from static root. Example
   # customJS = ["js/foo.js"]
 
+  # Display `Prev` on left side of the pagination, and `Next` on right side one.
+  # If you set this value to `true`, these positions swap.
+  # swapPagenator = false
+
   # Sharing options
   # Comment and uncomment to enable or disable sharing options
   # If you wanna add a sharing option, read user documentation :
