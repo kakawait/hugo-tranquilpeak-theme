@@ -104,16 +104,16 @@
   translation: "THẺ ĐÁNH DẤU"
 
 - id: "post.toc"
-  translation: "Phụ lục"
+  translation: "Mục lục"
 
 - id: "post.read_more"
   translation: "Đọc tiếp..."
 
 - id: "post.go_to_website"
-  translation: "Đi tới website"
+  translation: "Chuyển tới trang website"
 
 - id: "post.comment_and_share"
-  translation: "Comment và chia sẻ"
+  translation: "Bình luận và chia sẻ"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"
