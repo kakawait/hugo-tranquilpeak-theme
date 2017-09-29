@@ -2,7 +2,7 @@
   'use strict';
 
   var sourceforgePatt = new RegExp("^https?:\/\/?(?:www\.)?(sourceforge)\.net\/(projects)(\/)?([a-zA-Z0-9-]*)\/?$"),
-      thingiversePatt = new RegExp("^https?:\/\/?(?:www\.)?(thingiverse)\.com\/(thing)(:)?([0-9]*)\/?$"),
+      thingiversePatt = new RegExp("^https?:\/\/?(?:www\.)?(thingiverse)\.com\/(thing:?[0-9]*)\/?$"),
       pinshapePatt = new RegExp("^https?:\/\/?(?:www\.)?(pinshape)\.com\/(items)(\/)?([a-zA-Z0-9-]*)\/?$"),
       instructablesPatt = new RegExp("^https?:\/\/?(?:www\.)?(instructables)\.com\/(id)(\/)?([a-zA-Z0-9-]*)\/?$"),
       githubPatt = new RegExp("^https?:\/\/?(?:www\.)?(github)\.com\/?([a-zA-Z0-9\-_\.]*)(\/)?([a-zA-Z0-9\-_\.]*)\/?$"),
@@ -18,7 +18,8 @@
     }
     var checklist = [
       { r: sourceforgePatt, conv:commonConv },
-      { r: thingiversePatt, conv:commonConv },
+      { r: thingiversePatt,
+        conv:function(m){ return [ m[1], { id: m[2] } ]; } },
       { r: pinshapePatt, conv:commonConv },
       { r: instructablesPatt, conv:commonConv },
       { r: githubPatt,
@@ -172,6 +173,15 @@
         // category
         if(Array.isArray(data.categories) && data.categories.length > 0)
           data.category = data.categories[0];
+        
+        if(_data.has_unmoderated) {
+          $form.hide();
+          $wrp.find('.outer-error-msg').html(
+            "The project has an un-moderated item in queue, You can submit new change after It's processed"
+          )
+            .show();
+          return;
+        }
         
         if(_data.exists) {
           $form.find('.warning-msg').html(
