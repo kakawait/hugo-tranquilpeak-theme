@@ -33,6 +33,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 - [Integrated services configuration](#integrated-services-configuration)
     * [Google Analytics](#google-analytics)
         * [Exclude hostname (localhost) while writing articles](#exclude-hostname-localhost-while-writing-articles)
+    * [Twitter cards](#twitter-cards)
 - [Quick & easy modifications](#quick--easy-modifications)  
     * [Prerequisites](#prerequisites)
     * [Change global style](#change-global-style)
