@@ -1,7 +1,7 @@
 {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
   <div class="pagination-bar">
     <ul class="pagination">
-      {{ if .Site.Params.swapPagenator }}
+      {{ if .Site.Params.swapPaginator }}
         {{ if .Paginator.HasPrev }}
           <li class="pagination-prev">
             <a class="btn btn--default btn--small" href="{{ .Paginator.Prev.URL }}">

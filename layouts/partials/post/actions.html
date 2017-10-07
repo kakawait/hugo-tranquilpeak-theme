@@ -2,7 +2,7 @@
   <div class="post-actions-wrap">
       <nav {{ if eq .Params.showPagination false }}style="visibility: hidden"{{ end }}>
         <ul class="post-actions post-action-nav">
-          {{ if .Site.Params.swapPagenator }}
+          {{ if .Site.Params.swapPaginator }}
             <li class="post-action">
               {{ with .PrevInSection }}
                 <a class="post-action-btn btn btn--default tooltip--top" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}">
