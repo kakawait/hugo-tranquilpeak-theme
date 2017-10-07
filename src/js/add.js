@@ -50,6 +50,11 @@
         ('<strong>' + $xhr.status + '</strong>: ' +
          $xhr.statusText);
   }
+  function updateHeight() {
+    $('.add-wrapper .collapsable').each(function(){
+      collapsable_update_height(this)
+    });
+  }
   // add parsley project url validator
   window.Parsley.addValidator('projectUrl', {
     validateString: function(url) {
@@ -67,6 +72,7 @@
     // [for now] check for validity of url
     $form.find('.error-msg').hide();
     if(!parsley.validate()) {
+      updateHeight()
       return false;
     }
     var $btn = $form.find('button[type=submit]');
@@ -84,6 +90,7 @@
       .then(function(data) {
         if(data.error) {
           $form.find('.error-msg').html(respFailMessage(data)).show();
+          updateHeight()
           return;
         }
         if(!callback) {
@@ -96,6 +103,7 @@
       })
       .fail(function($xhr) {
         $form.find('.error-msg').html(ajaxFailMessage($xhr)).show();
+        updateHeight()
       })
       .always(function(){ $btn.prop('disabled', false); });
     return true;
@@ -122,10 +130,15 @@
         inputquery[k] = v;
     });
     function loadingFinished(success, msg) {
-      $wrp.find('.state-after-loading').addClass('ready');
       $wrp.find('.state-loading').addClass('finished');
+      setTimeout(function() {
+        var elm = $wrp.find('.state-after-loading')[0];
+        if(elm)
+          collapsable_toggle(elm, false);
+      }, 500); // delay
       if(!success) {
         $form.find('.error-msg').html(msg).show();
+        updateHeight()
         $form.find('button[type=submit]').prop('disabled', true);
       }
     }
@@ -161,6 +174,7 @@
         if(resp.error) {
           $form.hide();
           $wrp.find('.outer-error-msg').html(respFailMessage(resp)).show();
+          updateHeight()
           return;
         }
         _data = resp;
@@ -180,6 +194,7 @@
             "The project has an un-moderated item in queue, You can submit new change after It's processed"
           )
             .show();
+          updateHeight()
           return;
         }
         
@@ -190,16 +205,24 @@
             .append($('<a/>').attr('href', _data.current_url)
                     .html('Click here to see'))
             .show();
+          updateHeight()
         }
         updateForm()
       })
       .fail(function($xhr) {
         loadingFinished(false, ajaxFailMessage($xhr));
       });
+    window.updateHeight = updateHeight
+    $form.find('button[type=submit]').click(function() {
+      setTimeout(function() {
+        updateHeight() // update with delay anyway
+      }, 10);
+    });
     $form.submit(function($evt) {
       $evt.preventDefault();
       $form.find('.error-msg').hide();
       if(!parsley.validate()) {
+        updateHeight()
         return;
       }
       var data = dataWithFormInput(),
@@ -230,16 +253,16 @@
         .then(function(resp) {
           $btn.prop('disabled', false);
           if(resp.error) {
-            $wrp.find('.state-after-loading').css('max-height', 'inherit');
             $form.find('.error-msg').html(respFailMessage(resp)).show();
+            updateHeight()
             return;
           }
           // thank you page
           if(data.dryrun) {
             console.log(resp);
-            $wrp.find('.state-after-loading').css('max-height', 'inherit');
             $form.find('.debug-result').html(JSON.stringify(resp, null, '  '))
               .show();
+            updateHeight()
           } else {
             window.location = $form.data('done-goto');
           }
@@ -247,6 +270,7 @@
         .fail(function($xhr) {
           $btn.prop('disabled', false);
           $form.find('.error-msg').html(ajaxFailMessage($xhr)).show();
+          updateHeight()
         });
     });
     $form.find('.back-btn').click(function(){
@@ -256,8 +280,17 @@
   $(function() {
     if($('#add-project-select-form').length > 0)
       _addSelectInit()
-    if($('#add-project-submit-form').length > 0)
+    if($('#add-project-submit-form').length > 0) {
       _addSubmitInit();
+      $('#add-project-submit-form .more-less-btn').click(function() {
+        var elm = $('#add-project-submit-form .add-form-more')[0];
+        if(elm) {
+          var toggle = collapsable_toggle(elm);
+          $('#add-project-submit-form .more-less-btn')
+            .text(toggle ? 'More' : 'Less');
+        }
+      });
+    }
   });
 
   

@@ -25,22 +25,22 @@
     max-height: 0px;
   }
   .state-after-loading {
-    -moz-transition: max-height 0.5s;
-    -ms-transition: max-height 0.5s;
-    -o-transition: max-height 0.5s;
-    -webkit-transition: max-height 0.5s;
-    transition: max-height 0.5s;
-    -moz-transition-delay: 0.5s;
-    -ms-transition-delay: 0.5s;
-    -o-transition-delay: 0.5s;
-    -webkit-transition-delay: 0.5s;
-    transition-delay: 0.5s;
-    overflow: hidden;
-    max-height: 0px;
     padding: 2px;
   }
-  .state-after-loading.ready {
-    max-height: 1200px; // needs change on content change
+  .add-form-more {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  textarea {
+    min-height: 300px;
+  }
+  .more-less-btn {
+    padding: 5px 10px;
+    font-size: 90%;
+    color: #444 !important;
+    &:hover {
+      color: #111 !important;
+    }
   }
   dl {
     margin-top: 0;
@@ -177,5 +177,4 @@
       margin: 0px 5px;
     }
   }
-
 }

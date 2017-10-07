@@ -5,28 +5,14 @@
     <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
     <span class="sr-only">Loading...</span>
   </div>
-  <div class="state-after-loading">
+  <div class="state-after-loading collapsable collapse">
     <div class="outer-error-msg alert alert-danger" role="alert" style="display:none">
     </div>
     <form id="add-project-submit-form" data-done-goto="{{ .done_url }}">
       <div class="warning-msg alert alert-warning" role="alert" style="display:none">
       </div>
-      {{ range .fields }}
-        {{ if eq .type "select" }}
-        <div class="form-group">
-          <label for="{{ .name }}-inpf">{{ .label }}</label>
-          <select class="form-control" id="{{ .name }}-inpf" name="{{ .name }}" {{with .placeholder}}placeholder="{{.}}"{{end}} {{if isset . "required"|and .required }}required=""{{end}} {{ if isset . "can_edit" | and .can_edit | not }}disabled=""{{end}}>
-            {{ range .options }}
-            <option value="{{ index . 0 }}">{{ index . 1 }}</option>
-            {{ end }}
-          </select>
-        </div>
-        {{ else }}
-        <div class="form-group">
-          <label for="{{ .name }}-inpf">{{ .label }}</label>
-          <input class="form-control" id="{{ .name }}-inpf" type="{{ .type }}" name="{{ .name }}" {{with .placeholder}}placeholder="{{.}}"{{end}} {{if isset . "required"|and .required }}required=""{{end}} {{ if isset . "can_edit" | and .can_edit | not }}disabled=""{{end}} />
-        </div>
-        {{ end }}
+      {{ range .submit_form.basic_fields }}
+        {{ partial "add/_input" (index $.Site.Params.Add.field .) }}
       {{ end }}
       {{ if isset $.Site.Taxonomies "tags" }}
       <div class="tags form-group">
@@ -39,6 +25,12 @@
         </select>
       </div>
       {{ end }}
+      <button type="button" class="more-less-btn btn btn--default">More</button>
+      <div class="add-form-more collapsable collapse">
+        {{ range .submit_form.more_fields }}
+          {{ partial "add/_input" (index $.Site.Params.Add.field .) }}
+        {{ end }}
+      </div>
       <script src="https://www.google.com/recaptcha/api.js"></script>
       <div class="g-recaptcha" data-sitekey="{{ .recaptcha_site_key }}"></div>
       <div class="error-msg alert alert-danger" role="alert" style="display:none">

@@ -1,0 +1,9 @@
+.collapsable {
+  position: relative;
+  overflow: hidden;
+  height: auto; /* unknown depending on content */
+  transition: height 0.5s;
+  &.collapse {
+    height: 0px !important;
+  }
+}

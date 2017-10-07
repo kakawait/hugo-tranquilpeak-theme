@@ -1,0 +1,20 @@
+        {{ if eq .type "select" }}
+        <div class="form-group">
+          <label for="{{ .name }}-inpf">{{ .label }}</label>
+          <select class="form-control" id="{{ .name }}-inpf" name="{{ .name }}" {{with .placeholder}}placeholder="{{.}}"{{end}} {{if isset . "required"|and .required }}required=""{{end}} {{ if isset . "can_edit" | and .can_edit | not }}disabled=""{{end}}>
+            {{ range .options }}
+            <option value="{{ index . 0 }}">{{ index . 1 }}</option>
+            {{ end }}
+          </select>
+        </div>
+        {{ else if eq .type "textarea" }}
+        <div class="form-group">
+          <label for="{{ .name }}-inpf">{{ .label }}</label>
+          <textarea class="form-control" id="{{ .name }}-inpf" type="{{ .type }}" name="{{ .name }}" {{with .placeholder}}placeholder="{{.}}"{{end}} {{if isset . "required"|and .required }}required=""{{end}} {{ if isset . "can_edit" | and .can_edit | not }}disabled=""{{end}}></textarea>
+        </div>
+        {{ else }}
+        <div class="form-group">
+          <label for="{{ .name }}-inpf">{{ .label }}</label>
+          <input class="form-control" id="{{ .name }}-inpf" type="{{ .type }}" name="{{ .name }}" {{with .placeholder}}placeholder="{{.}}"{{end}} {{if isset . "required"|and .required }}required=""{{end}} {{ if isset . "can_edit" | and .can_edit | not }}disabled=""{{end}} />
+        </div>
+        {{ end }}
