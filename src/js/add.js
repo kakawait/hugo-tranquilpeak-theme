@@ -212,7 +212,6 @@
       .fail(function($xhr) {
         loadingFinished(false, ajaxFailMessage($xhr));
       });
-    window.updateHeight = updateHeight
     $form.find('button[type=submit]').click(function() {
       setTimeout(function() {
         updateHeight() // update with delay anyway
@@ -292,6 +291,4 @@
       });
     }
   });
-
-  
 })(jQuery);
