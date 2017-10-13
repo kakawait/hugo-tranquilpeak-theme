@@ -174,6 +174,10 @@ canonifyurls = true
   # [[params.customJS]]
   #   src = "js/myscript.js"
 
+  # Display `Next` on left side of the pagination, and `Prev` on right side one.
+  # If you set this value to `true`, these positions swap.
+  # swapPaginator = true
+
   # Sharing options
   # Comment and uncomment to enable or disable sharing options
   # If you wanna add a sharing option, read user documentation :
