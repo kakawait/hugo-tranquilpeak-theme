@@ -35,7 +35,8 @@
       $(document).keyup(function(event) {
         var target = event.target || event.srcElement;
         // exit if user is focusing an input
-        if (target.tagName.toUpperCase() === 'INPUT') {
+        if (['INPUT','TEXTAREA', 'SELECT']
+            .indexOf(target.tagName.toUpperCase()) != -1) {
           return;
         }
 

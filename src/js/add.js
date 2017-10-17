@@ -7,11 +7,12 @@
       instructablesPatt = new RegExp("^https?:\/\/?(?:www\.)?(instructables)\.com\/(id)(\/)?([a-zA-Z0-9-]*)\/?$"),
       githubPatt = new RegExp("^https?:\/\/?(?:www\.)?(github)\.com\/?([a-zA-Z0-9\-_\.]*)(\/)?([a-zA-Z0-9\-_\.]*)\/?$"),
       httpfilePatt = new RegExp("^https?://([a-z\\d-]+\\.){1,}[a-z\\d]{2,}/.*\.md$", "i"),
-      dropboxPatt = new RegExp("^https?:\\/\\/(?:www\.)?(dropbox)\.com\/sh/([^\?\\s]+)(?:\\?dl=[01])?$"),
+      dropboxPatt = new RegExp("^https?:\\/\\/(?:www\.)?(dropbox)\.com\/([^\?\\s]+)(?:\\?dl=[01])?$"),
       projectOrigins = ['sourceforge','thingiverse','pinshape',
                         'instructables','github','dropbox','httpfile'],
       apiurl = '//api.openassistive.org/';
-   //   apiurl = 'http://localhost:5000/'; // for development
+  if((location+'').match(/^https?:\/\/localhost[:\/]/))
+    apiurl = 'http://localhost:5000/'; // for development
   function parseProjectUrl(url) {
     function commonConv(m) {
       return [ m[1], { id: m[4] } ]
