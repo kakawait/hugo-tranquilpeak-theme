@@ -12,9 +12,12 @@
     {{ with .OutputFormats.Get "RSS" }}
         {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{ end }}
-    {{ range where .Data.Pages ".Params.moderated" "==" true }}
+    {{$a := where .Data.Pages ".Params.moderated" "==" true}}
+	{{$b := where .Data.Pages "Section" "post"}}
+	{{$c := $a | union $b }}
+    {{ range $c }}
     <item>
-      <title>{{ .Title }}</title>
+      <title>{{ .Title }} ({{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ end }})</title>
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
