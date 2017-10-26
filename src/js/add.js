@@ -4,11 +4,12 @@
   var sourceforgePatt = new RegExp("^https?:\/\/?(?:www\.)?(sourceforge)\.net\/(projects)(\/)?([a-zA-Z0-9-]*)\/?$"),
       thingiversePatt = new RegExp("^https?:\/\/?(?:www\.)?(thingiverse)\.com\/(thing:?[0-9]*)\/?$"),
       pinshapePatt = new RegExp("^https?:\/\/?(?:www\.)?(pinshape)\.com\/(items)(\/)?([a-zA-Z0-9-]*)\/?$"),
+      hackadayPatt = new RegExp("^https?:\/\/?(?:www\.)?(hackaday)\.io\/(project)(\/)?([a-zA-Z0-9-]*)\/?$"),
       instructablesPatt = new RegExp("^https?:\/\/?(?:www\.)?(instructables)\.com\/(id)(\/)?([a-zA-Z0-9-]*)\/?$"),
       githubPatt = new RegExp("^https?:\/\/?(?:www\.)?(github)\.com\/?([a-zA-Z0-9\-_\.]*)(\/)?([a-zA-Z0-9\-_\.]*)\/?$"),
       httpfilePatt = new RegExp("^https?://([a-z\\d-]+\\.){1,}[a-z\\d]{2,}/.*\.md$", "i"),
       dropboxPatt = new RegExp("^https?:\\/\\/(?:www\.)?(dropbox)\.com\/([^\?\\s]+)(?:\\?dl=[01])?$"),
-      projectOrigins = ['sourceforge','thingiverse','pinshape',
+      projectOrigins = ['sourceforge','thingiverse','pinshape','hackaday',
                         'instructables','github','dropbox','httpfile'],
       apiurl = '//api.openassistive.org/';
   if((location+'').match(/^https?:\/\/localhost[:\/]/))
@@ -22,6 +23,7 @@
       { r: thingiversePatt,
         conv:function(m){ return [ m[1], { id: m[2] } ]; } },
       { r: pinshapePatt, conv:commonConv },
+      { r: hackadayPatt, conv:commonConv },
       { r: instructablesPatt, conv:commonConv },
       { r: githubPatt,
         conv: function(m) { return [ m[1],{ id: m.slice(2,5).join("") } ] } },
