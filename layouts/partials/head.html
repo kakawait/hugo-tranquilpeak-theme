@@ -38,6 +38,10 @@
       <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ . }}">
     {{ end }}
 
+    {{ if not (eq .Params.canonical false) }}
+      <link rel="canonical" href="{{ .Permalink }}" />
+    {{ end }}
+
     <!-- open graph data -->
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <meta property="og:type" content="blog">
