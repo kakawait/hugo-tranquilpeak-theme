@@ -27,6 +27,7 @@
     {{ partial "head_start.html" . }}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="generator" content="Hugo {{ .Hugo.Version }} with theme Tranquilpeak 0.4.2-SNAPSHOT">
     <title>{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}</title>
     <meta name="author" content="{{ .Site.Author.name }}">
@@ -39,13 +40,15 @@
 
     <!-- open graph data -->
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}">
-    <meta property="og:url" content="{{ .URL }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:locale" content="{{ .Lang }}">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{{ .Site.Title }}">
+    <meta name="twitter:title" content="{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}">
+    <meta name="twitter:url" content="{{ .Permalink }}">
     <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     {{ with .Site.Author.twitter }}
       <meta name="twitter:creator" content="@{{ . }}">
@@ -63,23 +66,28 @@
 
     {{ if .Scratch.Get "gravatarEmail" }}
       <meta property="og:image" content="//www.gravatar.com/avatar/{{ (md5 (.Scratch.Get "gravatarEmail")) | urlize }}?s=640">
+      <meta name="twitter:image" content="//www.gravatar.com/avatar/{{ (md5 (.Scratch.Get "gravatarEmail")) | urlize }}?s=640">
     {{ else if .Site.Author.picture }}
       <meta property="og:image" content="{{ .Site.Author.picture | absURL }}">
+      <meta name="twitter:image" content="{{ .Site.Author.picture | absURL }}">
     {{ end }}
 
     {{ with .Params.thumbnailImage }}
       <meta property="og:image" content="{{ . | absURL }}">
+      <meta name="twitter:image" content="{{ . | absURL }}">
     {{ end }}
     {{ with .Params.coverImage }}
       <meta property="og:image" content="{{ . | absURL }}">
+      <meta name="twitter:image" content="{{ . | absURL }}">
     {{ end }}
     {{ with .Params.gallery }}
       {{ range . }}
         <meta property="og:image" content="{{ range first 1 (split . " ") }}{{ . | absURL }}{{ end }}">
+        <meta name="twitter:image" content="{{ range first 1 (split . " ") }}{{ . | absURL }}{{ end }}">
       {{ end }}
     {{ end }}
 
-    {{ with .Site.Author.googlePlus }}
+    {{ with .Site.Author.googleplus }}
       <link rel="publisher" href="https://plus.google.com/{{ . | urlize }}">
     {{ end }}
 
