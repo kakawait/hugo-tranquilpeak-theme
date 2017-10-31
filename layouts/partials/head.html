@@ -17,7 +17,7 @@
   {{ .Scratch.Set "gravatarEmail" .Site.Author.gravataremail }}
 {{ end }}
 {{ if .Scratch.Get "gravatarEmail" }}
-  {{ .Scratch.Set "authorPicture" (printf "//www.gravatar.com/avatar/%s" (urlize (md5 (.Scratch.Get "gravatarEmail")))) }}
+  {{ .Scratch.Set "authorPicture" (printf "https://www.gravatar.com/avatar/%s" (urlize (md5 (.Scratch.Get "gravatarEmail")))) }}
 {{ else if .Site.Author.picture }}
   {{ .Scratch.Set "authorPicture" (absURL .Site.Author.picture) }}
 {{ end }}
@@ -44,7 +44,7 @@
 
     <!-- open graph data -->
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    <meta property="og:type" content="blog">
+    <meta property="og:type" content="website">
     <meta property="og:title" content="{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}">
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
@@ -69,8 +69,8 @@
     {{ end }}
 
     {{ if .Scratch.Get "gravatarEmail" }}
-      <meta property="og:image" content="//www.gravatar.com/avatar/{{ (md5 (.Scratch.Get "gravatarEmail")) | urlize }}?s=640">
-      <meta name="twitter:image" content="//www.gravatar.com/avatar/{{ (md5 (.Scratch.Get "gravatarEmail")) | urlize }}?s=640">
+      <meta property="og:image" content="https://www.gravatar.com/avatar/{{ (md5 (.Scratch.Get "gravatarEmail")) | urlize }}?s=640">
+      <meta name="twitter:image" content="https://www.gravatar.com/avatar/{{ (md5 (.Scratch.Get "gravatarEmail")) | urlize }}?s=640">
     {{ else if .Site.Author.picture }}
       <meta property="og:image" content="{{ .Site.Author.picture | absURL }}">
       <meta name="twitter:image" content="{{ .Site.Author.picture | absURL }}">
