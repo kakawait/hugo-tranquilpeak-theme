@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.4.2-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/17) - TBD
+## [0.4.2-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/17) - 1 nov 2017
 
 - Support [prism.js](http://prismjs.com/) syntax highlighter in addition to _highlight.js_ ([#24](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/24))
 - Upgrade external JS dependencies
