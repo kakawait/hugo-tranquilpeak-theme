@@ -1,6 +1,10 @@
 <!--EXTERNAL SCRIPTS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+{{ if eq .Site.Params.syntaxHighlighter "highligth.js" }}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+{{ else if eq .Site.Params.syntaxHighlighter "prism.js" }}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.8.3/prism.min.js" integrity="sha256-haEv2ilTk2sXcJaGbkTtErRCHy/qGt3g+bGbgPf5OTY=" crossorigin="anonymous"></script>
+{{ end }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
 <!--EXTERNAL SCRIPTS END-->
 <!--SCRIPTS-->
@@ -13,10 +17,11 @@
     <script src="{{ . | absURL }}"></script>
   {{ end }}
 {{ end }}
+{{ if eq .Site.Params.syntaxHighlighter "highligth.js" }}
 <script>
 $(document).ready(function() {
   hljs.configure({ classPrefix: '', useBR: false });
-  $('pre.code-highlight, pre > code').each(function(i, block) {
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
     if (!$(this).hasClass('codeblock')) {
       $(this).addClass('codeblock');
     }
@@ -24,6 +29,7 @@ $(document).ready(function() {
   });
 });
 </script>
+{{ end }}
 {{ if .IsPage }}
   {{ if not (eq .Params.comments false) }}
     {{ if .Site.DisqusShortname }}
