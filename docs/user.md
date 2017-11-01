@@ -1,4 +1,4 @@
-# User documentation
+﻿# User documentation
 
 A gorgeous responsive theme for Hugo blog framework
 
@@ -171,7 +171,7 @@ You can customize it by setting
 
 Will produce: "2 January 2006"
 
-ATTENTION: date format should respect `go` `Time` package syntax, please refer to https://golang.org/pkg/time/
+**ATTENTION**: date format should respect `go` `Time` package syntax, please refer to https://golang.org/pkg/time/
 
 **Moreover, if you are using fully named month (short named month like "jan", "feb", etc is not supported), month will be translated.**
 
@@ -182,6 +182,25 @@ defaultContentLanguage = "fr-fr"
 ```
 
 "21 July 2006" will be output "21 Juillet 2006".
+
+**If you want to change format for other languages, you can declare them into hugo' language tag as:**
+
+```toml
+[params]
+  # Default Date Format
+  dateFormat = "2 January 2006"
+  # The output will be: `2 January 2006`
+
+# Custom Date Format for Vietnamese
+[languages.vi]
+dateFormat = "ngày 2 January năm 2006"
+# The output will be: `ngày 2 tháng 1 năm 2006`
+
+# Custom Date Format for Japanese
+[languages.ja]
+dateFormat = "2006年January2日"
+# The output will be: `2006年1月2日`
+```
 
 ### Define global keywords
 
