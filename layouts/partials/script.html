@@ -55,8 +55,8 @@ $(document).ready(function() {
 {{ end }}
 {{ with .Site.Params.algolia }}
   {{ if (isset . "appId") | and (isset . "apiKey") | and (isset . "indexName") }}
-    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment-with-locales.min.js"></script>
-    <script src="//cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment-with-locales.min.js" integrity="sha256-TbOIe++NbC9P3KTtUMJ5wcROlBdnRqrPleLdpPg3xxE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.24.5/algoliasearch.min.js" integrity="sha256-vUvLcn3X0cXhote4PNwW6d+fzjJR0hoD+yGFeVaElew=" crossorigin="anonymous"></script>
     <script>
       var algoliaClient = algoliasearch('{{ .appId }}', '{{ .apiKey }}');
       var algoliaIndex = algoliaClient.initIndex('{{ .indexName }}');
