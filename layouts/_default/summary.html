@@ -17,8 +17,8 @@
     {{ end }}
   {{ end }}
 {{ end }}
-{{ if and (.Scratch.Get "thumbnailImage") .Params.thumbnailimageposition }}
-  {{ .Scratch.Set "thumbnailImagePosition" .Params.thumbnailimageposition }}
+{{ if or .Params.thumbnailimageposition .Site.Params.thumbnailimageposition }}
+  {{ .Scratch.Set "thumbnailImagePosition" (.Params.thumbnailimageposition | default .Site.Params.thumbnailimageposition) }}
 {{ else }}
   {{ .Scratch.Set "thumbnailImagePosition" "bottom" }}
 {{ end }}
