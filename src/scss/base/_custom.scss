@@ -6,3 +6,9 @@
     	vertical-align: middle;
     }
 }
+
+pre.code-highlight > code {
+	padding: 0;
+	margin: 0;
+	line-height: inherit;
+}

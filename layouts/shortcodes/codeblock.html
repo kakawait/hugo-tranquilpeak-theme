@@ -18,7 +18,7 @@
   {{ end }}
 {{ end }}
 {{ $trimmedContent := trim .Inner "\n" }}
-<figure class="highlight {{ with ($.Scratch.Get "c-language") }}{{ . }}{{ end }}">
+<figure class="highlight {{ $.Scratch.Get "c-language" }} language-{{ with ($.Scratch.Get "c-language") }}{{ . }}{{ end }}">
   <figcaption>
     {{ if and (($.Scratch.Get "c-url") ($.Scratch.Get "c-title")) }}
       <span>{{ $.Scratch.Get "c-title" }}</span><a href="{{ ($.Scratch.Get "c-url") | safeURL }}" target="_blank" rel="external">{{ $.Scratch.Get "c-link-text" | default ($.Scratch.Get "c-title") }}</a>
@@ -33,7 +33,7 @@
           <pre>{{ range $index,$value := (split $trimmedContent "\n") }}<span class="line">{{ add $index 1 }}</span><br>{{ end }}</pre>
         </td>
         <td class="code">
-          <pre class="{{ $.Scratch.Get "c-language" }} code-highlight">{{ $trimmedContent }}</pre>
+          <pre class="code-highlight language-{{ $.Scratch.Get "c-language" }}"><code class="{{ $.Scratch.Get "c-language" }}">{{ $trimmedContent }}</code></pre>
         </td>
       </tr>
     </tbody>

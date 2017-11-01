@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.2-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/17) - TBD
+
+- Support [prism.js](http://prismjs.com/) syntax highlighter in addition to _highlight.js_ ([#24](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/24))
+- Upgrade external JS dependencies
+  - Jquery 2.1.3 to 2.2.4 ([#214](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/214))
+  - Fancybox 2.1.4 to 2.1.7 ([#215](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/215))
+  - Highlight 9.8.0 to 9.12.0 ([#219](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/219))
+- Fix issue where link to every posts is display inside archive ([#203](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/203))
+- Fix issue on global property `thumbnailimageposition` which was ignored ([#179](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/179))
+- Add global property to allow swapping pagination ([#202](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/202))
+
+### Breaking changes
+
+Since new syntax highlighter prism.js, you have to configure which syntax highlighter you want to use between _highlight.js_ and _prism.js_. **However if you don't configure it, no syntax highligh will be apply** (where previously _highlight.js_ was forced by default).
+
+Please upgrade you're `config.toml` (you can checkout `exampleSite/config.toml` to see sample) to re-add _highlight.js_ as syntax highlighter (except if you don't need it):
+
+```toml
+[params]
+  syntaxHighlighter = "highligth.js"
+```
+
 ## [0.4.1-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/16) - 11 sep 2017
 
 - Fix _sharing options_ link generation bug, that break shares ([#196](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/196))

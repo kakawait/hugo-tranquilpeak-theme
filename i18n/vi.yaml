@@ -24,7 +24,7 @@
   translation: "Thông tin"
 
 - id: "global.author_picture"
-  translation: "Ảnh đại diện của tác giả"
+  translation: "Ảnh đại diện"
 
 - id: "global.share_on"
   translation: "Chia sẻ với %s"
@@ -104,16 +104,16 @@
   translation: "THẺ ĐÁNH DẤU"
 
 - id: "post.toc"
-  translation: "Phụ lục"
+  translation: "Mục lục"
 
 - id: "post.read_more"
   translation: "Đọc tiếp..."
 
 - id: "post.go_to_website"
-  translation: "Đi tới website"
+  translation: "Chuyển tới trang"
 
 - id: "post.comment_and_share"
-  translation: "Comment và chia sẻ"
+  translation: "Bình luận và chia sẻ"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"
@@ -121,37 +121,37 @@
 
 ## DATE ##
 - id: "date.month.january"
-  translation: "Tháng một"
+  translation: "tháng 1"
 
 - id: "date.month.february"
-  translation: "Tháng hai"
+  translation: "tháng 2"
 
 - id: "date.month.march"
-  translation: "Tháng ba"
+  translation: "tháng 3"
 
 - id: "date.month.april"
-  translation: "Tháng tư"
+  translation: "tháng 4"
 
 - id: "date.month.may"
-  translation: "Tháng năm"
+  translation: "tháng 5"
 
 - id: "date.month.june"
-  translation: "Tháng sáu"
+  translation: "tháng 6"
 
 - id: "date.month.july"
-  translation: "Tháng bảy"
+  translation: "tháng 7"
 
 - id: "date.month.august"
-  translation: "Tháng tám"
+  translation: "tháng 8"
 
 - id: "date.month.september"
-  translation: "Tháng chín"
+  translation: "tháng 9"
 
 - id: "date.month.october"
-  translation: "Tháng mười"
+  translation: "tháng 10"
 
 - id: "date.month.november"
-  translation: "Tháng mười một"
+  translation: "tháng 11"
 
 - id: "date.month.december"
-  translation: "Tháng mười hai"
+  translation: "tháng 12"

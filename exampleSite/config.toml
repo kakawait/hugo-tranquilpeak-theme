@@ -1,5 +1,5 @@
 # Tranquilpeak
-# Version : 0.4.1-BETA
+# Version : 0.4.2-BETA
 # Author : Thibaud Leprêtre
 
 # I STRONGLY recommend you to use a CDN to speed up loading of pages.
@@ -12,7 +12,7 @@
 # For developpers, if you modify this theme, put your images in `source/images` folder and
 # use grunt task `build` to synchronize assets
 
-baseurl = ""
+baseURL = "https://example.org/"
 languageCode = "en-us"
 defaultContentLanguage = "en-us"
 title = "Hugo tranquilpeak theme"
@@ -107,6 +107,10 @@ canonifyurls = true
   # Global keywords configuration. Following keywords will be add to every pages
   # keywords = ["development", "next-gen"]
 
+  # Syntax highlighter, possible choice between: "highligth.js" (recommanded) and "prism.js" (experimental)
+  # You can comment it to disable syntax highligthing
+  syntaxHighlighter = "highligth.js"
+
   # Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. (true: enable, false: disable)
   clearReading = true
 
@@ -166,11 +170,17 @@ canonifyurls = true
 
   # Custom CSS. Put here your custom CSS files. They are loaded after the theme CSS;
   # they have to be referred from static root. Example
-  # customCSS = ["css/foo.css"]
+  # [[params.customCSS]]
+  #   href = "css/mystyle.css"
 
   # Custom JS. Put here your custom JS files. They are loaded after the theme JS;
   # they have to be referred from static root. Example
-  # customJS = ["js/foo.js"]
+  # [[params.customJS]]
+  #   src = "js/myscript.js"
+
+  # Display `Next` on left side of the pagination, and `Prev` on right side one.
+  # If you set this value to `true`, these positions swap.
+  # swapPaginator = true
 
   # Sharing options
   # Comment and uncomment to enable or disable sharing options
@@ -200,6 +210,6 @@ canonifyurls = true
   # [params.sidebar.profile]
   #   url = "/#about"
 
-  # Customize copyright value "© 2016 <CUSTOMIZATION>. All Rights Reserved"
+  # Customize copyright value "© 2017 <CUSTOMIZATION>. All Rights Reserved"
   # [params.footer]
   #   copyright = "<a href=\"https://github.com/kakawait\">kakawait</a>"
