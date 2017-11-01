@@ -95,10 +95,10 @@
 
 ## POST ##
 - id: "post.no_title"
-  translation: "Không có tiêu đề"
+  translation: "Vô đề"
 
 - id: "post.categorized_in"
-  translation: "trong"
+  translation: "mục"
 
 - id: "post.tagged_in"
   translation: "THẺ ĐÁNH DẤU"
