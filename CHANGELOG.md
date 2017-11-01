@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.2-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/17) - TBD
+
+- Support [prism.js](http://prismjs.com/) syntax highlighter in addition to _highlight.js_ ([#24](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/24))
+
+### Breaking changes
+
+Since new syntax highlighter prism.js, you have to configure which syntax highlighter you want to use between _highlight.js_ and _prism.js_. **However if you don't configure it, no syntax highligh will be apply** (where previously _highlight.js_ was forced by default).
+
+Please upgrade you're `config.toml` (you can checkout `exampleSite/config.toml` to see sample) to re-add _highlight.js_ as syntax highlighter (except if you don't need it):
+
+```toml
+[params]
+  syntaxHighlighter = "highligth.js"
+```
+
 ## [0.4.1-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/16) - 11 sep 2017
 
 - Fix _sharing options_ link generation bug, that break shares ([#196](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/196))

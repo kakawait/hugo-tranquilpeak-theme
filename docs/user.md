@@ -347,6 +347,7 @@ E.g to display a shortcut to open algolia search window :
   favicon = /favicon.png
   imageGallery = true
   hierarchicalCategories = true
+  syntaxHighlighter = 'highlight.js'
 ```
 
 | Variable | Description |
@@ -362,6 +363,7 @@ E.g to display a shortcut to open algolia search window :
 | hierarchicalCategories | Define categories will create hierarchy between parents: `categories = ["foo", "bar"]` will consider "bar" a sub-category of "foo". If false it will flat categories. |
 | customCSS (_DEPRECATED see [Add custom JS or CSS using configuration](#add-custom-js-or-css-using-configuration)_) | Define files with css that override or extend the theme css: `customCSS` = ["css/mystyles.css"]. |
 | customJS (_DEPRECATED see [Add custom JS or CSS using configuration](#add-custom-js-or-css-using-configuration)_) | Define files with js that override or extend the theme js: `customJS` = ["js/myscripts.js"]. |
+| syntaxHighlighter | Define which syntax highlighter you want to use (if not set syntax highlighting is disable) between `highlight.js` and `prism.js` |
 
 E.g :  
 A category page look like this with `hierarchicalCategories = true` :  
@@ -497,7 +499,7 @@ Follow these steps, to add new filter :
 
 ### Prerequisites
 
-Since you are going to edit the theme, you have to install all the necessary to build it after changes : [Installation](https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/developer.md#installation)
+Since you are going to edit the theme, you have to install all the necessary to build it after changes : [Installation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/developer.md#installation)
 
 **Run command in theme folder : `hexo-blog/themes/tranquilpeak`**
 
@@ -513,7 +515,7 @@ Of course, you can replace it with an other theme found on highlight.js reposito
 Follow these steps :
 
 1. Get your theme here : [Highlight.js theme](https://github.com/isagalaev/highlight.js/tree/master/src/styles) or create yours
-2. Follow guidelines in `source/scss/themes/hljs-custom.scss` file
+2. Follow guidelines in `src/scss/themes/hljs-custom.scss` file
 3. Build the theme with `npm run prod` or `grunt buildProd`. Learn more about Grunt tasks : [Grunt tasks](https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/developer.md#grunt-tasks)
  
 ## Writing posts
