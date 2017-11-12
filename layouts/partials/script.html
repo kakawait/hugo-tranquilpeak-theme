@@ -1,6 +1,6 @@
 <!--EXTERNAL SCRIPTS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-{{ if eq .Site.Params.syntaxHighlighter "highligth.js" }}
+{{ if eq .Site.Params.syntaxHighlighter "highlight.js" }}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
 {{ else if eq .Site.Params.syntaxHighlighter "prism.js" }}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.8.3/prism.min.js" integrity="sha256-haEv2ilTk2sXcJaGbkTtErRCHy/qGt3g+bGbgPf5OTY=" crossorigin="anonymous"></script>
@@ -17,7 +17,7 @@
     <script src="{{ . | absURL }}"></script>
   {{ end }}
 {{ end }}
-{{ if eq .Site.Params.syntaxHighlighter "highligth.js" }}
+{{ if eq .Site.Params.syntaxHighlighter "highlight.js" }}
 <script>
 $(document).ready(function() {
   hljs.configure({ classPrefix: '', useBR: false });

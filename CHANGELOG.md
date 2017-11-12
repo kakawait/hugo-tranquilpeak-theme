@@ -21,7 +21,7 @@ Please upgrade you're `config.toml` (you can checkout `exampleSite/config.toml` 
 
 ```toml
 [params]
-  syntaxHighlighter = "highligth.js"
+  syntaxHighlighter = "highlight.js"
 ```
 
 ## [0.4.1-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/16) - 11 sep 2017
@@ -39,7 +39,7 @@ Please upgrade you're `config.toml` (you can checkout `exampleSite/config.toml` 
   - _OLDER POSTS_ Button Overlaps Sidebar
   - Print media queries
 - Load external resources using SRI ([#159](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/159))
-- revamp HLjs usage to fix highligthing bugs ([#154](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/154), [#160](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/160))
+- revamp HLjs usage to fix highlighting bugs ([#154](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/154), [#160](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/160))
 - Improve `customJS` and `customCSS`
   - Now support both abs and rel url ([#155](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/155))
   - Add more customization than just url ([#163](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/163))
