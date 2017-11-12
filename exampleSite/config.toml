@@ -1,5 +1,5 @@
 # Tranquilpeak
-# Version : 0.4.2-BETA
+# Version : 0.4.3-BETA
 # Author : Thibaud Leprêtre
 
 # I STRONGLY recommend you to use a CDN to speed up loading of pages.
@@ -107,9 +107,9 @@ canonifyurls = true
   # Global keywords configuration. Following keywords will be add to every pages
   # keywords = ["development", "next-gen"]
 
-  # Syntax highlighter, possible choice between: "highligth.js" (recommanded) and "prism.js" (experimental)
-  # You can comment it to disable syntax highligthing
-  syntaxHighlighter = "highligth.js"
+  # Syntax highlighter, possible choice between: "highlight.js" (recommanded) and "prism.js" (experimental)
+  # You can comment it to disable syntax highlighting
+  syntaxHighlighter = "highlight.js"
 
   # Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. (true: enable, false: disable)
   clearReading = true

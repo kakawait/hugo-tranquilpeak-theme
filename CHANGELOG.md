@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.3-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/18) - 12 nov 2017
+
+- Typo fix from `highligth.js` to correct on `highlight.js` ([#231](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/231)) (thank you [@zacbook](https://github.com/zacbook))
+- Russian translation enhancement ([#227](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/227))
+
+### Breaking changes
+
+Since I did an error on `highlight.js` for parameter `syntaxHighlighter`, sorry but you have to change it again for the correct typo
+
+```toml
+[params]
+  syntaxHighlighter = "highlight.js"
+``` 
+
 ## [0.4.2-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/17) - 1 nov 2017
 
 - Support [prism.js](http://prismjs.com/) syntax highlighter in addition to _highlight.js_ ([#24](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/24))
@@ -21,6 +35,7 @@ Please upgrade you're `config.toml` (you can checkout `exampleSite/config.toml` 
 
 ```toml
 [params]
+  # There is a typo on highligth.js (which should be highlight.js instead, please checkout version 0.4.3-BETA to get fix)
   syntaxHighlighter = "highligth.js"
 ```
 
@@ -39,7 +54,7 @@ Please upgrade you're `config.toml` (you can checkout `exampleSite/config.toml` 
   - _OLDER POSTS_ Button Overlaps Sidebar
   - Print media queries
 - Load external resources using SRI ([#159](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/159))
-- revamp HLjs usage to fix highligthing bugs ([#154](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/154), [#160](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/160))
+- revamp HLjs usage to fix highlighting bugs ([#154](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/154), [#160](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/160))
 - Improve `customJS` and `customCSS`
   - Now support both abs and rel url ([#155](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/155))
   - Add more customization than just url ([#163](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/163))

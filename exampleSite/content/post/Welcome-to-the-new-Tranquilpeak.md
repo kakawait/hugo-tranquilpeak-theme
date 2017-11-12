@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Tranquilpeak 0.4.2-BETA"
+title: "Welcome to Tranquilpeak 0.4.3-BETA"
 date: 2015-06-15
 categories:
 - tranquilpeak
@@ -65,7 +65,7 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 ## General
 
 - **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
-- **Version**: 0.4.2-BETA (based on Hexo version 1.10.0)
+- **Version**: 0.4.3-BETA (based on Hexo version 1.10.0)
 - **Compatibility**: Hugo v0.20.1
 
 ## Features
