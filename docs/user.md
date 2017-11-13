@@ -530,7 +530,8 @@ Please note, there are many different versions of Markdown and some of them are 
 Tranquilpeak introduces new variables to give you a lot of possibilities.  
   
 Example :  
-``` markdown
+
+```markdown
 disqusIdentifier: fdsF34ff34
 keywords:
 - javascript
@@ -555,6 +556,7 @@ showTags: true
 showPagination: true
 showSocial: true
 showDate: true
+summary: "This is a custom summary and does *not* appear in the post."
 ```
 
 |Variable|Description|
@@ -578,6 +580,7 @@ showDate: true
 |showSocial|`true`: show social button such as share on Twitter, Facebook...|
 |showMeta|`true`: Show post meta (date, categories).|
 |showActions|`true`: Show post actions (navigation, share links).|
+|summary|Custom excerpt text to show on the homepage.|
 
 Example: 
 A post on index page will look like this with :`thumbnailImagePosition` set to `bottom`:  
@@ -594,6 +597,7 @@ The same with : `thumbnailImagePosition` set to `left`:
 Use: 
 
 - `<!--more-->` to define post excerpt and keep the post excerpt in the post content
+- For a custom exerpt *not* in the post content, use the `summary` front-matter variable. Markdown syntax is supported.
 
 ### Display table of contents
 
