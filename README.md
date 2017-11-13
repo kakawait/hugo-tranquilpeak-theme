@@ -4,6 +4,24 @@ A gorgeous responsive theme for Hugo blog framework.
 
 ![Tranquilpeak](https://raw.githubusercontent.com/kakawait/hugo-tranquilpeak-theme/master/showcase.png)
 
+## ZacBook's Fork
+
+To independently tweak and modify this theme, yet keep it somewhat independent from my main Hugo blog, I decided to fork this theme.
+
+To facilitate obtaining updates from [Tranquilpeak's repository](https://github.com/kakawait), I've added his repository as an upstream remote via
+
+```bash
+git remote add upstream git@github.com:kakawait/hugo-tranquilpeak-theme.git
+```
+
+then updates from the `master` branch can be obtained via
+
+```bash
+git pull upstream master
+```
+
+My `master` fork contains my production theme that is deployed to my website.  I'm reserving the `develop` branch for pull requests to Tranquilpeak's repository, and have therefore created a `develop-zacbook` branch that contains my modifications to the theme.
+
 ## Alpha/Beta versions
 
 **ATTENTION** during *alpha* or *beta* [versions](https://github.com/kakawait/hugo-tranquilpeak-theme/milestones) breaking changes are possible on config file.
