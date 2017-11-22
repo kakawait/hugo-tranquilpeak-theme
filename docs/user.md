@@ -33,6 +33,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 - [Integrated services configuration](#integrated-services-configuration)
     * [Google Analytics](#google-analytics)
         * [Exclude hostname (localhost) while writing articles](#exclude-hostname-localhost-while-writing-articles)
+    * [Twitter cards](#twitter-cards)
 - [Quick & easy modifications](#quick--easy-modifications)  
     * [Prerequisites](#prerequisites)
     * [Change global style](#change-global-style)
@@ -494,6 +495,16 @@ Follow these steps, to add new filter :
 6. Enter a name for the filter
 7. Select **Custom filter**, **Filter Field** : `Hostname`, **Filter Pattern** :  `(.*?localhost.*?)`
 8. Click on **Save** button
+
+### Twitter cards
+
+You can configure how links to your site will appear in Twitter in the form of Twitter cards. There are several ways of setting up card parameters:
+
+* **Title**: if in a page with title (like a post) it will use post title, otherwise, will use site title.
+* **Description**: will use article summary, if it does not exist, will use site description.
+* **Site author**: will use the value of `twitter` field on ``[[params.Author]]`` section of your `config.toml` file.
+* **Content author**: will use the value of the field `twitter` in your document header. If not specified, will use the **Site author** field value.
+* **Image**: will use the following fields in order, if one is not available, the next will be taken: gravatar email, author picture, thumbnail of document, cover of document, gallery images.
 
 ## Quick & easy modifications
 
