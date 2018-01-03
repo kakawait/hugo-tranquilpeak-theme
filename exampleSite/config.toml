@@ -104,6 +104,12 @@ canonifyurls = true
   # Default format is: January 2, 2006 
   # dateFormat = "2 January 2006"
 
+  # Custom title delimiter use to render blog post format
+  # This parameter affect to pages except home page
+  # If empty it will be title only
+  # e.g. <page title> - <site title>
+  # titleDelimiter = " - "
+
   # Global keywords configuration. Following keywords will be add to every pages
   # keywords = ["development", "next-gen"]
 
