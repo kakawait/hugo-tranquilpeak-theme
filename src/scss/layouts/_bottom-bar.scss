@@ -12,8 +12,8 @@
     transition:         transform .25s ease-in-out;
     -webkit-transition: -webkit-transform .25s ease-in-out;
 
-    min-width: calc(#{map-get($main-content, max-width)} + 2 * #{map-get($main-content, padding-right-left)});
-    @media only screen and (max-width: calc(#{map-get($main-content, max-width)} + 2 * #{map-get($main-content, padding-right-left)})) {
+    min-width: $main-width;
+    @media only screen and (max-width: $main-width) {
         min-width: 100%;
     }
 }
