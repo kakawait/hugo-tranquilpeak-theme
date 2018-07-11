@@ -101,7 +101,7 @@ canonifyurls = true
   # Customize date format use to render blog post date, categories and other
   # You must use date format used by Go Time package https://golang.org/pkg/time/
   # Months (not work with short month like "jan", "feb", etc) are translated if translation exists on i18n folders
-  # Default format is: January 2, 2006 
+  # Default format is: January 2, 2006
   # dateFormat = "2 January 2006"
 
   # Global keywords configuration. Following keywords will be add to every pages
@@ -114,7 +114,7 @@ canonifyurls = true
   # Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. (true: enable, false: disable)
   clearReading = true
 
-  # Define categories will create hierarchy between parents: `categories = ["foo", "bar"]` will consider "bar" a sub-category of "foo". 
+  # Define categories will create hierarchy between parents: `categories = ["foo", "bar"]` will consider "bar" a sub-category of "foo".
   # If false it will flat categories.
   hierarchicalCategories = true
 
@@ -171,6 +171,11 @@ canonifyurls = true
   # Display `Next` on left side of the pagination, and `Prev` on right side one.
   # If you set this value to `true`, these positions swap.
   # swapPaginator = true
+
+  # Pagination configuration
+  # Default pagination is with classic <PREV NEXT> buttons.
+  # Enabling scrollPagination creates an infinite scroll for your posts
+  # scrollPagination = false
 
   # Custom CSS. Put here your custom CSS files. They are loaded after the theme CSS;
   # they have to be referred from static root. Example

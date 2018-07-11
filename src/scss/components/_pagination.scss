@@ -24,3 +24,45 @@
         }
     }
 }
+
+.scroll-bar {
+    height: auto;
+    padding-top: 5rem;
+    text-align:center;
+    width:  100%;
+    height: $pagination-height;
+
+    .pagination {
+        position:    relative;
+        height:      $pagination-height;
+        line-height: $pagination-height;
+        display:     block;
+        list-style:  none;
+        padding:     0 10px;
+        width:       auto;
+
+        .pagination-next {
+            float:        left;
+            margin-right: 10px;
+        }
+        .pagination-number {
+            float:     right;
+            font-size: map-get($font-size, small);
+            //color:     map-get($colors, light);
+            color:     black;
+        }
+    }
+    .pagination-next {
+        margin: auto;
+    }
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fade-in {
+  animation: fadeIn .4s linear;
+}
+

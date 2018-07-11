@@ -93,6 +93,9 @@
 - id: "pagination.next"
   translation: "Tiếp"
 
+- id: "pagination.show_more"
+  translation: "Cho xem nhiều hơn..."
+
 ## POST ##
 - id: "post.no_title"
   translation: "Vô đề"

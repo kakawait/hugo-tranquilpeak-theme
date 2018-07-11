@@ -93,6 +93,9 @@
 - id: "pagination.next"
   translation: "下一篇"
 
+- id: "pagination.show_more"
+  translation: "展示更多..."
+
 ## POST ##
 - id: "post.no_title"
   translation: "無標題"

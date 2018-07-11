@@ -22,7 +22,7 @@
 {{ else }}
   {{ .Scratch.Set "thumbnailImagePosition" "bottom" }}
 {{ end }}
-<article class="postShorten postShorten--thumbnailimg-{{ .Scratch.Get "thumbnailImagePosition" }}" itemscope itemType="http://schema.org/BlogPosting">
+<article class="postShorten postShorten--thumbnailimg-{{ .Scratch.Get "thumbnailImagePosition" }} fade-in" itemscope itemType="http://schema.org/BlogPosting">
   <div class="postShorten-wrap">
     {{ if and (.Scratch.Get "thumbnailImage") (eq (.Scratch.Get "thumbnailImagePosition") "top")}}
       <a href="{{ .Permalink }}">
