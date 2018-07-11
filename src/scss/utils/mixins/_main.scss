@@ -3,6 +3,7 @@
     padding-top: map-get($main, padding-top);
     float:       right;
     width:       calc(100% - #{map-get($sidebar, xlg-screen-width)});
+    min-width:   0;
 }
 
 /// Mixin helper to stylized `main` div in small size
@@ -10,6 +11,7 @@
     padding-top: map-get($main, padding-top);
     float:       right;
     width:       calc(100% - #{map-get($sidebar, lg-screen-width)});
+    min-width:   0;
 }
 
 /// Mixin helper to stylized `main` div in medium size
@@ -17,6 +19,7 @@
     padding-top: map-get($main, padding-top);
     float:       right;
     width:       calc(100% - #{map-get($sidebar, md-screen-width)});
+    min-width:   0;
 }
 
 /// Mixin helper to stylized `main` div in large size
@@ -24,6 +27,7 @@
     padding-top: map-get($header, height) + map-get($main, padding-top);
     display:     block;
     width:       100%;
+    min-width:   0;
 }
 
 /// Mixin helper to push `main` div from medium sidebar size
