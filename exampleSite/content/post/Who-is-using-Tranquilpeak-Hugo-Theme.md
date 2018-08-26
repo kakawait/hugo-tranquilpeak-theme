@@ -43,3 +43,31 @@ If you want to add your site to this showcase, click [here](https://github.com/k
 ## Yamila Moreno's blog
 
 [![Yamila Moreno's blog](https://i.imgur.com/L51G3pJ.png)](https://moduslaborandi.net/)
+
+## Viajes Dendarii's blog
+
+[![Viajes Dendarii's blog](https://i.imgur.com/tdXK3kYm.png)](https://dendarii.es)
+
+## Wajahat Karim's blog
+
+[![Wajahat Karim's blog](https://i.imgur.com/9BPoJvdm.png)](https://wajahatkarim.com/)
+
+## Xiaoyun Yang's blog
+
+[![Xiaoyun Yang's blog](https://i.imgur.com/vVRSvhpm.png)](http://xiaoyunyang.github.io/)
+
+## Alfred E. Lin's blog
+
+[![Alfred E. Lin's blog](https://i.imgur.com/lHwsvIJm.png)](http://alfredlin.com/)
+
+## Philipp Gärtner's blog
+
+[![Philipp Gärtner's blog](https://i.imgur.com/Sx6oXnSm.png)](https://philippgaertner.github.io/)
+
+## Sagar Khatri's blog
+
+[![Sagar Khatri's blog](https://i.imgur.com/edZ3PO9m.png)](https://www.ragasirtahk.tk/)
+
+## Dr. Cruz Rincón's blog
+
+[![Dr. Cruz Rincón's blog](https://i.imgur.com/XazQAolm.png)](https://www.cruzrincon.com.ve/)
