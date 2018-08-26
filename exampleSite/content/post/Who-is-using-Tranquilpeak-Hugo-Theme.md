@@ -4,7 +4,7 @@ slug: who-is-using-tranquilpeak-hugo-theme
 date: 2015-06-14
 categories:
 - tranquilpeak
-- showcase
+- showcase appliquée
 thumbnailImagePosition: left
 thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city-750.jpg
 ---
