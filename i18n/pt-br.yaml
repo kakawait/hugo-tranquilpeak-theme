@@ -102,6 +102,9 @@
 - id: "pagination.next"
   translation: "PRÓXIMO"
 
+- id: "pagination.show_more"
+  translation: "Mostre mais..."
+
 ## POST ##
 - id: "post.no_title"
   translation: "sem título"

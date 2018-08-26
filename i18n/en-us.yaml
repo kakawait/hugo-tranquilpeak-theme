@@ -93,6 +93,9 @@
 - id: "pagination.next"
   translation: "NEXT"
 
+- id: "pagination.show_more"
+  translation: "Show more..."
+
 ## POST ##
 - id: "post.no_title"
   translation: "no title"

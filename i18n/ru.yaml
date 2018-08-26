@@ -93,6 +93,9 @@
 - id: "pagination.next"
   translation: "След."
 
+- id: "pagination.show_more"
+  translation: "Показать больше..."
+
 ## POST ##
 - id: "post.no_title"
   translation: "Без названия"
