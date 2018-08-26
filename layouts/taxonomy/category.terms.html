@@ -4,7 +4,7 @@
     {{ $page := . }}
     {{ if .Params.categories }}
       {{ $categories := (apply .Params.categories "urlize" ".") }}
-      {{ range $index,$value := $categories }}
+      {{ range $index,$value := .Params.categories }}
         {{ if gt $index ($.Scratch.Get "max-level") }}
           {{ $.Scratch.Set "max-level" $index }}
         {{ end }}
