@@ -40,7 +40,11 @@
       {{ partial "post/meta" . }}
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
-      {{ .Summary }}
+      {{ if .Params.Summary }}
+        {{ .Params.Summary | markdownify }}
+      {{ else }}
+        {{ .Summary }}
+      {{ end }}
       <p>
         <a href="{{ .Permalink }}" class="postShorten-excerpt_link link">{{ i18n "post.read_more" }}</a>
         {{ with .Params.readingtime }}

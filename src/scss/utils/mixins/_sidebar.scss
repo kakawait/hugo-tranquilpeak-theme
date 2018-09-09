@@ -41,8 +41,9 @@
         }
     }
     // Used to animate the sidebar (pushed effect)
+    @include prefix(transition, 'margin-left 0.5s', 'webkit' 'moz');
     &.pushed {
-        @include prefix(transform, translate3d(#{map-get($sidebar, md-screen-width)}, 0, 0), 'webkit' 'moz');
+        margin-left: #{map-get($sidebar, md-screen-width)};
     }
 }
 
@@ -103,8 +104,9 @@
         }
     }
     // Used to animate the sidebar (pushed effect)
+    @include prefix(transition, 'margin-left 0.5s', 'webkit' 'moz');
     &.pushed {
-        @include prefix(transform, translate3d(#{map-get($sidebar, lg-screen-width)}, 0, 0), 'webkit' 'moz');
+        margin-left: #{map-get($sidebar, lg-screen-width)};
     }
 }
 
@@ -194,7 +196,8 @@
         }
     }
     // Used to animate the sidebar (pushed effect)
+    @include prefix(transition, 'width 0.5s, margin-left 0.5s', 'webkit' 'moz');
     &.pushed {
-        @include prefix(transform, translate3d(#{map-get($sidebar, xlg-screen-width)}, 0, 0), 'webkit' 'moz');
+        margin-left: #{map-get($sidebar, xlg-screen-width)};
     }
 }

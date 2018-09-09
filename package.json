@@ -1,6 +1,6 @@
 {
   "name": "hugo-tranquilpeak-theme",
-  "version": "0.4.3-BETA",
+  "version": "0.4.4-BETA",
   "description": "A gorgeous responsive theme for Hugo blog framework",
   "main": "Gruntfile.js",
   "scripts": {
@@ -30,6 +30,7 @@
     "eslint": "^2.11.1",
     "eslint-config-google": "^0.5.0",
     "grunt": "^0.4.5",
+    "grunt-cli": "1.2.0",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-concat": "^0.5.0",
     "grunt-contrib-copy": "~0.4.1",

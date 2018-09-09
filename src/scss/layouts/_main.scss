@@ -5,6 +5,11 @@
     transition:         transform .25s ease-in-out;
     -webkit-transition: -webkit-transform .25s ease-in-out;
 
+    min-width: $main-width;
+    @media only screen and (max-width: $main-width) {
+        min-width: 100%;
+    }
+
     &.hasCover {
         // Set `padding-top` to `50px` when there is a cover image on page and
         // if there is a cover caption or

@@ -1,5 +1,5 @@
 # Tranquilpeak
-# Version : 0.4.3-BETA
+# Version : 0.4.4-BETA
 # Author : Thibaud Leprêtre
 
 # I STRONGLY recommend you to use a CDN to speed up loading of pages.
@@ -168,6 +168,10 @@ canonifyurls = true
   #     icon: search
   #     class: st-search-show-outputs
 
+  # Display `Next` on left side of the pagination, and `Prev` on right side one.
+  # If you set this value to `true`, these positions swap.
+  # swapPaginator = true
+
   # Custom CSS. Put here your custom CSS files. They are loaded after the theme CSS;
   # they have to be referred from static root. Example
   # [[params.customCSS]]
@@ -177,10 +181,6 @@ canonifyurls = true
   # they have to be referred from static root. Example
   # [[params.customJS]]
   #   src = "js/myscript.js"
-
-  # Display `Next` on left side of the pagination, and `Prev` on right side one.
-  # If you set this value to `true`, these positions swap.
-  # swapPaginator = true
 
   # Sharing options
   # Comment and uncomment to enable or disable sharing options

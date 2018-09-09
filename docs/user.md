@@ -33,6 +33,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 - [Integrated services configuration](#integrated-services-configuration)
     * [Google Analytics](#google-analytics)
         * [Exclude hostname (localhost) while writing articles](#exclude-hostname-localhost-while-writing-articles)
+    * [Social cards](#social-cards)
 - [Quick & easy modifications](#quick--easy-modifications)  
     * [Prerequisites](#prerequisites)
     * [Change global style](#change-global-style)
@@ -54,7 +55,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 ## General
 
 - **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
-- **Version**: 0.4.3-BETA (based on Hexo version 1.10.0)
+- **Version**: 0.4.4-BETA (based on Hexo version 1.10.0)
 - **Compatibility**: Hugo v0.20.1
 
 ## Features
@@ -352,7 +353,7 @@ E.g to display a shortcut to open algolia search window :
 
 | Variable | Description |
 |--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| sidebarBehavior | Define the behavior of the header and sidebar :<ul><li>1: Display extra large sidebar on extra large screen, large sidebar on large screen, medium sidebar on medium screen and header bar on small screen and extra large sidebar is swiped on extra large screen and large sidebar on all lower screens when open button is clicked (default)</li><li>2: Display large sidebar on extra large & large screen, medium sidebar on medium screen and header bar on small screen and large sidebar is swiped when open button is clicked</li><li>3: Display medium sidebar on large and medium screen and header bar on small screen and medium sidebar is swiped when open button is clicked</li><li>4: Display header bar on all screens, extra large sidebar is swiped on extra large screen and large sidebar is swiped on all lower screens</li><li>5: Display header bar on all screens and large sidebar is swiped on large screen</li><li>6: isplay header bar on all screens and medium sidebar is swiped</li></ul> |
+| sidebarBehavior | Define the behavior of the header and sidebar :<ul><li>1: Display extra large sidebar on extra large screen, large sidebar on large screen, medium sidebar on medium screen and header bar on small screen and extra large sidebar is swiped on extra large screen and large sidebar on all lower screens when open button is clicked (default)</li><li>2: Display large sidebar on extra large & large screen, medium sidebar on medium screen and header bar on small screen and large sidebar is swiped when open button is clicked</li><li>3: Display medium sidebar on large and medium screen and header bar on small screen and medium sidebar is swiped when open button is clicked</li><li>4: Display header bar on all screens, extra large sidebar is swiped on extra large screen and large sidebar is swiped on all lower screens</li><li>5: Display header bar on all screens and large sidebar is swiped on large screen</li><li>6: Display header bar on all screens and medium sidebar is swiped</li></ul> |
 | clearReading | Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. Useless if `sidebarBehavior` is equal to `3` or `4`. (true: enable, false: disable). Default behavior : `params.clearReading` value in theme configuration file. |
 | thumbnailImage | Display thumbnail image of each post on index pages |
 | thumbnailImagePosition | Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`). Set this value to `right` if you have old posts to keep the old style on them and define `thumbnailImagePosition` on a post to overwrite this setting. (Default: `right`) |
@@ -495,6 +496,16 @@ Follow these steps, to add new filter :
 7. Select **Custom filter**, **Filter Field** : `Hostname`, **Filter Pattern** :  `(.*?localhost.*?)`
 8. Click on **Save** button
 
+### Social cards
+
+You can configure how links to your site will appear in Twitter and/or Facebook. There are several ways of setting up card parameters:
+
+* **Title**: if in a page with title (like a post) it will use post title, otherwise, will use site title.
+* **Description**: will use article summary, if it does not exist, will use site description.
+* **Site author** (twitter only): will use the value of `twitter` field on ``[[params.Author]]`` section of your `config.toml` file.
+* **Content author** (twitter only): will use the value of the field `twitter` in your document header. If not specified, will use the **Site author** field value.
+* **Image**: will use the following fields in order, if one is not available, the next will be taken: thumbnail of document, cover of document, gallery images, gravatar email then author picture, .
+
 ## Quick & easy modifications
 
 ### Prerequisites
@@ -530,7 +541,8 @@ Please note, there are many different versions of Markdown and some of them are 
 Tranquilpeak introduces new variables to give you a lot of possibilities.  
   
 Example :  
-``` markdown
+
+```markdown
 disqusIdentifier: fdsF34ff34
 keywords:
 - javascript
@@ -555,6 +567,7 @@ showTags: true
 showPagination: true
 showSocial: true
 showDate: true
+summary: "This is a custom summary and does *not* appear in the post."
 ```
 
 |Variable|Description|
@@ -578,6 +591,7 @@ showDate: true
 |showSocial|`true`: show social button such as share on Twitter, Facebook...|
 |showMeta|`true`: Show post meta (date, categories).|
 |showActions|`true`: Show post actions (navigation, share links).|
+|summary|Custom excerpt text to show on the homepage.|
 
 Example: 
 A post on index page will look like this with :`thumbnailImagePosition` set to `bottom`:  
@@ -594,6 +608,7 @@ The same with : `thumbnailImagePosition` set to `left`:
 Use: 
 
 - `<!--more-->` to define post excerpt and keep the post excerpt in the post content
+- For a custom exerpt *not* in the post content, use the `summary` front-matter variable. Markdown syntax is supported.
 
 ### Display table of contents
 

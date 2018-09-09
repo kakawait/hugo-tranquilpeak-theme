@@ -12,11 +12,25 @@
 <!--SCRIPTS END-->
 {{ range .Site.Params.customJS }}
   {{ if isset . "src" }}
-    <script{{ range $key, $value := . }} {{ if eq $key "src" }}{{ (printf "%s=\"%s\"" $key ($value | absURL)) | safeHTMLAttr }}{{ else }}{{ (printf "%s=\"%s\"" $key (string $value)) | safeHTMLAttr }}{{ end }}{{ end }}></script>
+    <script{{ range $key, $value := . }} {{ if eq $key "src" }}{{ (printf "%s=\"%s\"" $key ($value | absURL)) | safeHTMLAttr }}{{ else if and (in "async defer" $key) }}{{ if $value }}{{ (printf "%s" $key) | safeHTMLAttr }}{{ end }}{{ else }}{{ (printf "%s=\"%s\"" $key (string $value)) | safeHTMLAttr }}{{ end }}{{ end }}></script>
   {{ else }}
     <script src="{{ . | absURL }}"></script>
   {{ end }}
 {{ end }}
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
 {{ if eq .Site.Params.syntaxHighlighter "highlight.js" }}
 <script>
 $(document).ready(function() {
@@ -58,6 +72,16 @@ $(document).ready(function() {
       </script>
     {{ end }}
   {{ end }}
+{{ end }}
+{{ if or .Params.math .Site.Params.math }}
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      CommonHTML: { linebreaks: { automatic: true } },
+      tex2jax: { inlineMath: [ ['$', '$'], ['\\(','\\)'] ], displayMath: [ ['$$','$$'], ['\\[', '\\]'] ], processEscapes: false },
+      messageStyle: 'none'
+    });
+  </script>
 {{ end }}
 {{ with .Site.Params.algolia }}
   {{ if (isset . "appId") | and (isset . "apiKey") | and (isset . "indexName") }}

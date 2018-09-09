@@ -18,6 +18,11 @@
     -webkit-backface-visibility: hidden;
     -webkit-perspective:         1000;
 
+    min-width: $main-width;
+    @media only screen and (max-width: $main-width) {
+        min-width: 100%;
+    }
+
     #btn-open-sidebar {
         position: absolute;
         // vertical center
@@ -67,8 +72,9 @@
         }
     }
     // Class used to swipe to the top the header on small screen when the user scroll down
+    @include prefix(transition, 'margin-top 0.5s, margin-left 0.5s, width 0.5s', 'webkit' 'moz');
     &.header-up {
-        @include prefix(transform, translate3d(0, -#{map-get($header, height)}, 0), 'webkit' 'moz');
+        margin-top: -#{map-get($header, height)};
     }
 
     // Push the header from the size of the large sidebar
