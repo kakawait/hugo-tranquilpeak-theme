@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.4-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/19) - 09 sep 2018
+
+- Revamp _open sidebar_ behavior to not push the content out of container ([#278](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/278)) (thank you [johnsoncodehk](https://github.com/johnsoncodehk))
+- Fix category name when using special char ([#269](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/269))
+- Fix param `async` & `defer` from `customJS` ([#289](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/289))
+- Add support of `mailto:` in menu link ([#208](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/208))
+- Add support of `MathJax` ([#294](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/294))
+- And more see milestone page for complete log
+
 ## [0.4.3-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/18) - 12 nov 2017
 
 - Typo fix from `highligth.js` to correct on `highlight.js` ([#231](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/231)) (thank you [@zacbook](https://github.com/zacbook))
