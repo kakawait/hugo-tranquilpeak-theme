@@ -219,6 +219,7 @@ $main-content: (
     'max-width':          750px,
     'padding-right-left': 20px,
 );
+$main-width: map-get($main-content, max-width) + map-get($main-content, padding-right-left) * 2;
 
 // Mardown
 // These variables are use to have headings smaller than general headings title
