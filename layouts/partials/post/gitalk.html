@@ -6,7 +6,7 @@
     repo: '{{ .Site.Params.gitalk.repo }}',
     owner: '{{ .Site.Params.gitalk.owner }}',
     admin: '{{ .Site.Params.gitalk.admin }}',
-    id: location.pathname,
+    id: md5(location.pathname),
     distractionFreeMode: false
     })
     gitalk.render('gitalk-container')
