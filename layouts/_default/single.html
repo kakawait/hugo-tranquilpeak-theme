@@ -41,6 +41,9 @@
             {{ end }}
           </div>
         </article>
+        {{ if .Site.Params.gitalk }}
+          {{ partial "post/gitalk.html" . }}
+        {{ end }}
         {{ partial "footer.html" . }}
       </div>
       <div id="bottom-bar" class="post-bottom-bar" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}">

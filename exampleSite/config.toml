@@ -213,3 +213,11 @@ canonifyurls = true
   # Customize copyright value "© 2017 <CUSTOMIZATION>. All Rights Reserved"
   # [params.footer]
   #   copyright = "<a href=\"https://github.com/kakawait\">kakawait</a>"
+
+  #[params.gitalk]
+  #    gitalk = true
+  #    clientID = "GitHub Application Client ID"
+  #    Secret = "GitHub Application Client Secret"
+  #    repo = "GitHub repo"
+  #    owner = "GitHub repo owner"
+  #    admin = "GitHub repo owner and collaborators, only these guys can initialize github issues"
