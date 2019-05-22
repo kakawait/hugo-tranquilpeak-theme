@@ -1,6 +1,6 @@
 {{ range .menu }}
   <li class="sidebar-button">
-    {{ if and (or (in .URL "://") (in .URL "mailto:")) (not (in .URL (printf "%s" $.root.Site.BaseURL))) }}
+    {{ if and (or (in .URL "://") (in .URL "mailto:") (in .URL "tel:") (in .URL "callto:") (in .URL "skype:")) (not (in .URL (printf "%s" $.root.Site.BaseURL))) }}
       <a class="sidebar-button-link {{ if eq .Identifier "search" }}open-algolia-search{{ end }}" href="{{ .URL | safeURL }}" target="_blank" rel="noopener">
     {{ else }}
       <a class="sidebar-button-link {{ if eq .Identifier "search" }}open-algolia-search{{ end }}" href="{{ .URL | relLangURL }}">
