@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         cwd: 'static/css',
         src: ['style.css'],
         dest: 'static/css',
-        ext: '-' + nanoid(60).toLocaleLowerCase().replace(/[_-]+/g, "") + '.min.css'
+        ext: '-' + nanoid(60).toLocaleLowerCase().replace(/[_-]+/g, '') + '.min.css'
       }]
     }
   });
