@@ -10,8 +10,12 @@
           {{ end }}
         {{ end }}
       {{ else }}
-        {{ if .Params.coverimage }}
-          {{ .Scratch.Set "thumbnailImage" (.Params.coverimage | absURL) }}
+        {{ if .Params.coverImage }}
+          {{ if (findRE "^/" .Params.coverImage 1) }}
+            {{ .Scratch.Set "thumbnailImage" (.Params.coverImage | absURL) }}
+          {{ else }}
+            {{ .Scratch.Set "thumbnailImage" (path.Join .RelPermalink .Params.coverImage) }}
+          {{ end }}
         {{ end }}
       {{ end }}
     {{ end }}
