@@ -3,7 +3,7 @@
     {{ $cover := . }}
     <div id="cover" style="background-image:url('{{ $cover | absURL }}');"></div>
   {{ else }}
-    {{ $cover := (printf "images/%s" .) }}
-    <div id="cover" style="background-image:url('{{ $cover | absURL }}');"></div>
+    {{ $cover := . }}
+    <div id="cover" style="background-image:url('{{ $cover }}');"></div>
   {{ end }}
 {{ end }}
