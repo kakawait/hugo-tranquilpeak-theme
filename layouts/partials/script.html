@@ -53,7 +53,7 @@ $(document).ready(function() {
           {{ if .Params.disqusIdentifier }}
             this.page.identifier = '{{ .Params.disqusIdentifier }}';
           {{ else }}
-            this.page.identifier = '{{ .URL | relURL }}'
+            this.page.identifier = '{{ .RelPermalink }}'
           {{ end }}
         };
         (function() {
