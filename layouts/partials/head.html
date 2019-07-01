@@ -29,8 +29,8 @@
     <title>{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}</title>
 
     <link rel="icon" href="{{ with .Site.Params.favicon }}{{ . }}{{ else }}/favicon.png{{ end }}">
-    {{ with .RSSLink }}
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ . }}">
+    {{ with .OutputFormats.Get "RSS" }}
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ .RelPermalink }}">
     {{ end }}
 
     {{ with .Site.Author.googleplus }}
