@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.5-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/20) - TBD
+
+### Breaking changes
+
+Do not support anymore Hugo version <= 0.30!
+
+`coverImage` from `config.toml` now more consistent by do not fix default static folder to `images` (see [#327](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/327) for more details)
+
 ## [0.4.4-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/19) - 09 sep 2018
 
 - Revamp _open sidebar_ behavior to not push the content out of container ([#278](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/278)) (thank you [johnsoncodehk](https://github.com/johnsoncodehk))
@@ -23,7 +31,7 @@ Since I did an error on `highlight.js` for parameter `syntaxHighlighter`, sorry 
 ```toml
 [params]
   syntaxHighlighter = "highlight.js"
-``` 
+```
 
 ## [0.4.2-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/17) - 1 nov 2017
 
@@ -107,7 +115,7 @@ With new _Sharing options_ that allow extensible list of sharing options, there 
 
 ### Breaking changes
 
-Do not support anymore Hugo version < 0.20! 
+Do not support anymore Hugo version < 0.20!
 
 ## [0.2.3-ALPHA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/12) - 31 mar 2017
 
@@ -200,7 +208,7 @@ defaultContentLanguage = "en-us"
     - `de-de` (thank you [@Martin1001](https://github.com/Martin1001))
 - Allow some customization on *copyright* section ([#48](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/48))
 
-using 
+using
 
 ```toml
 [params.footer]
