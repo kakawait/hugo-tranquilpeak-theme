@@ -8,7 +8,18 @@ All notable changes to this project will be documented in this file.
 
 Do not support anymore Hugo version <= 0.30!
 
-`coverImage` from `config.toml` now more consistent by do not fix default static folder to `images` (see [#327](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/327) for more details)
+`coverImage` from `config.toml` now more consistent by do not fix default static folder to `images` (see [#327](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/327) for more details).
+`coverImage` from `param` will now always based on base path and not relative to current url, thus
+
+```yml
+coverImage: img/a.jpg
+```
+
+will the be the same as
+
+```yml
+coverImage: /img/a.jpg
+```
 
 ## [0.4.4-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/19) - 09 sep 2018
 
