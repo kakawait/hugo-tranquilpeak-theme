@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Tranquilpeak 0.4.4-BETA"
+title: "Welcome to Tranquilpeak 0.4.5-BETA"
 date: 2015-06-15
 categories:
 - tranquilpeak
@@ -49,7 +49,7 @@ How can I migrate my current version? Please read [CHANGELOG.md](https://github.
 
 Please all the credit should be attributed to [original *Hexo* version](https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak) and its author [Louis Barranqueiro](https://github.com/LouisBarranqueiro).
 
-*Hugo* version keeps every `.js` and `.css` files untouched from original *Hexo* version in order to enjoy futur original *Hexo* version updates or features! 
+*Hugo* version keeps every `.js` and `.css` files untouched from original *Hexo* version in order to enjoy futur original *Hexo* version updates or features!
 
 ## Summary
 
@@ -65,12 +65,12 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 ## General
 
 - **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
-- **Version**: 0.4.4-BETA (based on Hexo version 1.10.0)
-- **Compatibility**: Hugo v0.20.1
+- **Version**: 0.4.5-BETA (based on Hexo version 1.10.0)
+- **Compatibility**: Hugo v0.30
 
 ## Features
 
-**General features:**  
+**General features:**
 
 - Fully responsive
 - Optimized for tablets & mobiles
@@ -82,8 +82,8 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 - Easily customizable (fonts, colors, layout elements, code coloration, etc..)
 - Documentations
 - Support internationalization (i18)
-  
-**Posts features:**  
+
+**Posts features:**
 
 - Thumbnail image
 - Cover image
@@ -93,9 +93,9 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 - GitHub theme for code highlighting (customizable)
 - Image gallery
 - Tags for images (FancyBox), wide images, tabbed code blocks, highlighted text, alerts
-- Table of contents  
-  
-**Integrated services:**  
+- Table of contents
+
+**Integrated services:**
 
 - Disqus
 - Google analytics
@@ -127,16 +127,16 @@ cd themes
 git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git
 ```
 
-After installing the Tranquilpeak theme successfully, we recommend you to take a look at the [exampleSite](exampleSite) directory. You will find a working Hugo site configured with the Universal theme that you can use as a starting point for your site.
+After installing the Tranquilpeak theme successfully, we recommend you to take a look at the [exampleSite](exampleSite) directory. You will find a working Hugo site configured with the Tranquilpeak theme that you can use as a starting point for your site.
 
 First, let's take a look at the [config.toml](exampleSite/config.tom). It will be useful to learn how to customize your site. Feel free to play around with the settings.
 
-More information on [user documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md) to install and configure the theme  
+More information on [user documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md) to install and configure the theme
 
-### For people who want to create their own version of tranquilpeak (developers) 
+### For people who want to create their own version of tranquilpeak (developers)
 
-1. Run `git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git`  
-2. Follow [developer documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/developer.md) to edit and build the theme 
+1. Run `git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git`
+2. Follow [developer documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/developer.md) to edit and build the theme
 
 ## Demo
 
@@ -147,7 +147,7 @@ Check out Tranquilpeak theme in live : [hugo-tranquilpeak-theme demo](https://tr
 Checkout showcase https://github.com/kakawait/hugo-tranquilpeak-theme/wiki/Showcase
 
 ### How can I add my site to the showcase
-  
+
 **Click [here](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/new?title=Add%20my%20blog%20into%20the%20showcase&body=Hey,%20add%20my%20blog%20into%20the%20showcase:) to add your blog into the showcase.**
 
 Please fill the following information:
@@ -160,9 +160,9 @@ Please fill the following information:
 
 If it's your first time using Hugo, please check [Hugo official documentation](https://gohugo.io/overview/introduction/)
 
-### For users  
+### For users
 
-To install and configure the theme, consult the following documentation : [user documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md)  
+To install and configure the theme, consult the following documentation : [user documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md)
 
 ### For developers
 
@@ -174,7 +174,7 @@ All kinds of contributions (enhancements, new features, documentation & code imp
 
 As explained on [Credits](#credits):
 
-> *Hugo* version keeps every `.js` and `.css` files untouched from original *Hexo* version in order to enjoy futur original *Hexo* version updates or features! 
+> *Hugo* version keeps every `.js` and `.css` files untouched from original *Hexo* version in order to enjoy futur original *Hexo* version updates or features!
 
 That mean I would keep a stronge dependency with original *Hexo* theme. Thus if you want to suggest any modifications on `.css` or `.js` files **I will submit those changes to original *Hexo* theme** (except if it's really specific to *Hugo* bugs that is not present on *Hexo*).
 

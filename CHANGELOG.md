@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.5-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/20) - 03 jul 2019
+
+- Remove algolia search if site config is not enable ([#283](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/283))
+- Site config `coverImage` is more consistent with other existing image config, refer to _breaking changes_ ([#327](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/327))
+- `param` `coverImage` if relative now based on site base url ([#236](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/236))
+- Fix `grunt` build to support newer `node` version ([#315](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/315))
+- Fix `hugo` warnings/deprecations ([#340](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/340) & [#349](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/349))
+- Add swedish translation ([#345](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/345)) (thank you [flojon](https://github.com/flojon))
+
+### Breaking changes
+
+Do not support anymore Hugo version <= 0.30!
+
+`coverImage` from `config.toml` now more consistent by do not fix default static folder to `images` (see [#327](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/327) for more details).
+`coverImage` from `param` will now always based on base path and not relative to current url, thus
+
+```yml
+coverImage: img/a.jpg
+```
+
+will the be the same as
+
+```yml
+coverImage: /img/a.jpg
+```
+
 ## [0.4.4-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/19) - 09 sep 2018
 
 - Revamp _open sidebar_ behavior to not push the content out of container ([#278](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/278)) (thank you [johnsoncodehk](https://github.com/johnsoncodehk))
@@ -23,7 +49,7 @@ Since I did an error on `highlight.js` for parameter `syntaxHighlighter`, sorry 
 ```toml
 [params]
   syntaxHighlighter = "highlight.js"
-``` 
+```
 
 ## [0.4.2-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/17) - 1 nov 2017
 
@@ -107,7 +133,7 @@ With new _Sharing options_ that allow extensible list of sharing options, there 
 
 ### Breaking changes
 
-Do not support anymore Hugo version < 0.20! 
+Do not support anymore Hugo version < 0.20!
 
 ## [0.2.3-ALPHA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/12) - 31 mar 2017
 
@@ -200,7 +226,7 @@ defaultContentLanguage = "en-us"
     - `de-de` (thank you [@Martin1001](https://github.com/Martin1001))
 - Allow some customization on *copyright* section ([#48](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/48))
 
-using 
+using
 
 ```toml
 [params.footer]

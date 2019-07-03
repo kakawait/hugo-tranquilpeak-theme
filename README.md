@@ -36,8 +36,8 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 ## General
 
 - **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
-- **Version**: 0.4.4-BETA (based on Hexo version 1.10.0)
-- **Compatibility**: Hugo v0.20.1
+- **Version**: 0.4.5-BETA (based on Hexo version 1.10.0)
+- **Compatibility**: Hugo v0.30
 
 ## Features
 
@@ -97,7 +97,7 @@ cd themes
 git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git
 ```
 
-After installing the Tranquilpeak theme successfully, we recommend you to take a look at the [exampleSite](exampleSite) directory. You will find a working Hugo site configured with the Universal theme that you can use as a starting point for your site.
+After installing the Tranquilpeak theme successfully, we recommend you to take a look at the [exampleSite](exampleSite) directory. You will find a working Hugo site configured with the Tranquilpeak theme that you can use as a starting point for your site.
 
 First, let's take a look at the [config.toml](exampleSite/config.toml). It will be useful to learn how to customize your site. Feel free to play around with the settings.
 

@@ -1,6 +1,6 @@
 # Developer documentation #
 
-This documentation will help you to understand Tranquilpeak Hugo theme code.  
+This documentation will help you to understand Tranquilpeak Hugo theme code.
 
 If you want to report a bug or ask a question, [create an issue](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/new).
 
@@ -28,8 +28,8 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 ## General ##
 
 - **Author** : Thibaud Leprêtre
-- **Version** : 0.4.4-BETA (based on Hexo version 1.10.0)
-- **Compatibility** : Hugo v0.20.1
+- **Version** : 0.4.5-BETA (based on Hexo version 1.10.0)
+- **Compatibility** : Hugo v0.30
 
 ## Requirements ##
 
@@ -45,16 +45,14 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 5. Install [requirements](#requirements)
 6. Run `npm install` to install [NPM dependencies](#npm-dependencies)
 
-If you want to configure the theme, please follow the [user documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md)  
+If you want to configure the theme, please follow the [user documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md)
 
 ## Code style ##
 
-We use [ESLint](http://eslint.org) based on Google code style to maintain javascript code style.  
+We use [ESLint](http://eslint.org) based on Google code style to maintain javascript code style.
 Check code style with :
 ``` bash
 npm run lint
-# or
-grunt eslint
 ```
 
 ## Code structure ##
@@ -76,7 +74,7 @@ tranquilpeak
 
 <!--### Languages ###
 
-Each files contains all labels used in the theme. 
+Each files contains all labels used in the theme.
 If you want to add a new language, duplicate an existing language file and replace all string by their translation.-->
 
 ### Views
@@ -99,10 +97,10 @@ If you want to add a new language, duplicate an existing language file and repla
 
 #### Stylesheets
 
-SCSS structure follow 7-1 pattern of [sass guidelines](http://sass-guidelin.es/#the-7-1-pattern)  
-If you want more information and to understand better this code, consult [sass guidelines](http://sass-guidelin.es/)  
+SCSS structure follow 7-1 pattern of [sass guidelines](http://sass-guidelin.es/#the-7-1-pattern)
+If you want more information and to understand better this code, consult [sass guidelines](http://sass-guidelin.es/)
 
-#### Images 
+#### Images
 
 ```
 ├── images
@@ -111,8 +109,8 @@ If you want more information and to understand better this code, consult [sass g
 |File|Description|
 |---|---|
 |cover.png|Default background cover of the blog|
-  
-Contains all images of the theme.  
+
+Contains all images of the theme.
 
 #### Javascript
 
@@ -148,13 +146,13 @@ Contains all images of the theme.
 |smartresize.js|Debouncing function from [John Hann](https://github.com/unscriptable)|
 |tabbed-codeblocks.js|Animate tabs of tabbed code blocks|
 |tags-filter.js|Filter posts by using their tags on archives page : `/tags`|
-  
-Each file correspond to a feature.  
-  
+
+Each file correspond to a feature.
+
 ## NPM scripts
 
-Use `npm run <script_name>` to run one of these scripts. E.g : `npm run start` 
-    
+Use `npm run <script_name>` to run one of these scripts. E.g : `npm run start`
+
 |`npm run ...`|Description|
 |---|---|
 |`start`|Build the theme once and rebuild after each change|
@@ -163,14 +161,14 @@ Use `npm run <script_name>` to run one of these scripts. E.g : `npm run start`
 
 ## Grunt tasks ##
 
-### Tasks structure 
-  
+### Tasks structure
+
 ```
 ├── tasks
     ├── config
     ├── register
     └── pipeline.js
-```  
+```
 
 |File/folder|Description|
 |---|---|
@@ -203,7 +201,7 @@ var tranquilpeakCssFilesToInject = [
 
 On production environment, these javascript and stylesheets files are concatenate and minify in 1 javascript file and 1 stylesheet file and linked to their respective views
 
-### Config tasks 
+### Config tasks
 
 |Task|Description|
 |---|---|
@@ -233,13 +231,13 @@ When you run `grunt build` or `grunt buildProd` tasks, a `source/assets` folder 
 
 ## Build ##
 
-### Development environment  
+### Development environment
 
-1. Run `npm run start` or `grunt default` and start coding :)
+1. Run `npm run start` and start coding :)
 
 ### Production environment (before deploying your blog)
 
-1. Run `npm run prod` or `grunt buildProd` to build the project with some optimization (concat and minify) to reduce number of HTTP requests and improve performance.
+1. Run `npm run prod` to build the project with some optimization (concat and minify) to reduce number of HTTP requests and improve performance.
 
 ## Running ##
 

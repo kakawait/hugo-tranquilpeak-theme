@@ -11,7 +11,7 @@
           {{ $image := (split $element " ") }}
           {{ $imageLength := len $image }}
           <div class="photo-box">
-            <a class="photo-box-inner fancybox" data-fancybox-group="gallery-{{ $.UniqueID }}"
+            <a class="photo-box-inner fancybox" data-fancybox-group="gallery-{{ $.File.UniqueID }}"
                title="{{ if gt $imageLength 2 }}{{ index $image 2 }}{{ else }}{{ index $image 1 }}{{ end }}" href="{{ index $image 0 }}">
               <img class="photo" src="{{ if gt $imageLength 2 }}{{ index $image 1 }}{{ else }}{{ index $image 0 }}{{ end }}" itemprop="image">
             </a>

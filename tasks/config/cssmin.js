@@ -1,4 +1,4 @@
-var randToken = require('rand-token');
+var nanoid = require('nanoid');
 
 module.exports = function(grunt) {
   grunt.config.set('cssmin', {
@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         cwd: 'static/css',
         src: ['style.css'],
         dest: 'static/css',
-        ext: '-' + randToken.generate(60).toLocaleLowerCase() + '.min.css'
+        ext: '-' + nanoid(60).toLocaleLowerCase().replace(/[_-]+/g, '') + '.min.css'
       }]
     }
   });
