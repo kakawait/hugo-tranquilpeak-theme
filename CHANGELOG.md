@@ -2,7 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.4.5-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/20) - TBD
+## [0.4.5-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/20) - 03 jul 2019
+
+- Remove algolia search if site config is not enable ([#283](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/283))
+- Site config `coverImage` is more consistent with other existing image config, refer to _breaking changes_ ([#327](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/327))
+- `param` `coverImage` if relative now based on site base url ([#236](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/236))
+- Fix `grunt` build to support newer `node` version ([#315](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/315))
+- Fix `hugo` warnings/deprecations ([#340](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/340) & [#349](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/349))
+- Add swedish translation ([#345](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/345)) (thank you [flojon](https://github.com/flojon))
 
 ### Breaking changes
 
