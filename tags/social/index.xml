@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Social on Hugo tranquilpeak theme</title>
+    <title>social on Hugo tranquilpeak theme</title>
     <link>https://tranquilpeak.kakawait.com/tags/social/</link>
-    <description>Recent content in Social on Hugo tranquilpeak theme</description>
+    <description>Recent content in social on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 17 Aug 2014 00:00:00 +0000</lastBuildDate>
@@ -17,8 +17,7 @@
       <pubDate>Sun, 17 Aug 2014 00:00:00 +0000</pubDate>
       
       <guid>https://tranquilpeak.kakawait.com/2014/08/hidden-social-section-showcase/</guid>
-      <description>&lt;p&gt;This post is used to show how a site looks if the social section is hidden.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;This post is used to show how a site looks if the social section is hidden.&lt;/p&gt;</description>
     </item>
     
   </channel>

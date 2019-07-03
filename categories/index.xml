@@ -6,21 +6,13 @@
     <description>Recent content in Categories on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 15 Jun 2015 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://tranquilpeak.kakawait.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Features</title>
-      <link>https://tranquilpeak.kakawait.com/categories/features/</link>
-      <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://tranquilpeak.kakawait.com/categories/features/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Releases</title>
+      <title>releases</title>
       <link>https://tranquilpeak.kakawait.com/categories/releases/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
@@ -29,7 +21,16 @@
     </item>
     
     <item>
-      <title>Showcase Appliquée</title>
+      <title>tranquilpeak</title>
+      <link>https://tranquilpeak.kakawait.com/categories/tranquilpeak/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://tranquilpeak.kakawait.com/categories/tranquilpeak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>showcase appliquée</title>
       <link>https://tranquilpeak.kakawait.com/categories/showcase-appliqu%C3%A9e/</link>
       <pubDate>Sun, 14 Jun 2015 00:00:00 +0000</pubDate>
       
@@ -38,11 +39,11 @@
     </item>
     
     <item>
-      <title>Tranquilpeak</title>
-      <link>https://tranquilpeak.kakawait.com/categories/tranquilpeak/</link>
-      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      <title>features</title>
+      <link>https://tranquilpeak.kakawait.com/categories/features/</link>
+      <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://tranquilpeak.kakawait.com/categories/tranquilpeak/</guid>
+      <guid>https://tranquilpeak.kakawait.com/categories/features/</guid>
       <description></description>
     </item>
     
