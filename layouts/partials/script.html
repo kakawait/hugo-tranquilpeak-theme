@@ -34,7 +34,7 @@ $(document).ready(function() {
   {{ if not (eq .Params.comments false) }}
     {{ if .Site.DisqusShortname }}
       <script>
-        var disqus_config = function () {
+        var disqus_config = function() {
           this.page.url = '{{ .Permalink }}';
           {{ if .Params.disqusIdentifier }}
             this.page.identifier = '{{ .Params.disqusIdentifier }}';
