@@ -8,14 +8,14 @@
         class="{{ with .Params.coverimage }}hasCover{{ end }}
                {{ if eq .Params.covermeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
                {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
-        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+        <article class="post">
           {{ with .Params.covercaption }}
             <span class="post-header-cover-caption caption">{{ . | markdownify }}</span>
           {{ end }}
           {{ if or (not .Params.coverimage) (eq .Params.covermeta "out") }}
             {{ partial "post/header.html" . }}
           {{ end }}
-          <div class="post-content markdown" itemprop="articleBody">
+          <div class="post-content markdown">
             <div class="main-content-wrap">
               {{ (replaceRE "<!--\\s*[t|T][o|O][c|C]\\s*-->" (printf "<h1 id=\"table-of-contents\">%s</h1>%s" (i18n "post.toc") .TableOfContents) .Content) | safeHTML }}
               {{ partial "post/gallery.html" . }}

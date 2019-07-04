@@ -44,6 +44,21 @@
 - id: "global.search_date"
   translation: "日付検索 (YYYY/MM/DD)"
 
+- id: "global.read_more_about_author"
+  translation: "著者についてもっと読む"
+
+- id: "global.zoom_in_on_picture"
+  translation: "写真を拡大する"
+
+- id: "global.go_to_homepage"
+  translation: "ホームページへ"
+
+- id: "global.open_link"
+  translation: "リンクを開く"
+
+- id: "global.open_post"
+  translation: "投稿を開く"
+
 ## GLOBAL.POST_FOUND ##
 - id: "global.post_found.zero"
   translation: "見つかりませんでした。"
@@ -114,6 +129,26 @@
 
 - id: "post.comment_and_share"
   translation: "コメント・共有"
+
+- id: "post.comment"
+  translation: "コメントを残す"
+
+- id: "post.back_to_top"
+  translation: "トップに戻る"
+
+- id: "post.share"
+  translation: "この記事を共有する"
+
+- id: "post.gallery"
+  translation: "ギャラリー"
+
+## POST.IMAGE ##
+
+- id: "post.image.one"
+  translation: "偶像"
+
+- id: "post.image.other"
+  translation: "{n} イメージ"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"

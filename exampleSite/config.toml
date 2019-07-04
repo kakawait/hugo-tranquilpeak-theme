@@ -50,51 +50,51 @@ canonifyurls = true
   weight = 1
   identifier = "home"
   name = "Home"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\" aria-hidden=\"true\"></i>"
   url = "/"
 [[menu.main]]
   weight = 2
   identifier = "categories"
   name = "Categories"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\" aria-hidden=\"true\"></i>"
   url = "/categories"
 [[menu.main]]
   weight = 3
   identifier = "tags"
   name = "Tags"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\" aria-hidden=\"true\"></i>"
   url = "/tags"
 [[menu.main]]
   weight = 4
   identifier = "archives"
   name = "Archives"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\" aria-hidden=\"true\"></i>"
   url = "/archives"
 [[menu.main]]
   weight = 5
   identifier = "about"
   name = "About"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\" aria-hidden=\"true\"></i>"
   url = "/#about"
 
 [[menu.links]]
   weight = 1
   identifier = "github"
   name = "GitHub"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\" aria-hidden=\"true\"></i>"
   url = "https://github.com/kakawait"
 [[menu.links]]
   weight = 2
   identifier = "stackoverflow"
   name = "Stack Overflow"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-stack-overflow\"></i>"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-stack-overflow\" aria-hidden=\"true\"></i>"
   url = "https://stackoverflow.com/users/636472/kakawait"
 
 [[menu.misc]]
   weight = 1
   identifier = "rss"
   name = "RSS"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\" aria-hidden=\"true\"></i>"
   url = "/index.xml"
 
 [params]

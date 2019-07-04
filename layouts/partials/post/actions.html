@@ -5,7 +5,7 @@
           {{ if .Site.Params.swapPaginator }}
             <li class="post-action">
               {{ with .PrevInSection }}
-                <a class="post-action-btn btn btn--default tooltip--top" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}">
+                <a class="post-action-btn btn btn--default tooltip--top" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}" aria-label="{{ i18n "pagination.previous" }}: {{ .Title }}">
               {{ else }}
                 <a class="post-action-btn btn btn--disabled">
               {{ end }}
@@ -15,7 +15,7 @@
             </li>
             <li class="post-action">
               {{ with .NextInSection }}
-                <a class="post-action-btn btn btn--default tooltip--top" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}">
+                <a class="post-action-btn btn btn--default tooltip--top" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}" aria-label="{{ i18n "pagination.next" }}: {{ .Title }}">
               {{ else }}
                 <a class="post-action-btn btn btn--disabled">
               {{ end }}
@@ -26,7 +26,7 @@
           {{ else }}
             <li class="post-action">
               {{ with .NextInSection }}
-                <a class="post-action-btn btn btn--default tooltip--top" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}">
+                <a class="post-action-btn btn btn--default tooltip--top" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}" aria-label="{{ i18n "pagination.next" }}: {{ .Title }}">
               {{ else }}
                 <a class="post-action-btn btn btn--disabled">
               {{ end }}
@@ -36,7 +36,7 @@
             </li>
             <li class="post-action">
               {{ with .PrevInSection }}
-                <a class="post-action-btn btn btn--default tooltip--top" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}">
+                <a class="post-action-btn btn btn--default tooltip--top" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}" aria-label="{{ i18n "pagination.previous" }}: {{ .Title }}">
               {{ else }}
                 <a class="post-action-btn btn btn--disabled">
               {{ end }}
@@ -50,14 +50,14 @@
     <ul class="post-actions post-action-share" >
       {{ if (not (eq .Params.showSocial false)) }}
         <li class="post-action hide-lg hide-md hide-sm">
-          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
-            <i class="fa fa-share-alt"></i>
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="{{ i18n "post.share" }}">
+            <i class="fa fa-share-alt" aria-hidden="true"></i>
           </a>
         </li>
         {{ range .Site.Params.sharingOptions }}
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="{{ printf .url $.Permalink }}">
-              <i class="fa {{ .icon }}"></i>
+            <a class="post-action-btn btn btn--default" target="new" href="{{ printf .url $.Permalink }}" title="{{ i18n "global.share_on" }} {{ .name }}" aria-label="{{ i18n "global.share_on" }} {{ .name }}">
+              <i class="fa {{ .icon }}" aria-hidden="true"></i>
             </a>
           </li>
         {{ end }}
@@ -71,11 +71,11 @@
       {{ end }}
       <li class="post-action">
         {{ if findRE "<!--\\s*[t|T][o|O][c|C]\\s*-->" .Content }}
-          <a class="post-action-btn btn btn--default" href="#table-of-contents">
+          <a class="post-action-btn btn btn--default" href="#table-of-contents" aria-label="{{ i18n "post.toc" }}">
         {{ else }}
-          <a class="post-action-btn btn btn--default" href="#">
+          <a class="post-action-btn btn btn--default" href="#" aria-label="{{ i18n "post.back_to_top" }}">
         {{ end }}
-          <i class="fa fa-list"></i>
+          <i class="fa fa-list" aria-hidden="true"></i>
         </a>
       </li>
     </ul>

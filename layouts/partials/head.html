@@ -25,6 +25,7 @@
 <html lang="{{ .Site.LanguageCode }}">
   <head>
     {{ partial "head_start.html" . }}
+    {{ partial "schema.html" . }}
     {{ partial "meta.html" . }}
     <title>{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}</title>
 
