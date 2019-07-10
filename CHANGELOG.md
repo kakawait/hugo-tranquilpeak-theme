@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.6-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/21) - 10 jul 2019
+
+- Fix coverImage url (again) ([#358](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/358))
+
 ## [0.4.5-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/20) - 03 jul 2019
 
 - Remove algolia search if site config is not enable ([#283](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/283))
