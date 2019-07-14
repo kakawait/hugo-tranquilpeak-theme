@@ -29,11 +29,11 @@
         <li class="tab {{ if eq $index 0 }}active{{ end }}">{{ . }}</li>
       {{ end }}
     </ul>
-  </figcaption> 
+  </figcaption>
   <div class="tabs-content">
     {{ range $index, $value := $.Scratch.Get "tc-content" }}
       {{ $trimmedContent := trim $value "\n" }}
-      <figure class="highlight language-{{ index ($.Scratch.Get "tc-languages") $index }}" style="display: {{ if eq $index 0 }}block{{ else }}none{{ end }};">   
+      <figure class="highlight language-{{ index ($.Scratch.Get "tc-languages") $index }} {{ index ($.Scratch.Get "tc-languages") $index }}" style="display: {{ if eq $index 0 }}block{{ else }}none{{ end }};">
         <table>
           <tbody>
             <tr>
@@ -41,7 +41,7 @@
                 <pre>{{ range $index,$value := (split $trimmedContent "\n") }}<span>{{ add $index 1 }}</span><br>{{ end }}</pre>
               </td>
               <td class="code">
-                <pre class="code-highlight language-{{ index ($.Scratch.Get "tc-languages") $index }}"><code class="{{ index ($.Scratch.Get "tc-languages") $index }}">{{ $trimmedContent }}</code></pre>
+                <pre class="code-highlight language-{{ index ($.Scratch.Get "tc-languages") $index }} {{ index ($.Scratch.Get "tc-languages") $index }}"><code class="{{ index ($.Scratch.Get "tc-languages") $index }}">{{ $trimmedContent }}</code></pre>
               </td>
             </tr>
           </tbody>
