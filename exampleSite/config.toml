@@ -98,6 +98,10 @@ canonifyurls = true
   url = "/index.xml"
 
 [params]
+  # Syntax highlighter, possible choice between: "highlight.js" and "prism.js"
+  # You can comment it to disable syntax highlighting
+  syntaxHighlighter = "highlight.js"
+
   # Customize date format use to render blog post date, categories and other
   # You must use date format used by Go Time package https://golang.org/pkg/time/
   # Months (not work with short month like "jan", "feb", etc) are translated if translation exists on i18n folders
@@ -106,10 +110,6 @@ canonifyurls = true
 
   # Global keywords configuration. Following keywords will be add to every pages
   # keywords = ["development", "next-gen"]
-
-  # Syntax highlighter, possible choice between: "highlight.js" (recommanded) and "prism.js" (experimental)
-  # You can comment it to disable syntax highlighting
-  syntaxHighlighter = "highlight.js"
 
   # Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. (true: enable, false: disable)
   clearReading = true
@@ -181,6 +181,54 @@ canonifyurls = true
   # they have to be referred from static root. Example
   # [[params.customJS]]
   #   src = "js/myscript.js"
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"
+    integrity = "sha256-LVuWfOU0rWFMCJNl1xb3K2HSWfxtK4IPbqEerP1P83M="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/less.min.js"
+    integrity = "sha256-EB4Qe5B8kOTN9/r65YrBPJ3VkDRJa8sSVqqaIakt0gU="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/puppet.min.js"
+    integrity = "sha256-LWiDV1Ge/4ULbV/tJh9N8NTILGIbsPEdnGQ24CrjBzo="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scss.min.js"
+    integrity = "sha256-/27cA5aA9DgzXPb747VxVTzwPG/X5tihoKySMSq3bwk="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/stylus.min.js"
+    integrity = "sha256-CFwICvPAUcOBI6YRYZMf4OkyePvFtdG7n7Wl9UNZwx0="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"
+    integrity = "sha256-zYofLVsdq2KkS4cVGc6/8gTKb7lPsTLk1vs37g9aYj0="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"
+    integrity = "sha256-tvm0lHsuUZcOfj/0C9xJTU4OQx5KpUgxUcAXLX5kvwA="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
 
   # Sharing options
   # Comment and uncomment to enable or disable sharing options
