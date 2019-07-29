@@ -3,6 +3,18 @@
     &.pushed {
         @include prefix(transform, translate3d(#{map-get($sidebar, md-screen-width)}, 0, 0), 'webkit' 'moz');
     }
+    @media #{$medium-and-up} {
+        .header-title {
+            &.pushed {
+                @include prefix(transform, translate3d(-#{(map-get($sidebar, md-screen-width) / 2) - 1}, 0, 0), 'webkit' 'moz');
+            }
+        }
+        .header-right-picture {
+            &.pushed {
+                @include prefix(transform, translate3d(-#{map-get($sidebar, md-screen-width)}, 0, 0), 'webkit' 'moz');
+            }
+        }
+    }
 }
 
 /// Mixin helper to push header from large sidebar size
@@ -10,10 +22,32 @@
     &.pushed {
         @include prefix(transform, translate3d(#{map-get($sidebar, lg-screen-width)}, 0, 0), 'webkit' 'moz');
     }
+    @media #{$small-and-up} {
+        .header-title {
+            &.pushed {
+                @include prefix(transform, translate3d(-#{(map-get($sidebar, lg-screen-width) / 2) - 1}, 0, 0), 'webkit' 'moz');
+            }
+        }
+        .header-right-picture {
+            &.pushed {
+                @include prefix(transform, translate3d(-#{map-get($sidebar, lg-screen-width)}, 0, 0), 'webkit' 'moz');
+            }
+        }
+    }
 }
 /// Mixin helper to push header from extra large sidebar size
 @mixin header-pushed-xlg {
     &.pushed {
         @include prefix(transform, translate3d(#{map-get($sidebar, xlg-screen-width)}, 0, 0), 'webkit' 'moz');
+    }
+    .header-title {
+        &.pushed {
+            @include prefix(transform, translate3d(-#{(map-get($sidebar, xlg-screen-width) / 2) - 1}, 0, 0), 'webkit' 'moz');
+        }
+    }
+    .header-right-picture {
+        &.pushed {
+            @include prefix(transform, translate3d(-#{map-get($sidebar, xlg-screen-width)}, 0, 0), 'webkit' 'moz');
+        }
     }
 }
