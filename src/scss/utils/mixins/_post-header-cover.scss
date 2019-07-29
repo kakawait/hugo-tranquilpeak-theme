@@ -29,6 +29,7 @@
 @mixin post-header-cover-pushed-md {
     &.pushed {
         @include prefix(transform, translate3d(#{map-get($sidebar, md-screen-width)}, 0, 0), 'webkit' 'moz');
+        width: calc(100% - #{map-get($sidebar, md-screen-width)});
     }
 }
 
@@ -36,6 +37,7 @@
 @mixin post-header-cover-pushed-lg {
     &.pushed {
         @include prefix(transform, translate3d(#{map-get($sidebar, lg-screen-width)}, 0, 0), 'webkit' 'moz');
+        width: calc(100% - #{map-get($sidebar, lg-screen-width)});
     }
 }
 
@@ -43,5 +45,6 @@
 @mixin post-header-cover-pushed-xlg {
     &.pushed {
         @include prefix(transform, translate3d(#{map-get($sidebar, xlg-screen-width)}, 0, 0), 'webkit' 'moz');
+        width: calc(100% - #{map-get($sidebar, xlg-screen-width)});
     }
 }

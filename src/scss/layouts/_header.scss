@@ -10,10 +10,7 @@
     // used to animate the header on small screen with javascript
     //@include prefix(transition, top 0.25s ease-in-out, 'webkit' 'moz' 'ms' 'o');
     z-index:                     map-get($z-indexes, l-header);
-    // Sidebar animation
-    // Transition style (push)
-    transition:                  transform .25s ease-in-out;
-    -webkit-transition:          -webkit-transform .25s ease-in-out;
+    @include sidebar-slide-animation;
     // Eliminate any flickering of elements while they are in a state of being animated
     -webkit-backface-visibility: hidden;
     -webkit-perspective:         1000;
@@ -34,6 +31,7 @@
         width:    30px;
         height:   30px;
         color:    map-get($header, color);
+        @include sidebar-slide-animation;
 
         .header-picture {
             display:       block;
@@ -54,6 +52,7 @@
         font-size:   $font-size-base;
         line-height: 55px;
         margin:      0;
+        @include sidebar-slide-animation;
 
         .header-title-link {
             color:       map-get($header, color);

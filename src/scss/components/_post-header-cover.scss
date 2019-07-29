@@ -26,13 +26,8 @@
     // 100% minus header high, minus padding-top, minus padding bottom and minus 4px for perfect pixels
     height:                      100%;
     z-index:                     map-get($z-indexes, 'c-post-header-cover');
-    // Sidebar animation
-    // Transition style (push)
-    transition:                  transform .25s ease-in-out;
-    -webkit-transition:          -webkit-transform .25s ease-in-out;
-    // Eliminate any flickering of elements while they are in a state of being animated
-    -webkit-backface-visibility: hidden;
-    -webkit-perspective:         1000;
+    transition:                  transform .25s ease-in-out, width .25s ease-in-out;
+    -webkit-transition:          -webkit-transform .25s ease-in-out, width .25s ease-in-out;
 
     .post-header {
         display:        table-cell;
