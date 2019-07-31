@@ -2,6 +2,7 @@
 title: "Who's using Tranquilpeak Hugo Theme"
 slug: who-is-using-tranquilpeak-hugo-theme
 date: 2015-06-14
+type: post
 categories:
 - tranquilpeak
 - showcase

@@ -29,7 +29,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 
 - **Author** : Thibaud Leprêtre
 - **Version** : 0.4.6-BETA (based on Hexo version 1.10.0)
-- **Compatibility** : Hugo v0.30
+- **Compatibility** : Hugo v0.53
 
 ## Requirements ##
 

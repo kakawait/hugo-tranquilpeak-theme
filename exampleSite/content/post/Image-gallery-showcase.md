@@ -1,6 +1,7 @@
 ---
 title: "Image gallery showcase"
 date: 2013-02-18
+type: post
 thumbnailImagePosition: left
 thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/image-gallery-showcase/city-140.jpg
 gallery:
