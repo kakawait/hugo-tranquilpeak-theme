@@ -23,7 +23,7 @@
           {{ $.Scratch.Set $name $node }}
           {{ $.Scratch.SetInMap $level $path $node }}
         {{ end }}
-        {{ $.Scratch.SetInMap (printf "%s" (delimit (first (add $index 1) $categories) "/")) $page.UniqueID $page }}
+        {{ $.Scratch.SetInMap (printf "%s" (delimit (first (add $index 1) $categories) "/")) $page.File.UniqueID $page }}
         {{ $.Scratch.Set "parent" $path }}
       {{ end }}
       {{ $.Scratch.Set "parent" nil }}

@@ -1,15 +1,15 @@
-var randToken = require('rand-token');
+var nanoid = require('nanoid');
 
 module.exports = function(grunt) {
   var website = {};
-  var token = randToken.generate(60).toLocaleLowerCase();
+  var token = nanoid(60).toLocaleLowerCase().replace(/[_-]+/g, '');
   website['static/js/script-' + token + '.min.js'] = ['static/js/script.js'];
   grunt.config.set('uglify', {
     // Minify `script.js` file into `script.min.js`
     prod: {
       options: {
         mangle: {
-          except: [
+          reserved: [
             'jQuery',
             'fancybox'
           ]
