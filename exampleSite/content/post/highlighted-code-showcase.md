@@ -1,6 +1,7 @@
 ---
 title: "highlighted code showcase"
 date: 2015-03-23
+type: post
 categories:
   - tranquilpeak
   - features

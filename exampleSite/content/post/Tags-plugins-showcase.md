@@ -1,6 +1,7 @@
 ---
 title: "Tags plugins showcase"
 date: 2014-10-29
+type: post
 tags:
 - tag plugins
 - test

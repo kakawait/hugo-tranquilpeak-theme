@@ -1,6 +1,7 @@
 ---
 title: "Welcome to Tranquilpeak 0.4.6-BETA"
 date: 2015-06-15
+type: post
 categories:
 - tranquilpeak
 - releases
