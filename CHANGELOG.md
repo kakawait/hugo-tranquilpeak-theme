@@ -21,7 +21,9 @@ All notable changes to this project will be documented in this file.
 
 ### Breaking changes
 
-Do not support anymore Hugo version <= 0.30!
+#### Do not support anymore Hugo version < 0.53!
+
+As `.Hugo` is deprecated, it has been replace by the global function `hugo` which appears in ([version 0.53](https://github.com/gohugoio/hugo/releases/tag/v0.53)).
 
 `coverImage` from `config.toml` now more consistent by do not fix default static folder to `images` (see [#327](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/327) for more details).
 `coverImage` from `param` will now always based on base path and not relative to current url, thus
