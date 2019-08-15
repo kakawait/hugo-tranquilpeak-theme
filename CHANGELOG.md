@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.7-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/22) - 15 aug 2019
+
+- Fix regression from Hugo 0.57 ([#371](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/371))
+
 ## [0.4.6-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/21) - 10 jul 2019
 
 - Fix coverImage url (again) ([#358](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/358))
