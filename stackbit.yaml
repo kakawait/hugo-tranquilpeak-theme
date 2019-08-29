@@ -171,10 +171,10 @@ models:
           - type: string
             name: description
             label: Description
-          - type: enum
+          - type: number
             name: sidebarBehavior
             label: Sidebar Behavior
-            options: [1, 2, 3, 4, 5, 6]
+            description: value should be in 1~6
           - type: image
             name: coverImage
             label: Cover Image
