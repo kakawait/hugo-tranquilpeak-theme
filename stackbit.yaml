@@ -1,0 +1,296 @@
+stackbitVersion: ~0.2.0
+ssgName: custom
+publishDir: exampleSite/public
+buildCommand: cd exampleSite && hugo --gc --baseURL "/" --themesDir ../.. && cd ..
+uploadDir: img
+staticDir: exampleSite/static
+pagesDir: exampleSite/content
+dataDir: exampleSite
+models:
+  config:
+    type: data
+    label: Config
+    file: config.toml
+    fields:
+      - type: string
+        name: title
+        label: Title
+        required: true
+      - type: string
+        name: baseURL
+        label: Base baseURL
+        description: Hostname (and path)  to the root
+      - type: string
+        name: languageCode
+        label: Language Code "en"
+      - type: string
+        name: defaultContentLanguage
+        label: Language Code "en"
+      - type: string
+        name: theme
+        label: Theme Name 
+      - type: string
+        name: themesDir
+        label: Themes Folder Path
+      - type: string
+        name: disqusShortname
+        label: Disqus Shortname
+      - type: string
+        name: googleAnalytics
+        label: Google Analytics ID
+      - type: number
+        name: paginate
+        label: Paginate
+      - type: boolean
+        name: canonifyurls
+        label: Canonify URLs
+      - type: object
+        name: permalinks
+        label: Permalinks
+        fields:
+          - type: string
+            name: post
+            label: Post Permalink
+      - type: object
+        name: taxonomies
+        label: Taxonomies
+        fields:
+          - type: string
+            name: tag
+            label: Tag
+          - type: string
+            name: category
+            label: Category
+          - type: string
+            name: archive
+            label: Archive
+      - type: object
+        name: author
+        label: Author
+        fields:
+          - type: string
+            name: name
+            label: Name
+          - type: string
+            name: bio
+            label: Bio
+          - type: string
+            name: job
+            label: Job
+          - type: string
+            name: location
+            label: Location
+          - type: string
+            name: gravatarEmail
+            label: Gravatar Email
+          - type: string
+            name: picture
+            label: Profile Picture
+      - type: object
+        name: menu
+        label: Menu
+        fields:
+          - type: list
+            name: main
+            label: Main menu
+            items:
+              type: object
+              fields:
+                - type: number
+                  name: weight
+                  label: Menu Order Weight
+                - type: string
+                  name: identifier
+                  label: Identifier
+                - type: string
+                  name: name
+                  label: Menu Name
+                - type: string
+                  name: pre
+                  label: Previous Icon
+                - type: string
+                  name: url
+                  label: Menu Link
+          - type: list
+            name: links
+            label: Links
+            items:
+              type: object
+              fields:
+                - type: number
+                  name: weight
+                  label: Order Weight
+                - type: string
+                  name: identifier
+                  label: Identifier
+                - type: string
+                  name: name
+                  label: Menu Name
+                - type: string
+                  name: pre
+                  label: Pre
+                - type: string
+                  name: url
+                  label: Icon Link
+          - type: list
+            name: misc
+            label: Misc
+            items:
+              type: object
+              fields:
+                - type: number
+                  name: weight
+                  label: Order Weight
+                - type: string
+                  name: identifier
+                  label: Identifier
+                - type: string
+                  name: name
+                  label: Menu Name
+                - type: string
+                  name: pre
+                  label: Pre
+                - type: string
+                  name: url
+                  label: URL
+      - type: object
+        name: params
+        label: Site Parameters
+        fields:
+          - type: string
+            name: dateFormat
+            label: Date Format
+            default: "January 2, 2006"
+          - type: enum
+            name: syntaxHighlighter
+            label: Syntax Highlighter JS
+            options: ["highlight.js", "prism.js"]
+          - type: boolean
+            name: clearReading
+            label: Clear Reading
+          - type: boolean
+            name: hierarchicalCategories
+            label: Hierarchical Categories
+          - type: string
+            name: description
+            label: Description
+          - type: enum
+            name: sidebarBehavior
+            label: Sidebar Behavior
+            options: [1, 2, 3, 4, 5, 6]
+          - type: image
+            name: coverImage
+            label: Cover Image
+          - type: boolean
+            name: imageGallery
+            label: Image Gallery
+          - type: boolean
+            name: thumbnailImage
+            label: Thumbnail Image
+          - type: enum
+            name: thumbnailImagePosition
+            label: Thumbnail Image Position
+            options: ["right", "left", "bottom"]
+          - type: boolean
+            name: autoThumbnailImage
+            label: Auto Thumbnail Image
+          - type: list
+            name: sharingOptions
+            label: Sharing Options
+            items:
+              type: object
+              fields:
+                - type: string
+                  name: name
+                  label: Name
+                - type: string
+                  name: icon
+                  label: Icon
+                - type: string
+                  name: url
+                  label: URL
+          - type: object
+            name: header
+            label: Header
+            fields:
+              - type: object
+                name: rightLink
+                label: Right Link
+                fields:
+                  - type: string
+                    name: class
+                    label: Class
+                  - type: string
+                    name: icon
+                    label: Icon
+                  - type: string
+                    name: url
+                    label: URL
+  post:
+    type: page
+    label: Blog Post
+    folder: post
+    fields: 
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: slug
+        label: Slug
+      - type: date
+        name: date
+        label: Publish Date
+      - type: boolean
+        name: autoThumbnailImage
+        label: Auto Thumbnail Image
+      - type: enum
+        name: thumbnailImagePosition
+        label: Thumbnail Image Position
+        options: ["right", "left", "bottom"]
+      - type: string
+        name: thumbnailImage
+        label: Thumbnail Image
+      - type: string
+        name: coverImage
+        label: Cover Image
+      - type: string
+        name: coverMeta
+        label: Cover Meta
+      - type: enum
+        name: metaAlignment
+        label: Meta Alignment
+        options: ["right", "left", "center"]
+      - type: list
+        name: gallery
+        label: Image Gallery
+        items:
+          type: string
+      - type: list
+        name: categories
+        label: Post Categories
+        items: 
+          type: string
+      - type: list
+        name: tags
+        label: Post Tags
+        items: 
+          type: string
+      - type: list
+        name: keywords
+        label: Search keywords
+        items: 
+          type: string
+      - type: boolean
+        name: showPagination
+        label: Show Pagination
+      - type: boolean
+        name: showSocial
+        label: Show Social
+      - type: boolean
+        name: showTags
+        label: Show Tags
+
+
+
+
+
