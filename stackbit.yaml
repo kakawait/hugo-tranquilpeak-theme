@@ -25,7 +25,7 @@ models:
         label: Language Code "en"
       - type: string
         name: defaultContentLanguage
-        label: Language Code "en"
+        label: Default Content Language "en"
       - type: string
         name: theme
         label: Theme Name 
