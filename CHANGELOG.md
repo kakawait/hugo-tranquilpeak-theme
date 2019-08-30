@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.7-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/22) - 15 aug 2019
+
+- Fix regression from Hugo 0.57 ([#371](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/371))
+
+## [0.4.6-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/21) - 10 jul 2019
+
+- Fix coverImage url (again) ([#358](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/358))
+
 ## [0.4.5-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/20) - 03 jul 2019
 
 - Remove algolia search if site config is not enable ([#283](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/283))
@@ -13,7 +21,9 @@ All notable changes to this project will be documented in this file.
 
 ### Breaking changes
 
-Do not support anymore Hugo version <= 0.30!
+#### Do not support anymore Hugo version < 0.53!
+
+As `.Hugo` is deprecated, it has been replace by the global function `hugo` which appears in ([version 0.53](https://github.com/gohugoio/hugo/releases/tag/v0.53)).
 
 `coverImage` from `config.toml` now more consistent by do not fix default static folder to `images` (see [#327](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/327) for more details).
 `coverImage` from `param` will now always based on base path and not relative to current url, thus
