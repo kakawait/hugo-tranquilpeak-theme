@@ -30,6 +30,17 @@
     &.pushed {
         @include prefix(transform, translate3d(#{map-get($sidebar, md-screen-width)}, 0, 0), 'webkit' 'moz');
         width: calc(100% - #{map-get($sidebar, md-screen-width)} - 15px * 2);
+
+        .post-actions-wrap {
+            ul.post-action-nav {
+                // Best width for responsive post's navigation panel on very small screen
+                width: 35%;
+            }
+            ul.post-action-share {
+                // Best width for responsive post's share panel on very small screen
+                width: 65%;
+            }
+        }
     }
 }
 
@@ -38,6 +49,17 @@
     &.pushed {
         @include prefix(transform, translate3d(#{map-get($sidebar, lg-screen-width)}, 0, 0), 'webkit' 'moz');
         width: calc(100% - #{map-get($sidebar, lg-screen-width)} - 15px * 2);
+
+        .post-actions-wrap {
+            ul.post-action-nav {
+                // Best width for responsive post's navigation panel on very small screen
+                width: 35%;
+            }
+            ul.post-action-share {
+                // Best width for responsive post's share panel on very small screen
+                width: 65%;
+            }
+        }
     }
 }
 /// Mixin helper to pushed bottom bar from extra large sidebar size

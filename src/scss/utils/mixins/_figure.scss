@@ -1,6 +1,6 @@
 @mixin figure-pushed-md {
     &.figure--fullWidth img.figure-img {
-        width: calc(100% - #{map-get($sidebar, md-screen-width)});
+        width: calc(100% - #{map-get($sidebar, md-screen-width)} + 1px);
     }
 }
 

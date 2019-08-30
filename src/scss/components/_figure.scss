@@ -47,7 +47,7 @@
         .figure-img {
             width: 100%;
             margin: 0 auto;
-            transition: transform width .25s ease-in-out;
+            transition: width .25s ease-in-out;
             -webkit-transition: width .25s ease-in-out;
         }
     }
@@ -63,8 +63,6 @@
 }
 
 @media #{$large-only} {
-    // main[data-behavior="x"] .post.pushed .figure.figure--fullWidth
-
     #main {
         // Display bottom bar in small size and push it from the size of the large sidebar
         &[data-behavior="1"] .pushed .figure,
@@ -81,14 +79,14 @@
             @include figure-pushed-lg;
         }
         // Display bottom bar in large size and push it from the size of the medium sidebar
-        &[data-behavior="6"] {
+        &[data-behavior="6"] .pushed .figure {
             @include figure-pushed-md;
         }
     }
 }
 
 @media #{$xlarge-and-up} {
-    .pushed .figure {
+    #main {
         // Display bottom bar in extra small size and push it from the size of the extra large sidebar
         &[data-behavior="1"] .pushed .figure {
             @include figure-pushed-xlg;
