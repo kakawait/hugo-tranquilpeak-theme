@@ -4,7 +4,7 @@
     {{ range .Site.Params.sharingOptions }}
       <li class="share-option">
         <a class="share-option-btn" target="new" href="{{ printf .url (substr (querify "x" $.Permalink) 2) }}">
-          <i class="fa {{ .icon }}"></i><span>{{ printf (i18n "global.share_on") .name }}</span>
+          <i class="fab {{ .icon }}"></i><span>{{ printf (i18n "global.share_on") .name }}</span>
         </a>
       </li>
     {{ end }}
