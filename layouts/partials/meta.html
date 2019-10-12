@@ -72,11 +72,12 @@
     <meta property="twitter:image" content="{{ range first 1 (split . " ") }}{{ . | absURL }}{{ end }}">
   {{ end }}
 {{ end }}
-
-{{ if .Scratch.Get "gravatarEmail" }}
-  <meta property="og:image" content="https://www.gravatar.com/avatar/{{ (md5 (.Scratch.Get "gravatarEmail")) | urlize }}?s=640">
-  <meta property="twitter:image" content="https://www.gravatar.com/avatar/{{ (md5 (.Scratch.Get "gravatarEmail")) | urlize }}?s=640">
-{{ else if .Site.Author.picture }}
-  <meta property="og:image" content="{{ .Site.Author.picture | absURL }}">
-  <meta property="twitter:image" content="{{ .Site.Author.picture | absURL }}">
+{{ if not .Params.disableSiteImageMetaTags }}
+  {{ if .Scratch.Get "gravatarEmail" }}
+    <meta property="og:image" content="https://www.gravatar.com/avatar/{{ (md5 (.Scratch.Get "gravatarEmail")) | urlize }}?s=640">
+    <meta property="twitter:image" content="https://www.gravatar.com/avatar/{{ (md5 (.Scratch.Get "gravatarEmail")) | urlize }}?s=640">
+  {{ else if .Site.Author.picture }}
+    <meta property="og:image" content="{{ .Site.Author.picture | absURL }}">
+    <meta property="twitter:image" content="{{ .Site.Author.picture | absURL }}">
+  {{ end }}
 {{ end }}
