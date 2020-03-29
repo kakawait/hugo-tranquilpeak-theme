@@ -95,3 +95,7 @@ If you want to add your site to this showcase, click [here](https://github.com/k
 ## Aditya Mangal's blog
 
 [![Aditya Mangal's blog](https://i.imgur.com/FKrnNGlm.png)](https://www.adityamangal.com/)
+
+## Agonyus's blog
+
+[![Agonyus's blog](https://i.imgur.com/P25TDrFm.png)](https://agonyus.com/)
