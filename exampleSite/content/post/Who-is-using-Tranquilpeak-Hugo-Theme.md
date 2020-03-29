@@ -68,9 +68,9 @@ If you want to add your site to this showcase, click [here](https://github.com/k
 
 [![Ivan Fadila Putra's blog](https://i.imgur.com/r7tJa2Lm.png)](https://ffadilaputra.github.io/)
 
-## BALLOON a.k.a. Fu-sen's blog
+## BALLOON a.k.a. Fu-sen.'s blog
 
-[![BALLOON a.k.a. Fu-sen's blog](https://i.imgur.com/ThaDHyfm.png)](https://balloon.gq/)
+[![BALLOON a.k.a. Fu-sen.'s blog](https://i.imgur.com/ThaDHyfm.png)](https://blog.balloon.im/)
 
 ## Yue Hao's blog
 
