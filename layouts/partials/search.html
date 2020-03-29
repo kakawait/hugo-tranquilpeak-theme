@@ -16,7 +16,7 @@
       <div class="modal-body">
         <div class="no-result text-color-light text-center">{{ i18n "global.posts_found.zero" }}</div>
         <div class="results">
-          {{ $posts := (where .Site.RegularPages "Section" "post") }}
+          {{ $posts := (where .Site.RegularPages "Section" "posts") }}
           {{ range first 10 $posts }}
             <div class="media">
               {{ if .Params.thumbnailImageUrl }}

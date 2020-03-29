@@ -1,6 +1,6 @@
 {{- $.Scratch.Set "isPost" false -}}
 {{- if .IsPage -}}
-  {{- if eq .Type "post" -}}
+  {{- if eq .Type "posts" -}}
     {{- $.Scratch.Set "isPost" true -}}
   {{- end -}}
 {{- end -}}
