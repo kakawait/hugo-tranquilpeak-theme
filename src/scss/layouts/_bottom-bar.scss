@@ -9,13 +9,11 @@
     border-top:         1px solid #eef2f8;
     padding:            0 15px;
     z-index:            map-get($z-indexes, c-post-bottom-bar);
-    transition:         transform .25s ease-in-out;
-    -webkit-transition: -webkit-transform .25s ease-in-out;
-
-    min-width: $main-width - 15px * 2;
-    @media only screen and (max-width: $main-width - 15px * 2) {
-        min-width: calc(100% - 15px * 2);
-    }
+    transition: transform .25s ease-in-out, width .25s ease-in-out;
+    -webkit-transition: -webkit-transform .25s ease-in-out, width .25s ease-in-out;
+    // Eliminate any flickering of elements while they are in a state of being animated
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective:         1000;
 }
 
 @media #{$small-and-down} {
