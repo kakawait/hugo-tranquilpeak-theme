@@ -105,3 +105,7 @@ If you want to add your site to this showcase, click [here](https://github.com/k
 > Data science blog 
 
 [![Namshik Kim's blog](https://i.imgur.com/oQ8i7k7m.png)](https://physhik.com/)
+
+## Razvan Avramescu's blog
+
+[![Razvan Avramescu's blog](https://i.imgur.com/vyhMGDFm.png)](https://www.avramescu.net/)
