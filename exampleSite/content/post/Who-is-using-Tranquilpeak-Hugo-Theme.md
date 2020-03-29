@@ -99,3 +99,9 @@ If you want to add your site to this showcase, click [here](https://github.com/k
 ## Agonyus's blog
 
 [![Agonyus's blog](https://i.imgur.com/P25TDrFm.png)](https://agonyus.com/)
+
+## Namshik Kim's blog
+
+> Data science blog 
+
+[![Namshik Kim's blog](https://i.imgur.com/oQ8i7k7m.png)](https://physhik.com/)
