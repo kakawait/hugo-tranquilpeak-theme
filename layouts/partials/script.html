@@ -30,35 +30,6 @@ $(document).ready(function() {
 });
 </script>
 {{ end }}
-{{ if .IsPage }}
-  {{ if not (eq .Params.comments false) }}
-    {{ if .Site.DisqusShortname }}
-      <script>
-        var disqus_config = function() {
-          this.page.url = '{{ .Permalink }}';
-          {{ if .Params.disqusIdentifier }}
-            this.page.identifier = '{{ .Params.disqusIdentifier }}';
-          {{ else }}
-            this.page.identifier = '{{ .RelPermalink }}'
-          {{ end }}
-        };
-        (function() {
-          // Don't ever inject Disqus on localhost--it creates unwanted
-          // discussions from 'localhost:1313' on your Disqus account...
-          if (window.location.hostname == "localhost") {
-            return;
-          }
-          var d = document, s = d.createElement('script');
-          var disqus_shortname = '{{ .Site.DisqusShortname }}';
-          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-        })();
-      </script>
-    {{ end }}
-  {{ end }}
-{{ end }}
 {{ if or .Params.math .Site.Params.math }}
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous"></script>
   <script type="text/x-mathjax-config">

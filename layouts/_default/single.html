@@ -34,11 +34,7 @@
               {{ end }}
             {{ end }}
             {{ partial "post/actions.html" . }}
-            {{ if not (eq .Params.comments false) }}
-              {{ if .Site.DisqusShortname }}
-                {{ partial "post/disqus.html" . }}
-              {{ end }}
-            {{ end }}
+            {{ partial "post/comment.html" . }}
           </div>
         </article>
         {{ partial "footer.html" . }}

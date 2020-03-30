@@ -105,23 +105,7 @@ canonifyurls = true
 # -------------
 # Customization
 # -------------
-
 [params]
-  # ------
-  # Header
-  # ------
-  # The link at the right of the header is customizable
-  # You can add a link (as an icon) at the right of the header instead of the author's gravatar image or author's picture.
-  # By default, author's gravatar or author's picture is displayed.
-  #  url: /#search
-  #  icon: search
-  #  class: st-search-show-outputs
-
-  [params.header.rightLink]
-    class = ""
-    icon = ""
-    url = "/#about"
-
   # -----------
   # Description
   # -----------
@@ -209,7 +193,6 @@ canonifyurls = true
 
   # Your favicon path, default is "/favicon.png"
   #  favicon = "/favicon.png"
-
 
   # ------------------
   # External resources
@@ -307,6 +290,28 @@ canonifyurls = true
   #  fbAdminIds =
   # Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : 9841307
   #  fbAppId =
+
+  # --------------
+  # Comment system
+  # --------------
+  [params.comment]
+    [params.comment.disqus]
+      enable = true
+      shortname = "hugo-tranquilpeak-theme"
+
+  # --------------------
+  # Header configuration
+  # --------------------
+  # The link at the right of the header is customizable
+  # You can add a link (as an icon) at the right of the header instead of the author's gravatar image or author's picture.
+  # By default, author's gravatar or author's picture is displayed.
+  #  url: /#search
+  #  icon: search
+  #  class: st-search-show-outputs
+  [params.header.rightLink]
+    class = ""
+    icon = ""
+    url = "/#about"
 
   # --------------------
   # Footer configuration
