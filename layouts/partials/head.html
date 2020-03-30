@@ -56,7 +56,7 @@
       {{ end }}
     {{ end }}
 
-    {{ if .Params.ga.async }}
+    {{ if or .Params.googleAnalytics.async .Params.ga.async }}
       {{ template "_internal/google_analytics_async.html" . }}
     {{ else }}
       {{ template "_internal/google_analytics.html" . }}
