@@ -30,6 +30,9 @@ canonifyurls = true
   category = "categories"
   archive = "archives"
 
+# ------
+# Author
+# ------
 [author]
   name = "Firstname Lastname"
   bio = "Super bio with markdown support **COOL**"
@@ -45,7 +48,9 @@ canonifyurls = true
   # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
   # googlePlus = "+ThibaudLepretre"
 
-# Menu Configuration
+# ------------
+# Sidebar menu
+# ------------
 [[menu.main]]
   weight = 1
   identifier = "home"
@@ -97,19 +102,52 @@ canonifyurls = true
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\" aria-hidden=\"true\"></i>"
   url = "/index.xml"
 
+# -------------
+# Customization
+# -------------
+
 [params]
+  # ------
+  # Header
+  # ------
+  # The link at the right of the header is customizable
+  # You can add a link (as an icon) at the right of the header instead of the author's gravatar image or author's picture.
+  # By default, author's gravatar or author's picture is displayed.
+  #  url: /#search
+  #  icon: search
+  #  class: st-search-show-outputs
+
+  [params.header.rightLink]
+    class = ""
+    icon = ""
+    url = "/#about"
+
+  # -----------
+  # Description
+  # -----------
+  description = "Hugo tranquilpeak theme demo"
+
+  # ------------------
+  # Syntax highlighter
+  # ------------------
   # Syntax highlighter, possible choice between: "highlight.js" and "prism.js"
   # You can comment it to disable syntax highlighting
   syntaxHighlighter = "highlight.js"
 
+  # -----------
+  # Date format
+  # -----------
   # Customize date format use to render blog post date, categories and other
   # You must use date format used by Go Time package https://golang.org/pkg/time/
   # Months (not work with short month like "jan", "feb", etc) are translated if translation exists on i18n folders
   # Default format is: January 2, 2006
-  # dateFormat = "2 January 2006"
+  #  dateFormat = "2 January 2006"
 
+  # ---------------------------
+  # Posts related configuration
+  # ---------------------------
   # Global keywords configuration. Following keywords will be add to every pages
-  # keywords = ["development", "next-gen"]
+  #  keywords = ["development", "next-gen"]
 
   # Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. (true: enable, false: disable)
   clearReading = true
@@ -118,8 +156,13 @@ canonifyurls = true
   # If false it will flat categories.
   hierarchicalCategories = true
 
-  description = "Hugo tranquilpeak theme demo"
+  # Display `Next` on left side of the pagination, and `Prev` on right side one.
+  # If you set this value to `true`, these positions swap.
+  #  swapPaginator = true
 
+  # ---------------------
+  # Sidebar configuration
+  # ---------------------
   # Customization
   # Define the behavior of the sidebar
   # 1: Display extra large sidebar on extra large screen, large sidebar on large screen,
@@ -135,6 +178,13 @@ canonifyurls = true
   # 6: Display header bar on all screens and medium sidebar is swiped
   sidebarBehavior = 1
 
+  # Customize link of author avatar in sidebar
+  #  [params.sidebar.profile]
+  #    url = "/#about"
+
+  # -------------------
+  # Media configuration
+  # -------------------
   # Your blog cover picture. I STRONGLY recommend you to use a CDN to speed up loading of pages.
   # There is many free CDN like Cloudinary or you can also use indirectly
   # by using services like Google Photos.
@@ -158,29 +208,21 @@ canonifyurls = true
   autoThumbnailImage = true
 
   # Your favicon path, default is "/favicon.png"
-  # favicon = "/favicon.png"
+  #  favicon = "/favicon.png"
 
-  # Header configuration
-  # The link at the right of the header is customizable
-  # You can add a link (as an icon) at the right of the header instead of the author's gravatar image or author's picture.
-  # By default, author's gravatar or author's picture is displayed.
-  #     url: /#search
-  #     icon: search
-  #     class: st-search-show-outputs
 
-  # Display `Next` on left side of the pagination, and `Prev` on right side one.
-  # If you set this value to `true`, these positions swap.
-  # swapPaginator = true
-
+  # ------------------
+  # External resources
+  # ------------------
   # Custom CSS. Put here your custom CSS files. They are loaded after the theme CSS;
   # they have to be referred from static root. Example
-  # [[params.customCSS]]
-  #   href = "css/mystyle.css"
+  #  [[params.customCSS]]
+  #    href = "css/mystyle.css"
 
   # Custom JS. Put here your custom JS files. They are loaded after the theme JS;
   # they have to be referred from static root. Example
-  # [[params.customJS]]
-  #   src = "js/myscript.js"
+  #  [[params.customJS]]
+  #     src = "js/myscript.js"
   [[params.customJS]]
     src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"
     integrity = "sha256-LVuWfOU0rWFMCJNl1xb3K2HSWfxtK4IPbqEerP1P83M="
@@ -230,7 +272,9 @@ canonifyurls = true
     async = true
     defer = true
 
+  # ---------------
   # Sharing options
+  # ---------------
   # Comment and uncomment to enable or disable sharing options
   # If you wanna add a sharing option, read user documentation :
   # Tranquilpeak configuration > Theme configuration > sharing-options
@@ -249,15 +293,24 @@ canonifyurls = true
     icon = "fa-google-plus"
     url = "https://plus.google.com/share?url=%s"
 
-  [params.header.rightLink]
-    class = ""
-    icon = ""
-    url = "/#about"
+  # -------------------
+  # Integrated services
+  # -------------------
+  # Gravatar
+  #  >> See Author section
+  #    [author]
+  #      gravatarEmail =
+  # Google Analytics
+  #  >> See googleAnalytics
+  #    googleAnalytics =
+  # Your Facebook user ids used to connect your blog with your facebook user accounts (Facebook Insights). Separate ids with comma. e.g : 9830047,1003342
+  #  fbAdminIds =
+  # Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : 9841307
+  #  fbAppId =
 
-  # Customize link of author avatar in sidebar
-  # [params.sidebar.profile]
-  #   url = "/#about"
-
+  # --------------------
+  # Footer configuration
+  # --------------------
   # Customize copyright value "© 2017 <CUSTOMIZATION>. All Rights Reserved"
-  # [params.footer]
-  #   copyright = "<a href=\"https://github.com/kakawait\">kakawait</a>"
+  #  [params.footer]
+  #    copyright = "<a href=\"https://github.com/kakawait\">kakawait</a>"
