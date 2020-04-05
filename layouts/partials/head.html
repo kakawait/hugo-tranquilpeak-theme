@@ -36,9 +36,6 @@
     {{ with .Site.Author.googleplus }}
       <link rel="publisher" href="https://plus.google.com/{{ . | urlize }}">
     {{ end }}
-    {{ with .Site.Author.googleplus }}
-      <link rel="publisher" href="https://plus.google.com/{{ . | urlize }}">
-    {{ end }}
     
     {{ if .IsTranslated }}
     	{{ range .AllTranslations }}
