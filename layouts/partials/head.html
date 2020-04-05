@@ -36,6 +36,19 @@
     {{ with .Site.Author.googleplus }}
       <link rel="publisher" href="https://plus.google.com/{{ . | urlize }}">
     {{ end }}
+    {{ if .IsTranslated }}
+    	{{ range .AllTranslations }}
+      <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+	    {{ end }}
+    {{ end }}
+
+    {{ if .IsTranslated }}
+	    <nav class="LangNav">
+	    {{ range .AllTranslations }}
+		    <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+	    {{ end}}
+	    </nav>
+    {{ end }}
 
     <link rel="canonical" href="{{ .Permalink }}">
 
