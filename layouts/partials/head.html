@@ -43,13 +43,6 @@
 	    {{ end }}
     {{ end }}
 
-    {{ if .IsTranslated }}
-	    <nav class="LangNav">
-	    {{ range .AllTranslations }}
-		    <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-	    {{ end}}
-	    </nav>
-    {{ end }}
 
     <link rel="canonical" href="{{ .Permalink }}">
 
