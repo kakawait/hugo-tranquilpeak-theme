@@ -22,7 +22,7 @@
   {{- .Scratch.Set "authorPicture" (absURL .Site.Author.picture) -}}
 {{- end -}}
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ .Language.Lang }}">
   <head>
     {{ partial "head_start.html" . }}
     {{ partial "meta.html" . }}
