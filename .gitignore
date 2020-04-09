@@ -9,4 +9,4 @@ static/js/*
 !static/js/script-*.min.js
 static/css/*
 !static/css/style-*.min.css
-
+layouts/robots.txt
