@@ -51,22 +51,6 @@
 @mixin sidebar-lg {
     width: map-get($sidebar, lg-screen-width);
 
-    /* Flags navigation */
-    .flagselect {
-        border: 1px solid #ffffff;
-        padding: 0px;
-        margin: 0px;
-        font-weight: bold;
-        color: white;
-        font-size: 90%;
-    }
-    .flagnoselect {
-        padding: 0px;
-        margin: 0px;
-        color: #ffffff;
-        font-size: 90%;
-    }
-  
     // Author information
     .sidebar-profile {
         height:         130px;
