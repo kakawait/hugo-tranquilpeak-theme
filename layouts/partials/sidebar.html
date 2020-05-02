@@ -11,9 +11,6 @@
         {{ end }}
       </div>
     {{ end }}
-    <div class="sidebar-buttons">
-      {{ partial "language-selector.html" . }}
-    </div>
     <ul class="sidebar-buttons">
       {{ partial "menu.html" (dict "menu" .Site.Menus.main "root" $) }}
     </ul>
