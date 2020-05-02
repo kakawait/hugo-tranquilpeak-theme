@@ -14,11 +14,11 @@ $font-families: (
    'headings':          $open-sans-sans-serif,
    // components
    'code':              $menlo,
-   'caption':           $open-sans-sans-serif,
+   'caption':           $merriweather-serif,
    'image-gallery':     $open-sans,
-   'post-header-cover': $open-sans-sans-serif,
+   'post-header-cover': $merriweather-serif,
    'post-meta':         $open-sans-sans-serif,
-   'post-content':      $open-sans-sans-serif,
+   'post-content':      $merriweather-serif,
    'post-excerpt-link': $open-sans-sans-serif,
    'highlight':         $menlo,
    // layout
@@ -27,7 +27,7 @@ $font-families: (
 
 // equal to 15px
 $font-size-base:      1.6rem;
-$font-color-base:     #000000;
+$font-color-base:     #5d686f;
 $line-height-base:    1.9em;
 $letter-spacing-base: 0.01em;
 
