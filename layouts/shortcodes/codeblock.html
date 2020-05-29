@@ -20,7 +20,7 @@
 {{ $trimmedContent := trim .Inner "\n" }}
 <figure class="highlight {{ $.Scratch.Get "c-language" }} language-{{ with ($.Scratch.Get "c-language") }}{{ . }}{{ end }}">
   <figcaption>
-    {{ if and (($.Scratch.Get "c-url") ($.Scratch.Get "c-title")) }}
+    {{ if and ($.Scratch.Get "c-url") ($.Scratch.Get "c-title") }}
       <span>{{ $.Scratch.Get "c-title" }}</span><a href="{{ ($.Scratch.Get "c-url") | safeURL }}" target="_blank" rel="external">{{ $.Scratch.Get "c-link-text" | default ($.Scratch.Get "c-title") }}</a>
     {{ else if $.Scratch.Get "c-title" }}
       <span>{{ $.Scratch.Get "c-title" }}</span>
