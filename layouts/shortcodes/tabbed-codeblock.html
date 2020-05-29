@@ -19,7 +19,7 @@
 {{ end }}
 <figure class="codeblock codeblock--tabbed">
   <figcaption>
-    {{ if and (($.Scratch.Get "tc-url") ($.Scratch.Get "tc-title")) }}
+    {{ if and ($.Scratch.Get "tc-url") ($.Scratch.Get "tc-title") }}
       <span><a href="{{ ($.Scratch.Get "tc-url") | safeURL }}">{{ $.Scratch.Get "tc-title" }}</a></span>
     {{ else if $.Scratch.Get "tc-title" }}
       <span>{{ $.Scratch.Get "tc-title" }}</span>
