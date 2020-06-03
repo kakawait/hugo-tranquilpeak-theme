@@ -1,0 +1,1012 @@
+[90m                                                                                [39m
+[90m [39m                      === npm audit security report ===                       [90m [39m
+[90m                                                                                [39m
+# Run  npm install --save-dev node-sass@4.14.1  to resolve 2 vulnerabilities
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Denial of Service                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m node-sass                                                    [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m node-sass [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m node-sass                                                    [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/961                             [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m yargs-parser                                                 [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m node-sass [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m node-sass > sass-graph > yargs > yargs-parser                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1500                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+# Run  npm update lodash --depth 4  to resolve 13 vulnerabilities
+[90m                [39m[90m                                                                [39m
+[90m [39m High          [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m lodash                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m eslint [dev]                                                 [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m eslint > inquirer > lodash                                   [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1065                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m High          [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m lodash                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m eslint [dev]                                                 [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m eslint > lodash                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1065                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m High          [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m lodash                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m eslint [dev]                                                 [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m eslint > table > lodash                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1065                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m High          [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m lodash                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt [dev]                                                  [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt > grunt-legacy-log > grunt-legacy-log-utils > lodash   [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1065                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m High          [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m lodash                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt [dev]                                                  [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt > grunt-legacy-log > lodash                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1065                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m High          [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m lodash                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt [dev]                                                  [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt > grunt-legacy-util > lodash                           [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1065                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m High          [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m lodash                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-contrib-clean [dev]                                    [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-contrib-clean > async > lodash                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1065                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m High          [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m lodash                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-contrib-watch [dev]                                    [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-contrib-watch > async > lodash                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1065                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m High          [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m lodash                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-contrib-watch [dev]                                    [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-contrib-watch > gaze > globule > lodash                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1065                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m High          [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m lodash                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m node-sass [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m node-sass > gaze > globule > lodash                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1065                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m High          [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m lodash                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-contrib-watch [dev]                                    [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-contrib-watch > lodash                                 [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1065                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m High          [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m lodash                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m node-sass [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m node-sass > lodash                                           [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1065                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m High          [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m lodash                                                       [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m node-sass [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m node-sass > sass-graph > lodash                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1065                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+# Run  npm update eslint-utils --depth 2  to resolve 1 vulnerability
+[90m                [39m[90m                                                                [39m
+[90m [39m Critical      [90m [39m Arbitrary Code Execution                                     [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m eslint-utils                                                 [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m eslint [dev]                                                 [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m eslint > eslint-utils                                        [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1118                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+# Run  npm update mkdirp --depth 5  to resolve 7 vulnerabilities
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m minimist                                                     [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m eslint [dev]                                                 [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m eslint > file-entry-cache > flat-cache > write > mkdirp >    [90m [39m
+[90m [39m               [90m [39m minimist                                                     [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1179                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m minimist                                                     [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m eslint [dev]                                                 [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m eslint > mkdirp > minimist                                   [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1179                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m minimist                                                     [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt [dev]                                                  [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt > mkdirp > minimist                                    [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1179                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m minimist                                                     [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m node-sass [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m node-sass > mkdirp > minimist                                [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1179                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m minimist                                                     [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m node-sass [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m node-sass > node-gyp > fstream > mkdirp > minimist           [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1179                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m minimist                                                     [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m node-sass [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m node-sass > node-gyp > tar > fstream > mkdirp > minimist     [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1179                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m minimist                                                     [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m node-sass [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m node-sass > node-gyp > mkdirp > minimist                     [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1179                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+# Run  npm update minimist --depth 4  to resolve 2 vulnerabilities
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m minimist                                                     [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt [dev]                                                  [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt > dateformat > meow > minimist                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1179                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Prototype Pollution                                          [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m minimist                                                     [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m node-sass [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m node-sass > meow > minimist                                  [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1179                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+# Run  npm update acorn --depth 3  to resolve 1 vulnerability
+[90m                [39m[90m                                                                [39m
+[90m [39m Moderate      [90m [39m Regular Expression Denial of Service                         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m acorn                                                        [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m eslint [dev]                                                 [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m eslint > espree > acorn                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1488                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+# Run  npm update kind-of --depth 12  to resolve 45 vulnerabilities
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > braces >    [90m [39m
+[90m [39m               [90m [39m snapdragon > base > define-property > is-descriptor >        [90m [39m
+[90m [39m               [90m [39m is-accessor-descriptor > kind-of                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > extglob >   [90m [39m
+[90m [39m               [90m [39m expand-brackets > snapdragon > base > define-property >      [90m [39m
+[90m [39m               [90m [39m is-descriptor > is-accessor-descriptor > kind-of             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > extglob >   [90m [39m
+[90m [39m               [90m [39m snapdragon > base > define-property > is-descriptor >        [90m [39m
+[90m [39m               [90m [39m is-accessor-descriptor > kind-of                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > nanomatch > [90m [39m
+[90m [39m               [90m [39m snapdragon > base > define-property > is-descriptor >        [90m [39m
+[90m [39m               [90m [39m is-accessor-descriptor > kind-of                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > snapdragon  [90m [39m
+[90m [39m               [90m [39m > base > define-property > is-descriptor >                   [90m [39m
+[90m [39m               [90m [39m is-accessor-descriptor > kind-of                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > braces >    [90m [39m
+[90m [39m               [90m [39m snapdragon > base > define-property > is-descriptor >        [90m [39m
+[90m [39m               [90m [39m is-data-descriptor > kind-of                                 [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > extglob >   [90m [39m
+[90m [39m               [90m [39m expand-brackets > snapdragon > base > define-property >      [90m [39m
+[90m [39m               [90m [39m is-descriptor > is-data-descriptor > kind-of                 [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > extglob >   [90m [39m
+[90m [39m               [90m [39m snapdragon > base > define-property > is-descriptor >        [90m [39m
+[90m [39m               [90m [39m is-data-descriptor > kind-of                                 [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > nanomatch > [90m [39m
+[90m [39m               [90m [39m snapdragon > base > define-property > is-descriptor >        [90m [39m
+[90m [39m               [90m [39m is-data-descriptor > kind-of                                 [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > snapdragon  [90m [39m
+[90m [39m               [90m [39m > base > define-property > is-descriptor >                   [90m [39m
+[90m [39m               [90m [39m is-data-descriptor > kind-of                                 [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > braces >    [90m [39m
+[90m [39m               [90m [39m snapdragon > base > define-property > is-descriptor >        [90m [39m
+[90m [39m               [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > extglob >   [90m [39m
+[90m [39m               [90m [39m expand-brackets > snapdragon > base > define-property >      [90m [39m
+[90m [39m               [90m [39m is-descriptor > kind-of                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > extglob >   [90m [39m
+[90m [39m               [90m [39m snapdragon > base > define-property > is-descriptor >        [90m [39m
+[90m [39m               [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > nanomatch > [90m [39m
+[90m [39m               [90m [39m snapdragon > base > define-property > is-descriptor >        [90m [39m
+[90m [39m               [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > snapdragon  [90m [39m
+[90m [39m               [90m [39m > base > define-property > is-descriptor > kind-of           [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > braces >    [90m [39m
+[90m [39m               [90m [39m snapdragon-node > define-property > is-descriptor >          [90m [39m
+[90m [39m               [90m [39m is-accessor-descriptor > kind-of                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > braces >    [90m [39m
+[90m [39m               [90m [39m snapdragon-node > define-property > is-descriptor >          [90m [39m
+[90m [39m               [90m [39m is-data-descriptor > kind-of                                 [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > braces >    [90m [39m
+[90m [39m               [90m [39m snapdragon-node > define-property > is-descriptor > kind-of  [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > braces >    [90m [39m
+[90m [39m               [90m [39m to-regex > define-property > is-descriptor >                 [90m [39m
+[90m [39m               [90m [39m is-accessor-descriptor > kind-of                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > extglob >   [90m [39m
+[90m [39m               [90m [39m expand-brackets > to-regex > define-property > is-descriptor [90m [39m
+[90m [39m               [90m [39m > is-accessor-descriptor > kind-of                           [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > extglob >   [90m [39m
+[90m [39m               [90m [39m to-regex > define-property > is-descriptor >                 [90m [39m
+[90m [39m               [90m [39m is-accessor-descriptor > kind-of                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > nanomatch > [90m [39m
+[90m [39m               [90m [39m to-regex > define-property > is-descriptor >                 [90m [39m
+[90m [39m               [90m [39m is-accessor-descriptor > kind-of                             [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > to-regex >  [90m [39m
+[90m [39m               [90m [39m define-property > is-descriptor > is-accessor-descriptor >   [90m [39m
+[90m [39m               [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch >             [90m [39m
+[90m [39m               [90m [39m define-property > is-descriptor > is-accessor-descriptor >   [90m [39m
+[90m [39m               [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > nanomatch > [90m [39m
+[90m [39m               [90m [39m define-property > is-descriptor > is-accessor-descriptor >   [90m [39m
+[90m [39m               [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > braces >    [90m [39m
+[90m [39m               [90m [39m to-regex > define-property > is-descriptor >                 [90m [39m
+[90m [39m               [90m [39m is-data-descriptor > kind-of                                 [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > extglob >   [90m [39m
+[90m [39m               [90m [39m expand-brackets > to-regex > define-property > is-descriptor [90m [39m
+[90m [39m               [90m [39m > is-data-descriptor > kind-of                               [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > extglob >   [90m [39m
+[90m [39m               [90m [39m to-regex > define-property > is-descriptor >                 [90m [39m
+[90m [39m               [90m [39m is-data-descriptor > kind-of                                 [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > nanomatch > [90m [39m
+[90m [39m               [90m [39m to-regex > define-property > is-descriptor >                 [90m [39m
+[90m [39m               [90m [39m is-data-descriptor > kind-of                                 [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > to-regex >  [90m [39m
+[90m [39m               [90m [39m define-property > is-descriptor > is-data-descriptor >       [90m [39m
+[90m [39m               [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch >             [90m [39m
+[90m [39m               [90m [39m define-property > is-descriptor > is-data-descriptor >       [90m [39m
+[90m [39m               [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > nanomatch > [90m [39m
+[90m [39m               [90m [39m define-property > is-descriptor > is-data-descriptor >       [90m [39m
+[90m [39m               [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > braces >    [90m [39m
+[90m [39m               [90m [39m to-regex > define-property > is-descriptor > kind-of         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > extglob >   [90m [39m
+[90m [39m               [90m [39m expand-brackets > to-regex > define-property > is-descriptor [90m [39m
+[90m [39m               [90m [39m > kind-of                                                    [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > extglob >   [90m [39m
+[90m [39m               [90m [39m to-regex > define-property > is-descriptor > kind-of         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > nanomatch > [90m [39m
+[90m [39m               [90m [39m to-regex > define-property > is-descriptor > kind-of         [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > to-regex >  [90m [39m
+[90m [39m               [90m [39m define-property > is-descriptor > kind-of                    [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch >             [90m [39m
+[90m [39m               [90m [39m define-property > is-descriptor > kind-of                    [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > nanomatch > [90m [39m
+[90m [39m               [90m [39m define-property > is-descriptor > kind-of                    [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > extglob >   [90m [39m
+[90m [39m               [90m [39m define-property > is-descriptor > is-accessor-descriptor >   [90m [39m
+[90m [39m               [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > extglob >   [90m [39m
+[90m [39m               [90m [39m define-property > is-descriptor > is-data-descriptor >       [90m [39m
+[90m [39m               [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > extglob >   [90m [39m
+[90m [39m               [90m [39m define-property > is-descriptor > kind-of                    [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > kind-of     [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > findup-sync > micromatch > nanomatch > [90m [39m
+[90m [39m               [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+[90m                [39m[90m                                                                [39m
+[90m [39m Low           [90m [39m Validation Bypass                                            [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Package       [90m [39m kind-of                                                      [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Dependency of [90m [39m grunt-cli [dev]                                              [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m Path          [90m [39m grunt-cli > liftoff > object.map > make-iterator > kind-of   [90m [39m
+[90m                [39m[90m                                                                [39m
+[90m [39m More info     [90m [39m https://npmjs.com/advisories/1490                            [90m [39m
+[90m                [39m[90m                                                                [39m
+
+
+found 71 vulnerabilities (56 low, 1 moderate, 13 high, 1 critical) in 519 scanned packages
+  run `npm audit fix` to fix 71 of them.
