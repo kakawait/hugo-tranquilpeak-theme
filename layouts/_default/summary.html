@@ -22,31 +22,31 @@
 {{ else }}
   {{ .Scratch.Set "thumbnailImagePosition" "bottom" }}
 {{ end }}
-<article class="postShorten postShorten--thumbnailimg-{{ .Scratch.Get "thumbnailImagePosition" }}" itemscope itemType="http://schema.org/BlogPosting">
+<article class="postShorten postShorten--thumbnailimg-{{ .Scratch.Get "thumbnailImagePosition" }}">
   <div class="postShorten-wrap">
     {{ if and (.Scratch.Get "thumbnailImage") (eq (.Scratch.Get "thumbnailImagePosition") "top")}}
-      <a href="{{ .Permalink }}">
+      <a href="{{ .Permalink }}" aria-label="{{ if i18n "global.open_post" }}{{ i18n "global.open_post" }}: {{ .Title }}{{ end }}">
         <div class="postShorten-thumbnailimg">
-          <img alt="" itemprop="image" src="{{ .Scratch.Get "thumbnailImage" }}"/>
+          <img alt="" src="{{ .Scratch.Get "thumbnailImage" }}"/>
         </div>
       </a>
     {{ end }}
     <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="{{ .Permalink }}">
+      <h1 class="postShorten-title">
+        <a class="link-unstyled" href="{{ .Permalink }}" aria-label="{{ if i18n "global.open_post" }}{{ i18n "global.open_post" }}: {{ .Title }}{{ end }}">
           {{ .Title }}
         </a>
       </h1>
       {{ partial "post/meta" . }}
     </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
+    <div class="postShorten-excerpt">
       {{ if .Params.Summary }}
         {{ .Params.Summary | markdownify }}
       {{ else }}
         {{ .Summary }}
       {{ end }}
       <p>
-        <a href="{{ .Permalink }}" class="postShorten-excerpt_link link">{{ i18n "post.read_more" }}</a>
+        <a href="{{ .Permalink }}" class="postShorten-excerpt_link link" aria-label="{{ if i18n "global.open_post" }}{{ i18n "global.open_post" }}: {{ .Title }}{{ end }}">{{ i18n "post.read_more" }}</a>
         {{ with .Params.readingtime }}
           <span class="postShorten-readingtime">
             {{ printf " - %s min read" . }}
@@ -56,9 +56,9 @@
     </div>
   </div>
   {{ if and (.Scratch.Get "thumbnailImage") (ne (.Scratch.Get "thumbnailImagePosition") "top")}}
-    <a href="{{ .Permalink }}">
+    <a href="{{ .Permalink }}" aria-label="{{ if i18n "global.open_post" }}{{ i18n "global.open_post" }}: {{ .Title }}{{ end }}">
       <div class="postShorten-thumbnailimg">
-        <img alt="" itemprop="image" src="{{ .Scratch.Get "thumbnailImage" }}"/>
+        <img alt="" src="{{ .Scratch.Get "thumbnailImage" }}"/>
       </div>
     </a>
   {{ end }}

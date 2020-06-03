@@ -44,6 +44,21 @@
 - id: "global.search_date"
   translation: "Buscar fecha (YYYY/MM/DD)"
 
+- id: "global.read_more_about_author"
+  translation: "Leer más sobre el autor"
+
+- id: "global.zoom_in_on_picture"
+  translation: "Acercar a la imagen"
+
+- id: "global.go_to_homepage"
+  translation: "Ir a la página de inicio"
+
+- id: "global.open_link"
+  translation: "Abre el enlace"
+
+- id: "global.open_post"
+  translation: "Abre el post"
+
 ## GLOBAL.POSTS_FOUND ##
 - id: "global.posts_found.zero"
   translation: "no se encontraron artículos"
@@ -114,6 +129,26 @@
 
 - id: "post.comment_and_share"
   translation: "Comentar y compartir"
+
+- id: "post.comment"
+  translation: "Deja un comentario"
+
+- id: "post.back_to_top"
+  translation: "Volver arriba"
+
+- id: "post.share"
+  translation: "Compartir esta publicacion"
+
+- id: "post.gallery"
+  translation: "Galería"
+
+## POST.IMAGE ##
+
+- id: "post.image.one"
+  translation: "imágen"
+
+- id: "post.image.other"
+  translation: "{n} imágenes"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"

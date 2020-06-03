@@ -2,7 +2,7 @@
   <div class="sidebar-container">
     {{ with ($.Scratch.Get "authorPicture") }}
       <div class="sidebar-profile">
-        <a href="{{ if $.Site.Params.sidebar.profile.url }}{{ $.Site.Params.sidebar.profile.url }}{{ else }}{{ "/#about" }}{{ end }}">
+        <a href="{{ if $.Site.Params.sidebar.profile.url }}{{ $.Site.Params.sidebar.profile.url }}{{ else }}{{ "/#about" }}{{ end }}" aria-label="{{ i18n "global.read_more_about_author"}}">
           <img class="sidebar-profile-picture" src="{{ . }}{{ if in . "//www.gravatar.com/avatar/" }}?s=110{{ end }}" alt="{{ i18n "global.author_picture" }}" />
         </a>
         <h4 class="sidebar-profile-name">{{ $.Site.Author.name }}</h4>

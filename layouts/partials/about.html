@@ -1,7 +1,7 @@
 <div id="about">
   <div id="about-card">
     <div id="about-btn-close">
-      <i class="fa fa-remove"></i>
+      <i class="fa fa-times"></i>
     </div>
     {{ with ($.Scratch.Get "authorPicture") }}
       <img id="about-card-picture" src="{{ . }}{{ if in . "//www.gravatar.com/avatar/" }}?s=110{{ end }}" alt="{{ i18n "global.author_picture" }}" />
@@ -19,7 +19,7 @@
     {{ end }}
     {{ with .Site.Author.location }}
       <div id="about-card-location">
-        <i class="fa fa-map-marker"></i>
+        <i class="fa fa-map-marker-alt"></i>
         <br/>
         {{ . }}
       </div>

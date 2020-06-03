@@ -44,6 +44,21 @@
 - id: "global.search_date"
   translation: "搜尋日期（YYYY/MM/DD）"
 
+- id: "global.read_more_about_author"
+  translation: "閱讀有關作者的更多信息"
+
+- id: "global.zoom_in_on_picture"
+  translation: "放大圖片"
+
+- id: "global.go_to_homepage"
+  translation: "去首頁"
+
+- id: "global.open_link"
+  translation: "打開鏈接"
+
+- id: "global.open_post"
+  translation: "打開帖子"
+
 ## GLOBAL.POSTS_FOUND ##
 - id: "global.posts_found.zero"
   translation: "沒有找到文章"
@@ -114,6 +129,26 @@
 
 - id: "post.comment_and_share"
   translation: "留言與分享"
+
+- id: "post.comment"
+  translation: "發表評論"
+
+- id: "post.back_to_top"
+  translation: "回到頂部"
+
+- id: "post.share"
+  translation: "分享這個帖子"
+
+- id: "post.gallery"
+  translation: "畫廊"
+
+## POST.IMAGE ##
+
+- id: "post.image.one"
+  translation: "圖片"
+
+- id: "post.image.other"
+  translation: "{n} 圖片"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"
