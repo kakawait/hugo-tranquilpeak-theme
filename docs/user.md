@@ -281,7 +281,6 @@ You can add groups of links and links much as you want.
 | name       | title to be display                   | string        |
 | pre        | icon to be display a left of the name | template.HTML |
 | url        | menu entry url                        | string        |
-| class      | CSS Class added to the `a` link tag   | string        |
 
 `identifier` can be use for translation see [Menu translation](#menu-translation).
 
