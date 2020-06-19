@@ -11,4 +11,8 @@
     </h1>
   {{ end }}
   {{ partial "post/meta.html" . }}
+  {{ if .Params.toc }}
+    {{ .TableOfContents }}
+  {{ end }}
+
 </div>
