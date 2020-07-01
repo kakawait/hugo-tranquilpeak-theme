@@ -257,13 +257,13 @@ You can add groups of links and links much as you want.
   weight = 0
   identifier = "github"
   name = "GitHub"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
+  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-github\"></i>"
   url = "https://github.com/kakawait"
 [[menu.links]]
   weight = 1
   identifier = "stackoverflow"
   name = "Stack Overflow"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-stack-overflow\"></i>"
+  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-stack-overflow\"></i>"
   url = "https://stackoverflow.com/users/636472/kakawait"
 
 [[menu.misc]]

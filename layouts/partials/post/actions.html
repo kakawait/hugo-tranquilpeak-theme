@@ -57,7 +57,7 @@
         {{ range .Site.Params.sharingOptions }}
           <li class="post-action hide-xs">
             <a class="post-action-btn btn btn--default" target="new" href="{{ printf .url $.Permalink }}">
-              <i class="fa {{ .icon }}"></i>
+              <i class="fab {{ .icon }}"></i>
             </a>
           </li>
         {{ end }}
