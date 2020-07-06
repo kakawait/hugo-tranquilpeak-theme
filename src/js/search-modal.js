@@ -135,7 +135,7 @@
         html += moment(post.date).locale(lang).format('ll');
         html += '</span>';
         html += '</span>';
-        html += '<div class="media-content hide-xs font-merryweather">' + post.excerpt + '</div>';
+        html += '<div class="media-content hide-xs font-opensans">' + post.excerpt + '</div>';
         html += '</div>';
         html += '<div style="clear:both;"></div>';
         html += '<hr>';
