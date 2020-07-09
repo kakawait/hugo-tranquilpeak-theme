@@ -48,7 +48,9 @@
     "nanoid": "^2.0.3",
     "node-sass": "^4.14.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "grunt-exec": "^3.0.0"
+  },
   "engines": {
     "node": ">=6.13.1"
   }
