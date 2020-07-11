@@ -5,6 +5,9 @@
         {{ partial "internal/date.html" . }}
       </time>
     {{ end }}
-    {{ partial "post/category.html" . }}
+    {{ partial "post/category.html" . }}<br />
+    <span class="postReadingTime">
+      {{ .ReadingTime }} minute read
+    </span>
   </div>
 {{ end }}
