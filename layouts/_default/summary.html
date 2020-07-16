@@ -10,8 +10,11 @@
       {{ if .Params.gallery }}
         {{ range first 1 .Params.gallery }}
           {{ range first 1 (split . " ") }}
-            {{- /* TODO: page resource support */ -}}
-            {{ $.Scratch.Set "thumbnailImage" (. | absURL) }}
+            {{ with $.Page.Resources.GetMatch ( . ) }}
+              {{ $.Scratch.Set "thumbnailImage" (.RelPermalink) }}
+            {{ else }}
+              {{ $.Scratch.Set "thumbnailImage" (. | relURL) }}
+            {{ end }}
           {{ end }}
         {{ end }}
       {{ else }}
