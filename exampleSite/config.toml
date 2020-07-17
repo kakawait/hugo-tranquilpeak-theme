@@ -108,6 +108,11 @@ canonifyurls = true
   # Default format is: January 2, 2006
   # dateFormat = "2 January 2006"
 
+  # Customize title format
+  # This parameter affect to pages except home page
+  # If empty it will be title only
+  # titleFormat = "$pageTitle - $siteTitle"
+
   # Global keywords configuration. Following keywords will be add to every pages
   # keywords = ["development", "next-gen"]
 
