@@ -561,7 +561,7 @@ gallery:
     - image-3.jpg "New York"
     - image-4.png "Paris"
     - http://i.imgur.com/o9r19kD.jpg "Dubai"
-    - https://example.com/orignal.jpg https://example.com/thumbnail.jpg "Sidney"
+    - https://example.com/original.jpg https://example.com/thumbnail.jpg "Sidney"
 comments: false
 showTags: true
 showPagination: true
@@ -691,7 +691,7 @@ E.g:
 |classes (optional)|You can add css classes to stylize the image. Separate class with whitespace. Tranquilpeak integrate many css class to create nice effects :  <ul><li><strong>fancybox</strong> : Generate a fancybox image.</li><li><strong>nocaption</strong> : Caption of the image will not be displayed.</li><li><strong>left</strong> : Image will float at the left.</li><li><strong>right</strong> : Image will float at the right.</li><li><strong>center</strong> : Image will be at center.</li><li><strong>fig-20</strong> : Image will take 20% of the width of post width and automatically float at left.</li><li><strong>fig-25</strong> : Image will take 25% of the width of post width and automatically float at left.</li><li><strong>fig-33</strong> : Image will take 33% of the width of post width and automatically float at left.</li><li><strong>fig-50</strong> : Image will take 50% of the width of post width and automatically float at left.</li><li><strong>fig-75</strong> : Image will take 75% of the width of post width and automatically float at left.</li><li><strong>fig-100</strong> : Image will take 100% of the width of post width.</li><li><strong>clear</strong> : Add a div with `clear:both;` style attached after the image to retrieve the normal flow of the post.</li></ul>|
 |group (optional)| Name of a group, used to create a gallery. **Only for image with `fancybox` css class**|
 |src| Path to the original image.|
-|thumbnail (optional)| Path to the thumbnail image. If empty, the orignal image will be displayed.|
+|thumbnail (optional)| Path to the thumbnail image. If empty, the original image will be displayed.|
 |thumbnail-width (optional)| Width to the thumbnail image. If the thumbnail image is empty, width will be attached to thumbnail image created from original image. E.g : `150px` or `85%`.|
 |thumbnail-height (optional)| Height to the thumbnail image. If the thumbnail image is empty, height will be attached to thumbnail image created from original image. E.g : `300px` or `20%`.|
 |title (optional)| Title of image displayed in a caption under image. `Alt` HTML attribute will use this title. E.g : `"A beautiful sunrise"`.|
