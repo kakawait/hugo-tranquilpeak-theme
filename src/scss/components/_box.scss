@@ -10,5 +10,7 @@
 
 // Box
 .box {
-    border-bottom: 1px solid #eef2f8;
+    @include themed() {
+        border-bottom: t('box-border-bottom');
+    }
 }

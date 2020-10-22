@@ -18,13 +18,16 @@
         // Position the card out the page to improve the javascript drop effect
         top:           -1000px;
         display:       block;
-        background:    white;
         max-width:     400px;
         margin:        15px auto;
         border-radius: 3px;
         padding:       30px 0;
         cursor:        initial;
         @include prefix(box-shadow, 0 0 5px rgba(0, 0, 0, 0.50), 'webkit' 'moz');
+
+        @include themed() {
+            background: t('about-card-bg');
+        }
 
         #about-btn-close {
             position: absolute;
@@ -58,8 +61,10 @@
         #about-card-bio {
             font-size:   $font-size-base;
             line-height: $line-height-base;
-            font-weight: 400;
-            color:       map-get($colors, base);
+            @include themed() {
+                color: t('about-card-color');
+                font-weight: t('font-weight-base');
+            }
         }
     }
 }

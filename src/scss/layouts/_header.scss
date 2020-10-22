@@ -1,12 +1,9 @@
 #header {
     display:                     block;
     width:                       100%;
-    height:                      map-get($header, height);
-    background:                  map-get($header, background);
+    height:                      map-get($header, height);    
     position:                    fixed;
     top:                         0;
-    border:                      map-get($header, border);
-    color:                       map-get($header, color);
     // used to animate the header on small screen with javascript
     //@include prefix(transition, top 0.25s ease-in-out, 'webkit' 'moz' 'ms' 'o');
     z-index:                     map-get($z-indexes, l-header);
@@ -14,6 +11,17 @@
     // Eliminate any flickering of elements while they are in a state of being animated
     -webkit-backface-visibility: hidden;
     -webkit-perspective:         1000;
+
+    @include themed() {
+        background: t('header-bg');
+        border-bottom: t('header-border');
+        color: t('header-color');
+    }
+
+    min-width: $main-width;
+    @media only screen and (max-width: $main-width) {
+        min-width: 100%;
+    }
 
     #btn-open-sidebar {
         position: absolute;
@@ -60,8 +68,11 @@
 
             &:hover,
             &:active {
-                color:           darken(map-get($header, color), 10);
                 text-decoration: none;
+
+                @include themed() {
+                    color: darken(t('header-color'), 10);
+                }
             }
         }
     }

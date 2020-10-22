@@ -1,0 +1,67 @@
+<script>
+    function setTheme(themeName) {
+        if(themeName === 'dark') {
+            document.documentElement.classList.remove('theme--light');
+            document.documentElement.classList.add('theme--dark');
+        }
+        else {
+            document.documentElement.classList.remove('theme--dark');
+            document.documentElement.classList.add('theme--light');
+        }
+
+        localStorage.setItem('theme', themeName);
+        document.documentElement.setAttribute('data-theme', themeName);
+    }
+
+    var currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+    // Un thème a été choisi par l'utilisateur sur ce site, on l'applique
+    if (currentTheme) {
+        if (currentTheme === 'dark') {
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        }
+    }
+    else {
+        // Pas encore de choix, on regarde les préférences de l'OS/navigateur
+        if (window.matchMedia("(prefers-color-scheme: dark)")){
+            setTheme('dark');
+        }
+        else if (window.matchMedia("(prefers-color-scheme: light)")){
+            setTheme('light');
+        }
+        else {
+            // Par défaut, on applique le thème dark
+            setTheme('dark');
+        }
+    }
+
+    var mqDark = window.matchMedia('(prefers-color-scheme: dark)');
+    var mqLight = window.matchMedia('(prefers-color-scheme: light)');
+    
+    function checkTheme(event) {
+        if (event.matches) {
+            if (event.media.includes('dark')) {
+                setTheme('dark');
+                document.getElementById('slider').checked = false;
+            }
+            if (event.media.includes('light')) {
+                setTheme('light');
+                document.getElementById('slider').checked = true;
+            }
+        }
+    }
+    
+    try {
+      mqDark.addEventListener('change', checkTheme);
+      mqLight.addEventListener('change', checkTheme);
+    } catch (maybeSafari) {
+      try {
+        mqDark.addListener(checkTheme);
+        mqLight.addListener(checkTheme);
+      } catch (dontknow) {
+        // not supported…
+      }
+    }
+</script>

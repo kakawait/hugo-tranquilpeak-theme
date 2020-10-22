@@ -1,0 +1,126 @@
+﻿$themes: (
+    light: (
+            main-bg: map-get($main-light, 'background-color'),
+
+            header-bg: map-get($header-light, 'background'),
+            header-border: map-get($header-light, 'border'),
+            header-color: map-get($header-light, 'color'),
+
+            bottom-bar-bg: white,
+            bottom-bar-border: 1px solid #eef2f8,
+
+            sidebar-color: map-get($sidebar-light, color),
+            sidebar-color-hover: lighten(map-get($sidebar-light, color), 45),
+
+            about-card-bg: white,
+            about-card-color: #5d686f,
+
+            tooltip-bg: rgba(0, 0, 20, 0.93),
+            tooltip-color: #fff,
+
+            font-color-base: #5d686f,
+            font-weight-base: $font-weight-base-light,
+            hx-color: #4a4a4a,
+            btn-bg: white,
+            tag-bg: white,
+            table-row-bg: #f7f8f8,
+            box-border-bottom: 1px solid #eef2f8,
+            image-filter: none,
+
+            highlight-bg: map-get($highlight-light, 'background'),
+            highlight-color: map-get($highlight-light, 'color'),
+
+            alert-info-bg: lighten(map-get($colors, 'info'), 37%),
+            alert-success-bg: lighten(map-get($colors, 'success'), 42%),
+            alert-warning-bg: lighten(map-get($colors, 'warning'), 42%),
+            alert-danger-bg: lighten(map-get($colors, 'danger'), 42%),
+
+            highlight-text-red-bg: lighten(map-get($highlight-text-bg-colors, 'red'), 45%),
+            highlight-text-green-bg: lighten(map-get($highlight-text-bg-colors, 'green'), 65%),
+            highlight-text-blue-bg: lighten(map-get($highlight-text-bg-colors, 'blue'), 45%),
+            highlight-text-purple-bg: lighten(map-get($highlight-text-bg-colors, 'purple'), 70%),
+            highlight-text-orange-bg: lighten(map-get($highlight-text-bg-colors, 'orange'), 40%),
+            highlight-text-yellow-bg: lighten(map-get($highlight-text-bg-colors, 'yellow'), 40%),
+            highlight-text-cyan-bg: lighten(map-get($highlight-text-bg-colors, 'cyan'), 40%),
+            highlight-text-primary-bg: lighten(map-get($highlight-text-bg-colors, 'primary'), 35%),
+            highlight-text-success-bg: lighten(map-get($highlight-text-bg-colors, 'success'), 35%),
+            highlight-text-warning-bg: lighten(map-get($highlight-text-bg-colors, 'warning'), 40%),
+            highlight-text-danger-bg: lighten(map-get($highlight-text-bg-colors, 'danger'), 40%),
+
+            post-shorten-color: map-get($colors, base),
+            post-shorten-border: #eef2f8,
+            post-content-color: map-get($colors, base),
+            post-meta-color: map-get($colors, light)
+    ),
+    dark: (
+            main-bg: map-get($main-dark, 'background-color'),
+
+            header-bg: map-get($header-dark, 'background'),
+            header-border: map-get($header-dark, 'border'),
+            header-color: map-get($header-dark, 'color'),
+
+            bottom-bar-bg: #181A1B,
+            bottom-bar-border: 1px solid #353941,
+
+            sidebar-color: map-get($sidebar-dark, color),
+            sidebar-color-hover: lighten(map-get($sidebar-dark, color), 15%),
+
+            about-card-bg: #121212,
+            about-card-color: #e8e6e3,
+
+            tooltip-bg: #181A1B,
+            tooltip-color: #e8e6e3,
+
+            font-color-base: #e8e6e3,
+            font-weight-base: $font-weight-base-dark,
+            hx-color: #B9B3AA,
+            btn-bg: #181A1B,
+            tag-bg: #181A1B,
+            table-row-bg: #333,
+            box-border-bottom: 1px solid #26282B,
+            image-filter: brightness(.8) contrast(1.2),
+
+            highlight-bg: map-get($highlight-dark, 'background'),
+            highlight-color: map-get($highlight-dark, 'color'),
+
+            alert-info-bg: darken(map-get($colors, 'info'), 37%),
+            alert-success-bg: darken(map-get($colors, 'success'), 42%),
+            alert-warning-bg: darken(map-get($colors, 'warning'), 42%),
+            alert-danger-bg: darken(map-get($colors, 'danger'), 42%),
+
+            highlight-text-red-bg: darken(map-get($highlight-text-bg-colors, 'red'), 35%),
+            highlight-text-green-bg: darken(map-get($highlight-text-bg-colors, 'green'), 15%),
+            highlight-text-blue-bg: darken(map-get($highlight-text-bg-colors, 'blue'), 35%),
+            highlight-text-purple-bg: darken(map-get($highlight-text-bg-colors, 'purple'), 15%),
+            highlight-text-orange-bg: darken(map-get($highlight-text-bg-colors, 'orange'), 30%),
+            highlight-text-yellow-bg: darken(map-get($highlight-text-bg-colors, 'yellow'), 30%),
+            highlight-text-cyan-bg: darken(map-get($highlight-text-bg-colors, 'cyan'), 35%),
+            highlight-text-primary-bg: darken(map-get($highlight-text-bg-colors, 'primary'), 35%),
+            highlight-text-success-bg: darken(map-get($highlight-text-bg-colors, 'success'), 35%),
+            highlight-text-warning-bg: darken(map-get($highlight-text-bg-colors, 'warning'), 35%),
+            highlight-text-danger-bg: darken(map-get($highlight-text-bg-colors, 'danger'), 35%),
+
+            post-shorten-color: #B1ABA1,
+            post-shorten-border: #26282B,
+            post-content-color: #A8A095,
+            post-meta-color: map-get($colors, light)     
+    ),
+);
+
+@mixin themed() {
+  @each $theme, $map in $themes {    
+    .theme--#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function t($key) {
+  @return map-get($theme-map, $key);
+}

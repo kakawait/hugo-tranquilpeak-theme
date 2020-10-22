@@ -4,7 +4,9 @@
 
 .archive {
     .archive-title {
-        color: $font-color-base;
+        @include themed() {
+            color: t('font-color-base');
+        }
 
         &:hover {
             text-decoration: underline;
@@ -16,7 +18,10 @@
         .archive-post {
             .archive-post-title {
                 margin-left: 10px;
-                color:       $font-color-base;
+
+                @include themed() {
+                    color: t('font-color-base');
+                }
 
                 &:hover {
                     text-decoration: underline;
@@ -31,6 +36,10 @@
                 font-weight: 600;
                 content:     '\f0da';
                 font-size:   map-get($font-size, small);
+
+                @include themed() {
+                    color: t('font-color-base')
+                }
             }
         }
     }

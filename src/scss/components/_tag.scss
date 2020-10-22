@@ -1,7 +1,6 @@
 a.tag,
 .tag {
     display:        inline-block;
-    background:     #fff;
     width:          auto;
     height:         auto;
     border-radius:  3px;
@@ -10,6 +9,10 @@ a.tag,
     margin:         0;
     margin-right:   4px;
     margin-bottom:  7px;
+
+    @include themed() {
+        background: t('tag-bg');
+    }
 }
 
 // Colors variant

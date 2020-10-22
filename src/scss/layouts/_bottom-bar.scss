@@ -4,16 +4,24 @@
     position:           fixed;
     bottom:             0;
     height:             60px;
-    background:         white;
     margin:             0;
-    border-top:         1px solid #eef2f8;
     padding:            0 15px;
     z-index:            map-get($z-indexes, c-post-bottom-bar);
-    transition: transform .25s ease-in-out, width .25s ease-in-out;
-    -webkit-transition: -webkit-transform .25s ease-in-out, width .25s ease-in-out;
+    transition:         transform .25s ease-in-out;
+    -webkit-transition: -webkit-transform .25s ease-in-out;
     // Eliminate any flickering of elements while they are in a state of being animated
     -webkit-backface-visibility: hidden;
     -webkit-perspective:         1000;
+
+    @include themed() {
+        background: t('bottom-bar-bg');
+        border-top: t('bottom-bar-border');
+    }
+
+    min-width: $main-width - 15px * 2;
+    @media only screen and (max-width: $main-width - 15px * 2) {
+        min-width: calc(100% - 15px * 2);
+    }
 }
 
 @media #{$small-and-down} {

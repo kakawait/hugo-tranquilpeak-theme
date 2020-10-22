@@ -59,7 +59,7 @@
 
     // Author information
     .sidebar-profile {
-        height:         130px;
+        height:         160px;
         padding-top:    40px;
         padding-bottom: 7.5px;
 
@@ -147,7 +147,10 @@
         .sidebar-profile-location {
             font-weight: 400;
             font-size:   1.6rem;
-            color:       map-get($sidebar, color);
+            
+            @include themed() {
+                color: t('sidebar-color');
+            }
         }
         .sidebar-profile-job,
         .sidebar-profile-location {
