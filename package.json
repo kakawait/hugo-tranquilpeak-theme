@@ -46,7 +46,7 @@
     "include-all": "4.0.3",
     "load-grunt-tasks": "5.0.0",
     "nanoid": "^2.1.11",
-    "node-sass": "4.12.0"
+    "sass": "1.36.0"
   },
   "dependencies": {},
   "engines": {
