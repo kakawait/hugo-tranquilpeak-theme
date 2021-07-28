@@ -5,7 +5,7 @@
     {{ range .Site.Params.sharingOptions }}
       <li class="share-option">
         <a class="share-option-btn" target="new" href="{{ printf .url (substr (querify "x" $.Permalink) 2) }}" aria-label="{{ i18n "global.share_on" }} {{ .name }}">
-          <i class="fa {{ .icon }}" aria-hidden="true"></i><span>{{ printf (i18n "global.share_on") .name }}</span>
+          <i class="{{ .icon }}" aria-hidden="true"></i><span>{{ printf (i18n "global.share_on") .name }}</span>
         </a>
       </li>
     {{ end }}
