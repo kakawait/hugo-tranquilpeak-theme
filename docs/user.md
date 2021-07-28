@@ -257,13 +257,13 @@ You can add groups of links and links much as you want.
   weight = 0
   identifier = "github"
   name = "GitHub"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\" aria-hidden=\"true\"></i>"
+  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-github\" aria-hidden=\"true\"></i>"
   url = "https://github.com/kakawait"
 [[menu.links]]
   weight = 1
   identifier = "stackoverflow"
   name = "Stack Overflow"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-stack-overflow\" aria-hidden=\"true\"></i>"
+  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-stack-overflow\" aria-hidden=\"true\"></i>"
   url = "https://stackoverflow.com/users/636472/kakawait"
 
 [[menu.misc]]
@@ -436,17 +436,17 @@ googleAnalytics =
 [params]
   [[params.sharingOptions]]
     name = "Facebook"
-    icon = "fa-facebook-official"
+    icon = "fab fa-facebook"
     url = "https://www.facebook.com/sharer/sharer.php?u=%s"
 
   [[params.sharingOptions]]
     name = "Twitter"
-    icon = "fa-twitter"
+    icon = "fab fa-twitter"
     url = "https://twitter.com/intent/tweet?text=%s"
 
   [[params.sharingOptions]]
     name = "Google+"
-    icon = "fa-google-plus"
+    icon = "fab fa-google-plus"
     url = "https://plus.google.com/share?url=%s"
 ```
 
