@@ -298,6 +298,19 @@ canonifyurls = true
     [params.comment.disqus]
       enable = true
       shortname = "hugo-tranquilpeak-theme"
+    [params.comment.gitalk]
+      enable = false
+      # clientId = 
+      # clientSecret =
+      # owner =
+      # repo =
+      # See all options: https://github.com/gitalk/gitalk#options
+      [params.comment.gitalk.options]
+        language = "en"
+        perPage = 10
+        distractionFreeMode = false
+        enableHotKey = true
+        pagerDirection = "first"
 
   # --------------------
   # Header configuration
