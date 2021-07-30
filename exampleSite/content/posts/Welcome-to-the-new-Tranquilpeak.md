@@ -64,7 +64,11 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 
 ## General
 
+<<<<<<< HEAD
 - **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
+=======
+- **Authors**: [Thibaud Leprêtre (kakawait)](https://github.com/kakawait) and [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro)
+>>>>>>> b1e13c4 (Update doc)
 - **Version**: 0.5.0-SNAPSHOT (based on Hexo version 3.1.0)
 - **Compatibility**: Hugo v0.53
 

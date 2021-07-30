@@ -35,7 +35,7 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 
 ## General
 
-- **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
+- **Authors**: [Thibaud Leprêtre (kakawait)](https://github.com/kakawait) and [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro)
 - **Version**: 0.5.0-SNAPSHOT (based on Hexo version 3.1.0)
 - **Compatibility**: Hugo v0.53
 
@@ -68,13 +68,13 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 **Integrated services:**
 
 - Disqus
+- Gitlak
 - Google analytics
 - Gravatar
 - Facebook Insights
 
 ### Missing features from original *Hexo* version
 
-- [ ] Baidu analytics
 - [ ] Algolia (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8)
 - [ ] Pagination customization `tagPagination`, `categoryPagination` and `archivePagination` (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17)
 
@@ -140,15 +140,10 @@ To understand the code, the workflow and edit the theme, consult the following d
 
 ## Contributing
 
-All kinds of contributions (enhancements, new features, documentation & code improvements, issues & bugs reporting) are welcome.
+All kinds of contributions (enhancements, features, documentation & code improvements, bugs reporting) are welcome.
 
 Read [guidelines for contributing](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/.github/CONTRIBUTING.md) for more information.
 
-As explained on [Credits](#credits):
-
-> *Hugo* version keeps every `.js` and `.css` files untouched from original *Hexo* version in order to enjoy future original *Hexo* version updates or features!
-
-That mean I would keep a strong dependency with original *Hexo* theme. Thus if you want to suggest any modifications on `.css` or `.js` files **I will submit those changes to original *Hexo* theme** (except if it's really specific to *Hugo* bugs that is not present on *Hexo*).
 
 ## License
 
