@@ -1,4 +1,4 @@
-(function ($) {
+(function($) {
   'use strict';
 
   // Open and close the sidebar by swiping the sidebar and the blog and vice versa
@@ -7,7 +7,7 @@
    * Sidebar
    * @constructor
    */
-  var Sidebar = function () {
+  var Sidebar = function() {
     this.$sidebar = $('#sidebar');
     this.$openBtn = $('#btn-open-sidebar');
     // Elements where the user can click to close the sidebar
@@ -34,22 +34,22 @@
      * Run Sidebar feature
      * @return {void}
      */
-    run: function () {
+    run: function() {
       var self = this;
       // Detect the click on the open button
-      this.$openBtn.click(function () {
+      this.$openBtn.click(function() {
         if (!self.$sidebar.hasClass('pushed')) {
           self.openSidebar();
         }
       });
       // Detect the click on close button
-      this.$closeBtn.click(function () {
+      this.$closeBtn.click(function() {
         if (self.$sidebar.hasClass('pushed')) {
           self.closeSidebar();
         }
       });
       // Detect resize of the windows
-      $(window).resize(function () {
+      $(window).resize(function() {
         // Check if the window is larger than the minimal medium screen value
         if ($(window).width() > self.mediumScreenWidth) {
           self.resetSidebarPosition();
@@ -65,7 +65,7 @@
      * Open the sidebar by swiping to the right the sidebar and the blog
      * @return {void}
      */
-    openSidebar: function () {
+    openSidebar: function() {
       this.swipeBlogToRight();
       this.swipeSidebarToRight();
     },
@@ -74,7 +74,7 @@
      * Close the sidebar by swiping to the left the sidebar and the blog
      * @return {void}
      */
-    closeSidebar: function () {
+    closeSidebar: function() {
       this.swipeSidebarToLeft();
       this.swipeBlogToLeft();
     },
@@ -83,7 +83,7 @@
      * Reset sidebar position
      * @return {void}
      */
-    resetSidebarPosition: function () {
+    resetSidebarPosition: function() {
       this.$sidebar.removeClass('pushed');
     },
 
@@ -91,7 +91,7 @@
      * Reset blog position
      * @return {void}
      */
-    resetBlogPosition: function () {
+    resetBlogPosition: function() {
       this.$blog.removeClass('pushed');
     },
 
@@ -99,7 +99,7 @@
      * Swipe the sidebar to the right
      * @return {void}
      */
-    swipeSidebarToRight: function () {
+    swipeSidebarToRight: function() {
       var self = this;
       // Check if the sidebar isn't swiped
       // and prevent multiple click on the open button with `.processing` class
@@ -108,7 +108,7 @@
         this.$sidebar.addClass('processing pushed');
         // add overflow on body to remove horizontal scroll
         this.$body.css('overflow-x', 'hidden');
-        setTimeout(function () {
+        setTimeout(function() {
           self.$sidebar.removeClass('processing');
         }, 250);
       }
@@ -118,7 +118,7 @@
      * Swipe the sidebar to the left
      * @return {void}
      */
-    swipeSidebarToLeft: function () {
+    swipeSidebarToLeft: function() {
       var self = this;
       // Check if the sidebar is swiped
       // and prevent multiple click on the close button with `.processing` class
@@ -126,7 +126,7 @@
         // Swipe the sidebar to the left
         this.$sidebar.addClass('processing').removeClass('pushed processing');
         // go back to the default overflow
-        setTimeout(function () {
+        setTimeout(function() {
           self.$body.css('overflow-x', 'auto');
         }, 255);
       }
@@ -136,7 +136,7 @@
      * Swipe the blog to the right
      * @return {void}
      */
-    swipeBlogToRight: function () {
+    swipeBlogToRight: function() {
       var blog = this.$blog;
 
       // Check if there is enough place for translating `#header .header-title` and `#header .right-picture`
@@ -151,7 +151,7 @@
         // Swipe the blog to the right
         blog.addClass('processing pushed');
 
-        setTimeout(function () {
+        setTimeout(function() {
           blog.removeClass('processing');
         }, 250);
       }
@@ -161,7 +161,7 @@
      * Swipe the blog to the left
      * @return {void}
      */
-    swipeBlogToLeft: function () {
+    swipeBlogToLeft: function() {
       var self = this;
       // Check if the blog is swiped
       // and prevent multiple click on the close button with `.processing` class
@@ -169,14 +169,14 @@
         // Swipe the blog to the left
         self.$blog.addClass('processing').removeClass('pushed');
 
-        setTimeout(function () {
+        setTimeout(function() {
           self.$blog.removeClass('processing');
         }, 250);
       }
     }
   };
 
-  $(document).ready(function () {
+  $(document).ready(function() {
     var sidebar = new Sidebar();
     sidebar.run();
   });
