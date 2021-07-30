@@ -1,8 +1,8 @@
-# Contributing #
+# Contributing
 
 All kinds of contributions (enhancements, new features, documentation & code improvements, issues & bugs reporting) are welcome.
 
-## Code style ##
+## Code style
 
 ### Javascript
 
@@ -13,11 +13,11 @@ Check code status with:
 npm run lint
 ```
 
-## Issues ##
+## Issues
 
 When you create an issue to report a bug or ask a question, please fill template information, except if is **really not relevant**. And all others related information that are susceptible to help us.
 
-## Pull requests ##
+## Pull requests
 
 All pull requests must be done on the **develop** branch.
 
