@@ -14,14 +14,6 @@ You can track [breaking changes label](https://github.com/kakawait/hugo-tranquil
 
 How can I migrate my current version? Please read [CHANGELOG.md](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/CHANGELOG.md).
 
-## Credits
-
-*Hugo* version of Tranquilpeak is a based on original *Hexo* version https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak. This version is simply a port to *Hugo* static site generator.
-
-Please all the credit should be attributed to [original *Hexo* version](https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak) and its author [Louis Barranqueiro](https://github.com/LouisBarranqueiro).
-
-*Hugo* version keeps every `.js` and `.css` files untouched from original *Hexo* version in order to enjoy future original *Hexo* version updates or features!
-
 ## Summary
 
 - [General](#general)
@@ -144,6 +136,9 @@ All kinds of contributions (enhancements, features, documentation & code improve
 
 Read [guidelines for contributing](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/.github/CONTRIBUTING.md) for more information.
 
+## Credits
+
+*Hugo* version of Tranquilpeak is a based on original *Hexo* version https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak. This version is simply a port to *Hugo* static site generator.
 
 ## License
 
