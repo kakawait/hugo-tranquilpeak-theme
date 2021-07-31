@@ -207,50 +207,50 @@ canonifyurls = true
   #  [[params.customJS]]
   #     src = "js/myscript.js"
   [[params.customJS]]
-    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"
-    integrity = "sha256-LVuWfOU0rWFMCJNl1xb3K2HSWfxtK4IPbqEerP1P83M="
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"
+    integrity = "sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow=="
     crossorigin = "anonymous"
     async = true
     defer = true
 
   [[params.customJS]]
-    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/less.min.js"
-    integrity = "sha256-EB4Qe5B8kOTN9/r65YrBPJ3VkDRJa8sSVqqaIakt0gU="
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"
+    integrity = "sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA=="
     crossorigin = "anonymous"
     async = true
     defer = true
 
   [[params.customJS]]
-    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/puppet.min.js"
-    integrity = "sha256-LWiDV1Ge/4ULbV/tJh9N8NTILGIbsPEdnGQ24CrjBzo="
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"
+    integrity = "sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog=="
     crossorigin = "anonymous"
     async = true
     defer = true
 
   [[params.customJS]]
-    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scss.min.js"
-    integrity = "sha256-/27cA5aA9DgzXPb747VxVTzwPG/X5tihoKySMSq3bwk="
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"
+    integrity = "sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA=="
     crossorigin = "anonymous"
     async = true
     defer = true
 
   [[params.customJS]]
-    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/stylus.min.js"
-    integrity = "sha256-CFwICvPAUcOBI6YRYZMf4OkyePvFtdG7n7Wl9UNZwx0="
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"
+    integrity = "sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w=="
     crossorigin = "anonymous"
     async = true
     defer = true
 
   [[params.customJS]]
-    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"
-    integrity = "sha256-zYofLVsdq2KkS4cVGc6/8gTKb7lPsTLk1vs37g9aYj0="
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"
+    integrity = "sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg=="
     crossorigin = "anonymous"
     async = true
     defer = true
 
   [[params.customJS]]
-    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"
-    integrity = "sha256-tvm0lHsuUZcOfj/0C9xJTU4OQx5KpUgxUcAXLX5kvwA="
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"
+    integrity = "sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw=="
     crossorigin = "anonymous"
     async = true
     defer = true
