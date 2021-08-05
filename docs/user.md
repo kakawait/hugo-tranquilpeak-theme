@@ -491,7 +491,7 @@ googleAnalytics =
 [params]
   [[params.sharingOptions]]
     name = "Facebook"
-    icon = "fab fa-facebook"
+    icon = "fab fa-facebook-square"
     url = "https://www.facebook.com/sharer/sharer.php?u=%s"
 
   [[params.sharingOptions]]
