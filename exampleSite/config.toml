@@ -207,6 +207,13 @@ canonifyurls = true
   #  [[params.customJS]]
   #     src = "js/myscript.js"
   [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"
+    integrity = "sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
     src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"
     integrity = "sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow=="
     crossorigin = "anonymous"
@@ -214,8 +221,22 @@ canonifyurls = true
     defer = true
 
   [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"
+    integrity = "sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
     src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"
     integrity = "sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"
+    integrity = "sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg=="
     crossorigin = "anonymous"
     async = true
     defer = true
@@ -263,7 +284,7 @@ canonifyurls = true
   # Tranquilpeak configuration > Theme configuration > sharing-options
   [[params.sharingOptions]]
     name = "Facebook"
-    icon = "fab fa-facebook"
+    icon = "fab fa-facebook-square"
     url = "https://www.facebook.com/sharer/sharer.php?u=%s"
 
   [[params.sharingOptions]]
@@ -300,7 +321,7 @@ canonifyurls = true
       shortname = "hugo-tranquilpeak-theme"
     [params.comment.gitalk]
       enable = false
-      # clientId = 
+      # clientId =
       # clientSecret =
       # owner =
       # repo =
