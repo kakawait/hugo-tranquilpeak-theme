@@ -668,10 +668,24 @@ Use:
 
 ### Display table of contents
 
-As post excerpt feature enable with `<!--more-->` comment, you can display the table of contents of a post with  `<!-- toc -->`.  Place this comment where you want to display the table of content.
+Hugo Tranquilpeak theme provides a shortcode for adding table of content inside your content.
 
-Here is what looks like the table of contents generated:
-![thumbnail-image-position-left](https://s3-ap-northeast-1.amazonaws.com/tranquilpeak-hexo-theme/docs/1.4.0/toc-400.png)
+syntgax:
+```
+{{< toc >}}
+```
+
+However you may have to update your hugo `config.toml` configuration to be sure that `startLevel` is matching your content. By default (see [official documentation](https://gohugo.io/getting-started/configuration-markup/#table-of-contents)) Hugo detects table of content starting level 2, that mean `<h2>my title</h2>` or `## my title`.
+
+If you used to write `# my title` and so transformed to `<h1>my title</h1>`, the table of content will be empty by default if you're not updating `startLevel` to `startLevel = 1`
+
+```toml
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 1
+```
 
 ### Tags
 
