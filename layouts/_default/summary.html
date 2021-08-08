@@ -1,17 +1,29 @@
 {{ if .Site.Params.thumbnailImage }}
   {{ if .Params.thumbnailimage }}
-    {{ .Scratch.Set "thumbnailImage" (.Params.thumbnailimage | absURL) }}
+    {{ with .Resources.GetMatch ( .Params.thumbnailimage ) }}
+      {{ $.Scratch.Set "thumbnailImage" (.RelPermalink) }}
+    {{ else }}
+      {{ $.Scratch.Set "thumbnailImage" (.Params.thumbnailimage | relURL) }}
+    {{ end }}
   {{ else }}
     {{ if or .Params.autothumbnailimage (and .Site.Params.autoThumbnailImage (ne .Params.autothumbnailimage false)) }}
       {{ if .Params.gallery }}
         {{ range first 1 .Params.gallery }}
           {{ range first 1 (split . " ") }}
-            {{ $.Scratch.Set "thumbnailImage" (. | absURL) }}
+            {{ with $.Page.Resources.GetMatch ( . ) }}
+              {{ $.Scratch.Set "thumbnailImage" (.RelPermalink) }}
+            {{ else }}
+              {{ $.Scratch.Set "thumbnailImage" (. | relURL) }}
+            {{ end }}
           {{ end }}
         {{ end }}
       {{ else }}
         {{ if .Params.coverimage }}
-          {{ .Scratch.Set "thumbnailImage" (.Params.coverimage | absURL) }}
+          {{ with .Resources.GetMatch ( .Params.coverimage ) }}
+            {{ $.Scratch.Set "thumbnailImage" (.RelPermalink) }}
+          {{ else }}
+            {{ $.Scratch.Set "thumbnailImage" (.Params.coverimage | relURL) }}
+          {{ end }}
         {{ end }}
       {{ end }}
     {{ end }}
