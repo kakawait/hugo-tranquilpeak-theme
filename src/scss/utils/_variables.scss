@@ -98,6 +98,7 @@ $screen-max: (
 $screen: map-merge($screen-min, $screen-max);
 // Shortcuts for medias
 $xsmall-and-down: "only screen and (max-width : #{map-get($screen, xs-max)})" !default;
+$xsmall-and-up: "only screen and (min-width : #{map-get($screen, xs-min)})" !default;
 $small-and-down:  "only screen and (max-width : #{map-get($screen, sm-max)})" !default;
 $small-only:      "only screen and (min-width : #{map-get($screen, sm-min)}) and (max-width : #{map-get($screen, sm-max)})" !default;
 $small-and-up:    "only screen and (min-width : #{map-get($screen, sm-min)})" !default;

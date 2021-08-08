@@ -141,6 +141,7 @@
 
       // Check if there is enough place for translating `#header .header-title` and `#header .right-picture`
       // regarding the size of `#header .header-title-link`
+      // TODO better to use text-overflow on $headerElements.title
       if (this.$header.width() - this.$sidebar.width() - this.$headerElements.titleLink.width() < 130) {
         blog = blog.not(this.$headerElements.title).not(this.$headerElements.rightPicture);
       }

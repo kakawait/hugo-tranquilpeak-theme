@@ -1,4 +1,4 @@
-const { nanoid } = require('nanoid');
+const {nanoid} = require('nanoid');
 
 module.exports = function(grunt) {
   grunt.config.set('cssmin', {
