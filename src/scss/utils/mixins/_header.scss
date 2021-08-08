@@ -5,10 +5,10 @@
     &.pushed {
         @include prefix(transform, translate3d(#{map-get($sidebar, md-screen-width)}, 0, 0), 'webkit' 'moz');
     }
-    @media #{$small-and-up} {
+    @media #{$xsmall-and-up} {
         .header-title {
             &.pushed {
-                @include prefix(transform, translate3d(-#{math.div(map-get($sidebar, lg-screen-width), 2) - 1}, 0, 0), 'webkit' 'moz');
+                @include prefix(transform, translate3d(-#{math.div(map-get($sidebar, md-screen-width), 2) - 1}, 0, 0), 'webkit' 'moz');
             }
         }
         .header-right-picture {
@@ -24,7 +24,7 @@
     &.pushed {
         @include prefix(transform, translate3d(#{map-get($sidebar, lg-screen-width)}, 0, 0), 'webkit' 'moz');
     }
-    @media #{$medium-and-up} {
+    @media #{$xsmall-and-up} {
         .header-title {
             &.pushed {
                 @include prefix(transform, translate3d(-#{math.div(map-get($sidebar, lg-screen-width), 2) - 1}, 0, 0), 'webkit' 'moz');
