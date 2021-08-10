@@ -48,6 +48,37 @@
           self.closeSidebar();
         }
       });
+
+      var xDown = null;
+      var yDown = null;
+
+      $(document).on('touchstart', function(e) {
+        if (self.$sidebar.hasClass('pushed')) {
+          var firstTouch = (e.touches || e.originalEvent.touches)[0];
+          xDown = firstTouch.clientX;
+          yDown = firstTouch.clientY;
+        }
+      }).on('touchmove', function(e) {
+        if ((!xDown || !yDown) || !self.$sidebar.hasClass('pushed')) {
+          return;
+        }
+
+        var xUp = e.touches[0].clientX;
+        var yUp = e.touches[0].clientY;
+
+        var xDiff = xDown - xUp;
+        var yDiff = yDown - yUp;
+
+        if (Math.abs(xDiff) > Math.abs(yDiff)) {
+            if (xDiff > 0) {
+              self.closeSidebar();
+            }
+        }
+
+        xDown = null;
+        yDown = null;
+      });
+
       // Detect resize of the windows
       $(window).resize(function() {
         // Check if the window is larger than the minimal medium screen value
