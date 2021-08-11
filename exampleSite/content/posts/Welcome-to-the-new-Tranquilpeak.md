@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Tranquilpeak 0.5.0-SNAPSHOT"
+title: "Welcome to Tranquilpeak 0.5.0-BETA"
 date: 2015-06-15
 categories:
 - tranquilpeak
@@ -57,12 +57,8 @@ How can I migrate my current version? Please read [CHANGELOG.md](https://github.
 
 ## General
 
-<<<<<<< HEAD
-- **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
-=======
 - **Authors**: [Thibaud Leprêtre (kakawait)](https://github.com/kakawait) and [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro)
->>>>>>> b1e13c4 (Update doc)
-- **Version**: 0.5.0-SNAPSHOT (based on Hexo version 3.1.0)
+- **Version**: 0.5.0-BETA (based on Hexo version 3.1.0)
 - **Compatibility**: Hugo v0.53
 
 ## Features
