@@ -29,7 +29,7 @@ If you'd like to start helping you can firstly look on that list of labelled iss
 - Revamp sidebar translation in order to use `transform3d` which is way more efficiant in term of performance ([#364](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/364))
 - De-hardcode main section as recommended in [Hugo documentation](https://gohugo.io/functions/where/#mainsections) ([#444](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/444))
 - Create a new shortcode `{{< toc >}}` to replace previous HTML comment `<!-- toc -->` that does not work anymore with latest Hugo's markdown engine ([#395](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/395))
-- Update every 3rd party dependencies (except MathJax<sup id="fnr1">[1](#fnt1)</sup>):
+- Update every 3rd party dependencies (except MathJax<sup id="fnr1">[*](#fnt1)</sup>):
   - highlight.js `9.12.0` -> `11.1.0`
   - jQuery `2.2.4` -> `3.6.0`
   - jQuery fancybox `2.1.4` -> `3.5.7`
@@ -37,7 +37,7 @@ If you'd like to start helping you can firstly look on that list of labelled iss
   - font-awesome `4.7.0` -> `5.15.3`
 - Add touch event support for closing sidebar when opened ([#475](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/475))
 
-<b id="fnt1">1</b>I'm not using Math's stuffs at all, so it's hard for me to check no-regression. That why I'm looking for some help by creating a new post that expose Math feature. See issue [#478](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/478). [↩](#fnr1)
+<b id="fnt1">*</b> I'm not using Math's stuffs at all, so it's hard for me to check no-regression. That why I'm looking for some help by creating a new post that expose Math feature. See issue [#478](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/478). [↩](#fnr1)
 
 ## [0.4.8-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/23) - 29 may 2020
 
