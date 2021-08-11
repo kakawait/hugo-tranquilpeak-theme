@@ -4,6 +4,41 @@ All notable changes to this project will be documented in this file.
 
 ## [0.5.0-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/5) - TBD
 
+### Forwords
+
+> Theme activities were pretty low since 2019. I maintain the theme on my free time and in 2019 I became a dad. You may (or not) understand that it was hard for me to find time to maintain the project.
+>
+> I recently find a great motiviation to re-maintain with more frequent updates and releases!
+>Some big changes will comes to try to use latest Hugo's improvements and features.
+> The goal is to release the `1.0.0` for the end of this year.
+
+I'd like to thank every existing contributors. And not only people that pushing code.
+During that period, I've seen some people trying to help other people on issue! I really appreciate.
+
+If you'd like to start helping you can firstly look on that list of labelled issues [good first issue, ideal for contribution, help wanted](https://github.com/kakawait/hugo-tranquilpeak-theme/issues?q=is%3Aopen+label%3A%22good+first+issue%22%2C%22ideal+for+contribution%22%2C%22help+wanted%22)
+
+---
+
+- Synch from Hexo Tranquilpeak theme 3.1.0 ([#287](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/287))
+  - Check https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/releases to get more informations
+  - Notables changes:
+    - Update Font Awesome to v5
+    - Accessibility: add `aria-label` HTML attribute to links
+    - Close about page when clicking on its background
+    - Add Gitalk comment component
+- Revamp sidebar translation in order to use `transform3d` which is way more efficiant in term of performance ([#364](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/364))
+- De-hardcode main section as recommended in [Hugo documentation](https://gohugo.io/functions/where/#mainsections) ([#444](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/444))
+- Create a new shortcode `{{< toc >}}` to replace previous HTML comment `<!-- toc -->` that does not work anymore with latest Hugo's markdown engine ([#395](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/395))
+- Update every 3rd party dependencies (except MathJax<sup id="fnr1">[1](#fnt1)</sup>):
+  - highlight.js `9.12.0` -> `11.1.0`
+  - jQuery `2.2.4` -> `3.6.0`
+  - jQuery fancybox `2.1.4` -> `3.5.7`
+  - prism `1.8.3` -> `1.24.1`
+  - font-awesome `4.7.0` -> `5.15.3`
+- Add touch event support for closing sidebar when opened ([#475](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/475))
+
+<b id="fnt1">1</b>I'm not using Math's stuffs at all, so it's hard for me to check no-regression. That why I'm looking for some help by creating a new post that expose Math feature. See issue [#478](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/478). [↩](#fnr1)
+
 ## [0.4.8-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/23) - 29 may 2020
 
 - Fix regression from Hugo 0.71 ([#429](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/429))
