@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.5.0-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/5) - TBD
+## [0.5.0-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/5) - 14 aug 2021
 
 ### Forwords
 
