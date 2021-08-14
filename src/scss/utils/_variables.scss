@@ -98,6 +98,7 @@ $screen-max: (
 $screen: map-merge($screen-min, $screen-max);
 // Shortcuts for medias
 $xsmall-and-down: "only screen and (max-width : #{map-get($screen, xs-max)})" !default;
+$xsmall-and-up: "only screen and (min-width : #{map-get($screen, xs-min)})" !default;
 $small-and-down:  "only screen and (max-width : #{map-get($screen, sm-max)})" !default;
 $small-only:      "only screen and (min-width : #{map-get($screen, sm-min)}) and (max-width : #{map-get($screen, sm-max)})" !default;
 $small-and-up:    "only screen and (min-width : #{map-get($screen, sm-min)})" !default;
@@ -219,7 +220,6 @@ $main-content: (
     'max-width':          750px,
     'padding-right-left': 20px,
 );
-$main-width: map-get($main-content, max-width) + map-get($main-content, padding-right-left) * 2;
 
 // Mardown
 // These variables are use to have headings smaller than general headings title
@@ -245,6 +245,7 @@ $pagination-height: 60px;
 // Post thumbnail image
 // Width and height of post's thumbnail image
 $post-thumbnail-image-width: 140px;
+$post-bottom-thumbnail-image-max-height: 250px;
 
 // Tooltip
 $tooltip: (

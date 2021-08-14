@@ -1,6 +1,6 @@
 {{ if $.Site.Params.hierarchicalCategories }}
   {{ $.Scratch.Set "max-level" 0 }}
-  {{ range where $.Site.RegularPages "Type" "post" }}
+  {{ range where $.Site.RegularPages "Type" "in" site.Params.mainSections }}
     {{ $page := . }}
     {{ if .Params.categories }}
       {{ $categories := (apply .Params.categories "urlize" ".") }}

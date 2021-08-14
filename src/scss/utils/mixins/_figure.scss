@@ -1,0 +1,17 @@
+@mixin figure-pushed-md {
+    &.figure--fullWidth img.figure-img {
+        width: calc(100% - #{map-get($sidebar, md-screen-width)} + 1px);
+    }
+}
+
+@mixin figure-pushed-lg {
+    &.figure--fullWidth img.figure-img {
+        width: calc(100% - #{map-get($sidebar, lg-screen-width)});
+    }
+}
+
+@mixin figure-pushed-xlg {
+    &.figure--fullWidth img.figure-img {
+        width: calc(100% - #{map-get($sidebar, xlg-screen-width)});
+    }
+}

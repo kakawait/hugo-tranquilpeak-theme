@@ -6,6 +6,7 @@
     'utils/mixins/bottom-bar',
     'utils/mixins/button',
     'utils/mixins/category',
+    'utils/mixins/figure',
     'utils/mixins/form',
     'utils/mixins/header',
     'utils/mixins/main',
@@ -20,14 +21,15 @@
     'base/base',
     'base/custom';
 
-@import 'layouts/about',
-'layouts/blog',
-'layouts/bottom-bar',
-'layouts/cover',
-'layouts/footer',
-'layouts/header',
-'layouts/main',
-'layouts/sidebar';
+@import
+    'layouts/about',
+    'layouts/blog',
+    'layouts/bottom-bar',
+    'layouts/cover',
+    'layouts/footer',
+    'layouts/header',
+    'layouts/main',
+    'layouts/sidebar';
 
 @import
     'components/alert',
@@ -36,6 +38,7 @@
     'components/button',
     'components/caption',
     'components/code',
+    'components/fancybox',
     'components/figure',
     'components/form',
     'components/hide',

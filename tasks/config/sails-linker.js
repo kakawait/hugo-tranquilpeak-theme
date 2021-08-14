@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         startTag: '<!--SCRIPTS-->',
         endTag: '<!--SCRIPTS END-->',
         fileRef: function(filepath) {
-          var tmpl = '<script src="%s"></script>';
+          var tmpl = '<script src="{{ "%s" | absURL }}"></script>';
           return util.format(tmpl, filepath.substring(filepath.indexOf('/')));
         },
         appRoot: 'src/'
@@ -21,8 +21,8 @@ module.exports = function(grunt) {
         startTag: '<!--STYLES-->',
         endTag: '<!--STYLES END-->',
         fileRef: function(filepath) {
-          var tmpl = '<link rel="stylesheet" href="%s" />';
-          return util.format(tmpl, filepath.substring(filepath.indexOf('/')));
+          var tmpl = '<link rel="stylesheet" href="{{ "%s" | absURL }}" />';
+          return util.format(tmpl, filepath.substring(filepath.indexOf('/') + 1));
         },
         appRoot: 'src/'
       },
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
         startTag: '<!--SCRIPTS-->',
         endTag: '<!--SCRIPTS END-->',
         fileRef: function(filepath) {
-          var tmpl = '<script src="%s"></script>';
+          var tmpl = '<script src="{{ "%s" | absURL }}"></script>';
           return util.format(tmpl, filepath.substring(filepath.indexOf('/')));
         },
         appRoot: 'src/'
@@ -49,8 +49,8 @@ module.exports = function(grunt) {
         startTag: '<!--STYLES-->',
         endTag: '<!--STYLES END-->',
         fileRef: function(filepath) {
-          var tmpl = '<link rel="stylesheet" href="%s" />';
-          return util.format(tmpl, filepath.substring(filepath.indexOf('/')));
+          var tmpl = '<link rel="stylesheet" href="{{ "%s" | absURL }}" />';
+          return util.format(tmpl, filepath.substring(filepath.indexOf('/') + 1));
         },
         appRoot: 'src/'
       },

@@ -10,18 +10,10 @@
     // used to animate the header on small screen with javascript
     //@include prefix(transition, top 0.25s ease-in-out, 'webkit' 'moz' 'ms' 'o');
     z-index:                     map-get($z-indexes, l-header);
-    // Sidebar animation
-    // Transition style (push)
-    transition:                  transform .25s ease-in-out;
-    -webkit-transition:          -webkit-transform .25s ease-in-out;
+    @include sidebar-slide-animation;
     // Eliminate any flickering of elements while they are in a state of being animated
     -webkit-backface-visibility: hidden;
     -webkit-perspective:         1000;
-
-    min-width: $main-width;
-    @media only screen and (max-width: $main-width) {
-        min-width: 100%;
-    }
 
     #btn-open-sidebar {
         position: absolute;
@@ -39,6 +31,7 @@
         width:    30px;
         height:   30px;
         color:    map-get($header, color);
+        @include sidebar-slide-animation;
 
         .header-picture {
             display:       block;
@@ -59,6 +52,7 @@
         font-size:   $font-size-base;
         line-height: 55px;
         margin:      0;
+        @include sidebar-slide-animation;
 
         .header-title-link {
             color:       map-get($header, color);
@@ -72,9 +66,8 @@
         }
     }
     // Class used to swipe to the top the header on small screen when the user scroll down
-    @include prefix(transition, 'margin-top 0.5s, margin-left 0.5s, width 0.5s', 'webkit' 'moz');
     &.header-up {
-        margin-top: -#{map-get($header, height)};
+        @include prefix(transform, translate3d(0, -#{map-get($header, height)}, 0), 'webkit' 'moz');
     }
 
     // Push the header from the size of the large sidebar

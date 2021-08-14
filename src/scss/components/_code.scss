@@ -50,7 +50,7 @@ figure.highlight,
     // Gutter which contains line numbers
     .gutter {
         border-right: map-get($highlight, border);
-        padding:      0.3em 15px;
+        padding:      0.3rem 15px;
         line-height:    map-get($highlight, line-height);
         font-size:      map-get($highlight, font-size);
 
@@ -60,15 +60,15 @@ figure.highlight,
     }
     // Code container
     .code {
-        padding: 0.3em 15px 0.3em 1em;
+        padding: 0.3rem 15px 0.3rem 1em;
         width:   100%;
 
         pre {
             line-height:    map-get($highlight, line-height);
             font-size:      map-get($highlight, font-size);
-            max-width:  calc(#{map-get($main-content, 'max-width')} - 50px);
-            overflow-x: auto;
-            overflow-y: hidden;
+            max-width:      calc(#{map-get($main-content, 'max-width')} - 50px);
+            overflow-x:     auto;
+            overflow-y:     hidden;
         }
     }
     // All lines in gutter and code container
