@@ -1,22 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Hugo tranquilpeak theme</title>
-    <link>https://tranquilpeak.kakawait.com/post/</link>
+    <link>https://tranquilpeak.kakawait.com/posts/</link>
     <description>Recent content in Posts on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jun 2015 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://tranquilpeak.kakawait.com/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 15 Jun 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://tranquilpeak.kakawait.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Welcome to Tranquilpeak 0.4.7-BETA</title>
-      <link>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.4.7-beta/</link>
+      <title>Welcome to Tranquilpeak 0.5.0-BETA</title>
+      <link>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.5.0-beta/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.4.7-beta/</guid>
+      <guid>https://tranquilpeak.kakawait.com/2015/06/welcome-to-tranquilpeak-0.5.0-beta/</guid>
       <description>&lt;p&gt;Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.&lt;/p&gt;</description>
     </item>
     
