@@ -13,7 +13,7 @@
           {{ $imageLength := len $image }}
           <div class="photo-box">
             <a class="photo-box-inner fancybox" 
-               data-fancybox-group="gallery-{{ $.File.UniqueID }}"
+               data-fancybox="gallery-{{ $.File.UniqueID }}"
                data-caption="{{ if gt $imageLength 2 }}{{ index $image 2 }}{{ else }}{{ index $image 1 }}{{ end }}"
                title="{{ if gt $imageLength 2 }}{{ index $image 2 }}{{ else }}{{ index $image 1 }}{{ end }}" 
                href="{{ index $image 0 }}"
