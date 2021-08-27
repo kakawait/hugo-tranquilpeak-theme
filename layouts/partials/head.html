@@ -1,10 +1,10 @@
-{{- $.Scratch.Set "isPost" false -}}
+{{- $.Scratch.Set "isTypeInMainSections" false -}}
 {{- if .IsPage -}}
-  {{- if eq .Type "posts" -}}
-    {{- $.Scratch.Set "isPost" true -}}
+  {{- if in site.Params.mainSections .Type -}}
+    {{- $.Scratch.Set "isTypeInMainSections" true -}}
   {{- end -}}
 {{- end -}}
-{{- if and (and ($.Scratch.Get "isPost") (lt .Site.Params.sidebarBehavior 3)) (or (and .Site.Params.clearReading (not .Params.clearReading)) .Params.clearReading) -}}
+{{- if and (and ($.Scratch.Get "isTypeInMainSections") (lt .Site.Params.sidebarBehavior 3)) (or (and .Site.Params.clearReading (not .Params.clearReading)) .Params.clearReading) -}}
   {{- .Scratch.Set "sidebarBehavior" (add .Site.Params.sidebarBehavior 3) -}}
 {{- else -}}
   {{- .Scratch.Set "sidebarBehavior" .Site.Params.sidebarBehavior -}}
