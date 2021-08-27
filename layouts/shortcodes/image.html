@@ -21,7 +21,7 @@
 {{ end }}
 <div class="figure {{ delimit ($.Scratch.Get "i-classes") " " }}" {{ with (.Get "thumbnailWidth") }}style="width:{{ . }};"{{ end }}>
   {{ if eq ($.Scratch.Get "i-fancybox") 1 }}
-    <a class="fancybox" href="{{ .Get "src" }}"{{ with (.Get "title") }} title="{{ . }}"{{ end }} data-fancybox-group="{{ with (.Get "group") }}{{ . }}{{ end }}">
+    <a class="fancybox" href="{{ .Get "src" }}"{{ with (.Get "title") }} title="{{ . }}"{{ end }} data-fancybox="{{ with (.Get "group") }}{{ . }}{{ end }}">
   {{ end }}
     <img class="fig-img" src="{{ with (.Get "thumbnail") }}{{ . }}{{ else }}{{ .Get "src" }}{{ end }}" {{ if or (.Get "thumbnail-width") (.Get "thumbnail-height") }}style="{{ with (.Get "thumbnail-width") }}width: {{ . }};{{ end }}{{ with (.Get "thumbnail-height") }}height: {{ . }};{{ end }}"{{ end }}{{ with (.Get "title") }} alt="{{ . }}"{{ end }}>
   {{ if eq ($.Scratch.Get "i-fancybox") 1 }}

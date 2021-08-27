@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.5.1-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/24) - 27 aug 2021
+
+- Fix fancybox gallery since upgrade to 3.x.x ([#490](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/490))
+- Fix `clearReading` options that was only applied to type `posts`. Now apply to any types of `mainSections` ([#492](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/492))
+- Fix merriweather font that only load latin subset, missing other subsets like vietnamese. ([#493](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/493))
+
 ## [0.5.0-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/5) - 14 aug 2021
 
 ### Forwords

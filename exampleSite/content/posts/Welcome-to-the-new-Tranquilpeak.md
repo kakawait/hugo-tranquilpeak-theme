@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Tranquilpeak 0.5.0-BETA"
+title: "Welcome to Tranquilpeak 0.5.1-BETA"
 date: 2015-06-15
 categories:
 - tranquilpeak
@@ -24,7 +24,6 @@ Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many
 <!--more-->
 
 ![Tranquilpeak](/img/showcase.png)
-Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
 
 {{< toc >}}
 
@@ -58,7 +57,7 @@ How can I migrate my current version? Please read [CHANGELOG.md](https://github.
 ## General
 
 - **Authors**: [Thibaud Leprêtre (kakawait)](https://github.com/kakawait) and [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro)
-- **Version**: 0.5.0-BETA (based on Hexo version 3.1.0)
+- **Version**: 0.5.1-BETA (based on Hexo version 3.1.0)
 - **Compatibility**: Hugo v0.53
 
 ## Features
