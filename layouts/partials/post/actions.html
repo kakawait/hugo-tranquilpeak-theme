@@ -56,7 +56,7 @@
         </li>
         {{ range .Site.Params.sharingOptions }}
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="{{ printf .url $.Permalink }}" title="{{ i18n "global.share_on" }} {{ .name }}" aria-label="{{ i18n "global.share_on" }} {{ .name }}">
+            <a class="post-action-btn btn btn--default" target="new" href="{{ printf .url $.Permalink }}" title="{{ replace (i18n "global.share_on") "%s" .name }}" aria-label="{{ replace (i18n "global.share_on") "%s" .name }}">
               <i class="{{ .icon }}" aria-hidden="true"></i>
             </a>
           </li>
