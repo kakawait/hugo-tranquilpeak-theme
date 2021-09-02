@@ -59,14 +59,14 @@
 - id: "global.open_post"
   translation: "打开帖子"
 
-## GLOBAL.POST_FOUND ##
-- id: "global.post_found.zero"
+## GLOBAL.POSTS_FOUND ##
+- id: "global.posts_found.zero"
   translation: "没有找到文章"
 
-- id: "global.post_found.one"
+- id: "global.posts_found.one"
   translation: "找到 1 篇文章"
 
-- id: "global.post_found.other"
+- id: "global.posts_found.other"
   translation: "找到 {n} 篇文章"
 
 ## GLOBAL.CATEGORIES_FOUND ##

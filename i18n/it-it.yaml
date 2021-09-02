@@ -59,7 +59,7 @@
 - id: "global.open_post"
   translation: "Apri il post"
 
-## GLOBAL.POST_FOUND ##
+## GLOBAL.POSTS_FOUND ##
 - id: "global.posts_found.zero"
   translation: "nessun post trovato"
 
