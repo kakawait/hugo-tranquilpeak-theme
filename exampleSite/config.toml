@@ -303,30 +303,30 @@ canonifyurls = true
     url = "https://twitter.com/intent/tweet?text=%s"
 
 
-  [[params.sharingOptions]]
-    name = "Whatsapp"
-    icon = "fab fa-whatsapp"
-    url = "https://wa.me/?text=%s"
+#  [[params.sharingOptions]]
+#    name = "Whatsapp"
+#    icon = "fab fa-whatsapp"
+#    url = "https://wa.me/?text=%s"
 
   [[params.sharingOptions]]
     name = "Linkedin"
     icon = "fab fa-linkedin"
     url = "https://www.linkedin.com/sharing/share-offsite/?url=%s"
 
-  [[params.sharingOptions]]
-    name = "Reddit"
-    icon = "fab fa-reddit"
-    url = "https://www.reddit.com/submit?url=%s"
-
-  [[params.sharingOptions]]
-    name = "Pocket"
-    icon = "fab fa-get-pocket"
-    url = "https://getpocket.com/edit?url=%s"
-
-  [[params.sharingOptions]]
-    name = "Hacker News"
-    icon = "fab fa-hacker-news"
-    url = "https://news.ycombinator.com/submitlink?u=%s"
+#  [[params.sharingOptions]]
+#    name = "Reddit"
+#    icon = "fab fa-reddit"
+#    url = "https://www.reddit.com/submit?url=%s"
+#
+#  [[params.sharingOptions]]
+#    name = "Pocket"
+#    icon = "fab fa-get-pocket"
+#    url = "https://getpocket.com/edit?url=%s"
+#
+#  [[params.sharingOptions]]
+#    name = "Hacker News"
+#    icon = "fab fa-hacker-news"
+#    url = "https://news.ycombinator.com/submitlink?u=%s"
 
   # -------------------
   # Integrated services
