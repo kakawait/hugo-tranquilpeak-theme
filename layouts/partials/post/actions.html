@@ -78,10 +78,11 @@
       <li class="post-action">
         {{ if findRE "<!--\\s*[t|T][o|O][c|C]\\s*-->" .Content }}
           <a class="post-action-btn btn btn--default" href="#table-of-contents" aria-label="{{ i18n "post.toc" }}">
-        {{ else }}
-          <a class="post-action-btn btn btn--default" href="#" aria-label="{{ i18n "post.back_to_top" }}">
-        {{ end }}
           <i class="fa fa-list" aria-hidden="true"></i>
+        {{ else }}
+          <a class="post-action-btn btn btn--default" href="#top" aria-label="{{ i18n "post.back_to_top" }}">
+          <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        {{ end }}
         </a>
       </li>
     </ul>
