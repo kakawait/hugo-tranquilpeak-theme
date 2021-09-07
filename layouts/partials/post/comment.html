@@ -42,7 +42,7 @@
           repo: '{{ .Site.Params.comment.gitalk.repo }}',
           owner: '{{ .Site.Params.comment.gitalk.owner }}',
           admin: ['{{ .Site.Params.comment.gitalk.owner }}'],
-          id: '{{ .RelPermalink }}',
+          id: '{{ md5 .RelPermalink }}',
           ...{{ .Site.Params.comment.gitalk.options | jsonify | safeJS }}
         }).render('gitalk')
       })()
