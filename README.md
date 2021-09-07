@@ -56,6 +56,7 @@ How can I migrate my current version? Please read [CHANGELOG.md](https://github.
 - Image gallery
 - Tags for images (FancyBox), wide images, tabbed code blocks, highlighted text, alerts
 - Table of contents
+- Add diagrams and visualizations using text (https://mermaid-js.github.io/mermaid/#/)
 
 **Integrated services:**
 

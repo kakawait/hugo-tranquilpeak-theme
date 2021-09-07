@@ -55,6 +55,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
     - [Image](#image)
     - [Tabbed code block](#tabbed-code-block)
     - [Wide image](#wide-image)
+    - [Mermaid diagram](#mermaid-diagram)
 - [Writing pages](#writing-pages)
 - [Running](#running)
 
@@ -89,6 +90,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 - Image gallery
 - Tags for images (FancyBox), wide images, tabbed code blocks, highlighted text, alerts
 - Table of contents
+- Add diagrams and visualizations using text (https://mermaid-js.github.io/mermaid/#/)
 
 **Integrated services:**
 
@@ -603,6 +605,7 @@ keywords:
 - javascript
 - hexo
 clearReading: true
+mermaid: true
 thumbnailImage: image-1.png
 thumbnailImagePosition: bottom
 autoThumbnailImage: yes
@@ -630,6 +633,7 @@ summary: "This is a custom summary and does *not* appear in the post."
 |disqusIdentifier|Define a unique string which is used to look up a page's thread in the Disqus system.|
 |keywords|Define keywords for search engines. you can also define global keywords in Hugo configuration file.|
 |clearReading|Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. Useless if `params.sidebarBehavior` is equal to `3` or `4`. (true: enable, false: disable). Default behavior : `params.clearReading` value in theme configuration file.|
+|mermaid|Enable mermaid pluging on this post|
 |autoThumbnailImage|Automatically select the cover image or the first photo from the gallery of a post if there is no thumbnail image as the thumbnail image. `autoThumbnailImage` overwrite the setting `autoThumbnailImage` in the theme configuration file|
 |thumbnailImage|Image displayed in index view.|
 |thumbnailImagePosition|Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`). `thumbnailImagePosition` overwrite the setting `thumbnailImagePosition` in the theme configuration file|
@@ -821,6 +825,38 @@ E.g:
 |src|Path to the original image.|
 |title (optional)|Title of image displayed in a caption under image. `Alt` HTML attribute will use this title. E.g : `"A beautiful sunrise"`.|
 
+#### Mermaid diagram
+
+Diagram and schema are useful to explain complex workflow or system : flowchart, sequence diagram, state diagram, Gantt, pie chart and many others. You can embed it with beautiful library MermaidJS (https://mermaid-js.github.io/mermaid/#/) !
+
+E.g
+```
+{{<mermaid>}}
+graph TD
+    A[Choosing an OS] --> B{Do you fear technology ?}
+    B -->|Yes| C{Is your daddy rich ?}
+    C -->|Yes| E(fa:fa-apple Mac OS);
+    C -->|No| F(fa:fa-chrome Chrome OS);
+    
+    B -->|No| D{Do you care about freedom/privacy ?}
+    D -->|Yes| G{Do you have a life ?}
+    D -->|No| H(fa:fa-windows Windows);
+    
+    G -->|Yes| I(fa:fa-ubuntu Ubuntu);
+    G -->|Yes| K(fa:fa-fedora Fedora);
+    G -->|No| L(fa:fa-linux Archlinux);
+    G -->|No| M(fa:fa-shield Backtrack);
+
+    style A fill:#0094FF,stroke:#333,stroke-width:4px,color:#fff
+    style E fill:#808080,stroke:#333,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+    style F fill:#808080,stroke:#333,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+    style H fill:#004A7F,stroke:#333,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+    style I fill:#FF6A00,stroke:#333,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+    style K fill:#FF6A00,stroke:#333,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+    style L fill:#7F0000,stroke:#333,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+    style M fill:#7F0000,stroke:#333,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+{{< /mermaid >}}
+```
 
 ## Writing pages ##
 
