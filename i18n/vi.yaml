@@ -44,7 +44,22 @@
 - id: "global.search_date"
   translation: "Tìm theo ngày (YYYY/MM/DD)"
 
-## GLOBAL.POST_FOUND ##
+- id: "global.read_more_about_author"
+  translation: "Tìm hiểu thêm về tác giả"
+
+- id: "global.zoom_in_on_picture"
+  translation: "Phóng to hình ảnh"
+
+- id: "global.go_to_homepage"
+  translation: "Tới trang chủ"
+
+- id: "global.open_link"
+  translation: "Mở liên kết"
+
+- id: "global.open_post"
+  translation: "Mở bài"
+
+## GLOBAL.POSTS_FOUND ##
 - id: "global.posts_found.zero"
   translation: "không tìm thấy kết quả"
 
@@ -114,6 +129,26 @@
 
 - id: "post.comment_and_share"
   translation: "Bình luận và chia sẻ"
+
+- id: "post.comment"
+  translation: "Để lại một bình luận"
+
+- id: "post.back_to_top"
+  translation: "Trở lại đầu trang"
+
+- id: "post.share"
+  translation: "Chia sẻ bài viết này"
+
+- id: "post.gallery"
+  translation: "Bộ sưu tập"
+
+## POST.IMAGE ##
+
+- id: "post.image.one"
+  translation: "image"
+
+- id: "post.image.other"
+  translation: "{n} images"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"

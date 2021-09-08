@@ -1,15 +1,15 @@
 <header id="header" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
-    <a class="header-title-link" href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a>
+    <a class="header-title-link" href="{{ "/" | relLangURL }}" aria-label="{{ if i18n "global.go_to_homepage" }}{{ i18n "global.go_to_homepage" }}{{ end }}">{{ .Site.Title }}</a>
   </div>
   {{ with .Site.Params.header.rightLink }}
     {{ if and (in .url ":") (not (in .url (printf "%s" $.Site.BaseURL))) }}
       <a class="{{ if .icon }}header-right-icon {{ else }}header-right-picture {{ end }}{{ with .class }}{{ . }}{{ end }}"
-         href="{{ .url | safeURL }}" target="_blank" rel="noopener">
+         href="{{ .url | safeURL }}" target="_blank" rel="noopener" aria-label="{{ if i18n "global.open_link" }}{{ i18n "global.open_link" }}: {{ .url | safeURL }}{{ end }}">
     {{ else if .url }}
       <a class="{{ if .icon }}header-right-icon {{ else }}header-right-picture {{ end }}{{ with .class }}{{ . }}{{ end }}"
-         href="{{ .url | safeURL }}">
+         href="{{ .url | safeURL }}" aria-label="{{ if i18n "global.open_link" }}{{ i18n "global.open_link" }}: {{ .url | safeURL }}{{ end }}">
     {{ end }}
     {{ if .icon }}
       <i class="fa fa-lg fa-{{ .icon }}"></i>

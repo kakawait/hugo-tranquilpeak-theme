@@ -12,7 +12,7 @@
                {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
         {{ if or (not (isset .Site.Params "tagPagination")) (.Site.Params.tagPagination) }}
           <section class="postShorten-group main-content-wrap">
-            {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+            {{ $paginator := .Paginate (where .Data.Pages "Type" "in" site.Params.mainSections) }}
             {{ range $paginator.Pages }}
               {{ .Render "summary" }}
             {{ end }}
@@ -23,7 +23,7 @@
             <form id="filter-form" action="#">
               <input name="date" type="text" class="form-control input--xlarge" placeholder="{{ i18n "global.search_date" }}" autofocus="autofocus">
             </form>
-            {{ partial "archive-post.html" (where .Data.Pages "Type" "post") }}
+            {{ partial "archive-post.html" (where .Data.Pages "Type" "in" site.Params.mainSections) }}
           </div>
         {{ end }}
         {{ partial "footer.html" . }}

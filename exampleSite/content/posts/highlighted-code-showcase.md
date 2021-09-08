@@ -15,7 +15,7 @@ thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/highlighted-code-showcase/peak-1
 Tranquilpeak Hugo theme have its own theme to highlight source code. It's based on GitHub theme: simple and elegant. Check out how it sublimate source codes.
 <!--more-->
 
-<!-- toc -->
+{{< toc >}}
 
 # Tabbed code block
 
@@ -151,62 +151,6 @@ genApacheConf(){
  host_root="${APACHE_HOME_DIR}$1/$2/$(title)"
  echo -e "# Host $1/$2 :"
 }
-{{< /codeblock >}}
-
-# Coffeescript
-
-{{< codeblock lang="coffeescript" >}}
- ###
- Some tests
- ###
- class Animal
-   constructor: (@name) ->
-   move: (meters) -> alert @name + " moved " + meters + "m."
-
- class Snake extends Animal
-   move: ->
-     alert 'Slithering...'
-     super 5
-
- number   = 42; opposite = true
-
-
- square = (x) -> x * x
-
- range = [1..2]
- list = [1...5]
-
- math =
-   root:   Math.sqrt
-   cube:   (x) => x * square x
-
- race = (winner, runners...) ->
-   print winner, runners
-
- alert "I knew it!" if elvis?
-
- cubes = math.cube num for num in list
-
- text = """
-  Result
-     is #{ @number }"""
-
- html = '''   <body></body>'''
-
- String::dasherize = ->
-   this.replace /_/g, "-"
- SINGERS = {Jagger: "Rock", Elvis: "Roll"}
-
- t = ///
- #{ something }[a-z]
- ///
-
- $('.shopping_cart').bind 'click', (event) =>
-     @customer.purchase @cart
-
- hi = `function() {
-   return [document.title, "Hello JavaScript"].join(": ");
- }`
 {{< /codeblock >}}
 
 # C++

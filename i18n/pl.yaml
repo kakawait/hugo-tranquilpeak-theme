@@ -44,7 +44,22 @@
 - id: "global.search_date"
   translation: "Szukaj datę (YYYY/MM/DD)"
 
-## GLOBAL.POST_FOUND ##
+- id: "global.read_more_about_author"
+  translation: "Przeczytaj więcej o autorze"
+
+- id: "global.zoom_in_on_picture"
+  translation: "Powiększ zdjęcie"
+
+- id: "global.go_to_homepage"
+  translation: "Wróć do strony głównej"
+
+- id: "global.open_link"
+  translation: "Otwórz link"
+
+- id: "global.open_post"
+  translation: "Otwórz post"
+
+## GLOBAL.POSTS_FOUND ##
 - id: "global.posts_found.zero"
   translation: "nie znaleziono wpisów"
 
@@ -114,6 +129,26 @@
 
 - id: "post.comment_and_share"
   translation: "Skomentuj i Udostępnij"
+
+- id: "post.comment"
+  translation: "Zostaw komentarz"
+
+- id: "post.back_to_top"
+  translation: "Powrót do góry"
+
+- id: "post.share"
+  translation: "Podziel się tym postem"
+
+- id: "post.gallery"
+  translation: "Galeria"
+
+## POST.IMAGE ##
+
+- id: "post.image.one"
+  translation: "image"
+
+- id: "post.image.other"
+  translation: "{n} images"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"
