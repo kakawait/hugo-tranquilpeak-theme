@@ -3,7 +3,7 @@
     <div id="cover" style="background-image:url('{{ . | absURL }}');"></div>
   {{ else }}
     {{ if (fileExists (printf "static/images/%s" .)) }}
-      {{ $cover := (printf "images/%s" .) }}
+      {{ $cover := (printf "/images/%s" .) }}
       <div id="cover" style="background-image:url('{{ $cover | absURL }}');"></div>
     {{ else }}
       <div id="cover" style="background-image:url('{{ . | absURL }}');"></div>

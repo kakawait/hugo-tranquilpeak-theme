@@ -68,9 +68,9 @@ If you want to add your site to this showcase, click [here](https://github.com/k
 
 [![Ivan Fadila Putra's blog](https://i.imgur.com/r7tJa2Lm.png)](https://ffadilaputra.github.io/)
 
-## BALLOON a.k.a. Fu-sen.'s blog
+## 🎈 BALLOON | FU-SEN blog
 
-[![BALLOON a.k.a. Fu-sen.'s blog](https://i.imgur.com/ThaDHyfm.png)](https://blog.balloon.im/)
+[![🎈 BALLOON | FU-SEN blog](https://i.imgur.com/7tDrORCm.png)](https://balloon.asia/)
 
 ## Yue Hao's blog
 
@@ -102,7 +102,7 @@ If you want to add your site to this showcase, click [here](https://github.com/k
 
 ## Namshik Kim's blog
 
-> Data science blog 
+> Data science blog
 
 [![Namshik Kim's blog](https://i.imgur.com/oQ8i7k7m.png)](https://physhik.com/)
 

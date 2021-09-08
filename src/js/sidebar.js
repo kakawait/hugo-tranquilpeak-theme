@@ -58,7 +58,7 @@
           xDown = firstTouch.clientX;
           yDown = firstTouch.clientY;
         }
-      }).on('touchmove', function(e) {
+      }).on('touchmove', function(e) {
         if ((!xDown || !yDown) || !self.$sidebar.hasClass('pushed')) {
           return;
         }
@@ -70,9 +70,9 @@
         var yDiff = yDown - yUp;
 
         if (Math.abs(xDiff) > Math.abs(yDiff)) {
-            if (xDiff > 0) {
-              self.closeSidebar();
-            }
+          if (xDiff > 0) {
+            self.closeSidebar();
+          }
         }
 
         xDown = null;

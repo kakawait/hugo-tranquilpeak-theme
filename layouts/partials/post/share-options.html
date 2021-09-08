@@ -4,8 +4,8 @@
   <ul class="share-options">
     {{ range .Site.Params.sharingOptions }}
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="{{ printf .url (substr (querify "x" $.Permalink) 2) }}" aria-label="{{ i18n "global.share_on" }} {{ .name }}">
-          <i class="{{ .icon }}" aria-hidden="true"></i><span>{{ printf (i18n "global.share_on") .name }}</span>
+        <a class="share-option-btn" target="new" href="{{ printf .url (substr (querify "x" $.Permalink) 2) }}" aria-label="{{ replace (i18n "global.share_on") "%s" .name }}">
+          <i class="{{ .icon }}" aria-hidden="true"></i><span>{{ replace (i18n "global.share_on") "%s" .name }}</span>
         </a>
       </li>
     {{ end }}
