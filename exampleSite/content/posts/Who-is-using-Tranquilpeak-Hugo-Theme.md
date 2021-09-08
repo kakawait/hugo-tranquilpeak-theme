@@ -70,7 +70,7 @@ If you want to add your site to this showcase, click [here](https://github.com/k
 
 ## 🎈 BALLOON | FU-SEN blog
 
-[![🎈 BALLOON | FU-SEN blog](https://i.imgur.com/ThaDHyfm.png)](https://balloon.asia/)
+[![🎈 BALLOON | FU-SEN blog](https://i.imgur.com/7tDrORCm.png)](https://balloon.asia/)
 
 ## Yue Hao's blog
 
