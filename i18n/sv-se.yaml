@@ -44,7 +44,22 @@
 - id: "global.search_date"
   translation: "Sök datum (YYYY-MM-DD)"
 
-## GLOBAL.POST_FOUND ##
+- id: "global.read_more_about_author"
+  translation: "Läs mer om författaren"
+
+- id: "global.zoom_in_on_picture"
+  translation: "Zooma in på bilden"
+
+- id: "global.go_to_homepage"
+  translation: "Gå till hemsidan"
+
+- id: "global.open_link"
+  translation: "Öppna länken"
+
+- id: "global.open_post"
+  translation: "Öppna inlägget"
+
+## GLOBAL.POSTS_FOUND ##
 - id: "global.posts_found.zero"
   translation: "inga inlägg hittades"
 
@@ -114,6 +129,26 @@
 
 - id: "post.comment_and_share"
   translation: "Kommentera och dela"
+
+- id: "post.comment"
+  translation: "Lämna en kommentar"
+
+- id: "post.back_to_top"
+  translation: "Tillbaka till toppen"
+
+- id: "post.share"
+  translation: "Dela det här inlägget"
+
+- id: "post.gallery"
+  translation: "Galleri"
+
+## POST.IMAGE ##
+
+- id: "post.image.one"
+  translation: "bild"
+
+- id: "post.image.other"
+  translation: "{n} bilder"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"

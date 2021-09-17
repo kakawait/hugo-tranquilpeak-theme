@@ -1,19 +1,26 @@
+{{ $GALLERY_IMAGES_DISPLAYED_LIMIT := 3 }}
 {{ if and .Site.Params.imageGallery .Params.gallery }}
   {{ $galleryLength := len .Params.gallery }}
   {{ $imageGalleryClass := "" }}
   {{ if gt $galleryLength 0 }}
     <div class="image-gallery">
       <div class="image-gallery-metabar">
-        <span>Gallery {{ $galleryLength }} images</span>
+        <span>{{ i18n "post.gallery"}} {{ if gt $galleryLength 1 }}{{ replace (i18n "post.image.other") "{n}" $galleryLength }}{{ else }}{{ i18n "post.image.one" }}{{ end }}</span>
       </div>
       <div class="image-gallery-photos {{ if gt $galleryLength 2 }}image-gallery-photos--thumbnail{{ end }}">
         {{ range $index, $element := .Params.gallery }}
-          {{ $image := (split $element " ") }}
+          {{ $image := findRE "[^\\s\"']+|\"([^\"]*)\"|'([^']*)'" $element }}
           {{ $imageLength := len $image }}
           <div class="photo-box">
-            <a class="photo-box-inner fancybox" data-fancybox-group="gallery-{{ $.File.UniqueID }}"
-               title="{{ if gt $imageLength 2 }}{{ index $image 2 }}{{ else }}{{ index $image 1 }}{{ end }}" href="{{ index $image 0 }}">
-              <img class="photo" src="{{ if gt $imageLength 2 }}{{ index $image 1 }}{{ else }}{{ index $image 0 }}{{ end }}" itemprop="image">
+            <a class="photo-box-inner fancybox"
+               data-fancybox="gallery-{{ $.File.UniqueID }}"
+               data-caption="{{ if gt $imageLength 2 }}{{ replace (index $image 2) "\"" "" }}{{ else }}{{ replace (index $image 1) "\"" "" }}{{ end }}"
+               title="{{ if gt $imageLength 2 }}{{ replace (index $image 2) "\"" "" }}{{ else }}{{ replace (index $image 1) "\"" "" }}{{ end }}"
+               href="{{ index $image 0 }}"
+               aria-label="{{ i18n "global.zoom_in_on_picture" }}">
+              {{ if lt $index $GALLERY_IMAGES_DISPLAYED_LIMIT }}
+              <img class="photo" src="{{ if gt $imageLength 2 }}{{ index $image 1 }}{{ else }}{{ index $image 0 }}{{ end }}">
+              {{ end }}
             </a>
           </div>
         {{ end }}

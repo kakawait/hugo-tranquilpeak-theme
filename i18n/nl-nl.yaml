@@ -44,7 +44,22 @@
 - id: "global.search_date"
   translation: "Zoek op datum (YYYY/MM/DD)"
 
-## GLOBAL.POST_FOUND ##
+- id: "global.read_more_about_author"
+  translation: "Lees meer over de auteur"
+
+- id: "global.zoom_in_on_picture"
+  translation: "Zoom in op de foto"
+
+- id: "global.go_to_homepage"
+  translation: "Ga naar homepagina"
+
+- id: "global.open_link"
+  translation: "Open de link"
+
+- id: "global.open_post"
+  translation: "Open het bericht"
+
+## GLOBAL.POSTS_FOUND ##
 - id: "global.posts_found.zero"
   translation: "Geen posts gevonden"
 
@@ -114,6 +129,26 @@
 
 - id: "post.comment_and_share"
   translation: "Reageer en deel"
+
+- id: "post.comment"
+  translation: "Laat een reactie achter"
+
+- id: "post.back_to_top"
+  translation: "Terug naar boven"
+
+- id: "post.share"
+  translation: "Deel dit bericht"
+
+- id: "post.gallery"
+  translation: "Galerij"
+
+## POST.IMAGE ##
+
+- id: "post.image.one"
+  translation: "image"
+
+- id: "post.image.other"
+  translation: "{n} images"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"

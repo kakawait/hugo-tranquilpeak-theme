@@ -44,14 +44,29 @@
 - id: "global.search_date"
   translation: "搜索日期 (YYYY/MM/DD)"
 
-## GLOBAL.POST_FOUND ##
-- id: "global.post_found.zero"
+- id: "global.read_more_about_author"
+  translation: "阅读有关作者的更多信息"
+
+- id: "global.zoom_in_on_picture"
+  translation: "放大图片"
+
+- id: "global.go_to_homepage"
+  translation: "去首页"
+
+- id: "global.open_link"
+  translation: "打开链接"
+
+- id: "global.open_post"
+  translation: "打开帖子"
+
+## GLOBAL.POSTS_FOUND ##
+- id: "global.posts_found.zero"
   translation: "没有找到文章"
 
-- id: "global.post_found.one"
+- id: "global.posts_found.one"
   translation: "找到 1 篇文章"
 
-- id: "global.post_found.other"
+- id: "global.posts_found.other"
   translation: "找到 {n} 篇文章"
 
 ## GLOBAL.CATEGORIES_FOUND ##
@@ -114,6 +129,26 @@
 
 - id: "post.comment_and_share"
   translation: "注释和共享"
+
+- id: "post.comment"
+  translation: "发表评论"
+
+- id: "post.back_to_top"
+  translation: "回到顶部"
+
+- id: "post.share"
+  translation: "分享这个帖子"
+
+- id: "post.gallery"
+  translation: "画廊"
+
+## POST.IMAGE ##
+
+- id: "post.image.one"
+  translation: "图片"
+
+- id: "post.image.other"
+  translation: "{n} 图片"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"

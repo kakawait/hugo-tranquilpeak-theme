@@ -1,5 +1,5 @@
 # Tranquilpeak
-# Version : 0.4.8-BETA
+# Version : 0.5.2-BETA
 # Author : Thibaud Leprêtre
 
 # I STRONGLY recommend you to use a CDN to speed up loading of pages.
@@ -23,13 +23,26 @@ paginate = 7
 canonifyurls = true
 
 [permalinks]
-  post = "/:year/:month/:slug/"
+  posts = "/:year/:month/:slug/"
 
 [taxonomies]
   tag = "tags"
   category = "categories"
   archive = "archives"
 
+# ------
+# Markup
+# ------
+[markup]
+  # Set startLevel = 1 to support # title (<h1>title</h1>) otherwise table of content is blank/empty
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 1
+
+# ------
+# Author
+# ------
 [author]
   name = "Firstname Lastname"
   bio = "Super bio with markdown support **COOL**"
@@ -45,71 +58,90 @@ canonifyurls = true
   # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
   # googlePlus = "+ThibaudLepretre"
 
-# Menu Configuration
+# ------------
+# Sidebar menu
+# ------------
 [[menu.main]]
   weight = 1
   identifier = "home"
   name = "Home"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-home\" aria-hidden=\"true\"></i>"
   url = "/"
 [[menu.main]]
   weight = 2
   identifier = "categories"
   name = "Categories"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-bookmark\" aria-hidden=\"true\"></i>"
   url = "/categories"
 [[menu.main]]
   weight = 3
   identifier = "tags"
   name = "Tags"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-tags\" aria-hidden=\"true\"></i>"
   url = "/tags"
 [[menu.main]]
   weight = 4
   identifier = "archives"
   name = "Archives"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-archive\" aria-hidden=\"true\"></i>"
   url = "/archives"
 [[menu.main]]
   weight = 5
   identifier = "about"
   name = "About"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-question\" aria-hidden=\"true\"></i>"
   url = "/#about"
 
 [[menu.links]]
   weight = 1
   identifier = "github"
   name = "GitHub"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
+  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-github\" aria-hidden=\"true\"></i>"
   url = "https://github.com/kakawait"
 [[menu.links]]
   weight = 2
   identifier = "stackoverflow"
   name = "Stack Overflow"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-stack-overflow\"></i>"
+  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-stack-overflow\" aria-hidden=\"true\"></i>"
   url = "https://stackoverflow.com/users/636472/kakawait"
 
 [[menu.misc]]
   weight = 1
   identifier = "rss"
   name = "RSS"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-rss\" aria-hidden=\"true\"></i>"
   url = "/index.xml"
 
+# -------------
+# Customization
+# -------------
 [params]
+  # -----------
+  # Description
+  # -----------
+  description = "Hugo tranquilpeak theme demo"
+
+  # ------------------
+  # Syntax highlighter
+  # ------------------
+  # Syntax highlighter, possible choice between: "highlight.js" and "prism.js"
+  # You can comment it to disable syntax highlighting
+  syntaxHighlighter = "highlight.js"
+
+  # -----------
+  # Date format
+  # -----------
   # Customize date format use to render blog post date, categories and other
   # You must use date format used by Go Time package https://golang.org/pkg/time/
   # Months (not work with short month like "jan", "feb", etc) are translated if translation exists on i18n folders
   # Default format is: January 2, 2006
-  # dateFormat = "2 January 2006"
+  #  dateFormat = "2 January 2006"
 
+  # ---------------------------
+  # Posts related configuration
+  # ---------------------------
   # Global keywords configuration. Following keywords will be add to every pages
-  # keywords = ["development", "next-gen"]
-
-  # Syntax highlighter, possible choice between: "highlight.js" (recommanded) and "prism.js" (experimental)
-  # You can comment it to disable syntax highlighting
-  syntaxHighlighter = "highlight.js"
+  #  keywords = ["development", "next-gen"]
 
   # Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. (true: enable, false: disable)
   clearReading = true
@@ -118,8 +150,13 @@ canonifyurls = true
   # If false it will flat categories.
   hierarchicalCategories = true
 
-  description = "Hugo tranquilpeak theme demo"
+  # Display `Next` on left side of the pagination, and `Prev` on right side one.
+  # If you set this value to `true`, these positions swap.
+  #  swapPaginator = true
 
+  # ---------------------
+  # Sidebar configuration
+  # ---------------------
   # Customization
   # Define the behavior of the sidebar
   # 1: Display extra large sidebar on extra large screen, large sidebar on large screen,
@@ -135,6 +172,13 @@ canonifyurls = true
   # 6: Display header bar on all screens and medium sidebar is swiped
   sidebarBehavior = 1
 
+  # Customize link of author avatar in sidebar
+  #  [params.sidebar.profile]
+  #    url = "/#about"
+
+  # -------------------
+  # Media configuration
+  # -------------------
   # Your blog cover picture. I STRONGLY recommend you to use a CDN to speed up loading of pages.
   # There is many free CDN like Cloudinary or you can also use indirectly
   # by using services like Google Photos.
@@ -158,58 +202,185 @@ canonifyurls = true
   autoThumbnailImage = true
 
   # Your favicon path, default is "/favicon.png"
-  # favicon = "/favicon.png"
+  #  favicon = "/favicon.png"
 
-  # Header configuration
-  # The link at the right of the header is customizable
-  # You can add a link (as an icon) at the right of the header instead of the author's gravatar image or author's picture.
-  # By default, author's gravatar or author's picture is displayed.
-  #     url: /#search
-  #     icon: search
-  #     class: st-search-show-outputs
-
-  # Display `Next` on left side of the pagination, and `Prev` on right side one.
-  # If you set this value to `true`, these positions swap.
-  # swapPaginator = true
-
+  # ------------------
+  # External resources
+  # ------------------
   # Custom CSS. Put here your custom CSS files. They are loaded after the theme CSS;
   # they have to be referred from static root. Example
-  # [[params.customCSS]]
-  #   href = "css/mystyle.css"
+  #  [[params.customCSS]]
+  #    href = "css/mystyle.css"
 
   # Custom JS. Put here your custom JS files. They are loaded after the theme JS;
   # they have to be referred from static root. Example
-  # [[params.customJS]]
-  #   src = "js/myscript.js"
+  #  [[params.customJS]]
+  #     src = "js/myscript.js"
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"
+    integrity = "sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
 
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"
+    integrity = "sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"
+    integrity = "sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"
+    integrity = "sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"
+    integrity = "sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"
+    integrity = "sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"
+    integrity = "sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"
+    integrity = "sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"
+    integrity = "sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  [[params.customJS]]
+    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"
+    integrity = "sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw=="
+    crossorigin = "anonymous"
+    async = true
+    defer = true
+
+  # ---------------
   # Sharing options
+  # ---------------
   # Comment and uncomment to enable or disable sharing options
   # If you wanna add a sharing option, read user documentation :
   # Tranquilpeak configuration > Theme configuration > sharing-options
   [[params.sharingOptions]]
     name = "Facebook"
-    icon = "fa-facebook-official"
+    icon = "fab fa-facebook-square"
     url = "https://www.facebook.com/sharer/sharer.php?u=%s"
 
   [[params.sharingOptions]]
     name = "Twitter"
-    icon = "fa-twitter"
+    icon = "fab fa-twitter"
     url = "https://twitter.com/intent/tweet?text=%s"
 
-  [[params.sharingOptions]]
-    name = "Google+"
-    icon = "fa-google-plus"
-    url = "https://plus.google.com/share?url=%s"
 
+#  [[params.sharingOptions]]
+#    name = "Whatsapp"
+#    icon = "fab fa-whatsapp"
+#    url = "https://wa.me/?text=%s"
+
+  [[params.sharingOptions]]
+    name = "Linkedin"
+    icon = "fab fa-linkedin"
+    url = "https://www.linkedin.com/sharing/share-offsite/?url=%s"
+
+#  [[params.sharingOptions]]
+#    name = "Reddit"
+#    icon = "fab fa-reddit"
+#    url = "https://www.reddit.com/submit?url=%s"
+#
+#  [[params.sharingOptions]]
+#    name = "Pocket"
+#    icon = "fab fa-get-pocket"
+#    url = "https://getpocket.com/edit?url=%s"
+#
+#  [[params.sharingOptions]]
+#    name = "Hacker News"
+#    icon = "fab fa-hacker-news"
+#    url = "https://news.ycombinator.com/submitlink?u=%s"
+
+  # -------------------
+  # Integrated services
+  # -------------------
+  # Gravatar
+  #  >> See Author section
+  #    [author]
+  #      gravatarEmail =
+  # Google Analytics
+  #  >> See googleAnalytics
+  #    googleAnalytics =
+  # Your Facebook user ids used to connect your blog with your facebook user accounts (Facebook Insights). Separate ids with comma. e.g : 9830047,1003342
+  #  fbAdminIds =
+  # Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : 9841307
+  #  fbAppId =
+
+  # --------------
+  # Comment system
+  # --------------
+  [params.comment]
+    [params.comment.disqus]
+      enable = true
+      shortname = "hugo-tranquilpeak-theme"
+    [params.comment.gitalk]
+      enable = false
+      # clientId =
+      # clientSecret =
+      # owner =
+      # repo =
+      # See all options: https://github.com/gitalk/gitalk#options
+      [params.comment.gitalk.options]
+        language = "en"
+        perPage = 10
+        distractionFreeMode = false
+        enableHotKey = true
+        pagerDirection = "first"
+
+  # --------------------
+  # Header configuration
+  # --------------------
+  # The link at the right of the header is customizable
+  # You can add a link (as an icon) at the right of the header instead of the author's gravatar image or author's picture.
+  # By default, author's gravatar or author's picture is displayed.
+  #  url: /#search
+  #  icon: search
+  #  class: st-search-show-outputs
   [params.header.rightLink]
     class = ""
     icon = ""
     url = "/#about"
 
-  # Customize link of author avatar in sidebar
-  # [params.sidebar.profile]
-  #   url = "/#about"
-
+  # --------------------
+  # Footer configuration
+  # --------------------
   # Customize copyright value "© 2017 <CUSTOMIZATION>. All Rights Reserved"
-  # [params.footer]
-  #   copyright = "<a href=\"https://github.com/kakawait\">kakawait</a>"
+  #  [params.footer]
+  #    copyright = "<a href=\"https://github.com/kakawait\">kakawait</a>"

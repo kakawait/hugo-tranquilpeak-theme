@@ -1,10 +1,10 @@
-{{- $.Scratch.Set "isPost" false -}}
+{{- $.Scratch.Set "isTypeInMainSections" false -}}
 {{- if .IsPage -}}
-  {{- if eq .Type "post" -}}
-    {{- $.Scratch.Set "isPost" true -}}
+  {{- if in site.Params.mainSections .Type -}}
+    {{- $.Scratch.Set "isTypeInMainSections" true -}}
   {{- end -}}
 {{- end -}}
-{{- if and (and ($.Scratch.Get "isPost") (lt .Site.Params.sidebarBehavior 3)) (or (and .Site.Params.clearReading (not .Params.clearReading)) .Params.clearReading) -}}
+{{- if and (and ($.Scratch.Get "isTypeInMainSections") (lt .Site.Params.sidebarBehavior 3)) (or (and .Site.Params.clearReading (not .Params.clearReading)) .Params.clearReading) -}}
   {{- .Scratch.Set "sidebarBehavior" (add .Site.Params.sidebarBehavior 3) -}}
 {{- else -}}
   {{- .Scratch.Set "sidebarBehavior" .Site.Params.sidebarBehavior -}}
@@ -25,10 +25,11 @@
 <html lang="{{ .Site.LanguageCode }}">
   <head>
     {{ partial "head_start.html" . }}
+    {{ partial "schema.html" . }}
     {{ partial "meta.html" . }}
     <title>{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}</title>
 
-    <link rel="icon" href="{{ with .Site.Params.favicon }}{{ . }}{{ else }}/favicon.png{{ end }}">
+    <link rel="icon" href="{{ with .Site.Params.favicon }}{{ . | absURL }}{{ else }}/favicon.png{{ end }}">
     {{ with .OutputFormats.Get "RSS" }}
       <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ .RelPermalink }}">
     {{ end }}
@@ -40,12 +41,14 @@
     <link rel="canonical" href="{{ .Permalink }}">
 
     <!--EXTERNAL STYLES-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {{ if .Site.Params.comment.gitalk.enable }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.7.2/gitalk.css" integrity="sha512-MLcK/YRapzET1qTBXrOiZE6bGBgtATMo2bIyalVJ8EKDEGNoeA3SPQkvWAR0zNS650YG13ocXBMeioDuZcSRuQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {{ end }}
     <!--EXTERNAL STYLES END-->
     <!--STYLES-->
-    <link rel="stylesheet" href="/css/style-qaxrqgjxjnorxetflyibrrmv8cgxc3ddkbmlbksahenkbgt4oli1kt99u.min.css" />
+    <link rel="stylesheet" href="{{ "css/style-c5yjx2losbmkttdif4mskx5f9pqjjquywurgngxfvceyyrtyatseix5hpd.min.css" | absURL }}" />
     <!--STYLES END-->
     {{ range .Site.Params.customCSS }}
       {{ if isset . "href" }}
@@ -55,7 +58,7 @@
       {{ end }}
     {{ end }}
 
-    {{ if .Params.ga.async }}
+    {{ if or .Params.googleAnalytics.async .Params.ga.async }}
       {{ template "_internal/google_analytics_async.html" . }}
     {{ else }}
       {{ template "_internal/google_analytics.html" . }}

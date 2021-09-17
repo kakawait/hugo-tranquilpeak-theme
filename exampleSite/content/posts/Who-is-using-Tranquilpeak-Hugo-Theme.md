@@ -68,9 +68,9 @@ If you want to add your site to this showcase, click [here](https://github.com/k
 
 [![Ivan Fadila Putra's blog](https://i.imgur.com/r7tJa2Lm.png)](https://ffadilaputra.github.io/)
 
-## BALLOON a.k.a. Fu-sen's blog
+## 🎈 BALLOON | FU-SEN blog
 
-[![BALLOON a.k.a. Fu-sen's blog](https://i.imgur.com/ThaDHyfm.png)](https://balloon.gq/)
+[![🎈 BALLOON | FU-SEN blog](https://i.imgur.com/7tDrORCm.png)](https://balloon.asia/)
 
 ## Yue Hao's blog
 
@@ -95,3 +95,17 @@ If you want to add your site to this showcase, click [here](https://github.com/k
 ## Aditya Mangal's blog
 
 [![Aditya Mangal's blog](https://i.imgur.com/FKrnNGlm.png)](https://www.adityamangal.com/)
+
+## Agonyus's blog
+
+[![Agonyus's blog](https://i.imgur.com/P25TDrFm.png)](https://agonyus.com/)
+
+## Namshik Kim's blog
+
+> Data science blog
+
+[![Namshik Kim's blog](https://i.imgur.com/oQ8i7k7m.png)](https://physhik.com/)
+
+## Razvan Avramescu's blog
+
+[![Razvan Avramescu's blog](https://i.imgur.com/vyhMGDFm.png)](https://www.avramescu.net/)

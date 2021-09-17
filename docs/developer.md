@@ -11,24 +11,26 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 - [Installation](#installation)
 - [Code style](#code-style)
 - [Code structure](#code-structure)
-    * [Views](#views)
-    * [Assets](#assets)
-         * [Stylesheets](#stylesheets)
-         * [Images](#images)
-         * [Javascript](#javascript)
+- [Views](#views)
+- [Assets](#assets)
+    - [Stylesheets](#stylesheets)
+    - [Images](#images)
+    - [Javascript](#javascript)
 - [NPM scripts](#npm-scripts)
 - [Grunt tasks](#grunt-tasks)
-    * [Tasks structure](#tasks-structure)
-    * [Pipeline](#pipeline)
-    * [Config tasks](#config-tasks)
-    * [Register tasks](#register-tasks)
+- [Tasks structure](#tasks-structure)
+- [Pipeline](#pipeline)
+- [Config tasks](#config-tasks)
+- [Register tasks](#register-tasks)
 - [Build](#build)
+- [Development environment](#development-environment)
+- [Production environment (before deploying your blog)](#production-environment-before-deploying-your-blog)
 - [Running](#running)
 
 ## General ##
 
 - **Author** : Thibaud Leprêtre
-- **Version** : 0.4.8-BETA (based on Hexo version 1.10.0)
+- **Version** : 0.5.2-BETA (based on Hexo version 3.1.0)
 - **Compatibility** : Hugo v0.53
 
 ## Requirements ##

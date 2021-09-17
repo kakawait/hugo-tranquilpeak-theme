@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo {{ hugo.Version }} with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo {{ hugo.Version }} with theme Tranquilpeak 0.5.2-BETA">
 <meta name="author" content="{{ .Site.Author.name }}">
 <meta name="keywords" content="{{ with .Keywords }}{{ delimit . ", " }}{{ end }}{{ if .Site.Params.keywords }}, {{ delimit .Site.Params.keywords ", " }}{{ end }}">
 <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
@@ -58,25 +58,25 @@
   {{ end }}
 {{ end }}
 
-{{ with .Params.thumbnailImage }}
-  <meta property="og:image" content="{{ . | absURL }}">
-  <meta property="twitter:image" content="{{ . | absURL }}">
-{{ end }}
-{{ with .Params.coverImage }}
-  <meta property="og:image" content="{{ . | absURL }}">
-  <meta property="twitter:image" content="{{ . | absURL }}">
-{{ end }}
-{{ with .Params.gallery }}
-  {{ range . }}
-    <meta property="og:image" content="{{ range first 1 (split . " ") }}{{ . | absURL }}{{ end }}">
-    <meta property="twitter:image" content="{{ range first 1 (split . " ") }}{{ . | absURL }}{{ end }}">
-  {{ end }}
-{{ end }}
-
 {{ if .Scratch.Get "gravatarEmail" }}
   <meta property="og:image" content="https://www.gravatar.com/avatar/{{ (md5 (.Scratch.Get "gravatarEmail")) | urlize }}?s=640">
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/{{ (md5 (.Scratch.Get "gravatarEmail")) | urlize }}?s=640">
 {{ else if .Site.Author.picture }}
   <meta property="og:image" content="{{ .Site.Author.picture | absURL }}">
   <meta property="twitter:image" content="{{ .Site.Author.picture | absURL }}">
+{{ end }}
+
+{{ with .Params.gallery }}
+  {{ range . }}
+    <meta property="og:image" content="{{ range first 1 (split . " ") }}{{ . | absURL }}{{ end }}">
+    <meta property="twitter:image" content="{{ range first 1 (split . " ") }}{{ . | absURL }}{{ end }}">
+  {{ end }}
+{{ end }}
+{{ with .Params.coverImage }}
+  <meta property="og:image" content="{{ . | absURL }}">
+  <meta property="twitter:image" content="{{ . | absURL }}">
+{{ end }}
+{{ with .Params.thumbnailImage }}
+  <meta property="og:image" content="{{ . | absURL }}">
+  <meta property="twitter:image" content="{{ . | absURL }}">
 {{ end }}

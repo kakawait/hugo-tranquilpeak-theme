@@ -5,8 +5,14 @@
 - id: "global.categories"
   translation: "Catégories"
 
+- id: "global.category"
+  translation: "Catégorie"
+
 - id: "global.tags"
   translation: "Tags"
+
+- id: "global.tag"
+  translation: "Tag"
 
 - id: "global.archives"
   translation: "Archive"
@@ -37,6 +43,21 @@
 
 - id: "global.search_date"
   translation: "Rechercher une date (YYYY/MM/DD)"
+
+- id: "global.read_more_about_author"
+  translation: "En savoir plus sur l'auteur"
+
+- id: "global.zoom_in_on_picture"
+  translation: "Zoomer sur l'image"
+
+- id: "global.go_to_homepage"
+  translation: "Aller à la page principale"
+
+- id: "global.open_link"
+  translation: "Ouvrir le lien"
+
+- id: "global.open_post"
+  translation: "Ouvrir l'article"
 
 ## GLOBAL.POSTS_FOUND ##
 - id: "global.posts_found.zero"
@@ -108,6 +129,26 @@
 
 - id: "post.comment_and_share"
   translation: "Commenter et partager"
+
+- id: "post.comment"
+  translation: "Laisser un commentaire"
+
+- id: "post.back_to_top"
+  translation: "Retour en haut de page"
+
+- id: "post.share"
+  translation: "Partager cette publication"
+
+- id: "post.gallery"
+  translation: "Galerie"
+
+## POST.IMAGE ##
+
+- id: "post.image.one"
+  translation: "image"
+
+- id: "post.image.other"
+  translation: "{n} images"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"
