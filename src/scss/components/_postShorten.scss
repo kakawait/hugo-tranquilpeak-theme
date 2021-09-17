@@ -36,6 +36,11 @@
         a {
             color: map-get($colors, light);
         }
+
+        .postReadingTime {
+            color: #349ef3;
+            font-weight: bold;
+        }
     }
     .postShorten-meta,
     .postShorten-readingtime {
