@@ -59,14 +59,14 @@
 - id: "global.open_post"
   translation: "投稿を開く"
 
-## GLOBAL.POST_FOUND ##
-- id: "global.post_found.zero"
+## GLOBAL.POSTS_FOUND ##
+- id: "global.posts_found.zero"
   translation: "見つかりませんでした。"
 
-- id: "global.post_found.one"
+- id: "global.posts_found.one"
   translation: "1件見つかりました。"
 
-- id: "global.post_found.other"
+- id: "global.posts_found.other"
   translation: "{n} 件見つかりました。"
 
 ## GLOBAL.CATEGORIES_FOUND ##
@@ -80,13 +80,13 @@
   translation: "{n} 件のカテゴリーが見つかりました。"
 
 ## GLOBAL.TAGS_FOUND ##
-- id: "globa.tags_found.zero"
+- id: "global.tags_found.zero"
   translation: "見つかりませんでした。"
 
-- id: "globa.tags_found.one"
+- id: "global.tags_found.one"
   translation: "1件のタグが見つかりました。"
 
-- id: "globa.tags_found.other"
+- id: "global.tags_found.other"
   translation: "{n} 件のタグが見つかりました。"
 
 ## PAGINATION ##

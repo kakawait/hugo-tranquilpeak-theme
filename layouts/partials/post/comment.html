@@ -37,12 +37,12 @@
           return;
         }
         new Gitalk({
-          clientID: '{{ .Site.Params.comment.gitalk.client_id }}',
-          clientSecret: '{{ .Site.Params.comment.gitalk.client_secret }}',
+          clientID: '{{ .Site.Params.comment.gitalk.clientId }}',
+          clientSecret: '{{ .Site.Params.comment.gitalk.clientSecret }}',
           repo: '{{ .Site.Params.comment.gitalk.repo }}',
           owner: '{{ .Site.Params.comment.gitalk.owner }}',
           admin: ['{{ .Site.Params.comment.gitalk.owner }}'],
-          id: '{{ .RelPermalink }}',
+          id: '{{ md5 .RelPermalink }}',
           ...{{ .Site.Params.comment.gitalk.options | jsonify | safeJS }}
         }).render('gitalk')
       })()

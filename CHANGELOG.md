@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.5.2-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/25) - 08 sep 2021
+
+- Fix gitalk (really does not work on previous version) ([#504](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/504) and [#507](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/507)) (thank you @duval1024)
+- Replace Google+ with Linkedin as default in exampleSite ([#489](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/489)) (thank you @stiliajohny)
+- Fix i18n files (missing keys or wrong key names) and aria-label translation ([#479](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/479) and [#503](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/503))
+- Add Finnish lang ([#500](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/500)) (thank you @ronjakoi)
+- Support gallery title with spaces ([#292](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/292))
+- Properly handle relative URLs ([#333](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/333)) (thank you @sascha-wolf)
+- Fix small visual bug on Firefox ([#322](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/322))
+- Remove dom element `<div class="post-actions-wrap>` if `showActions: false` ([#413](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/413))
+
 ## [0.5.1-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/24) - 27 aug 2021
 
 - Fix fancybox gallery since upgrade to 3.x.x ([#490](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/490))
