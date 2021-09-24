@@ -54,15 +54,12 @@
             <i class="fa fa-share-alt" aria-hidden="true"></i>
           </a>
         </li>
-        {{ range .Site.Params.sharingOptions }}
-          <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="{{ printf .url $.Permalink }}" title="{{ i18n "global.share_on" }} {{ .name }}" aria-label="{{ i18n "global.share_on" }} {{ .name }}">
-              <i class="{{ .icon }}" aria-hidden="true"></i>
-            </a>
-          </li>
-        {{ end }}
-      {{ end }}
-      {{ if and (and (.Site.Params.comment.disqus.enable) (not (.Site.Config.Privacy.Disqus.Disable))) .Site.DisqusShortname }}
+        <li class="post-action hide-xs responsive-social">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="{{ i18n "post.share" }}">
+            <i class="fa fa-share-alt" aria-hidden="true"></i>
+          </a>
+        </li>
+        {{ if and (and (.Site.Params.comment.disqus.enable) (not (.Site.Config.Privacy.Disqus.Disable))) .Site.DisqusShortname }}
         <li class="post-action">
           <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="{{ i18n "post.comment" }}">
             <i class="far fa-comment"></i>
@@ -84,6 +81,16 @@
           <i class="fa fa-list" aria-hidden="true"></i>
         </a>
       </li>
+        {{ range .Site.Params.sharingOptions }}
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="{{ printf .url $.Permalink }}" title="{{ i18n "global.share_on" }} {{ .name }}" aria-label="{{ i18n "global.share_on" }} {{ .name }}">
+              <i class="{{ .icon }}" aria-hidden="true"></i>
+            </a>
+          </li>
+        {{ end }}
+        
+      {{ end }}
+    
     </ul>
   {{ end }}
 </div>
