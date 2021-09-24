@@ -5,8 +5,14 @@
 - id: "global.categories"
   translation: "Catégories"
 
+- id: "global.category"
+  translation: "Catégorie"
+
 - id: "global.tags"
   translation: "Tags"
+
+- id: "global.tag"
+  translation: "Tag"
 
 - id: "global.archives"
   translation: "Archive"
