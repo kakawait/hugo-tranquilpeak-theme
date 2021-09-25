@@ -49,6 +49,11 @@
   </nav>
 <ul class="post-actions post-action-share" >
   {{ if (not (eq .Params.showSocial false)) }}
+  <li class="post-action hide-xs responsive-social">
+    <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="{{ i18n "post.share" }}">
+      <i class="fa fa-share-alt" aria-hidden="true"></i>
+    </a>
+  </li>
     <li class="post-action hide-lg hide-md hide-sm">
       <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="{{ i18n "post.share" }}">
         <i class="fa fa-share-alt" aria-hidden="true"></i>
