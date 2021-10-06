@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.5.3-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/27) - 06 oct 2021
+
+- Fix top/bottom bar behavior when scrolling ([#520](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/520))
+
 ## [0.5.2-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/25) - 08 sep 2021
 
 - Fix gitalk (really does not work on previous version) ([#504](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/504) and [#507](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/507)) (thank you @duval1024)
