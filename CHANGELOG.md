@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.5.3-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/27) - 04 oct 2021
+## [0.5.3-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/27) - 06 oct 2021
 
 - Fix top/bottom bar behavior when scrolling ([#520](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/520))
 
