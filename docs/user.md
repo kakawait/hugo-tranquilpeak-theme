@@ -61,7 +61,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 ## General
 
 - **Authors**: [Thibaud Leprêtre (kakawait)](https://github.com/kakawait) and [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro)
-- **Version**: 0.5.2-BETA (based on Hexo version 3.1.0)
+- **Version**: 0.5.3-BETA (based on Hexo version 3.1.0)
 - **Compatibility**: Hugo v0.53
 
 ## Features
