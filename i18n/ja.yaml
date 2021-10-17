@@ -74,7 +74,7 @@
   translation: "見つかりませんでした。"
 
 - id: "global.categories_found.one"
-  translation: "1件のカテゴリーが見つかりました。"
+  translation: "1 件のカテゴリーが見つかりました。"
 
 - id: "global.categories_found.other"
   translation: "{n} 件のカテゴリーが見つかりました。"
@@ -84,7 +84,7 @@
   translation: "見つかりませんでした。"
 
 - id: "global.tags_found.one"
-  translation: "1件のタグが見つかりました。"
+  translation: "1 件のタグが見つかりました。"
 
 - id: "global.tags_found.other"
   translation: "{n} 件のタグが見つかりました。"
@@ -145,10 +145,10 @@
 ## POST.IMAGE ##
 
 - id: "post.image.one"
-  translation: "偶像"
+  translation: "1 枚の画像"
 
 - id: "post.image.other"
-  translation: "{n} イメージ"
+  translation: "{n} 枚の画像"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"

@@ -8,5 +8,5 @@
     {{ .Date.Format $.Site.Params.dateFormat }}
   {{ end }}
 {{ else }}
-  {{ i18n (lower (printf "date.month.%s" .Date.Month)) }} {{ .Date.Day }}, {{ .Date.Year }}
+  {{ i18n (lower (printf "date.month.%s" .Date.Month)) }} {{ if i18n "date.month.suffix" }} {{ i18n "date.month.suffix" }} {{ end }} {{ .Date.Day }} {{ if i18n "date.day.suffix" }} {{ i18n "date.day.suffix" }} {{ end }}, {{ .Date.Year }} {{ if i18n "date.year.suffix" }} {{ i18n "date.year.suffix" }} {{ end }}
 {{ end }}
