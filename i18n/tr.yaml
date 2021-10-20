@@ -1,0 +1,157 @@
+## GLOBAL ##
+- id: "global.home"
+  translation: "Anasayfa"
+
+- id: "global.categories"
+  translation: "Kategoriler"
+
+- id: "global.category"
+  translation: "Kategori"
+
+- id: "global.tags"
+  translation: "Etiketler"
+
+- id: "global.tag"
+  translation: "Etiket"
+
+- id: "global.archives"
+  translation: "Arşivler"
+
+- id: "global.search"
+  translation: "Arama"
+
+- id: "global.about"
+  translation: "Hakkında"
+
+- id: "global.author_picture"
+  translation: "Yazar'ın fotoğrafı"
+
+- id: "global.share_on"
+  translation: "%s üzerinde paylaş"
+
+- id: "global.mail"
+  translation: "Mail"
+
+- id: "global.rss"
+  translation: "RSS"
+
+- id: "global.search_category"
+  translation: "Kategori ara"
+
+- id: "global.search_tag"
+  translation: "Etiket ara"
+
+- id: "global.search_date"
+  translation: "Tarih ara (YYYY/AA/GG)"
+
+## GLOBAL.POST_FOUND ##
+- id: "global.posts_found.zero"
+  translation: "gönderi bulunamadı"
+
+- id: "global.posts_found.one"
+  translation: "1 gönderi bulundu"
+
+- id: "global.posts_found.other"
+  translation: "{n} gönderi bulundu"
+
+## GLOBAL.CATEGORIES_FOUND ##
+- id: "global.categories_found.zero"
+  translation: "kategori bulunamadı"
+
+- id: "global.categories_found.one"
+  translation: "1 kategori bulundu"
+
+- id: "global.categories_found.other"
+  translation: "{n} kategori bulundu"
+
+## GLOBAL.TAGS_FOUND ##
+- id: "global.tags_found.zero"
+  translation: "etiket bulunamadı"
+
+- id: "global.tags_found.one"
+  translation: "1 etiket bulundu"
+
+- id: "global.tags_found.other"
+  translation: "{n} etiket bulundu"
+
+## PAGINATION ##
+- id: "pagination.page"
+  translation: "{{ .Paginator.PageNumber }}. sayfa"
+
+- id: "pagination.of"
+  translation: "{{ .Paginator.TotalPages }} içinde"
+
+- id: "pagination.newer_posts"
+  translation: "SON GÖNDERİLER"
+
+- id: "pagination.older_posts"
+  translation: "ESKİ GÖNDERİLER"
+
+- id: "pagination.previous"
+  translation: "ÖNCEKİ"
+
+- id: "pagination.next"
+  translation: "SONRAKİ"
+
+## POST ##
+- id: "post.no_title"
+  translation: "başlık yok"
+
+- id: "post.categorized_in"
+  translation: "içinde"
+
+- id: "post.tagged_in"
+  translation: "ETİKET:"
+
+- id: "post.toc"
+  translation: "İçindekiler"
+
+- id: "post.read_more"
+  translation: "Okumaya devam et"
+
+- id: "post.go_to_website"
+  translation: "Siteye git"
+
+- id: "post.comment_and_share"
+  translation: "Yorum yap ve paylaş"
+
+## FOOTER ##
+- id: "footer.all_rights_reserved"
+  translation: "Tüm Hakları Saklıdır"
+
+## DATE ##
+- id: "date.month.january"
+  translation: "Ocak"
+
+- id: "date.month.february"
+  translation: "Şubat"
+
+- id: "date.month.march"
+  translation: "Mart"
+
+- id: "date.month.april"
+  translation: "Nisan"
+
+- id: "date.month.may"
+  translation: "Mayıs"
+
+- id: "date.month.june"
+  translation: "Haziran"
+
+- id: "date.month.july"
+  translation: "Temmuz"
+
+- id: "date.month.august"
+  translation: "Ağustos"
+
+- id: "date.month.september"
+  translation: "Eylül"
+
+- id: "date.month.october"
+  translation: "Ekim"
+
+- id: "date.month.november"
+  translation: "Kasım"
+
+- id: "date.month.december"
+  translation: "Aralık"
