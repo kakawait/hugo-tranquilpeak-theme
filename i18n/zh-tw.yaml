@@ -142,13 +142,9 @@
 - id: "post.gallery"
   translation: "畫廊"
 
-## POST.IMAGE ##
-
-- id: "post.image.one"
-  translation: "圖片"
-
-- id: "post.image.other"
-  translation: "{n} 圖片"
+- id: "post.image"
+  one: "圖片"
+  other: "{{ .Count }} 圖片"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"
