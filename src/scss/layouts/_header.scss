@@ -1,7 +1,7 @@
 #header {
     display:                     block;
     width:                       100%;
-    height:                      map-get($header, height);    
+    height:                      map-get($header, height);
     position:                    fixed;
     top:                         0;
     // used to animate the header on small screen with javascript
@@ -16,11 +16,6 @@
         background: t('header-bg');
         border-bottom: t('header-border');
         color: t('header-color');
-    }
-
-    min-width: $main-width;
-    @media only screen and (max-width: $main-width) {
-        min-width: 100%;
     }
 
     #btn-open-sidebar {

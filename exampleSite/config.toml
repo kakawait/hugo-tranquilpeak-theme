@@ -39,6 +39,10 @@ canonifyurls = true
     endLevel = 3
     ordered = false
     startLevel = 1
+  # In order to support HTML inside .md file
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 # ------
 # Author
