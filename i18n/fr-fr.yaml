@@ -142,13 +142,9 @@
 - id: "post.gallery"
   translation: "Galerie"
 
-## POST.IMAGE ##
-
-- id: "post.image.one"
-  translation: "image"
-
-- id: "post.image.other"
-  translation: "{n} images"
+- id: "post.image"
+  one: "image"
+  other: "{{ .Count }} images"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"

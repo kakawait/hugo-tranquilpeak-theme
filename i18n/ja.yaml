@@ -142,13 +142,9 @@
 - id: "post.gallery"
   translation: "ギャラリー"
 
-## POST.IMAGE ##
-
-- id: "post.image.one"
-  translation: "1 枚の画像"
-
-- id: "post.image.other"
-  translation: "{n} 枚の画像"
+- id: "post.image"
+  one: "1 枚の画像"
+  other: "{{ .Count }} 枚の画像"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"
