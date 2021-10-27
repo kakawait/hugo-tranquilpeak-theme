@@ -144,7 +144,7 @@
 
 - id: "post.image"
   one: "image"
-  other: "{n} images"
+  other: "{{ .Count }} images"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"

@@ -144,7 +144,7 @@
 
 - id: "post.image"
   one: "kuva"
-  other: "{n} kuvaa"
+  other: "{{ .Count }} kuvaa"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"

@@ -5,7 +5,7 @@
   {{ if gt $galleryLength 0 }}
     <div class="image-gallery">
       <div class="image-gallery-metabar">
-        <span>{{ i18n "post.gallery"}} {{ T "post.image" (dict "Count" $galleryLength) }}</span>
+        <span>{{ i18n "post.gallery"}} {{ i18n "post.image" (dict "Count" $galleryLength) }}</span>
       </div>
       <div class="image-gallery-photos {{ if gt $galleryLength 2 }}image-gallery-photos--thumbnail{{ end }}">
         {{ range $index, $element := .Params.gallery }}
