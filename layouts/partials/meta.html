@@ -3,7 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo {{ hugo.Version }} with theme Tranquilpeak 0.6.0-SNAPSHOT">
 <meta name="author" content="{{ .Site.Author.name }}">
-<meta name="keywords" content="{{ with .Keywords }}{{ delimit . ", " }}{{ end }}{{ if .Site.Params.keywords }}, {{ delimit .Site.Params.keywords ", " }}{{ end }}">
+<meta name="keywords" content="{{ with .Keywords }}{{ delimit . ", " }}{{ end }}{{ if and .Keywords .Site.Params.keywords }}, {{ end }}{{ with .Site.Params.Keywords }}{{ delimit . ", "}}{{ end }}">
 <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 
 <!-- Meta Social -->
@@ -19,13 +19,13 @@
 <meta property="og:locale" content="{{ .Lang }}">
 {{ if .IsPage }}
   {{ if not .PublishDate.IsZero }}
-    <meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05" }}">
+    <meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">
   {{ end }}
   {{ if not .Lastmod.IsZero }}
-    <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05" }}">
+    <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
   {{ end }}
   {{ if not .ExpiryDate.IsZero }}
-    <meta property="article:expiration_time" content="{{ .ExpiryDate.Format "2006-01-02T15:04:05" }}">
+    <meta property="article:expiration_time" content="{{ .ExpiryDate.Format "2006-01-02T15:04:05Z07:00" }}">
   {{ end }}
   {{ with .Params.categories }}
     {{ range $v := . }}
@@ -54,7 +54,7 @@
 {{ end }}
 {{ with .Site.Params.fbAdminIds }}
   {{ range . }}
-      <meta property="fb:admins" content="{{ . }}">
+    <meta property="fb:admins" content="{{ . }}">
   {{ end }}
 {{ end }}
 
