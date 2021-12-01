@@ -63,5 +63,7 @@
     {{ else }}
       {{ template "_internal/google_analytics.html" . }}
     {{ end }}
+
+    {{ partial "theme.html" }}
     {{ partial "head_end.html" . }}
   </head>
