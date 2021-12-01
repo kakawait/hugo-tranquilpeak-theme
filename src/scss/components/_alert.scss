@@ -27,20 +27,27 @@
         }
     }
     &.info {
-        border-color:     map-get($colors, 'primary');
-        background-color: lighten(map-get($colors, 'primary'), 37%);
+        border-color:     map-get($colors, 'info');
+
+        @include themed() {
+            background-color: t('alert-info-bg');
+        }
 
         &:not(.no-icon) {
             &:before {
                 content: "\f05a";
-                color:   map-get($colors, 'primary');
+                color:   map-get($colors, 'info');
             }
         }
     }
     &.success {
         border-color:     map-get($colors, 'success');
-        background-color: lighten(map-get($colors, 'success'), 42%);
         content:          "\f058";
+
+        @include themed() {
+            background-color: t('alert-success-bg');
+        }
+
         &:not(.no-icon) {
             &:before {
                 content: "\f058";
@@ -50,7 +57,11 @@
     }
     &.warning {
         border-color:     map-get($colors, 'warning');
-        background-color: lighten(map-get($colors, 'warning'), 42%);
+
+        @include themed() {
+            background-color: t('alert-warning-bg');
+        }
+
         &:not(.no-icon) {
             &:before {
                 content: "\f071";
@@ -60,7 +71,11 @@
     }
     &.danger {
         border-color:     map-get($colors, 'danger');
-        background-color: lighten(map-get($colors, 'danger'), 42%);
+
+        @include themed() {
+            background-color: t('alert-danger-bg');
+        }
+
         &:not(.no-icon) {
             &:before {
                 content: "\f05e";

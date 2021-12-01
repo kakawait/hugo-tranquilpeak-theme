@@ -1,0 +1,5 @@
+<script type="text/javascript">
+{{ $js := resources.Get "js/theme-loader.js" }}
+{{ $mini := $js | resources.ExecuteAsTemplate . $.Context | resources.Minify }}
+{{ $mini.Content | safeJS }}
+</script>

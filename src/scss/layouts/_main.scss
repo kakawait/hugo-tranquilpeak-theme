@@ -1,9 +1,13 @@
 #main {
     display:            block;
     min-height:         100%;
-    background:         map-get($main, 'background-color');
-    transition:         transform .25s ease-in-out;
+    transition:         transform .25s ease-in-out, background-color 0.5s ease;
     -webkit-transition: -webkit-transform .25s ease-in-out;
+
+    background: map-get($main-dark, 'background-color');
+    @include themed() {
+        background: t('main-bg');
+    }
 
     &.hasCover {
         // Set `padding-top` to `50px` when there is a cover image on page and

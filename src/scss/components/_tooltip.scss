@@ -18,12 +18,15 @@
         padding:          8px;
         // Fixed width of tooltip
         min-width:        map-get($tooltip, min-width);
-        background-color: map-get($tooltip, background);
-        color:            #fff;
         content:          attr(data-tooltip);
         font-size:        0.93em;
         line-height:      $line-height-base;
         border-radius:    5px;
+
+        @include themed() {
+            background-color: t('tooltip-bg');
+            color: t('tooltip-color');
+        }
     }
     &:before,
     &:after {

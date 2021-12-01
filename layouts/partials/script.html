@@ -3,7 +3,7 @@
 {{ if eq .Site.Params.syntaxHighlighter "highlight.js" }}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 {{ else if eq .Site.Params.syntaxHighlighter "prism.js" }}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 {{ end }}
 {{ if (.Params.mermaid) }}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.12.1/mermaid.min.js" integrity="sha512-08D1plquyGkiMn9uWbY5ZgCrfpZo5hZ6Ab89VPOCZ8zGkPU428uaUDAAqYjCMrbz2ECFG/VR8v470aY9CiB1HA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -14,7 +14,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!--EXTERNAL SCRIPTS END-->
 <!--SCRIPTS-->
-<script src="{{ "js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js" | absURL }}"></script>
+<script src="{{ "/js/script-selmuan8akqv6cwrrqtvruec7fugp16yehud04hk8ckfamkid3yfsxwdlj.min.js" | absURL }}"></script>
 <!--SCRIPTS END-->
 {{ range .Site.Params.customJS }}
   {{ if isset . "src" }}

@@ -1,13 +1,16 @@
 .btn {
     width:          auto;
     height:         auto;
-    background:     white;
     border-radius:  3px;
     padding:        8px 15px;
     margin:         0;
     letter-spacing: $letter-spacing-base;
     font-size:      $font-size-base;
     cursor:         pointer;
+
+    @include themed() {
+        background: t('btn-bg')
+    }
 
     &:hover,
     &:focus,

@@ -78,6 +78,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 - Support Open Graph protocol
 - Easily customizable (fonts, colors, layout elements, code coloration, etc..)
 - Support internationalization (i18)
+- Dark mode
 
 **Posts features:**
 

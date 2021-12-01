@@ -9,6 +9,9 @@
         {{ with $.Site.Author.bio }}
           <h5 class="sidebar-profile-bio">{{ . | markdownify }}</h5>
         {{ end }}
+        {{ if $.Site.Params.enableThemeSwitcher }}
+          {{ partial "toggle.html" . }}
+        {{ end }}
       </div>
     {{ end }}
     <ul class="sidebar-buttons">
@@ -18,7 +21,7 @@
       {{ partial "menu.html" (dict "menu" .Site.Menus.links "root" $) }}
     </ul>
     <ul class="sidebar-buttons">
-      {{ partial "menu.html" (dict "menu" .Site.Menus.misc "root" $) }}
-    </ul>
+      {{ partial "menu.html" (dict "menu" .Site.Menus.misc "root" $) }}      
+    </ul>    
   </div>
 </nav>

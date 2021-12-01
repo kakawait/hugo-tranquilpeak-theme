@@ -31,6 +31,9 @@ $font-color-base:     #5d686f;
 $line-height-base:    1.9em;
 $letter-spacing-base: 0.01em;
 
+$font-weight-base-light:   400;
+$font-weight-base-dark:    350;
+
 // Reduction of font size base on small screen and down
 $font-size-base-sm-screen-reduction-factor: 0.1rem;
 
@@ -49,13 +52,14 @@ $font-size: (
 $colors: (
     'success': #4dc657,
     'danger':  #f5311d,
-    'primary': #349ef3,
+    'info': #349ef3,
+    'primary': #c96f53,
     'purple':  #cf6ae0,
     'base':    $font-color-base,
     'warning':  #f5aa0a,
     'light':   #9eabb3,
      // use for tag `a`
-    'link':    #349ef3
+    'link': #c96f53,
 );
 
 // Z-indexes
@@ -134,15 +138,24 @@ $headings-font-size-md-screen-reduction-factor: 0.15rem;
 
 // Main
 $about: (
-    'background': rgba(17, 26, 35, 0),
+    'background': rgba(17, 26, 35, 0)
 );
 
 // Header
 $header:(
-    'height':     55px,
+    'height':     55px    
+);
+
+$header-light: (
     'background': #fff,
     'color':      #88909a,
     'border':     1px solid #eef2f8
+);
+
+$header-dark: (
+    'background': #181A1B, // #26282B (gris un peu plus clair, à voir...)
+    'color':      #A39B8E,
+    'border':     1px solid #353941
 );
 
 // Sidebar
@@ -151,13 +164,27 @@ $sidebar: (
     'lg-screen-width':  250px,
     'xlg-screen-width': 500px,
     'background':       rgba(17, 26, 35, 0),
+);
+
+$sidebar-light: (
     'color':            #ebebeb
+);
+
+$sidebar-dark: (
+    'color':            #ebebeb // #333
 );
 
 // Main
 $main: (
-    'padding-top':      15px,
+    'padding-top':      15px    
+);
+
+$main-light: (
     'background-color': #fff
+);
+
+$main-dark: (
+    'background-color': #121212
 );
 
 // Components settings
@@ -166,10 +193,19 @@ $main: (
 
 // Highlight code
 $highlight: (
-    'background':  #f7f8f8,
     'font-size':   1.4rem,
     'border':      1px solid,
     'line-height': 2.3rem
+);
+
+$highlight-light: (
+    'background':  #f7f8f8,
+    'color':       #A8A095
+);
+
+$highlight-dark: (
+    'background':  #333,
+    'color':       #e8e6e3
 );
 
 // Highlight colors
@@ -187,7 +223,7 @@ $highlight-colors: (
     'cardinal':        #a71d5d,
     'scampi':          #795da3,
     'bahama-blue':     #1d3e81,
-    'egyptian-blue':   #183691,
+    'egyptian-blue':   lighten(#183691, 30%),
     // Deletion color for .diff file
     'free-speech-red': #bd2c00,
     // Deletion background color for .diff file
@@ -199,17 +235,17 @@ $highlight-colors: (
 );
 // Highlight text
 $highlight-text-bg-colors: (
-    'red':     lighten(red, 45%),
-    'green':   lighten(green, 65%),
-    'blue':    lighten(blue, 45%),
-    'purple':  lighten(purple, 70%),
-    'orange':  lighten(orange, 40%),
-    'yellow':  lighten(yellow, 40%),
-    'cyan':    lighten(cyan, 40%),
-    'primary': lighten(map-get($colors, 'primary'), 35%),
-    'success': lighten(map-get($colors, 'success'),35%),
-    'warning': lighten(map-get($colors, 'warning'), 40%),
-    'danger':  lighten(map-get($colors, 'danger'), 40%),
+    'red':     red,
+    'green':   green,
+    'blue':    blue,
+    'purple':  purple,
+    'orange':  orange,
+    'yellow':  yellow,
+    'cyan':    cyan,
+    'primary': map-get($colors, 'primary'),
+    'success': map-get($colors, 'success'),
+    'warning': map-get($colors, 'warning'),
+    'danger':  map-get($colors, 'danger'),
 );
 // Image gallery photos
 // Space between 2 photos
@@ -220,6 +256,7 @@ $main-content: (
     'max-width':          750px,
     'padding-right-left': 20px,
 );
+$main-width: map-get($main-content, max-width) + map-get($main-content, padding-right-left) * 2;
 
 // Mardown
 // These variables are use to have headings smaller than general headings title

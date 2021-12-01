@@ -19,10 +19,14 @@
     }
     // Author information
     .sidebar-profile {
-        color:         map-get($sidebar, color);
         text-align:    center;
         padding-top:   18px;
         margin-bottom: 15px;
+        color:         #ebebeb;
+
+        @include themed() {
+            color: t('sidebar-color');
+        }
 
         .sidebar-profile-picture {
             display: block;
@@ -30,7 +34,10 @@
         }
         .sidebar-profile-name {
             font-size: 1.1em;
-            color:     map-get($sidebar, color);
+            
+            @include themed() {
+                color: t('sidebar-color');
+            }
         }
     }
     // Sidebar's buttons
@@ -46,14 +53,21 @@
             line-height: 45px;
 
             .sidebar-button-link {
-                color:   map-get($sidebar, color);
                 display: block;
                 height:  100%;
+                color: #ebebeb;
+
+                @include themed() {
+                    color: t('sidebar-color');
+                }
 
                 &:hover,
                 &:active {
                     text-decoration: none;
-                    color:           lighten(map-get($sidebar, color), 35);
+
+                    @include themed() {
+                        color: t('sidebar-color-hover');
+                    }
                 }
             }
         }

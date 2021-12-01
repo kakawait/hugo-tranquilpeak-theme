@@ -6,6 +6,10 @@
     color:      map-get($colors, base);
     font-weight: 300;
 
+    @include themed() {
+        color: t('font-color-base');
+    }
+
     &:hover,
     &:focus {
         outline: none;

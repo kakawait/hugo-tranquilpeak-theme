@@ -44,6 +44,7 @@ How can I migrate my current version? Please read [CHANGELOG.md](https://github.
 - Support Open Graph protocol
 - Easily customizable (fonts, colors, layout elements, code coloration, etc..)
 - Support internationalization (i18)
+- Dark mode
 
 **Posts features:**
 

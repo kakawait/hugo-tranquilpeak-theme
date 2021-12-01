@@ -1,4 +1,10 @@
 // Official theme for Tranquilpeak
+.highlight {
+    @include themed() {
+        background-color: t('highlight-bg');
+    }
+}
+
 // Default code block
 pre > code {
     background: map-get($highlight, 'background');
