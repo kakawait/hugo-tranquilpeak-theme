@@ -82,9 +82,11 @@
                   </h4>
                   <ul class="archive-posts">
                     {{ range ($.Scratch.GetSortedMapValues $path) }}
+                      {{ if eq (len (after 1 .Params.categories)) 0 }}
                       <li class="archive-post">
                         <a class="archive-post-title" href="{{ .RelPermalink }}">{{ .Title }}</a><span class="archive-post-date"> - {{ partial "internal/date" . }}</span>
                       </li>
+                      {{ end }}
                     {{ end }}
                     {{ range seq ($.Scratch.Get "max-level") }}
                       {{ $index := . }}
