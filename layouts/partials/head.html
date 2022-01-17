@@ -98,10 +98,8 @@
     {{ range .Site.Params.customCSS }}
       <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
     {{ end }}
-    {{ if .Params.ga.async }}
-      {{ template "_internal/google_analytics_async.html" . }}
-    {{ else }}
-      {{ template "_internal/google_analytics.html" . }}
-    {{ end }}
+
+    <script defer data-domain="openassistive.org" src="https://stats.acecentre.org.uk/js/plausible.js"></script>
+
     {{ partial "head_end.html" . }}
   </head>
