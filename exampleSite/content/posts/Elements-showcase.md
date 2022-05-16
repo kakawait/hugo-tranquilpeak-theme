@@ -61,6 +61,24 @@ Interdum et malesuada fames ac ante ipsum primis in faucibus. `Sed erat diam`, b
 | Division 1 | Division 2 | Division 3 |
 | Division 1 | Division 2 | Division 3 |
 
+## Equations
+
+For inline math we can wrap text in `$` like so: $f(k) = {n \choose k} p^{k} (1-p)^{n-k}$ which looks like this in the Markdown file: `$f(k) = {n \choose k} p^{k} (1-p)^{n-k}$`
+
+Or for a equation block we can use double `$$`:
+
+$$f(k) = {n \choose k} p^{k} (1-p)^{n-k}$$
+
+which looks like this in the source:
+
+`$$f(k) = {n \choose k} p^{k} (1-p)^{n-k}$$`
+
+Here are some Greek letters:
+
+- $\alpha$ == `$\alpha$`
+- $\beta$ == `$\beta$`
+- $\frac{1}{\delta^2} \times \gamma_3$ == `$\frac{1}{\delta^2} \times \gamma_3$`
+
 ## Misc Stuff - abbr, acronym, sub, sup, etc.
 
 Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer adipiscing <kdb>ctrl + c</kdb>. Nullam dignissim convallis est. Quisque aliquam. <cite>cite</cite>. Nunc iaculis suscipit dui.
