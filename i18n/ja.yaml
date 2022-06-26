@@ -64,7 +64,7 @@
   translation: "見つかりませんでした。"
 
 - id: "global.posts_found.one"
-  translation: "1件見つかりました。"
+  translation: "1 件見つかりました。"
 
 - id: "global.posts_found.other"
   translation: "{n} 件見つかりました。"
@@ -74,7 +74,7 @@
   translation: "見つかりませんでした。"
 
 - id: "global.categories_found.one"
-  translation: "1件のカテゴリーが見つかりました。"
+  translation: "1 件のカテゴリーが見つかりました。"
 
 - id: "global.categories_found.other"
   translation: "{n} 件のカテゴリーが見つかりました。"
@@ -84,7 +84,7 @@
   translation: "見つかりませんでした。"
 
 - id: "global.tags_found.one"
-  translation: "1件のタグが見つかりました。"
+  translation: "1 件のタグが見つかりました。"
 
 - id: "global.tags_found.other"
   translation: "{n} 件のタグが見つかりました。"
@@ -94,7 +94,7 @@
   translation: "page {{ .Paginator.PageNumber }}"
 
 - id: "pagination.of"
-  translation: "of {{ .Paginator.TotalPages }}"
+  translation: "/ {{ .Paginator.TotalPages }}"
 
 - id: "pagination.newer_posts"
   translation: "新しい投稿"
@@ -155,47 +155,38 @@
   translation: "All Rights Reserved"
 
 ## DATE ##
-- id: "date.year.suffix"
-  translation: "年"
-
-- id: "date.month.suffix"
-  translation: "月"
-
-- id: "date.day.suffix"
-  translation: "日"
-
 - id: "date.month.january"
-  translation: "1"
+  translation: "1月"
 
 - id: "date.month.february"
-  translation: "2"
+  translation: "2月"
 
 - id: "date.month.march"
-  translation: "3"
+  translation: "3月"
 
 - id: "date.month.april"
-  translation: "4"
+  translation: "4月"
 
 - id: "date.month.may"
-  translation: "5"
+  translation: "5月"
 
 - id: "date.month.june"
-  translation: "6"
+  translation: "6月"
 
 - id: "date.month.july"
-  translation: "7"
+  translation: "7月"
 
 - id: "date.month.august"
-  translation: "8"
+  translation: "8月"
 
 - id: "date.month.september"
-  translation: "9"
+  translation: "9月"
 
 - id: "date.month.october"
-  translation: "10"
+  translation: "10月"
 
 - id: "date.month.november"
-  translation: "11"
+  translation: "11月"
 
 - id: "date.month.december"
-  translation: "12"
+  translation: "12月"
