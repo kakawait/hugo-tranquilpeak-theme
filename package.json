@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/kakawait/hugo-tranquilpeak-theme/issues"
   },
-  "homepage": "https://github.com/kakawait/hugo-tranquilpeak-theme",
+  "homepage": "./",
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-google": "^0.14.0",
