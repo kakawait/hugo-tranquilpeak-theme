@@ -44,7 +44,22 @@
 - id: "global.search_date"
   translation: "Поиск по дате (ГГГГ/ММ/ДД)"
 
-## GLOBAL.POST_FOUND ##
+- id: "global.read_more_about_author"
+  translation: "Узнайте больше об авторе"
+
+- id: "global.zoom_in_on_picture"
+  translation: "Увеличить картинку"
+
+- id: "global.go_to_homepage"
+  translation: "Вернуться на домашнюю страницу"
+
+- id: "global.open_link"
+  translation: "открыть ссылку"
+
+- id: "global.open_post"
+  translation: "открой пост"
+
+## GLOBAL.POSTS_FOUND ##
 - id: "global.posts_found.zero"
   translation: "Статей не найдено"
 
@@ -114,6 +129,26 @@
 
 - id: "post.comment_and_share"
   translation: "Обсудить и поделиться"
+
+- id: "post.comment"
+  translation: "Оставить комментарий"
+
+- id: "post.back_to_top"
+  translation: "Вернуться к началу"
+
+- id: "post.share"
+  translation: "Поделиться этой записью"
+
+- id: "post.gallery"
+  translation: "галерея"
+
+## POST.IMAGE ##
+
+- id: "post.image.one"
+  translation: "образ"
+
+- id: "post.image.other"
+  translation: "{n} изображений"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"

@@ -15,7 +15,13 @@
     // Elements affected by the swipe of the sidebar
     // The `pushed` class is added to each elements
     // Each element has a different behavior when the sidebar is opened
-    this.$blog = $('.post-bottom-bar, #header, #main, .post-header-cover');
+    this.$header = $('#header');
+    this.$headerElements = {
+      title: this.$header.find('.header-title'),
+      titleLink: this.$header.find('.header-title-link'),
+      rightPicture: this.$header.find('.header-right-picture')
+    };
+    this.$blog = $('.post-bottom-bar, #main, .post-header-cover, .post, #bottom-bar .post-action-share').add(this.$header).add(this.$headerElements.title).add(this.$headerElements.rightPicture);
     // If you change value of `mediumScreenWidth`,
     // you have to change value of `$screen-min: (md-min)` too
     // in `source/_css/utils/variables.scss`
@@ -42,6 +48,37 @@
           self.closeSidebar();
         }
       });
+
+      var xDown = null;
+      var yDown = null;
+
+      $(document).on('touchstart', function(e) {
+        if (self.$sidebar.hasClass('pushed')) {
+          var firstTouch = (e.touches || e.originalEvent.touches)[0];
+          xDown = firstTouch.clientX;
+          yDown = firstTouch.clientY;
+        }
+      }).on('touchmove', function(e) {
+        if ((!xDown || !yDown) || !self.$sidebar.hasClass('pushed')) {
+          return;
+        }
+
+        var xUp = e.touches[0].clientX;
+        var yUp = e.touches[0].clientY;
+
+        var xDiff = xDown - xUp;
+        var yDiff = yDown - yUp;
+
+        if (Math.abs(xDiff) > Math.abs(yDiff)) {
+          if (xDiff > 0) {
+            self.closeSidebar();
+          }
+        }
+
+        xDown = null;
+        yDown = null;
+      });
+
       // Detect resize of the windows
       $(window).resize(function() {
         // Check if the window is larger than the minimal medium screen value
@@ -113,13 +150,16 @@
      * @return {void}
      */
     swipeSidebarToLeft: function() {
+      var self = this;
       // Check if the sidebar is swiped
       // and prevent multiple click on the close button with `.processing` class
       if (this.$sidebar.hasClass('pushed') && !this.$sidebar.hasClass('processing')) {
         // Swipe the sidebar to the left
         this.$sidebar.addClass('processing').removeClass('pushed processing');
         // go back to the default overflow
-        this.$body.css('overflow-x', 'auto');
+        setTimeout(function() {
+          self.$body.css('overflow-x', 'auto');
+        }, 255);
       }
     },
 
@@ -128,15 +168,23 @@
      * @return {void}
      */
     swipeBlogToRight: function() {
-      var self = this;
+      var blog = this.$blog;
+
+      // Check if there is enough place for translating `#header .header-title` and `#header .right-picture`
+      // regarding the size of `#header .header-title-link`
+      // TODO better to use text-overflow on $headerElements.title
+      if (this.$header.width() - this.$sidebar.width() - this.$headerElements.titleLink.width() < 130) {
+        blog = blog.not(this.$headerElements.title).not(this.$headerElements.rightPicture);
+      }
+
       // Check if the blog isn't swiped
       // and prevent multiple click on the open button with `.processing` class
-      if (!this.$blog.hasClass('pushed') && !this.$blog.hasClass('processing')) {
+      if (!blog.hasClass('pushed') && !blog.hasClass('processing')) {
         // Swipe the blog to the right
-        this.$blog.addClass('processing pushed');
+        blog.addClass('processing pushed');
 
         setTimeout(function() {
-          self.$blog.removeClass('processing');
+          blog.removeClass('processing');
         }, 250);
       }
     },

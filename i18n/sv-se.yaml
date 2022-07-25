@@ -1,192 +1,192 @@
 ## GLOBAL ##
 - id: "global.home"
-  translation: "Beginpagina"
+  translation: "Hem"
 
 - id: "global.categories"
-  translation: "Categorieem"
+  translation: "Kategorier"
 
 - id: "global.category"
-  translation: "Categorie"
+  translation: "Kategori"
 
 - id: "global.tags"
-  translation: "Tags"
+  translation: "Taggar"
 
 - id: "global.tag"
-  translation: "Tag"
+  translation: "Tagg"
 
 - id: "global.archives"
-  translation: "Archieven"
+  translation: "Arkiv"
 
 - id: "global.search"
-  translation: "Zoeken"
+  translation: "Sök"
 
 - id: "global.about"
-  translation: "Over"
+  translation: "Om"
 
 - id: "global.author_picture"
-  translation: "Foto van auteur"
+  translation: "Författarens bild"
 
 - id: "global.share_on"
-  translation: "Delen op %s"
+  translation: "Dela på %s"
 
 - id: "global.mail"
-  translation: "Mail"
+  translation: "E-post"
 
 - id: "global.rss"
   translation: "RSS"
 
 - id: "global.search_category"
-  translation: "Zoek op categorie"
+  translation: "Sök kategori"
 
 - id: "global.search_tag"
-  translation: "Zoek op tag"
+  translation: "Sök tagg"
 
 - id: "global.search_date"
-  translation: "Zoek op datum (YYYY/MM/DD)"
+  translation: "Sök datum (YYYY-MM-DD)"
 
 - id: "global.read_more_about_author"
-  translation: "Lees meer over de auteur"
+  translation: "Läs mer om författaren"
 
 - id: "global.zoom_in_on_picture"
-  translation: "Zoom in op de foto"
+  translation: "Zooma in på bilden"
 
 - id: "global.go_to_homepage"
-  translation: "Ga naar homepagina"
+  translation: "Gå till hemsidan"
 
 - id: "global.open_link"
-  translation: "Open de link"
+  translation: "Öppna länken"
 
 - id: "global.open_post"
-  translation: "Open het bericht"
+  translation: "Öppna inlägget"
 
 ## GLOBAL.POSTS_FOUND ##
 - id: "global.posts_found.zero"
-  translation: "Geen posts gevonden"
+  translation: "inga inlägg hittades"
 
 - id: "global.posts_found.one"
-  translation: "1 post gevonden"
+  translation: "1 inlägg hittades"
 
 - id: "global.posts_found.other"
-  translation: "{n} posts gevonden"
+  translation: "{n} inlägg hittades"
 
 ## GLOBAL.CATEGORIES_FOUND ##
 - id: "global.categories_found.zero"
-  translation: "geen categorie gevonden"
+  translation: "inga kategorier hittades"
 
 - id: "global.categories_found.one"
-  translation: "1 categorie gevonden"
+  translation: "1 kategori hittades"
 
 - id: "global.categories_found.other"
-  translation: "{n} categorieen gevonden"
+  translation: "{n} kategorier hittades"
 
 ## GLOBAL.TAGS_FOUND ##
 - id: "global.tags_found.zero"
-  translation: "geen tags gevonden"
+  translation: "inga taggar hittades"
 
 - id: "global.tags_found.one"
-  translation: "1 tag gevonden"
+  translation: "1 tagg hittades"
 
 - id: "global.tags_found.other"
-  translation: "{n} tags gevonden"
+  translation: "{n} taggar hittades"
 
 ## PAGINATION ##
 - id: "pagination.page"
-  translation: "pagina {{ .Paginator.PageNumber }}"
+  translation: "sida {{ .Paginator.PageNumber }}"
 
 - id: "pagination.of"
-  translation: "van {{ .Paginator.TotalPages }}"
+  translation: "av {{ .Paginator.TotalPages }}"
 
 - id: "pagination.newer_posts"
-  translation: "NIEUWERE POSTS"
+  translation: "NYARE INLÄGG"
 
 - id: "pagination.older_posts"
-  translation: "OUDERE POSTS"
+  translation: "ÄLDRE INLÄGG"
 
 - id: "pagination.previous"
-  translation: "VORIGE"
+  translation: "FÖREGÅENDE"
 
 - id: "pagination.next"
-  translation: "VOLGENDE"
+  translation: "NÄSTA"
 
 ## POST ##
 - id: "post.no_title"
-  translation: "Geen titel"
+  translation: "ingen rubrik"
 
 - id: "post.categorized_in"
-  translation: "in"
+  translation: "i"
 
 - id: "post.tagged_in"
-  translation: "GETAGGED IN"
+  translation: "TAGGAD I"
 
 - id: "post.toc"
-  translation: "Inhoudsopgave"
+  translation: "Table of Contents"
 
 - id: "post.read_more"
-  translation: "Lees verder"
+  translation: "Fortsätt läsa"
 
 - id: "post.go_to_website"
-  translation: "Ga naar website"
+  translation: "Gå till webbsida"
 
 - id: "post.comment_and_share"
-  translation: "Reageer en deel"
+  translation: "Kommentera och dela"
 
 - id: "post.comment"
-  translation: "Laat een reactie achter"
+  translation: "Lämna en kommentar"
 
 - id: "post.back_to_top"
-  translation: "Terug naar boven"
+  translation: "Tillbaka till toppen"
 
 - id: "post.share"
-  translation: "Deel dit bericht"
+  translation: "Dela det här inlägget"
 
 - id: "post.gallery"
-  translation: "Galerij"
+  translation: "Galleri"
 
 ## POST.IMAGE ##
 
 - id: "post.image.one"
-  translation: "image"
+  translation: "bild"
 
 - id: "post.image.other"
-  translation: "{n} images"
+  translation: "{n} bilder"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"
-  translation: "Alle rechten voorbehouden"
+  translation: "Alla rättigheter förbehållna"
 
 ## DATE ##
 - id: "date.month.january"
-  translation: "Januari"
+  translation: "januari"
 
 - id: "date.month.february"
-  translation: "Februari"
+  translation: "februari"
 
 - id: "date.month.march"
-  translation: "Maart"
+  translation: "mars"
 
 - id: "date.month.april"
-  translation: "April"
+  translation: "april"
 
 - id: "date.month.may"
-  translation: "Mei"
+  translation: "maj"
 
 - id: "date.month.june"
-  translation: "Juni"
+  translation: "juni"
 
 - id: "date.month.july"
-  translation: "Juli"
+  translation: "juli"
 
 - id: "date.month.august"
-  translation: "Augustus"
+  translation: "augusti"
 
 - id: "date.month.september"
-  translation: "September"
+  translation: "september"
 
 - id: "date.month.october"
-  translation: "Oktober"
+  translation: "oktober"
 
 - id: "date.month.november"
-  translation: "November"
+  translation: "november"
 
 - id: "date.month.december"
-  translation: "December"
+  translation: "december"

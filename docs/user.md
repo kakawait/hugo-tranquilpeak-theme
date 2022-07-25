@@ -1,12 +1,12 @@
 # User documentation
 
-A gorgeous responsive theme for Hugo blog framework 
+A gorgeous responsive theme for Hugo blog framework
 
 [![Tranquilpeak](../showcase.png)](https://tranquilpeak.kakawait.com)
 
-Tranquilpeak theme is compatible with Hugo `v0.20`.
+Tranquilpeak theme is compatible with Hugo `v0.53`.
 
-This documentation will help you to install hugo-tranquilpeak-theme and configure it to use all features which it provides.  
+This documentation will help you to install hugo-tranquilpeak-theme and configure it to use all features which it provides.
 
 If you want to report a bug or ask a question, [create an issue](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/new).
 
@@ -14,53 +14,59 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 
 - [General](#general)
 - [Features](#features)
-    * [Missing features from original *Hexo* version](#missing-features-from-original-hexo-version)
+  - [Missing features from original *Hexo* version](#missing-features-from-original-hexo-version)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Tranquilpeak configuration](#tranquilpeak-configuration)
-    - [Language configuration](#language-configuration)
-        * [Menu translation](#menu-translation)
-    - [Theme configuration](#theme-configuration)
-        * [Define date format](#define-date-format)
-        * [Define global keywords](#define-global-keywords)
-        * [Sidebar](#sidebar)
-        * [Header](#header)
-        * [Author](#author)
-        * [Customization](#customization)
-        * [Integrated services](#integrated-services)
-        * [Sharing options](#sharing-options)
-        * [Enable pages](#enable-pages)
+  - [Language configuration](#language-configuration)
+    - [Menu translation](#menu-translation)
+  - [Setting up default theme to Tranquilpeak](#setting-up-default-theme-to-tranquilpeak)
+  - [Define date format](#define-date-format)
+  - [Define global keywords](#define-global-keywords)
+  - [Theme configuration](#theme-configuration)
+    - [Sidebar](#sidebar)
+    - [Header](#header)
+    - [Author](#author)
+    - [Customization](#customization)
+      - [Add custom JS or CSS using configuration](#add-custom-js-or-css-using-configuration)
+    - [Integrated services](#integrated-services)
+      - [Disqus](#disqus)
+      - [Gitalk](#gitalk)
+      - [Google Analytics](#google-analytics)
+      - [Gravatar](#gravatar)
+      - [Facebook](#facebook)
+    - [Sharing options](#sharing-options)
+    - [Enable pages](#enable-pages)
 - [Integrated services configuration](#integrated-services-configuration)
-    * [Google Analytics](#google-analytics)
-        * [Exclude hostname (localhost) while writing articles](#exclude-hostname-localhost-while-writing-articles)
-    * [Social cards](#social-cards)
-- [Quick & easy modifications](#quick--easy-modifications)  
-    * [Prerequisites](#prerequisites)
-    * [Change global style](#change-global-style)
-    * [Change code coloration (Highlight.js theme)](#change-code-coloration-highlightjs-theme)
+  - [Google Analytics](#google-analytics-1)
+    - [Exclude hostname (localhost) while writing articles](#exclude-hostname-localhost-while-writing-articles)
+  - [Social cards](#social-cards)
+- [Quick & easy modifications](#quick--easy-modifications)
+  - [Prerequisites](#prerequisites)
+  - [Change global style](#change-global-style)
+  - [Change code coloration (Highlight.js theme)](#change-code-coloration-highlightjs-theme)
 - [Writing posts](#writing-posts)
-    * [Front-matter settings](#front-matter-settings)
-    * [Define post excerpt](#define-post-excerpt)
-    * [Display table of contents](#display-table-of-contents)
-    * [Tags](#tags)
-        * [Alert](#alert)
-        * [Highlight text](#highlight-text)
-        * [Image](#image)
-        * [Tabbed code block](#tabbed-code-block)
-        * [Wide image](#wide-image)
-        * [Fancybox](#fancybox)
+  - [Front-matter settings](#front-matter-settings)
+  - [Define post excerpt](#define-post-excerpt)
+  - [Display table of contents](#display-table-of-contents)
+  - [Tags](#tags)
+    - [Alert](#alert)
+    - [Highlight Text](#highlight-text)
+    - [Image](#image)
+    - [Tabbed code block](#tabbed-code-block)
+    - [Wide image](#wide-image)
 - [Writing pages](#writing-pages)
-- [Running](#running)  
+- [Running](#running)
 
 ## General
 
-- **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
-- **Version**: 0.4.4-BETA (based on Hexo version 1.10.0)
-- **Compatibility**: Hugo v0.20.1
+- **Authors**: [Thibaud Leprêtre (kakawait)](https://github.com/kakawait) and [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro)
+- **Version**: 0.5.3-BETA (based on Hexo version 3.1.0)
+- **Compatibility**: Hugo v0.53
 
 ## Features
 
-**General features:**  
+**General features:**
 
 - Fully responsive
 - Optimized for tablets & mobiles
@@ -71,8 +77,8 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 - Support Open Graph protocol
 - Easily customizable (fonts, colors, layout elements, code coloration, etc..)
 - Support internationalization (i18)
-  
-**Posts features:**  
+
+**Posts features:**
 
 - Thumbnail image
 - Cover image
@@ -82,18 +88,18 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 - GitHub theme for code highlighting (customizable)
 - Image gallery
 - Tags for images (FancyBox), wide images, tabbed code blocks, highlighted text, alerts
-- Table of contents  
-  
-**Integrated services:**  
+- Table of contents
+
+**Integrated services:**
 
 - Disqus
+- Gitalk
 - Google analytics
 - Gravatar
 - Facebook Insights
 
 ### Missing features from original *Hexo* version
 
-- [ ] Baidu analytics
 - [ ] Algolia (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8)
 - [ ] Pagination custumization `tagPagination`, `categoryPagination` and `archivePagination` (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17)
 
@@ -104,7 +110,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 
 ## Requirements
 
-1. **Hugo** : `v0.20`
+1. **Hugo** : `v0.53`
 
 ## Installation
 
@@ -139,15 +145,17 @@ by one of the following code (code is between `()`):
 - Japanase (`ja`)
 - Portuguese (`pt-br`)
 - Russian (`ru`)
-- Spanish (`es`)
+- Spanish (`es-es`)
 - Vietnamese (`vi`)
+- Dutch (`nl-nl`)
+- Swedish (`sv-se`)
 
-If your language is not available, follow this guidelines (E.g : add swedish language (`sv-se`)) :  
+If your language is not available, follow this guidelines (E.g : add swedish language (`sv-se`)) :
 
-1. Set `defaultContentLanguage` to `sv-se` in Hugo configuration file `config.{toml,yaml,json}`  
-2. Create `sv-se.yaml` file in `theme/tranquilpeak/i18n/` folder  
-3. Copy the content of `theme/tranquilpeak/i18n/en-us.yaml` and paste it to `sv-se.yml` file  
-4. Replace all strings in english by their translation in swedish    
+1. Set `defaultContentLanguage` to `sv-se` in Hugo configuration file `config.{toml,yaml,json}`
+2. Create `sv-se.yaml` file in `theme/tranquilpeak/i18n/` folder
+3. Copy the content of `theme/tranquilpeak/i18n/en-us.yaml` and paste it to `sv-se.yml` file
+4. Replace all strings in english by their translation in swedish
 
 #### Menu translation
 
@@ -176,13 +184,13 @@ ATTENTION: date format should respect `go` `Time` package syntax, please refer t
 
 **Moreover, if you are using fully named month (short named month like "jan", "feb", etc is not supported), month will be translated.**
 
-Example: 
+Example:
 
 ```toml
 defaultContentLanguage = "fr-fr"
 ```
 
-"21 July 2006" will be output "21 Juillet 2006". 
+"21 July 2006" will be output "21 Juillet 2006".
 
 ### Define global keywords
 
@@ -198,7 +206,7 @@ You can define keywords for search engines. These keywords will be added on all 
 Backup your configuration:
 
 ```bash
-cp config.{toml,yml,json} config.{toml,yml,json}.backup 
+cp config.{toml,yml,json} config.{toml,yml,json}.backup
 ```
 
 Copy example configuration
@@ -216,61 +224,54 @@ You can add groups of links and links much as you want.
 
 ```toml
 [[menu.main]]
-  weight = 0
+  weight = 1
   identifier = "home"
   name = "Home"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-home\" aria-hidden=\"true\"></i>"
   url = "/"
 [[menu.main]]
-  weight = 1
+  weight = 2
   identifier = "categories"
   name = "Categories"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-bookmark\" aria-hidden=\"true\"></i>"
   url = "/categories"
 [[menu.main]]
-  weight = 2
+  weight = 3
   identifier = "tags"
   name = "Tags"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-tags\" aria-hidden=\"true\"></i>"
   url = "/tags"
 [[menu.main]]
-  weight = 3
+  weight = 4
   identifier = "archives"
   name = "Archives"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-archive\" aria-hidden=\"true\"></i>"
   url = "/archives"
 [[menu.main]]
-  weight = 4
-  identifier = "search"
-  name = "Search"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-search\"></i>"
-  url = "/#search"
-  class = "st-search-show-outputs"
-[[menu.main]]
-  weight = 4
+  weight = 5
   identifier = "about"
   name = "About"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-question\" aria-hidden=\"true\"></i>"
   url = "/#about"
 
 [[menu.links]]
   weight = 0
   identifier = "github"
   name = "GitHub"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
+  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-github\" aria-hidden=\"true\"></i>"
   url = "https://github.com/kakawait"
 [[menu.links]]
   weight = 1
   identifier = "stackoverflow"
   name = "Stack Overflow"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-stack-overflow\"></i>"
+  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-stack-overflow\" aria-hidden=\"true\"></i>"
   url = "https://stackoverflow.com/users/636472/kakawait"
 
 [[menu.misc]]
   weight = 0
   identifier = "rss"
   name = "RSS"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-rss\" aria-hidden=\"true\"></i>"
   url = "/index.xml"
 ```
 
@@ -281,13 +282,12 @@ You can add groups of links and links much as you want.
 | name       | title to be display                   | string        |
 | pre        | icon to be display a left of the name | template.HTML |
 | url        | menu entry url                        | string        |
-| class      | CSS Class added to the `a` link tag   | string        |
 
 `identifier` can be use for translation see [Menu translation](#menu-translation).
 
 #### Header
 
-The right link of the header is customizable. You can add a link (as an icon) at the right of the header instead of the author's gravatar image or author's picture. By default, author's gravatar or author's picture is displayed.  
+The right link of the header is customizable. You can add a link (as an icon) at the right of the header instead of the author's gravatar image or author's picture. By default, author's gravatar or author's picture is displayed.
 
 E.g to display a shortcut to open algolia search window :
 
@@ -322,7 +322,7 @@ E.g to display a shortcut to open algolia search window :
   # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
   googlePlus = "+ThibaudLepretre"
 ```
-  
+
 | Variable        | Description                                                                          |
 |-----------------|--------------------------------------------------------------------------------------|
 | name            | Your name                                                                            |
@@ -344,7 +344,7 @@ E.g to display a shortcut to open algolia search window :
   thumbnailImage = true
   thumbnailImagePosition = "right"
   autoThumbnailImage = true
-  coverImage = "cover.jpg"
+  coverImage = "images/cover.jpg"
   favicon = /favicon.png
   imageGallery = true
   hierarchicalCategories = true
@@ -354,7 +354,7 @@ E.g to display a shortcut to open algolia search window :
 | Variable | Description |
 |--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | sidebarBehavior | Define the behavior of the header and sidebar :<ul><li>1: Display extra large sidebar on extra large screen, large sidebar on large screen, medium sidebar on medium screen and header bar on small screen and extra large sidebar is swiped on extra large screen and large sidebar on all lower screens when open button is clicked (default)</li><li>2: Display large sidebar on extra large & large screen, medium sidebar on medium screen and header bar on small screen and large sidebar is swiped when open button is clicked</li><li>3: Display medium sidebar on large and medium screen and header bar on small screen and medium sidebar is swiped when open button is clicked</li><li>4: Display header bar on all screens, extra large sidebar is swiped on extra large screen and large sidebar is swiped on all lower screens</li><li>5: Display header bar on all screens and large sidebar is swiped on large screen</li><li>6: Display header bar on all screens and medium sidebar is swiped</li></ul> |
-| clearReading | Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. Useless if `sidebarBehavior` is equal to `3` or `4`. (true: enable, false: disable). Default behavior : `params.clearReading` value in theme configuration file. |
+| clearReading | Hide sidebar on all page (that is part of [mainSections](https://gohugo.io/functions/where/#mainsections)) to let page take full width to improve reading, and enjoy wide images and cover images. Useless if `sidebarBehavior` is equal to `3` or `4`. (true: enable, false: disable). Default behavior : `params.clearReading` value in theme configuration file. |
 | thumbnailImage | Display thumbnail image of each post on index pages |
 | thumbnailImagePosition | Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`). Set this value to `right` if you have old posts to keep the old style on them and define `thumbnailImagePosition` on a post to overwrite this setting. (Default: `right`) |
 | autoThumbnailImage | Automatically select the cover image or the first photo from the gallery of a post if there is no thumbnail image as the thumbnail image. Set this value to `true` if you have old posts that use the cover image or the first photo as the thumbnail image and set `autoThumbnailImage` to `false` on a post to overwrite this setting. (Default : `true`) |
@@ -366,12 +366,12 @@ E.g to display a shortcut to open algolia search window :
 | customJS (_DEPRECATED see [Add custom JS or CSS using configuration](#add-custom-js-or-css-using-configuration)_) | Define files with js that override or extend the theme js: `customJS` = ["js/myscripts.js"]. |
 | syntaxHighlighter | Define which syntax highlighter you want to use (if not set syntax highlighting is disable) between `highlight.js` and `prism.js` |
 
-E.g :  
-A category page look like this with `hierarchicalCategories = true` :  
-![hierarchicalCategories true](img/with_hierarchical_categories.png)  
+E.g :
+A category page look like this with `hierarchicalCategories = true` :
+![hierarchicalCategories true](img/with_hierarchical_categories.png)
 
-The same page with `hierarchicalCategories = false`:  
-![hierarchicalCategories false](img/without_hierarchical_categories.png)  
+The same page with `hierarchicalCategories = false`:
+![hierarchicalCategories false](img/without_hierarchical_categories.png)
 
 ##### Add custom JS or CSS using configuration
 
@@ -406,27 +406,82 @@ Futhermore, even if previous syntax is still supported (`customJS = ["js/myscrip
 
 #### Integrated services
 
+For privacy settings please refer to https://gohugo.io/about/hugo-and-gdpr/
+
+##### Disqus
+
 ```toml
 disqusShortname =
-googleAnalytics = 
+[params.comment.disqus]
+  enable = true
 ```
+
+| Variable | Description |
+|----------|-------------|
+| disqusShortname | Your Disqus shortname |
+| enable | Toggle disqus globally |
+
+##### Gitalk
+
+```toml
+[params.comment.gitalk]
+  enable = true
+  # clientId =
+  # clientSecret =
+  # owner =
+  # repo =
+  # See all options: https://github.com/gitalk/gitalk#options
+  [params.comment.gitalk.options]
+    language = "en"
+    perPage = 10
+    distractionFreeMode = false
+    enableHotKey = true
+    pagerDirection = "first"
+```
+
+| Variable | Description |
+|----------|-------------|
+| enable | Toggle gitalk globally |
+| clientId | GitHub Application Client ID |
+| clientSecret | GitHub Application Client Secret |
+| owner | GitHub repository owner. Can be personal user or organization |
+| repo | GitHub repository |
+| _options_ | See all available options on https://github.com/gitalk/gitalk#options |
+
+##### Google Analytics
+
+```toml
+googleAnalytics =
+[params.googleAnalytics]
+  async = true
+```
+
+| Variable | Description |
+|----------|-------------|
+| googleAnalytics | Your Google analystics web property ID : UA-XXXXX-X |
+| async | Load Google analytics asynchronously |
+
+##### Gravatar
 
 ```toml
 [author]
   gravatarEmail =
 ```
 
+| Variable | Description |
+|----------|-------------|
+| gravatarEmail | Your gravatar email. Overwrite `author.picture` everywhere in the blog |
+
+##### Facebook
+
 ```toml
 [params]
-  fbAdminIds = 
-  fbAppId = 
+  fbAdminIds =
+  fbAppId =
 ```
 
 | Variable | Description |
-|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| disqusShortname | Your Disqus shortname. |
-| gravatarEmail | Your gravatar email. Overwrite `author.picture` everywhere in the blog |
-| googleAnalytics | Your Google analystics web property ID : UA-XXXXX-X |
+|----------|-------------|
 | fbAdminIds | Your Facebook user ids used to connect your blog with your facebook user accounts (Facebook Insights). Use array syntax. E.g : `[9830047, 1003342]`. Visit [Facebook docs](https://developers.facebook.com/docs/platforminsights/domains) for more information. |
 | fbAppId | Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : `9841307`. Visit [Facebook docs](https://developers.facebook.com/docs/platforminsights/domains) for more information. |
 
@@ -436,17 +491,17 @@ googleAnalytics =
 [params]
   [[params.sharingOptions]]
     name = "Facebook"
-    icon = "fa-facebook-official"
+    icon = "fab fa-facebook-square"
     url = "https://www.facebook.com/sharer/sharer.php?u=%s"
 
   [[params.sharingOptions]]
     name = "Twitter"
-    icon = "fa-twitter"
+    icon = "fab fa-twitter"
     url = "https://twitter.com/intent/tweet?text=%s"
 
   [[params.sharingOptions]]
     name = "Google+"
-    icon = "fa-google-plus"
+    icon = "fab fa-google-plus"
     url = "https://plus.google.com/share?url=%s"
 ```
 
@@ -456,7 +511,7 @@ You can comment and uncomment to enable or disable sharing options. If your own 
 [params]
   [[params.sharingOptions]]
     name = "Foo bar"
-    icon = "fa-foo-bar"
+    icon = "fas fa-foo-bar"
     url = "https://www.foo-bar.com/sharer/sharer.php?u=%s"
 ```
 
@@ -485,7 +540,7 @@ Tranquilpeak provides you 2 pages to display all posts title and date by tags, b
 While you are writing articles, you need to check the result a lot of times before deploying your site.
 If you have enable Google analytics service, Google will include all requests done, even when hostname is localhost and this can greatly skew the results.
 To overcome this, you have to add a filter on Google Analytics website.
-   
+
 Follow these steps, to add new filter :
 
 1. Sign in to your Google Analytics account
@@ -512,7 +567,7 @@ You can configure how links to your site will appear in Twitter and/or Facebook.
 
 Since you are going to edit the theme, you have to install all the necessary to build it after changes : [Installation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/developer.md#installation)
 
-**Run command in theme folder : `hexo-blog/themes/tranquilpeak`**
+**Run command in theme folder : `hugo-blog/themes/tranquilpeak`**
 
 ### Change global style
 
@@ -520,27 +575,27 @@ If you want to change font families, font size, sidebar color, things like that,
 
 ### Change code coloration (Highlight.js theme)
 
-Tranquilpeak integrate its own highlight.js theme inspired by GitHub. 
-Of course, you can replace it with an other theme found on highlight.js repository. Since Hexo use different CSS class names, all theme are not ready out of the box, but it is very easy to make them compatible. 
+Tranquilpeak integrate its own highlight.js theme inspired by GitHub.
+Of course, you can replace it with an other theme found on highlight.js repository. Since Hexo use different CSS class names, all theme are not ready out of the box, but it is very easy to make them compatible.
 
 Follow these steps :
 
 1. Get your theme here : [Highlight.js theme](https://github.com/isagalaev/highlight.js/tree/master/src/styles) or create yours
 2. Follow guidelines in `src/scss/themes/hljs-custom.scss` file
-3. Build the theme with `npm run prod` or `grunt buildProd`. Learn more about Grunt tasks : [Grunt tasks](https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/developer.md#grunt-tasks)
- 
+3. Build the theme with `npm run prod`. Learn more about Grunt tasks : [Grunt tasks](https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/developer.md#grunt-tasks)
+
 ## Writing posts
 
-To write articles, you have to use Markdown language. [Here](https://guides.github.com/features/mastering-markdown/#examples) you can find the main basics of Markdown syntax.   
-Please note, there are many different versions of Markdown and some of them are not supported by Hugo.  
+To write articles, you have to use Markdown language. [Here](https://guides.github.com/features/mastering-markdown/#examples) you can find the main basics of Markdown syntax.
+Please note, there are many different versions of Markdown and some of them are not supported by Hugo.
 
 **I STRONGLY recommend you to use a CDN to speed up loading of pages. There is many free CDN like Cloudinary or you can also use indirectly by using services like Google Photos.**
 
 ### Front-matter settings
 
-Tranquilpeak introduces new variables to give you a lot of possibilities.  
-  
-Example :  
+Tranquilpeak introduces new variables to give you a lot of possibilities.
+
+Example :
 
 ```markdown
 disqusIdentifier: fdsF34ff34
@@ -561,7 +616,7 @@ gallery:
     - image-3.jpg "New York"
     - image-4.png "Paris"
     - http://i.imgur.com/o9r19kD.jpg "Dubai"
-    - https://example.com/orignal.jpg https://example.com/thumbnail.jpg "Sidney"
+    - https://example.com/original.jpg https://example.com/thumbnail.jpg "Sidney"
 comments: false
 showTags: true
 showPagination: true
@@ -592,31 +647,46 @@ summary: "This is a custom summary and does *not* appear in the post."
 |showMeta|`true`: Show post meta (date, categories).|
 |showActions|`true`: Show post actions (navigation, share links).|
 |summary|Custom excerpt text to show on the homepage.|
+|link|Override default URL/link for a given article/page.|
 
-Example: 
-A post on index page will look like this with :`thumbnailImagePosition` set to `bottom`:  
-![thumbnail-image-position-bottom](https://s3-ap-northeast-1.amazonaws.com/tranquilpeak-hexo-theme/docs/1.4.0/TIP-bottom-400.jpg)  
-  
-The same with : `thumbnailImagePosition` set to `right`:  
-![thumbnail-image-position-right](https://s3-ap-northeast-1.amazonaws.com/tranquilpeak-hexo-theme/docs/1.4.0/TIP-right-400.png)  
-  
-The same with : `thumbnailImagePosition` set to `left`:  
-![thumbnail-image-position-left](https://s3-ap-northeast-1.amazonaws.com/tranquilpeak-hexo-theme/docs/1.4.0/TIP-left-400.png)  
+Example:
+A post on index page will look like this with :`thumbnailImagePosition` set to `bottom`:
+![thumbnail-image-position-bottom](https://s3-ap-northeast-1.amazonaws.com/tranquilpeak-hexo-theme/docs/1.4.0/TIP-bottom-400.jpg)
+
+The same with : `thumbnailImagePosition` set to `right`:
+![thumbnail-image-position-right](https://s3-ap-northeast-1.amazonaws.com/tranquilpeak-hexo-theme/docs/1.4.0/TIP-right-400.png)
+
+The same with : `thumbnailImagePosition` set to `left`:
+![thumbnail-image-position-left](https://s3-ap-northeast-1.amazonaws.com/tranquilpeak-hexo-theme/docs/1.4.0/TIP-left-400.png)
 
 ### Define post excerpt
 
-Use: 
+Use:
 
 - `<!--more-->` to define post excerpt and keep the post excerpt in the post content
 - For a custom exerpt *not* in the post content, use the `summary` front-matter variable. Markdown syntax is supported.
 
 ### Display table of contents
 
-As post excerpt feature enable with `<!--more-->` comment, you can display the table of contents of a post with  `<!-- toc -->`.  Place this comment where you want to display the table of content.
-  
-Here is what looks like the table of contents generated:  
-![thumbnail-image-position-left](https://s3-ap-northeast-1.amazonaws.com/tranquilpeak-hexo-theme/docs/1.4.0/toc-400.png) 
-  
+Hugo Tranquilpeak theme provides a shortcode for adding table of content inside your content.
+
+syntgax:
+```
+{{< toc >}}
+```
+
+However you may have to update your hugo `config.toml` configuration to be sure that `startLevel` is matching your content. By default (see [official documentation](https://gohugo.io/getting-started/configuration-markup/#table-of-contents)) Hugo detects table of content starting level 2, that mean `<h2>my title</h2>` or `## my title`.
+
+If you used to write `# my title` and so transformed to `<h1>my title</h1>`, the table of content will be empty by default if you're not updating `startLevel` to `startLevel = 1`
+
+```toml
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 1
+```
+
 ### Tags
 
 Tranquilpeak introduce new tags to display alert messages, images in full width and create beautiful galleries.
@@ -627,14 +697,14 @@ Tranquilpeak introduce new tags to display alert messages, images in full width 
 
 Alert tag is useful to highlight a content like a tips or a warning. Check it live here : [Alert tag demo](https://tranquilpeak.kakawait.com/2014/10/tags-plugins-showcase/#alert)
 
-Syntax:  
+Syntax:
 ```
 {{< alert [classes] >}}
 content
 {{< /alert >}}
 ```
 
-E.g: 
+E.g:
 ```
 {{< alert danger no-icon >}}
 Here is a danger alert without icon
@@ -651,14 +721,14 @@ Here is a danger alert without icon
 
 Highlight text tag is useful to highlight an interesting part in a text. Check it live here : [Highlight text tag demo](https://tranquilpeak.kakawait.com/2014/10/tags-plugins-showcase/#highlight-text)
 
-Syntax:  
+Syntax:
 ```
 {{< hl-text [classes] >}}
 content
 {{< /hl-text >}}
-``` 
+```
 
-E.g:  
+E.g:
 ```
 {{< hl-text danger >}}
 your highlighted text
@@ -666,10 +736,10 @@ your highlighted text
 ```
 
 |Argument|Description|
-|---|---| 
+|---|---|
 |Classes|<strong>classes</strong> : <ul><li>red</li><li>green</li><li>blue</li><li>purple</li><li>orange</li><li>yellow</li><li>cyan</li><li>primary</li><li>success</li><li>warning</li><li>danger</li></ul>|
-        
-**It's important to put the paragraph that contains highlight text tag inside** `<p>...</p>` 
+
+**It's important to put the paragraph that contains highlight text tag inside** `<p>...</p>`
 **otherwise the following content may not be rendered.**
 
 #### Image
@@ -687,15 +757,15 @@ E.g:
 ```
 
 |Argument|Description|
-|---|---| 
+|---|---|
 |classes (optional)|You can add css classes to stylize the image. Separate class with whitespace. Tranquilpeak integrate many css class to create nice effects :  <ul><li><strong>fancybox</strong> : Generate a fancybox image.</li><li><strong>nocaption</strong> : Caption of the image will not be displayed.</li><li><strong>left</strong> : Image will float at the left.</li><li><strong>right</strong> : Image will float at the right.</li><li><strong>center</strong> : Image will be at center.</li><li><strong>fig-20</strong> : Image will take 20% of the width of post width and automatically float at left.</li><li><strong>fig-25</strong> : Image will take 25% of the width of post width and automatically float at left.</li><li><strong>fig-33</strong> : Image will take 33% of the width of post width and automatically float at left.</li><li><strong>fig-50</strong> : Image will take 50% of the width of post width and automatically float at left.</li><li><strong>fig-75</strong> : Image will take 75% of the width of post width and automatically float at left.</li><li><strong>fig-100</strong> : Image will take 100% of the width of post width.</li><li><strong>clear</strong> : Add a div with `clear:both;` style attached after the image to retrieve the normal flow of the post.</li></ul>|
 |group (optional)| Name of a group, used to create a gallery. **Only for image with `fancybox` css class**|
 |src| Path to the original image.|
-|thumbnail (optional)| Path to the thumbnail image. If empty, the orignal image will be displayed.|
+|thumbnail (optional)| Path to the thumbnail image. If empty, the original image will be displayed.|
 |thumbnail-width (optional)| Width to the thumbnail image. If the thumbnail image is empty, width will be attached to thumbnail image created from original image. E.g : `150px` or `85%`.|
 |thumbnail-height (optional)| Height to the thumbnail image. If the thumbnail image is empty, height will be attached to thumbnail image created from original image. E.g : `300px` or `20%`.|
 |title (optional)| Title of image displayed in a caption under image. `Alt` HTML attribute will use this title. E.g : `"A beautiful sunrise"`.|
- 
+
 #### Tabbed code block
 
 Tabbed code blocks are useful to group multiple code blocks related. For example, the source code of a web component (html, css and js). Or compare a source code in different languages.
@@ -713,7 +783,7 @@ Syntax:
 {{< /tabbed-codeblock >}}
 ```
 
-E.g:  
+E.g:
 ``` js
 {{< tabbed-codeblock example http://example.com >}}
     <!-- tab js -->
@@ -725,9 +795,9 @@ E.g:
         }
     <!-- endtab -->
 {{< /tabbed-codeblock >}}
-``` 
+```
 |Argument|Description|
-|---|---| 
+|---|---|
 |Name (optional)|Name of the code block, or of the file|
 |Link (optional)|Link to a demo, or a file|
 |Lang (optional)|Programming language use for the current tab|
@@ -744,21 +814,21 @@ Syntax:
 E.g:
 ```
 {{< wide-image src="http://google.fr/images/image125.png" title="A beautiful sunrise" >}}
-``` 
+```
 
 |Argument|Description|
-|---|---| 
+|---|---|
 |src|Path to the original image.|
-|title (optional)|Title of image displayed in a caption under image. `Alt` HTML attribute will use this title. E.g : `"A beautiful sunrise"`.| 
-  
+|title (optional)|Title of image displayed in a caption under image. `Alt` HTML attribute will use this title. E.g : `"A beautiful sunrise"`.|
+
 
 ## Writing pages ##
 
 Sometimes you need to create a **page** that is **not** a **regular blog post**,
-where you want to hide the date, social sharing buttons, tags, categories 
+where you want to hide the date, social sharing buttons, tags, categories
 and pagination.
 This is the case for the blog pages _About_ or _Contact_ for instance which do
-not need to be timestamped (nor tagged or categorized) nor provide 
+not need to be timestamped (nor tagged or categorized) nor provide
 pagination and are not intended to be shared on social networks.
 
 In order to create such a page you can proceed like so:

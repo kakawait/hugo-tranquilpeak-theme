@@ -1,0 +1,192 @@
+## GLOBAL ##
+- id: "global.home"
+  translation: "Koti"
+
+- id: "global.categories"
+  translation: "Luokat"
+
+- id: "global.category"
+  translation: "Luokka"
+
+- id: "global.tags"
+  translation: "Tagit"
+
+- id: "global.tag"
+  translation: "Tagi"
+
+- id: "global.archives"
+  translation: "Arkistot"
+
+- id: "global.search"
+  translation: "Haku"
+
+- id: "global.about"
+  translation: "Tietoja"
+
+- id: "global.author_picture"
+  translation: "Kirjoittajan kuva"
+
+- id: "global.share_on"
+  translation: "Jaa palvelussa %s"
+
+- id: "global.mail"
+  translation: "Sähköposti"
+
+- id: "global.rss"
+  translation: "RSS"
+
+- id: "global.search_category"
+  translation: "Hae luokkaa"
+
+- id: "global.search_tag"
+  translation: "Hae tagia"
+
+- id: "global.search_date"
+  translation: "Hae päivämäärää (VVVV/KK/PP)"
+
+- id: "global.read_more_about_author"
+  translation: "Lue lisää kirjoittajasta"
+
+- id: "global.zoom_in_on_picture"
+  translation: "Suurenna kuvaa"
+
+- id: "global.go_to_homepage"
+  translation: "Siirry kotisivulle"
+
+- id: "global.open_link"
+  translation: "Avaa linkki"
+
+- id: "global.open_post"
+  translation: "Avaa julkaisu"
+
+## GLOBAL.POSTS_FOUND ##
+- id: "global.posts_found.zero"
+  translation: "julkaisuja ei löytynyt"
+
+- id: "global.posts_found.one"
+  translation: "1 julkaisu löytyi"
+
+- id: "global.posts_found.other"
+  translation: "{n} julkaisua löytyi"
+
+## GLOBAL.CATEGORIES_FOUND ##
+- id: "global.categories_found.zero"
+  translation: "luokkia ei löytynyt"
+
+- id: "global.categories_found.one"
+  translation: "1 luokka löytyi"
+
+- id: "global.categories_found.other"
+  translation: "{n} luokkaa löytyi"
+
+## GLOBAL.TAGS_FOUND ##
+- id: "global.tags_found.zero"
+  translation: "tageja ei löytynyt"
+
+- id: "global.tags_found.one"
+  translation: "1 tagi löytyi"
+
+- id: "global.tags_found.other"
+  translation: "{n} tagia löytyi"
+
+## PAGINATION ##
+- id: "pagination.page"
+  translation: "sivu {{ .Paginator.PageNumber }}"
+
+- id: "pagination.of"
+  translation: "/{{ .Paginator.TotalPages }}"
+
+- id: "pagination.newer_posts"
+  translation: "UUDEMMAT JULKAISUT"
+
+- id: "pagination.older_posts"
+  translation: "VANHEMMAT JULKAISUT"
+
+- id: "pagination.previous"
+  translation: "EDELLINEN"
+
+- id: "pagination.next"
+  translation: "SEURAAVA"
+
+## POST ##
+- id: "post.no_title"
+  translation: "ei otsikkoa"
+
+- id: "post.categorized_in"
+  translation: "luokassa"
+
+- id: "post.tagged_in"
+  translation: "TAGIT"
+
+- id: "post.toc"
+  translation: "Sisällysluettelo"
+
+- id: "post.read_more"
+  translation: "Lue lisää"
+
+- id: "post.go_to_website"
+  translation: "Siirry web-sivulle"
+
+- id: "post.comment_and_share"
+  translation: "Kommentoi ja jaa"
+
+- id: "post.comment"
+  translation: "Kommentoi"
+
+- id: "post.back_to_top"
+  translation: "Takaisin ylös"
+
+- id: "post.share"
+  translation: "Jaa tämä julkaisu"
+
+- id: "post.gallery"
+  translation: "Galleria"
+
+## POST.IMAGE ##
+
+- id: "post.image.one"
+  translation: "kuva"
+
+- id: "post.image.other"
+  translation: "{n} kuvaa"
+
+## FOOTER ##
+- id: "footer.all_rights_reserved"
+  translation: "Kaikki oikeudet pidätetään"
+
+## DATE ##
+- id: "date.month.january"
+  translation: "tammikuuta"
+
+- id: "date.month.february"
+  translation: "helmikuuta"
+
+- id: "date.month.march"
+  translation: "maaliskuuta"
+
+- id: "date.month.april"
+  translation: "huhtikuuta"
+
+- id: "date.month.may"
+  translation: "toukokuuta"
+
+- id: "date.month.june"
+  translation: "kesäkuuta"
+
+- id: "date.month.july"
+  translation: "heinäkuuta"
+
+- id: "date.month.august"
+  translation: "elokuuta"
+
+- id: "date.month.september"
+  translation: "syyskuuta"
+
+- id: "date.month.october"
+  translation: "lokakuuta"
+
+- id: "date.month.november"
+  translation: "marraskuuta"
+
+- id: "date.month.december"
+  translation: "joulukuuta"

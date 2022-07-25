@@ -1,0 +1,51 @@
+{{ if .IsPage }}
+  {{ if and (.Site.Params.comment.disqus.enable) (not (.Site.Config.Privacy.Disqus.Disable)) }}
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = '{{ .Permalink }}';
+        {{ if .Params.disqusIdentifier }}
+          this.page.identifier = '{{ .Params.disqusIdentifier }}';
+        {{ else }}
+          this.page.identifier = '{{ .RelPermalink }}'
+        {{ end }}
+      };
+      (function() {
+        // Don't ever inject Disqus on localhost--it creates unwanted
+        // discussions from 'localhost:1313' on your Disqus account...
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = '{{ .Site.DisqusShortname }}';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  {{ else if .Site.Params.comment.gitalk.enable }}
+    <div id="gitalk">
+      <noscript>Please enable JavaScript to view the comments powered by Gitalk.</noscript>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.7.2/gitalk.min.js" integrity="sha512-EcTCcXV46teiNwe0VcnM5A038tcY+BaQYO4nW6Gh2i7v4/HjBVg7xx3+JBLl9WofDds//INJAiEGAtdgr8PWyA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+      (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('gitalk').innerHTML = 'Gitalk comments not available by default when the website is previewed locally.';
+          return;
+        }
+        new Gitalk({
+          clientID: '{{ .Site.Params.comment.gitalk.clientId }}',
+          clientSecret: '{{ .Site.Params.comment.gitalk.clientSecret }}',
+          repo: '{{ .Site.Params.comment.gitalk.repo }}',
+          owner: '{{ .Site.Params.comment.gitalk.owner }}',
+          admin: ['{{ .Site.Params.comment.gitalk.owner }}'],
+          id: '{{ md5 .RelPermalink }}',
+          ...{{ .Site.Params.comment.gitalk.options | jsonify | safeJS }}
+        }).render('gitalk')
+      })()
+    </script>
+  {{ end }}
+{{ end }}

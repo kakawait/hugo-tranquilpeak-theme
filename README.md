@@ -14,14 +14,6 @@ You can track [breaking changes label](https://github.com/kakawait/hugo-tranquil
 
 How can I migrate my current version? Please read [CHANGELOG.md](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/CHANGELOG.md).
 
-## Credits
-
-*Hugo* version of Tranquilpeak is a based on original *Hexo* version https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak. This version is simply a port to *Hugo* static site generator.
-
-Please all the credit should be attributed to [original *Hexo* version](https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak) and its author [Louis Barranqueiro](https://github.com/LouisBarranqueiro).
-
-*Hugo* version keeps every `.js` and `.css` files untouched from original *Hexo* version in order to enjoy future original *Hexo* version updates or features!
-
 ## Summary
 
 - [General](#general)
@@ -35,9 +27,9 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 
 ## General
 
-- **Authors**: [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro) and [Thibaud Leprêtre (kakawait)](https://github.com/kakawait)
-- **Version**: 0.4.4-BETA (based on Hexo version 1.10.0)
-- **Compatibility**: Hugo v0.20.1
+- **Authors**: [Thibaud Leprêtre (kakawait)](https://github.com/kakawait) and [Louis Barranqueiro (LouisBarranqueiro)](https://github.com/LouisBarranqueiro)
+- **Version**: 0.5.3-BETA (based on Hexo version 3.1.0)
+- **Compatibility**: Hugo v0.53
 
 ## Features
 
@@ -68,13 +60,13 @@ Please all the credit should be attributed to [original *Hexo* version](https://
 **Integrated services:**
 
 - Disqus
+- Gitlak
 - Google analytics
 - Gravatar
 - Facebook Insights
 
 ### Missing features from original *Hexo* version
 
-- [ ] Baidu analytics
 - [ ] Algolia (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8)
 - [ ] Pagination customization `tagPagination`, `categoryPagination` and `archivePagination` (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17)
 
@@ -97,7 +89,7 @@ cd themes
 git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git
 ```
 
-After installing the Tranquilpeak theme successfully, we recommend you to take a look at the [exampleSite](exampleSite) directory. You will find a working Hugo site configured with the Universal theme that you can use as a starting point for your site.
+After installing the Tranquilpeak theme successfully, we recommend you to take a look at the [exampleSite](exampleSite) directory. You will find a working Hugo site configured with the Tranquilpeak theme that you can use as a starting point for your site.
 
 First, let's take a look at the [config.toml](exampleSite/config.toml). It will be useful to learn how to customize your site. Feel free to play around with the settings.
 
@@ -140,15 +132,13 @@ To understand the code, the workflow and edit the theme, consult the following d
 
 ## Contributing
 
-All kinds of contributions (enhancements, new features, documentation & code improvements, issues & bugs reporting) are welcome.
+All kinds of contributions (enhancements, features, documentation & code improvements, bugs reporting) are welcome.
 
 Read [guidelines for contributing](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/.github/CONTRIBUTING.md) for more information.
 
-As explained on [Credits](#credits):
+## Credits
 
-> *Hugo* version keeps every `.js` and `.css` files untouched from original *Hexo* version in order to enjoy future original *Hexo* version updates or features!
-
-That mean I would keep a strong dependency with original *Hexo* theme. Thus if you want to suggest any modifications on `.css` or `.js` files **I will submit those changes to original *Hexo* theme** (except if it's really specific to *Hugo* bugs that is not present on *Hexo*).
+*Hugo* version of Tranquilpeak is a based on original *Hexo* version https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak. This version is simply a port to *Hugo* static site generator.
 
 ## License
 

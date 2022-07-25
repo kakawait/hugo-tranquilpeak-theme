@@ -44,7 +44,22 @@
 - id: "global.search_date"
   translation: "Suche Datum (YYYY/MM/DD)"
 
-## GLOBAL.POST_FOUND ##
+- id: "global.read_more_about_author"
+  translation: "Lesen Sie mehr über den Autor"
+
+- id: "global.zoom_in_on_picture"
+  translation: "Vergrößern Sie das Bild"
+
+- id: "global.go_to_homepage"
+  translation: "Gehe zur Homepage"
+
+- id: "global.open_link"
+  translation: "Öffne den Link"
+
+- id: "global.open_post"
+  translation: "Öffnen Sie den Beitrag"
+
+## GLOBAL.POSTS_FOUND ##
 - id: "global.posts_found.zero"
   translation: "kein Beitrag gefunden"
 
@@ -114,6 +129,26 @@
 
 - id: "post.comment_and_share"
   translation: "kommentieren und teilen"
+
+- id: "post.comment"
+  translation: "Hinterlasse einen Kommentar"
+
+- id: "post.back_to_top"
+  translation: "Zurück nach oben"
+
+- id: "post.share"
+  translation: "Diesen Beitrag teilen"
+
+- id: "post.gallery"
+  translation: "Gallerie"
+
+## POST.IMAGE ##
+
+- id: "post.image.one"
+  translation: "bild"
+
+- id: "post.image.other"
+  translation: "{n} bild"
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"

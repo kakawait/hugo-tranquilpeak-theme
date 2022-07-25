@@ -4,7 +4,7 @@ slug: who-is-using-tranquilpeak-hugo-theme
 date: 2015-06-14
 categories:
 - tranquilpeak
-- showcase appliquée
+- showcase
 thumbnailImagePosition: left
 thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city-750.jpg
 ---
@@ -24,14 +24,6 @@ If you want to add your site to this showcase, click [here](https://github.com/k
 
 [![Eric Bouchut's blog](http://i.imgur.com/zQmKIKNm.png)](http://ericbouchut.com/)
 
-## Pankaj Kumar's blog
-
-[![Pankaj Kumar's blog](http://i.imgur.com/WHpb9ZKm.png)](https://pnarula.com/)
-
-## Paul Wolke's blog
-
-[![Paul Wolke's blog](http://i.imgur.com/zHm1BVXm.png)](http://www.paulwolke.com/)
-
 ## Robin Hu's blog
 
 [![Robin Hu's blog](https://i.imgur.com/7SujaMam.png)](http://robinforest.net/)
@@ -39,10 +31,6 @@ If you want to add your site to this showcase, click [here](https://github.com/k
 ## Zentechnista's blog
 
 [![Zentechnista's blog](https://i.imgur.com/7zN7WMMm.png)](https://zentechnista.github.io/)
-
-## Yamila Moreno's blog
-
-[![Yamila Moreno's blog](https://i.imgur.com/L51G3pJ.png)](https://moduslaborandi.net/)
 
 ## Viajes Dendarii's blog
 
@@ -71,3 +59,53 @@ If you want to add your site to this showcase, click [here](https://github.com/k
 ## Dr. Cruz Rincón's blog
 
 [![Dr. Cruz Rincón's blog](https://i.imgur.com/XazQAolm.png)](https://www.cruzrincon.com.ve/)
+
+## Björn Oettinghaus's blog
+
+[![Björn Oettinghaus's blog](https://i.imgur.com/8vSMWIam.png)](https://www.datisticsblog.com/)
+
+## Ivan Fadila Putra's blog
+
+[![Ivan Fadila Putra's blog](https://i.imgur.com/r7tJa2Lm.png)](https://ffadilaputra.github.io/)
+
+## 🎈 BALLOON | FU-SEN blog
+
+[![🎈 BALLOON | FU-SEN blog](https://i.imgur.com/7tDrORCm.png)](https://balloon.asia/)
+
+## Yue Hao's blog
+
+[![Yue Hao's blog](https://i.imgur.com/CDDrTr4m.png)](https://yueyvettehao.netlify.com/)
+
+## Adrian Riyadi's blog
+
+[![Adrian Riyadi's blog](https://i.imgur.com/s6yB9lFm.png)](https://blog.adrian.id/)
+
+## Vijay Mateti's blog
+
+[![Vijay Mateti's blog](https://i.imgur.com/8LMItYSm.png)](https://vijaymateti.com/)
+
+## Walid Benchaa's blog
+
+[![Walid Benchaa's blog](https://i.imgur.com/8yn9DaOm.png)](https://rekkodo.gitlab.io/)
+
+## Stella Wang's blog
+
+[![Stella Wang's blog](https://i.imgur.com/F0jVpsOm.png)](https://hiwanglong.github.io/)
+
+## Aditya Mangal's blog
+
+[![Aditya Mangal's blog](https://i.imgur.com/FKrnNGlm.png)](https://www.adityamangal.com/)
+
+## Agonyus's blog
+
+[![Agonyus's blog](https://i.imgur.com/P25TDrFm.png)](https://agonyus.com/)
+
+## Namshik Kim's blog
+
+> Data science blog
+
+[![Namshik Kim's blog](https://i.imgur.com/oQ8i7k7m.png)](https://physhik.com/)
+
+## Razvan Avramescu's blog
+
+[![Razvan Avramescu's blog](https://i.imgur.com/vyhMGDFm.png)](https://www.avramescu.net/)

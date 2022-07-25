@@ -1,3 +1,9 @@
+// Mixin helper to animate sidebar transition (slide)
+@mixin sidebar-slide-animation {
+    transition:                  transform .25s ease-in-out;
+    -webkit-transition:          -webkit-transform .25s ease-in-out;
+}
+
 /// Mixin helper to display the sidebar in medium size
 @mixin sidebar-md {
     width: map-get($sidebar, md-screen-width);
@@ -26,6 +32,7 @@
 
                 .sidebar-button-icon {
                     font-size:      2rem;
+                    font-weight:    600;
                     display:        inline-block;
                     text-align:     center;
                     width:          30px;
@@ -41,9 +48,8 @@
         }
     }
     // Used to animate the sidebar (pushed effect)
-    @include prefix(transition, 'margin-left 0.5s', 'webkit' 'moz');
     &.pushed {
-        margin-left: #{map-get($sidebar, md-screen-width)};
+        @include prefix(transform, translate3d(#{map-get($sidebar, md-screen-width)}, 0, 0), 'webkit' 'moz');
     }
 }
 
@@ -81,6 +87,7 @@
                 // Font-awesome icon
                 .sidebar-button-icon {
                     font-size:      2rem;
+                    font-weight:    600;
                     display:        inline-block;
                     text-align:     center;
                     width:          30px;
@@ -104,9 +111,8 @@
         }
     }
     // Used to animate the sidebar (pushed effect)
-    @include prefix(transition, 'margin-left 0.5s', 'webkit' 'moz');
     &.pushed {
-        margin-left: #{map-get($sidebar, lg-screen-width)};
+        @include prefix(transform, translate3d(#{map-get($sidebar, lg-screen-width)}, 0, 0), 'webkit' 'moz');
     }
 }
 
@@ -167,6 +173,7 @@
                 // Font-awesome icon
                 .sidebar-button-icon {
                     font-size:      2rem;
+                    font-weight:    600;
                     float:          left;
                     text-align:     center;
                     width:          30px;
@@ -196,8 +203,7 @@
         }
     }
     // Used to animate the sidebar (pushed effect)
-    @include prefix(transition, 'width 0.5s, margin-left 0.5s', 'webkit' 'moz');
     &.pushed {
-        margin-left: #{map-get($sidebar, xlg-screen-width)};
+        @include prefix(transform, translate3d(#{map-get($sidebar, xlg-screen-width)}, 0, 0), 'webkit' 'moz');
     }
 }

@@ -18,6 +18,10 @@
         float:  right;
         margin: 2px;
     }
+    .fig-video {
+        width: 100%;
+        height: auto;
+    }
     &.fig-20 {
         @extend .left;
         width: calc(20% - 4px);
@@ -45,7 +49,10 @@
     &.figure--fullWidth {
         width: 100%;
         .figure-img {
+            width: 100%;
             margin: 0 auto;
+            transition: width .25s ease-in-out;
+            -webkit-transition: width .25s ease-in-out;
         }
     }
 }
@@ -55,6 +62,58 @@
     .fig-33, .fig-25, .fig-20 {
         .caption {
             display: none;
+        }
+    }
+}
+
+@media #{$large-only} {
+    #main {
+        // Display bottom bar in small size and push it from the size of the large sidebar
+        &[data-behavior="1"] .pushed .figure,
+        &[data-behavior="2"] .pushed .figure {
+            @include figure-pushed-lg;
+        }
+        // Display bottom bar in medium size and push it from the size of the medium sidebar
+        &[data-behavior="3"] .pushed .figure {
+            @include figure-pushed-md;
+        }
+        // Display bottom bar in large size and push it from the size of the large sidebar
+        &[data-behavior="4"] .pushed .figure,
+        &[data-behavior="5"] .pushed .figure {
+            @include figure-pushed-lg;
+        }
+        // Display bottom bar in large size and push it from the size of the medium sidebar
+        &[data-behavior="6"] .pushed .figure {
+            @include figure-pushed-md;
+        }
+    }
+}
+
+@media #{$xlarge-and-up} {
+    #main {
+        // Display bottom bar in extra small size and push it from the size of the extra large sidebar
+        &[data-behavior="1"] .pushed .figure {
+            @include figure-pushed-xlg;
+        }
+        // Display bottom bar in small size and push it from the size of the large sidebar
+        &[data-behavior="2"] .pushed .figure {
+            @include figure-pushed-lg;
+        }
+        // Display bottom bar in medium size and push it from the size of the medium sidebar
+        &[data-behavior="3"] .pushed .figure {
+            @include figure-pushed-md;
+        }
+        // Display bottom bar in large size and push it from the size of the extra large sidebar
+        &[data-behavior="4"] .pushed .figure {
+            @include figure-pushed-xlg;
+        }
+        // Display bottom bar in large size and push it from the size of the extra large sidebar
+        &[data-behavior="5"] .pushed .figure {
+            @include figure-pushed-lg;
+        }
+        // Display bottom bar in large size and push it from the size of the medium sidebar
+        &[data-behavior="6"] .pushed .figure {
+            @include figure-pushed-md;
         }
     }
 }
