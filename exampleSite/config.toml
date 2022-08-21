@@ -154,6 +154,10 @@ canonifyurls = true
   # If you set this value to `true`, these positions swap.
   #  swapPaginator = true
 
+  # Enable LaTeX math rendering? yes/no
+  # If false, you can enable math on a per page basis as needed.
+  math = true
+
   # ---------------------
   # Sidebar configuration
   # ---------------------
