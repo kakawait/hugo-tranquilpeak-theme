@@ -1,6 +1,6 @@
 # Instructions on how to build
 
-##Install grunt
+## Install grunt
 
 ```bash
 npm install grunt-cli
