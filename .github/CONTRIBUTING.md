@@ -6,7 +6,7 @@ All kinds of contributions (enhancements, new features, documentation & code imp
 
 ### Javascript
 
-We use [ESLint](http://eslint.org) based on Google code style to maintain code style.
+We use [ESLint](https://eslint.org) based on Google code style to maintain code style.
 Check code status with:
 
 ``` bash

@@ -301,7 +301,7 @@ E.g to display a shortcut to open algolia search window :
 |Variable|Description|
 |---|---|
 |url|URL of the link. If the URL is internal, domain name is not necessary|
-|icon|Name of the font awesome icon class without the `fa-` (Go to [font-awesome icons](http://fontawesome.io/icons/) to find class name of icon)|
+|icon|Name of the font awesome icon class without the `fa-` (Go to [font-awesome icons](https://fontawesome.io/icons/) to find class name of icon)|
 |class|CSS Class added to the link|
 
 #### Author
@@ -375,7 +375,7 @@ The same page with `hierarchicalCategories = false`:
 
 ##### Add custom JS or CSS using configuration
 
-If you need to add some additionnal javascript or css files to your blog without forking or overriding theme itself you could use following configuration:
+If you need to add some additional javascript or css files to your blog without forking or overriding theme itself you could use following configuration:
 
 ```toml
 [params]
@@ -402,7 +402,7 @@ If you need to add some additionnal javascript or css files to your blog without
 
 **ATTENTION** there is no limitation on key structures and each keys will be converted as tag attributes.
 
-Futhermore, even if previous syntax is still supported (`customJS = ["js/myscripts.js"]`), you can't mix both new and old syntax.
+Furthermore, even if previous syntax is still supported (`customJS = ["js/myscripts.js"]`), you can't mix both new and old syntax.
 
 #### Integrated services
 
@@ -664,13 +664,13 @@ The same with : `thumbnailImagePosition` set to `left`:
 Use:
 
 - `<!--more-->` to define post excerpt and keep the post excerpt in the post content
-- For a custom exerpt *not* in the post content, use the `summary` front-matter variable. Markdown syntax is supported.
+- For a custom excerpt *not* in the post content, use the `summary` front-matter variable. Markdown syntax is supported.
 
 ### Display table of contents
 
 Hugo Tranquilpeak theme provides a shortcode for adding table of content inside your content.
 
-syntgax:
+syntax:
 ```
 {{< toc >}}
 ```
