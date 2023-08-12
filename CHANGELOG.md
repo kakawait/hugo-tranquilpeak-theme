@@ -29,7 +29,7 @@ All notable changes to this project will be documented in this file.
 
 > Theme activities were pretty low since 2019. I maintain the theme on my free time and in 2019 I became a dad. You may (or not) understand that it was hard for me to find time to maintain the project.
 >
-> I recently find a great motiviation to re-maintain with more frequent updates and releases!
+> I recently find a great motivation to re-maintain with more frequent updates and releases!
 >Some big changes will comes to try to use latest Hugo's improvements and features.
 > The goal is to release the `1.0.0` for the end of this year.
 
@@ -41,7 +41,7 @@ If you'd like to start helping you can firstly look on that list of labelled iss
 ---
 
 - Synch from Hexo Tranquilpeak theme 3.1.0 ([#287](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/287))
-  - Check https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/releases to get more informations
+  - Check https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/releases to get more information
   - Notables changes:
     - Update Font Awesome to v5
     - Accessibility: add `aria-label` HTML attribute to links
@@ -393,7 +393,7 @@ With new _Sharing options_ that allow extensible list of sharing options, there 
 
 ## [0.3.0-BETA](https://github.com/kakawait/hugo-tranquilpeak-theme/milestone/3) - 9 apr 2017
 
-- Update minimun requirement to Hugo 0.20 ([#134](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/134))
+- Update minimum requirement to Hugo 0.20 ([#134](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/134))
 - Fix warning from Hugo 0.19 ([#125](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/125)) (thank you [jmugz3](https://github.com/jmugz3))
 - Hugo 0.20 fix 404's page for archive ([#111](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/111))
 

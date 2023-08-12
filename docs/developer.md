@@ -51,7 +51,7 @@ If you want to configure the theme, please follow the [user documentation](https
 
 ## Code style ##
 
-We use [ESLint](http://eslint.org) based on Google code style to maintain javascript code style.
+We use [ESLint](https://eslint.org) based on Google code style to maintain javascript code style.
 Check code style with :
 ``` bash
 npm run lint
@@ -99,8 +99,8 @@ If you want to add a new language, duplicate an existing language file and repla
 
 #### Stylesheets
 
-SCSS structure follow 7-1 pattern of [sass guidelines](http://sass-guidelin.es/#the-7-1-pattern)
-If you want more information and to understand better this code, consult [sass guidelines](http://sass-guidelin.es/)
+SCSS structure follow 7-1 pattern of [sass guidelines](https://sass-guidelin.es/#the-7-1-pattern)
+If you want more information and to understand better this code, consult [sass guidelines](https://sass-guidelin.es/)
 
 #### Images
 
@@ -159,7 +159,7 @@ Use `npm run <script_name>` to run one of these scripts. E.g : `npm run start`
 |---|---|
 |`start`|Build the theme once and rebuild after each change|
 |`prod`|Build the theme for production. (synchronize images, fonts, compile assets (css and js) with some optimization (concat and minify) and link it to views)|
-|`lint`|Check code style with [ESLint](http://eslint.org)|
+|`lint`|Check code style with [ESLint](https://eslint.org)|
 
 ## Grunt tasks ##
 
